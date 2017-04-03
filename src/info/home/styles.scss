@@ -1,0 +1,38 @@
+@import "../../common/styles/_variables.scss";
+
+#home {
+  .app-logo {
+    padding: 20px;
+    margin: 0 -15px 12%;
+    background-color: $color-main;
+    font-size: 53px;
+    color: $color-white;
+    text-align: center;
+
+    img  {
+      width: 100%;
+      max-width: 500px;
+      margin: 5vh auto;
+      display: block;
+    }
+  }
+
+  #intro-snippet {
+    margin: 20px;
+    color: $color-white;
+    font-weight: bold;
+  }
+
+  #buttons {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+// ios status bar fix
+.ios #app {
+  #home {
+    margin: -60px -2% 0;
+    overflow-x: hidden;
+  }
+}
