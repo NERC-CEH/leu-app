@@ -1,5 +1,5 @@
 <div class="app-logo">
-  <h3>European Ladybirds</h3>
+  <img src="images/app_logo.png" alt="" class="app-logo">
 </div>
 
 <div id="intro-snippet">
