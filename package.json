@@ -1,9 +1,9 @@
 {
   "name": "leu",
   "id": "uk.ac.ceh.leu",
-  "title": "Asian Hornet Watch",
-  "description": "European Ladybirdsapplication.",
-  "version": "1.1.0",
+  "title": "European Ladybirds",
+  "description": "European Ladybirds application.",
+  "version": "1.0.0",
   "build": "1",
   "homepage": "http://www.irecord.org.uk",
   "author": {
