@@ -1,109 +1,116 @@
 @import "../../styles/_variables.scss";
-//MAIN
-//.species .descript {
-//  width: 100%;
-//  padding-left: 1em;
-//}
 
-//.info li.table-view-cell {
-//  padding-right: 2%;
-//}
-//
-//.descript.comment {
-//  white-space: initial;
-//  text-align: left;
-//  width: auto;
-//  float: none;
-//  margin-left: 8% !important;
-//  display: block !important;
-//}
+#species-list-header {
+  @media only screen and (max-width: 375px) {
+    h1.title {
+      display: none;
+    }
+  }
+}
+#species-list {
+  margin: 0 -4px;
 
-#img-array {
+  li.empty {
+    height: initial!important;
+    min-height: initial!important;
+    padding: 13px 0;
+    border: none;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+}
+
+#species-list .table-view-cell {
   height: 80px;
-  padding: 0;
+  padding: 8px 65px 8px 8px;
 
-  white-space: nowrap;
-  overflow: overlay;
+  a.species {
+    .media-body {
+      line-height: 1.3;
+    }
 
-  img {
-    width: 60px;
-  }
-}
+    .pull-left {
+      height: 70px;
+      width: 96px;
+      background: center no-repeat;
+      background-size: cover;
+    }
 
-#occurrence-id {
-  position: fixed;
-  bottom: 0;
-  left: 10px;
-  color: $color-gray;
-}
+    .species-list-main-name {
+      font-size: $button-font-size;
+      margin: 0 0 8px;
+    }
 
-#taxon-main.list {
-  margin: -1px -1 0;
+    .species-list-secondary-name {
+      font-size: $text-font-size;
+    }
 
-  #species-list {
-    margin: 0 -2% -2px;
-  }
-  #species-list > div {
-    padding: 0;
-  }
+    @media only screen and (max-width: 400px) {
+      .species-list-main-name {
+        font-size: smaller;
+      }
 
-  label {
-    color: $color-white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30vh;
-    border: 0;
-
-    &.other {
-      height: inherit;
-      background-color: #7d7d7d;
-
-      .item-content {
-        width: 100%;
-        text-align: center;
-        font-size: 40px;
+      .species-list-secondary-name {
+        font-size: 12px;
       }
     }
 
-    a {
-      z-index: 10;
+    span.favourite {
       position: absolute;
-      right: 5px;
-      top: 5px;
-      color: $color-white;
-
-      span:before {
-        font-size: 35px;
-      }
-    }
-
-    #hornet-warning {
-      position: absolute;
-      bottom: 8px;
-      left: 8px;
-      color: $color-orange;
-
-      &:before {
-        font-size: 30px;
-      }
-    }
-
-    .item-content {
-      width: 50%;
-      padding: 10px;
-      font-size: 18px;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    // tick to shade
-    i.icon-check {
-      width: 100%;
-      background: rgba(0,0,0,0.6);
+      right: 52px;
+      top: 8px;
       z-index: 0;
-      &:before {
-        display: none;
-      }
+      color: $color-yellow;
     }
   }
+
+  button {
+    width: 20%;
+    height: 100%;
+    max-width: 50px;
+    right: 0;
+    background-color: transparent;
+    border: none;
+
+    &:before {
+      margin-left: -2px;
+    }
+
+    &:after {
+      content: "";
+      background: #ddd;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 1px;
+    }
+  }
+}
+
+#filter-btn {
+  width: 50%;
+  max-width: 55px;
+
+  &.on {
+    color: $color-yellow;
+  }
+}
+
+#user-btn {
+  &.on {
+    color: $color-yellow;
+  }
+}
+
+#filters-dialog-header .stats {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  color: gray;
+}
+
+#species-list-filters {
+  margin-bottom: 0;
 }

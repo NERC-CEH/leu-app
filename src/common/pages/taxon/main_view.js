@@ -1,51 +1,55 @@
 /** ****************************************************************************
- * Taxon main view.
+ * Home main view.
  *****************************************************************************/
 import Marionette from 'backbone.marionette';
+import _ from 'lodash';
 import JST from 'JST';
 import './styles.scss';
 
-const View = Marionette.View.extend({
-  template: JST['common/taxon/taxon'],
+const SpeciesView = Marionette.View.extend({
+  tagName: 'li',
+  className: 'table-view-cell',
 
-  events: {
-    'click input': 'onSelect',
-  },
-
-  onSelect() {
-    this.trigger('select', this.model.attributes);
-  },
+  template: JST['common/taxon/species'],
 
   serializeData() {
-    const sampleModel = this.options.sampleModel;
-    let taxon;
-    if (sampleModel) {
-      const occ = sampleModel.occurrences.at(0);
-      taxon = occ.get('taxon') || {};
-    }
+    const species = this.model;
+
+    const sort = this.options.appModel.get('sort');
+    const sortScientific = sort === 'scientific' || sort === 'scientific-reverse';
 
     return {
-      id: this.model.id,
-      name: this.model.get('common_name'),
-      pic: `${this.model.id}_0.jpg`,
-      selected: taxon && taxon.id === this.model.id,
-      sampleModel,
+      id: species.get('id'),
+      img: species.get('thumbnail'),
+      taxon: species.get('taxon'),
+      common_name: species.get('common_name'),
+      favourite: this.options.appModel.isFavouriteSpecies(species.get('id')),
+      sortScientific,
     };
   },
 });
 
-export default Marionette.CompositeView.extend({
-  id: 'taxon-main',
-  template: JST['common/taxon/main'],
-  childViewContainer: '#species-list',
 
-  tagName: 'div',
-  className: 'list',
-  childView: View,
+const NoSpeciesView = Marionette.View.extend({
+  tagName: 'li',
+  className: 'table-view-cell empty',
+  template: _.template('<p>No species with selected filters.</p>'),
+});
+
+export default Marionette.CollectionView.extend({
+  id: 'species-list',
+  tagName: 'ul',
+  className: 'table-view no-top',
+  childView: SpeciesView,
+  emptyView: NoSpeciesView,
+
+  initialize() {
+    this.listenTo(this.options.appModel, 'change:filter', this.render);
+  },
 
   childViewOptions() {
     return {
-      sampleModel: this.options.sampleModel,
+      appModel: this.options.appModel,
     };
   },
 });

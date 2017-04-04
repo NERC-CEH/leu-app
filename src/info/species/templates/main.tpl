@@ -13,7 +13,6 @@
 
 <div class="segmented-control no-border">
   <a id="gallery-button" class="control-item icon icon-camera">Gallery</a>
-  <a id="species-map-button" class="control-item icon icon-map">Distribution</a>
 </div>
 
 <ul id="species-info" class="table-view">
@@ -21,76 +20,81 @@
     <div class="common-name"><%= obj.common_name %></div>
     <div class="taxon"><%= obj.scientific_name %></div>
   </li>
-  <li id="species-map" style="display: none">
-    <div id="maps-holder" style="display:none"></div>
-    <svg viewBox="0 0 400 500"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-      <use id="species-map-data" xlink:href="#data"/>
-      <g id="legend">
-        <text dy="15" x="30" y="0" style="font-size: normal">Main area</text>
-        <rect width="20" height="20" fill="#FFC019" y="0" x="0"></rect>
-      </g>
-    </svg>
-  </li>
-
-  <li id="timeline"><img src="images/<%- obj.timeline %>" alt=""></li>
 
   <li>
-    <% if (obj.size) { %>
+
+    <% if (obj.name) { %>
+    <p>
+      <strong>Name:</strong>
+      <span><%= obj.name %></span>
+    </p>
+    <% } %>
+
+    <% if (obj.form) { %>
+    <p>
+      <strong>Form:</strong>
+      <span><%= obj.form %></span>
+    </p>
+    <% } %>
+
+    <% if (obj.size_comment) { %>
     <p>
       <strong>Size:</strong>
-      <span><%= obj.size %></span>
+      <span><%= obj.size_comment %></span>
     </p>
     <% } %>
 
-    <% if (obj.legs) { %>
+    <% if (obj.colour_comment) { %>
     <p>
-      <strong>Legs:</strong>
-      <span><%= obj.legs %></span>
+      <strong>Colour:</strong>
+      <span><%= obj.colour_comment %></span>
     </p>
     <% } %>
 
 
-    <% if (obj.abdomen) { %>
+    <% if (obj.pronotum_comment) { %>
     <p>
-      <strong>Abdomen:</strong>
-      <span><%= obj.abdomen %></span>
+      <strong>Pronotum:</strong>
+      <span><%= obj.pronotum_comment %></span>
     </p>
     <% } %>
 
 
-    <% if (obj.head) { %>
+
+    <% if (obj.melanic) { %>
     <p>
-      <strong>Head:</strong>
-      <span><%= obj.head %></span>
+      <strong>Melanic:</strong>
+      <span><%= obj.melanic %></span>
     </p>
     <% } %>
 
 
-    <% if (obj.antennae) { %>
+    <% if (obj.spot_fusions) { %>
     <p>
-      <strong>Antennae:</strong>
-      <span><%= obj.antennae %></span>
+      <strong>Spot fusions:</strong>
+      <span><%= obj.spot_fusions %></span>
     </p>
     <% } %>
 
-
-    <% if (obj.thorax) { %>
+    <% if (obj.leg) { %>
     <p>
-      <strong>Thorax:</strong>
-      <span><%= obj.thorax %></span>
+      <strong>Leg:</strong>
+      <span><%= obj.leg %></span>
     </p>
     <% } %>
 
-    <% if (obj.notes) { %>
+    <% if (obj.spots) { %>
     <p>
-      <strong>Other features:</strong>
-      <span><%= obj.notes %></span>
+      <strong>Spots:</strong>
+      <span><%= obj.spots %></span>
     </p>
     <% } %>
-  </li>
 
-  <li id="species-description">
-    <p><%= obj.description %></p>
+    <% if (obj.food) { %>
+    <p>
+      <strong>Food:</strong>
+      <span><%= obj.food %></span>
+    </p>
+    <% } %>
   </li>
 </ul>

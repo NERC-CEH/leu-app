@@ -12,6 +12,10 @@ let AppModel = Backbone.Model.extend({
   defaults: {
     exceptions: [],
 
+    favouriteSpecies: [],
+    sort: 'common',
+    filters: {},
+
     locations: [],
     autosync: true,
     useGridRef: true,
@@ -26,6 +30,42 @@ let AppModel = Backbone.Model.extend({
    */
   initialize() {
     this.fetch();
+  },
+
+  toggleFavouriteSpecies(species) {
+    const favSpecies = this.get('favouriteSpecies');
+    if (this.isFavouriteSpecies(species.id)) {
+      const foundIndex = _.indexOf(favSpecies, species.id);
+      favSpecies.splice(foundIndex, 1);
+    } else {
+      favSpecies.push(species.id);
+    }
+    this.set('favouriteSpecies', favSpecies);
+    this.save();
+    this.trigger('change:favourite');
+  },
+
+  isFavouriteSpecies(speciesID) {
+    const favSpecies = this.get('favouriteSpecies');
+    const foundIndex = _.indexOf(favSpecies, speciesID);
+    return foundIndex >= 0;
+  },
+
+  toggleFilter(filterGroup, filter) {
+    const filters = this.get('filters');
+    const foundIndex = _.indexOf(filters[filterGroup], filter);
+    if (foundIndex >= 0) {
+      // remove filter
+      filters[filterGroup].splice(foundIndex, 1);
+    } else {
+      // init group
+      filters[filterGroup] = filters[filterGroup] || [];
+      // add filter
+      filters[filterGroup].push(filter);
+    }
+    this.set('filters', filters);
+    this.save();
+    this.trigger('change:filter');
   },
 });
 

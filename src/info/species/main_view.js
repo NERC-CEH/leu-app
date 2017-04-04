@@ -8,19 +8,14 @@ import 'jquery-touchswipe';
 import Device from 'helpers/device';
 import Gallery from '../../common/gallery';
 import './styles.scss';
-import './data/maps/loader';
 import './data/images/loader';
-import './data/timelines/loader';
 
 export default Marionette.View.extend({
   template: JST['info/species/main'],
 
   events: {
-    'click #species-map': 'toggleMap',
-    'click #species-map-button': 'toggleMap',
     'click #gallery-button': 'photoView',
     'click .images .img': 'photoView',
-    'click #sample-btn': 'sample',
   },
 
   onAttach() {
