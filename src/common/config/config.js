@@ -26,13 +26,13 @@ const CONFIG = {
   // google analytics
   ga: {
     status: true,
-    ID: 'UA-58378803-8',
+    ID: 'UA-58378803-11',
   },
 
   // error analytics
   sentry: {
-    key: 'ad0bbb8232e941ad87a5225695ba513b',
-    project: '148738',
+    key: 'ffc9577e540144bea7574b7d180399f4',
+    project: '155047',
   },
 
   users: {
