@@ -33,28 +33,27 @@
     </p>
     <% } %>
 
-    <% if (obj.size.comment) { %>
+    <% if (obj.size) { %>
     <p>
       <strong>Size:</strong>
-      <span><%= obj.size.comment %></span>
+      <span><%= obj.size %></span>
     </p>
     <% } %>
 
-    <% if (obj.colour.comment) { %>
+    <% if (obj.comment) { %>
     <p>
       <strong>Colour:</strong>
-      <span><%= obj.colour.comment %></span>
+      <span><%= obj.colour %></span>
     </p>
     <% } %>
 
 
-    <% if (obj.pronotum.comment) { %>
+    <% if (obj.comment) { %>
     <p>
       <strong>Pronotum:</strong>
-      <span><%= obj.pronotum.comment %></span>
+      <span><%= obj.pronotum %></span>
     </p>
     <% } %>
-
 
 
     <% if (obj.melanic) { %>
@@ -93,10 +92,29 @@
     </p>
     <% } %>
 
-    <% if (obj.habitat.comment) { %>
+    <% if (obj.habitat) { %>
     <p>
       <strong>Habitat:</strong>
-      <span><%= obj.habitat.comment %></span>
+      <span><%= obj.habitat %></span>
+    </p>
+    <% } %>
+
+    <% if (obj.plant) { %>
+    <p>
+      <strong>Plant:</strong>
+      <span><%= obj.plant %></span>
+    </p>
+    <% } %>
+    <% if (obj.overwintering) { %>
+    <p>
+      <strong>Overwintering:</strong>
+      <span><%= obj.overwintering %></span>
+    </p>
+    <% } %>
+    <% if (obj.comment) { %>
+    <p>
+      <strong><u>Note:</u></strong>
+      <span><%= obj.comment %></span>
     </p>
     <% } %>
   </li>
