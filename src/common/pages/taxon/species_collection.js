@@ -41,15 +41,24 @@ const SpeciesCollection = Backbone.Collection.extend({
    */
   filterList() {
     const that = this;
-    let list = _.cloneDeep(speciesData);
-    const filtersToApply = appModel.get('filters');
+    const list = _.cloneDeep(speciesData);
+
+    // filter country species
+    const locale = appModel.get('country');
+    let countryList = [];
+    for (let j = 0; j < list.length; j++) {
+      if (list[j][locale].exist === 'YES') {
+        countryList.push(list[j]);
+      }
+    }
 
     // apply each selected filter group
+    const filtersToApply = appModel.get('filters');
     _.forOwn(filtersToApply, (filterGroup, filterGroupID) => {
-      list = that._filterListCore(list, filterGroup, filterGroupID);
+      countryList = that._filterListCore(countryList, filterGroup, filterGroupID);
     });
 
-    this.reset(list, _.extend({ silent: true }));
+    this.reset(countryList, _.extend({ silent: true }));
     Log(`Species:List:collection: Applied filters (${list.length}/${speciesData.length})`);
   },
 

@@ -9,20 +9,34 @@ import appModel from 'app_model';
  * label - label to represent the filter in the UI
  */
 function exist(locale, a, b) {
-  if (!a.attributes[locale].exist === 'NO') {
-    return 1;
+  if (!a.attributes[locale].exist === 'YES') {
+    return false;
   }
-  if (!b.attributes[locale].exist === 'NO') {
-    return -1;
+  if (!b.attributes[locale].exist === 'YES') {
+    return false;
   }
+
+  return true;
 }
 
 const sorts = {
+  default(a, b) {
+    const locale = appModel.get('country');
+    if (!exist(locale, a, b)) {
+      return 1;
+    }
+    a = a.attributes[locale].order;
+    b = b.attributes[locale].order;
+
+    if (a === b) {
+      return 0;
+    }
+    return a > b ? 1 : -1;
+  },
   common(a, b) {
     const locale = appModel.get('country');
-    const doesNotExist = exist(locale, a, b);
-    if (!doesNotExist) {
-      return doesNotExist;
+    if (!exist(locale, a, b)) {
+      return 1;
     }
     a = a.attributes[locale].common_name.toLowerCase();
     b = b.attributes[locale].common_name.toLowerCase();
@@ -34,10 +48,10 @@ const sorts = {
   },
   'common-reverse'(a, b) {
     const locale = appModel.get('country');
-    const doesNotExist = exist(locale, a, b);
-    if (!doesNotExist) {
-      return doesNotExist;
-    }    a = a.attributes[locale].common_name.toLowerCase();
+    if (!exist(locale, a, b)) {
+      return 1;
+    }
+    a = a.attributes[locale].common_name.toLowerCase();
     b = b.attributes[locale].common_name.toLowerCase();
 
     if (a === b) {
@@ -47,10 +61,10 @@ const sorts = {
   },
   scientific(a, b) {
     const locale = appModel.get('country');
-    const doesNotExist = exist(locale, a, b);
-    if (!doesNotExist) {
-      return doesNotExist;
-    }    a = a.attributes[locale].taxon.toLowerCase();
+    if (!exist(locale, a, b)) {
+      return 1;
+    }
+    a = a.attributes[locale].taxon.toLowerCase();
     b = b.attributes[locale].taxon.toLowerCase();
 
     if (a === b) {
@@ -60,9 +74,8 @@ const sorts = {
   },
   'scientific-reverse'(a, b) {
     const locale = appModel.get('country');
-    const doesNotExist = exist(locale, a, b);
-    if (!doesNotExist) {
-      return doesNotExist;
+    if (!exist(locale, a, b)) {
+      return 1;
     }
     a = a.attributes[locale].taxon.toLowerCase();
     b = b.attributes[locale].taxon.toLowerCase();

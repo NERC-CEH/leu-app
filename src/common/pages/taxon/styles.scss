@@ -38,8 +38,16 @@
     }
 
     .species-list-main-name {
+      font-weight: bold;
       font-size: $button-font-size;
       margin: 0 0 8px;
+    }
+
+    .species-list-form {
+      position: absolute;
+      right: 5px;
+      bottom: 0;
+      font-size: $text-font-size;
     }
 
     .species-list-secondary-name {
@@ -54,14 +62,18 @@
       .species-list-secondary-name {
         font-size: 12px;
       }
+
+      .species-list-form {
+        font-size: x-small;
+      }
     }
 
     span.favourite {
       position: absolute;
-      right: 52px;
-      top: 8px;
+      right: 5px;
+      top: 9px;
       z-index: 0;
-      color: $color-yellow;
+      color: $color-main;
     }
   }
 

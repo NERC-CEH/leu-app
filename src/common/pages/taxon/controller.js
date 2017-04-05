@@ -1,4 +1,3 @@
-import App from 'app';
 import Log from 'helpers/log';
 import radio from 'radio';
 import appModel from 'app_model';

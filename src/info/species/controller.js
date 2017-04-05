@@ -1,17 +1,15 @@
 import Backbone from 'backbone';
 import App from 'app';
+import appModel from 'app_model';
 import radio from 'radio';
 import savedSamples from 'saved_samples';
-import speciesData from 'species.data';
+import speciesCollection from '../../common/pages/taxon/species_collection';
 import MainView from './main_view';
-import appModel from '../../common/models/app_model';
-import Sample from '../../common/models/sample';
-import Occurrence from '../../common/models/occurrence';
 import HeaderView from '../../common/views/header_view';
+import FavouriteButtonView from './favourite_button_view';
 
 const API = {
   show(id) {
-    const speciesCollection = new Backbone.Collection(speciesData);
     const speciesModel = speciesCollection.get(id);
 
     const mainView = new MainView({
@@ -26,9 +24,19 @@ const API = {
     radio.trigger('app:main', mainView);
 
     // HEADER
+    const favouriteButtonView = new FavouriteButtonView({
+      model: appModel,
+      speciesID: speciesModel.id,
+    });
+
+    favouriteButtonView.on('click', () => {
+      appModel.toggleFavouriteSpecies(speciesModel);
+    });
+
     const headerView = new HeaderView({
       id: 'species-account-header',
-      model: new Backbone.Model({ title: speciesModel.get('scientific_name') }),
+      rightPanel: favouriteButtonView,
+      model: new Backbone.Model({ title: speciesModel.get('taxon') }),
 
     });
 

@@ -13,7 +13,12 @@
     <p class="species-list-secondary-name"><i><%- obj.taxon %></i></p>
     <% } %>
     <% if (obj.favourite) { %>
-      <span class="favourite icon icon-star"></span>
+      <span class="favourite icon icon-heart-full"></span>
     <% } %>
+
+    <% if (obj.form) { %>
+      <p class="species-list-form"><i>f. <%- obj.form %></i></p>
+    <% } %>
+
   </div>
 </a>

@@ -3,6 +3,7 @@
  *****************************************************************************/
 import Marionette from 'backbone.marionette';
 import _ from 'lodash';
+import appModel from 'app_model';
 import JST from 'JST';
 import './styles.scss';
 
@@ -14,15 +15,17 @@ const SpeciesView = Marionette.View.extend({
 
   serializeData() {
     const species = this.model;
-
+    const common_name = species.get(appModel.get('country')).common_name;
     const sort = this.options.appModel.get('sort');
     const sortScientific = sort === 'scientific' || sort === 'scientific-reverse';
 
+    const form = species.get('form');
     return {
       id: species.get('id'),
       img: species.get('thumbnail'),
       taxon: species.get('taxon'),
-      common_name: species.get('common_name'),
+      form,
+      common_name,
       favourite: this.options.appModel.isFavouriteSpecies(species.get('id')),
       sortScientific,
     };

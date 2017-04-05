@@ -13,7 +13,7 @@ let AppModel = Backbone.Model.extend({
     exceptions: [],
 
     favouriteSpecies: [],
-    sort: 'common',
+    sort: 'default',
     filters: {},
 
     country: 'UK',

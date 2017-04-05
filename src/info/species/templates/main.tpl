@@ -18,7 +18,7 @@
 <ul id="species-info" class="table-view">
   <li>
     <div class="common-name"><%= obj.common_name %></div>
-    <div class="taxon"><%= obj.scientific_name %></div>
+    <div class="taxon"><%= obj.taxon %></div>
   </li>
 
   <li>

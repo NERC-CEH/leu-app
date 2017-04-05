@@ -269,6 +269,12 @@
       "search": [
         "ladybug"
       ]
+    },
+    {
+      "uid": "d73eceadda1f594cec0536087539afbf",
+      "css": "heart-full",
+      "code": 59431,
+      "src": "fontawesome"
     }
   ]
 }
