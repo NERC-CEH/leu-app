@@ -23,7 +23,7 @@ const API = {
     // HEADER
     const headerView = new HeaderView({
       model: new Backbone.Model({
-        title: 'Register',
+        title: t('Register'),
       }),
     });
     radio.trigger('app:header', headerView);
@@ -32,8 +32,8 @@ const API = {
     mainView.on('form:submit', (data) => {
       if (!Device.isOnline()) {
         radio.trigger('app:dialog', {
-          title: 'Sorry',
-          body: 'Looks like you are offline!',
+          title: t('Sorry'),
+          body: t('Looks like you are offline!'),
         });
         return;
       }
@@ -46,12 +46,11 @@ const API = {
         API.register(data)
           .then(() => {
             radio.trigger('app:dialog', {
-              title: 'Welcome aboard!',
-              body: 'Before submitting any records please check your email and ' +
-              'click on the verification link.',
+              title: t('Welcome aboard!'),
+              body: t('Before submitting any records please check your email and click on the verification link.'),
               buttons: [
                 {
-                  title: 'OK, got it',
+                  title: t('OK, got it'),
                   class: 'btn-positive',
                   onClick() {
                     radio.trigger('app:dialog:hide');

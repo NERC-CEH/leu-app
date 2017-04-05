@@ -18,6 +18,6 @@ export default {
     const todayDateOnly = `${today.getDate()}/${(today.getMonth() + 1)}/${today.getFullYear()}`;
     const isToday = (todayDateOnly === sampleDate);
 
-    return (pretty && isToday ? 'Today' : sampleDate);
+    return (pretty && isToday ? t('Today') : sampleDate);
   },
 };

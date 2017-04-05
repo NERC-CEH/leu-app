@@ -1,1 +1,1 @@
-<p>Empty</p>
+<p><%= t('Empty') %></p>

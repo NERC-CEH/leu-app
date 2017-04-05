@@ -1,3 +1,3 @@
 <div class="error-404">
-  Page not found :(
+  <%= t('Page not found') %> :(
 </div>

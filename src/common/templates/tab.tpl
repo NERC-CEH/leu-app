@@ -1,1 +1,1 @@
-<%- obj.title %>
+<%- t( obj.title ) %>

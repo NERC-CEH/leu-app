@@ -29,127 +29,136 @@ const CONFIG = {
     ID: 'UA-58378803-11',
   },
 
-  // error analytics
-  sentry: {
-    key: 'ffc9577e540144bea7574b7d180399f4',
+  supportEmail: {
+    'UK': 'apps%40ceh.ac.uk',
+    'ITA': 'apps%40ceh.ac.uk',
+    'PT': 'apps%40ceh.ac.uk',
+    'SK': 'apps%40ceh.ac.uk',
+    'CZ': 'apps%40ceh.ac.uk',
+    'BE': 'apps%40ceh.ac.uk',
+  },
+
+// error analytics
+sentry: {
+  key: 'ffc9577e540144bea7574b7d180399f4',
     project: '155047',
-  },
+},
 
-  users: {
-    url: `${HOST + Indicia.API_BASE + Indicia.API_VER}/users/`,
+users: {
+  url: `${HOST + Indicia.API_BASE + Indicia.API_VER}/users/`,
     timeout: 80000,
-  },
+},
 
-  reports: {
-    url: `${HOST + Indicia.API_BASE + Indicia.API_VER + Indicia.API_REPORTS_PATH}`,
+reports: {
+  url: `${HOST + Indicia.API_BASE + Indicia.API_VER + Indicia.API_REPORTS_PATH}`,
     timeout: 80000,
-  },
+},
 
-  // mapping
-  map: {
-    os_api_key: '28994B5673A86451E0530C6CA40A91A5',
+// mapping
+map: {
+  os_api_key: '28994B5673A86451E0530C6CA40A91A5',
     mapbox_api_key: 'pk.eyJ1IjoiY2VoYXBwcyIsImEiOiJjaXBxdTZyOWYwMDZoaWVuYjI3Y3Z0a2x5In0.YXrZA_DgWCdjyE0vnTCrmw',
     mapbox_osm_id: 'cehapps.0fenl1fe',
     mapbox_satellite_id: 'cehapps.0femh3mh',
-  },
+},
 
-  // indicia configuration
-  indicia: {
-    host: HOST,
+// indicia configuration
+indicia: {
+  host: HOST,
     api_key: API_KEY,
     website_id: 23,
     survey_id: 423,
     input_form: 'enter-app-record',
 
     sample: {
-      // anonymouse user info
-      firstname: {
-        id: 6,
-      },
-      secondname: {
-        id: 7,
-      },
-      user_email: { // email key is taken
-        id: 8,
-      },
-      phone: {
-        id: 20,
-      },
+    // anonymouse user info
+    firstname: {
+      id: 6,
+    },
+    secondname: {
+      id: 7,
+    },
+    user_email: { // email key is taken
+      id: 8,
+    },
+    phone: {
+      id: 20,
+    },
 
-      location: {
-        values(location, submission) {
-          // convert accuracy for map and gridref sources
-          let accuracy = location.accuracy;
-          if (location.source !== 'gps') {
-            if (location.source === 'map') {
-              accuracy = LocHelp.mapZoom2meters(location.accuracy);
-            } else {
-              accuracy = null;
-            }
+    location: {
+      values(location, submission) {
+        // convert accuracy for map and gridref sources
+        let accuracy = location.accuracy;
+        if (location.source !== 'gps') {
+          if (location.source === 'map') {
+            accuracy = LocHelp.mapZoom2meters(location.accuracy);
+          } else {
+            accuracy = null;
           }
+        }
 
-          const attributes = {};
-          const keys = CONFIG.indicia.sample;
-          attributes.location_name = location.name; // this is a native indicia attr
-          attributes[keys.location_source.id] = location.source;
-          attributes[keys.location_gridref.id] = location.gridref;
-          attributes[keys.location_altitude.id] = location.altitude;
-          attributes[keys.location_altitude_accuracy.id] = location.altitudeAccuracy;
-          attributes[keys.location_accuracy.id] = accuracy;
+        const attributes = {};
+        const keys = CONFIG.indicia.sample;
+        attributes.location_name = location.name; // this is a native indicia attr
+        attributes[keys.location_source.id] = location.source;
+        attributes[keys.location_gridref.id] = location.gridref;
+        attributes[keys.location_altitude.id] = location.altitude;
+        attributes[keys.location_altitude_accuracy.id] = location.altitudeAccuracy;
+        attributes[keys.location_accuracy.id] = accuracy;
 
-          // add other location related attributes
-          $.extend(submission.fields, attributes);
+        // add other location related attributes
+        $.extend(submission.fields, attributes);
 
-          return `${location.latitude}, ${location.longitude}`;
-        },
-      },
-      location_accuracy: { id: 282 },
-      location_altitude: { id: 283 },
-      location_altitude_accuracy: { id: 284 },
-      location_source: { id: 760 },
-      location_gridref: { id: 335 },
-
-      device: {
-        id: 273,
-        values: {
-          iOS: 2398,
-          Android: 2399,
-        },
-      },
-
-      device_version: { id: 759 },
-
-      date: {
-        values(date) {
-          return DateHelp.print(date);
-        },
+        return `${location.latitude}, ${location.longitude}`;
       },
     },
-    occurrence: {
-      training: {
-        id: 'training',
-      },
+    location_accuracy: { id: 282 },
+    location_altitude: { id: 283 },
+    location_altitude_accuracy: { id: 284 },
+    location_source: { id: 760 },
+    location_gridref: { id: 335 },
 
-      taxon: {
-        values(taxon) {
-          return taxon.warehouse_id;
-        },
-      },
-      number: {
-        id: 523,
-        default: 'Present',
+    device: {
+      id: 273,
         values: {
-          'Present': 671,
+        iOS: 2398,
+          Android: 2399,
+      },
+    },
+
+    device_version: { id: 759 },
+
+    date: {
+      values(date) {
+        return DateHelp.print(date);
+      },
+    },
+  },
+  occurrence: {
+    training: {
+      id: 'training',
+    },
+
+    taxon: {
+      values(taxon) {
+        return taxon.warehouse_id;
+      },
+    },
+    number: {
+      id: 523,
+    default: 'Present',
+        values: {
+        'Present': 671,
           1: 665,
           '2-5': 666,
           '6-20': 667,
           '21-100': 668,
           '101-500': 669,
           '500+': 670,
-        },
       },
     },
   },
+},
 };
 
 export default CONFIG;

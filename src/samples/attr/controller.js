@@ -53,7 +53,7 @@ const API = {
           window.history.back();
         });
       },
-      model: new Backbone.Model({ title: attr }),
+      model: new Backbone.Model({ title: t(attr) }),
     });
 
     radio.trigger('app:header', headerView);

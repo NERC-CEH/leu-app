@@ -186,7 +186,7 @@ const API = {
     }
 
     radio.trigger('app:dialog', {
-      title: 'Sorry',
+      title: t('Sorry'),
       body: missing,
       timeout: 2000,
     });
@@ -206,10 +206,10 @@ const API = {
   askLogin(anonymousCallback) {
     radio.trigger('app:dialog', {
       title: '',
-      body: 'Please select <b>Login</b> if you have an iRecord account or would like to register, otherwise select <b>Send</b> and enter your contact details.',
+      body: t('Please select <b>Login</b> if you have an account or would like to register, otherwise select <b>Send</b> and enter your contact details.'),
       buttons: [
         {
-          title: 'Login',
+          title: t('Login'),
           class: 'btn-positive',
           onClick() {
             radio.trigger('app:dialog:hide');
@@ -217,7 +217,7 @@ const API = {
           },
         },
         {
-          title: 'Send',
+          title: t('Send'),
           onClick() {
             API.askAnonymous(anonymousCallback);
           },
@@ -260,11 +260,11 @@ const API = {
     const editView = new EditView({ model: location });
 
     App.regions.getRegion('dialog').show({
-      title: 'Your details',
+      title: t('Your details'),
       body: editView,
       buttons: [
         {
-          title: 'Send',
+          title: t('Send'),
           class: 'btn-positive',
           onClick() {
             // update user
@@ -281,7 +281,7 @@ const API = {
           },
         },
         {
-          title: 'Cancel',
+          title: t('Cancel'),
           onClick() {
             App.regions.getRegion('dialog').hide();
           },
@@ -294,17 +294,17 @@ const API = {
     const errors = {};
 
     if (!attrs.email) {
-      errors.email = "can't be blank";
+      errors.email = t("can't be blank");
     } else if (!Validate.email(attrs.email)) {
-      errors.email = 'invalid';
+      errors.email = t('invalid');
     }
 
     if (!attrs.firstname) {
-      errors.name = "can't be blank";
+      errors.name = t("can't be blank");
     }
 
     if (!attrs.secondname) {
-      errors.surname = "can't be blank";
+      errors.surname = t("can't be blank");
     }
 
     if (!_.isEmpty(errors)) {
@@ -316,18 +316,18 @@ const API = {
 
   photoDelete(photo) {
     radio.trigger('app:dialog', {
-      title: 'Delete',
+      title: t('Delete'),
       body: 'Are you sure you want to remove this photo from the sample?' +
       '</br><i><b>Note:</b> it will remain in the gallery.</i>',
       buttons: [
         {
-          title: 'Cancel',
+          title: t('Cancel'),
           onClick() {
             radio.trigger('app:dialog:hide');
           },
         },
         {
-          title: 'Delete',
+          title: t('Delete'),
           class: 'btn-negative',
           onClick() {
             // show loader
@@ -351,10 +351,10 @@ const API = {
     const occurrence = sample.getOccurrence();
 
     radio.trigger('app:dialog', {
-      title: 'Choose a method to upload a photo',
+      title: t('Choose a method to upload a photo'),
       buttons: [
         {
-          title: 'Camera',
+          title: t('Camera'),
           onClick() {
             ImageHelp.getImage((entry) => {
               API.addPhoto(occurrence, entry.nativeURL, (occErr) => {
@@ -367,7 +367,7 @@ const API = {
           },
         },
         {
-          title: 'Gallery',
+          title: t('Gallery'),
           onClick() {
             ImageHelp.getImage((entry) => {
               API.addPhoto(occurrence, entry.nativeURL, (occErr) => {

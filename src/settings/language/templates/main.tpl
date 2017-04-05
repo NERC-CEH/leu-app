@@ -1,10 +1,20 @@
 <div class="list">
   <label class="item item-radio">
-    <input type="radio" name="group" value="UK"
-    <%- !_.keys(obj).length || obj['UK'] ? 'checked' : ''%>>
+    <input type="radio" name="group" value="EN"
+    <%- !_.keys(obj).length || obj['EN'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        United Kingdom
+        English
+      </div>
+      <i class="radio-icon icon-check"></i>
+    </div>
+  </label>
+  <label class="item item-radio">
+    <input type="radio" name="group" value="ITA"
+    <%- obj['ITA'] ? 'checked' : ''%>>
+    <div class="radio-content">
+      <div class="item-content">
+        Italiano
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
@@ -14,7 +24,7 @@
     <%- obj['SK'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Slovensko
+        Slovenščina
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
@@ -24,17 +34,7 @@
     <%- obj['CZ'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Česká republika
-      </div>
-      <i class="radio-icon icon-check"></i>
-    </div>
-  </label>
-  <label class="item item-radio">
-    <input type="radio" name="group" value="IT"
-    <%- obj['IT'] ? 'checked' : ''%>>
-    <div class="radio-content">
-      <div class="item-content">
-        Italia
+        Check
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
@@ -44,17 +44,27 @@
     <%- obj['PT'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        República Portuguesa
+        Portugal
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
   </label>
   <label class="item item-radio">
-    <input type="radio" name="group" value="BE"
-    <%- obj['BE'] ? 'checked' : ''%>>
+    <input type="radio" name="group" value="FR"
+    <%- obj['FR'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Belgique / België
+        French
+      </div>
+      <i class="radio-icon icon-check"></i>
+    </div>
+  </label>
+  <label class="item item-radio">
+    <input type="radio" name="group" value="NL"
+    <%- obj['NL'] ? 'checked' : ''%>>
+    <div class="radio-content">
+      <div class="item-content">
+        Dutch
       </div>
       <i class="radio-icon icon-check"></i>
     </div>

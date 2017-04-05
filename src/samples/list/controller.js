@@ -73,17 +73,17 @@ const API = {
       body += '</br><i><b>Note:</b> it will remain on the server.</i>';
     }
     radio.trigger('app:dialog', {
-      title: 'Delete',
+      title: t('Delete'),
       body,
       buttons: [
         {
-          title: 'Cancel',
+          title: t('Cancel'),
           onClick() {
             radio.trigger('app:dialog:hide');
           },
         },
         {
-          title: 'Delete',
+          title: t('Delete'),
           class: 'btn-negative',
           onClick() {
             sample.destroy();

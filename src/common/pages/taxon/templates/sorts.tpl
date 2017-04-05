@@ -3,7 +3,7 @@
   <%- !_.keys(obj).length || obj['default'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
-      Default
+      <%= t('Default') %>
     </div>
     <i class="radio-icon icon-check"></i>
   </div>
@@ -13,7 +13,7 @@
   <%- obj['common'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
-      Common Name
+      <%= t('Common Name') %>
     </div>
     <i class="radio-icon icon-check"></i>
   </div>
@@ -24,7 +24,7 @@
   <%- obj['common-reverse'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
-      Common Name Reverse
+      <%= t('Common Name Reverse') %>
     </div>
     <i class="radio-icon icon-check"></i>
   </div>
@@ -35,7 +35,7 @@
   <%- obj['scientific'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
-      Scientific Name
+      <%= t('Scientific Name') %>
     </div>
     <i class="radio-icon icon-check"></i>
   </div>
@@ -46,7 +46,7 @@
   <%- obj['scientific-reverse'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
-      Scientific Name Reverse
+      <%= t('Scientific Name Reverse') %>
     </div>
     <i class="radio-icon icon-check"></i>
   </div>

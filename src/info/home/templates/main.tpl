@@ -10,13 +10,13 @@
   <li class="table-view-cell">
     <a href="#info/species" class="navigate-right">
       <span class="media-object pull-left icon icon-species"></span>
-      Species Info
+      <%= t('Species Info') %>
     </a>
   </li>
   <li class="table-view-cell">
     <a id="sample-btn" class="navigate-right">
       <span class="media-object pull-left icon icon-plus"></span>
-      Record
+      <%= t('Record') %>
     </a>
   </li>
   <li class="table-view-cell">
@@ -25,7 +25,7 @@
       <% if (obj.samples > 0) { %>
       <span class="badge <%- obj.needSync ? 'error' : '' %>"><%- obj.samples %></span>
       <% } %>
-      App Info
+      <%= t('App Info') %>
     </a>
   </li>
 </ul>

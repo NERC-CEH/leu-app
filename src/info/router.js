@@ -7,14 +7,12 @@ import Log from 'helpers/log';
 import CONFIG from 'config';
 import App from 'app';
 import radio from 'radio';
+import appModel from 'app_model';
 import CommonController from '../common/controller';
 import InfoMenuController from './menu/controller';
 import SpeciesController from './species/controller';
 import SpeciesListController from '../common/pages/taxon/controller';
 import HomeController from './home/controller';
-import './brc_approved/BRC_approved_logo.png';
-import './brc_approved/styles.scss';
-import './help/swipe_record.png';
 import './credits/sponsor_logo.png';
 
 App.info = {};
@@ -27,38 +25,24 @@ const Router = Marionette.AppRouter.extend({
     'info(/)': InfoMenuController.show,
     'info/about(/)': () => {
       CommonController.show({
-        title: 'About',
+        title: t('About'),
         App,
         route: 'info/about/main',
         model: new Backbone.Model({
           version: CONFIG.version,
           build: CONFIG.build,
-        }),
-      });
-    },
-    'info/help(/)': () => {
-      CommonController.show({
-        title: 'Help',
-        App,
-        route: 'info/help/main',
-        model: new Backbone.Model({
-          site_url: CONFIG.site_url,
+          supportEmail: CONFIG.supportEmail[appModel.get('country')],
         }),
       });
     },
     'info/privacy(/)': () => {
       CommonController.show({
-        title: 'Privacy Policy', App, route: 'info/privacy/main',
-      });
-    },
-    'info/brc-approved(/)': () => {
-      CommonController.show({
-        title: 'BRC Approved', App, route: 'info/brc_approved/main',
+        title: t('Privacy Policy'), App, route: 'info/privacy/main',
       });
     },
     'info/credits(/)': () => {
       CommonController.show({
-        title: 'Credits', App, route: 'info/credits/main',
+        title: t('Credits'), App, route: 'info/credits/main',
       }); },
     'info/species/:id(/)': SpeciesController.show,
     'info/species(/)': SpeciesListController.show,

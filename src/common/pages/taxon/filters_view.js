@@ -19,11 +19,11 @@ export default Marionette.View.extend({
     const filters = [
       {
         name: 'favourites',
-        label: 'Favourites',
+        label: t('Favourites'),
         filters: [
           {
             name: 'favourite',
-            label: 'My favourites only',
+            label: t('My favourites only'),
           }
         ]
       },
@@ -39,7 +39,7 @@ export default Marionette.View.extend({
     });
     filters.push({
       name: 'colour',
-      label: 'Colour',
+      label: t('Colour'),
       filters: colourFilters,
     });
 
@@ -53,7 +53,7 @@ export default Marionette.View.extend({
     });
     filters.push({
       name: 'size',
-      label: 'Size in mm',
+      label: t('Size in mm'),
       filters: sizeFilters,
     });
 
@@ -61,11 +61,11 @@ export default Marionette.View.extend({
     // add pronotum
     const pronotumFilters = [];
     [
-      'one colour',
-      'one colour with spots',
-      'M-shape',
-      'one colour with white patch on each side',
-      'none of them',	'Need to find name'
+      t('one colour'),
+      t('one colour with spots'),
+      t('M-shape'),
+      t('one colour with white patch on each side'),
+      t('none of them',	'Need to find name')
     ].forEach((filter) => {
       pronotumFilters.push({
         name: filter,
@@ -74,7 +74,7 @@ export default Marionette.View.extend({
     });
     filters.push({
       name: 'pronotum',
-      label: 'Pronotum pattern',
+      label: t('Pronotum pattern'),
       filters: pronotumFilters,
     });
 
@@ -94,7 +94,7 @@ export default Marionette.View.extend({
               <input type="checkbox" value="${filterName}"
               <%- obj['${filterName}'] ? 'checked' : ''%>
             </label>
-            ${filterLabel}
+            ${t(filterLabel)}
           </li>
           `;
         filtersTemplates += filterTpl;
@@ -103,7 +103,7 @@ export default Marionette.View.extend({
       const filterGroupTpl = `
         <li class="table-view-cell">
           <a class="collapsed" data-toggle="collapse" href="#${filterGroup}" aria-controls="${filterGroup}">
-            ${filterGroupLabel}
+            ${t(filterGroupLabel)}
           </a>
           <div id="${filterGroup}" class="collapse">
             <ul class="list">
@@ -113,7 +113,7 @@ export default Marionette.View.extend({
         </li>
         `;
 
-        template += filterGroupTpl;
+      template += filterGroupTpl;
     });
 
     return template;

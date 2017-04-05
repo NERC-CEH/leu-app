@@ -16,6 +16,7 @@ import Device from 'helpers/device';
 import CommonController from './common/controller';
 import DialogRegion from './common/views/dialog_region';
 import HideableRegion from './common/views/hideable_region';
+import './common/translator';
 import './common/router_extension';
 
 // init Analytics

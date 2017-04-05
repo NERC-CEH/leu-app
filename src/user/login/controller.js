@@ -27,7 +27,7 @@ const API = {
     // HEADER
     const headerView = new HeaderView({
       model: new Backbone.Model({
-        title: 'Login',
+        title: t('Login'),
       }),
     });
     radio.trigger('app:header', headerView);
@@ -35,8 +35,8 @@ const API = {
     mainView.on('form:submit', (data) => {
       if (!Device.isOnline()) {
         radio.trigger('app:dialog', {
-          title: 'Sorry',
-          body: 'Looks like you are offline!',
+          title: t('Sorry'),
+          body: t('Looks like you are offline!'),
         });
         return;
       }

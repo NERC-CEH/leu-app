@@ -81,8 +81,8 @@ const API = {
 
       if (!silent) {
         radio.trigger('app:dialog:show', {
-          title: 'Updating',
-          body: 'This should take only a moment...',
+          title: t('Updating'),
+          body: t('This should take only a moment...'),
           hideAllowed: false,
         });
       }

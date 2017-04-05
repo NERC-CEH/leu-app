@@ -58,7 +58,7 @@ const API = {
       });
 
       radio.trigger('app:dialog', {
-        title: 'Sort',
+        title: t('Sort'),
         body: sortsView,
       });
     });

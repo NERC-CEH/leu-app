@@ -41,6 +41,7 @@ export default Marionette.View.extend({
     return {
       useTraining: appModel.get('useTraining'),
       country: appModel.get('country'),
+      language: appModel.get('language'),
     };
   },
 });

@@ -13,108 +13,108 @@
 
 <ul id="species-info" class="table-view">
   <li>
-    <div class="common-name"><%= obj.common_name %></div>
-    <div class="taxon"><%= obj.taxon %></div>
+    <div class="common-name"><%= t( obj.common_name ) %></div>
+    <div class="taxon"><%= t( obj.taxon ) %></div>
   </li>
 
   <li>
 
     <% if (obj.name) { %>
     <p>
-      <strong>Name:</strong>
+      <strong><%= t('Name') %>:</strong>
       <span><%= obj.name %></span>
     </p>
     <% } %>
 
     <% if (obj.form) { %>
     <p>
-      <strong>Form:</strong>
-      <span><%= obj.form %></span>
+      <strong><%= t('Form') %>:</strong>
+      <span><%= t( obj.form ) %></span>
     </p>
     <% } %>
 
     <% if (obj.size) { %>
     <p>
-      <strong>Size:</strong>
-      <span><%= obj.size %></span>
+      <strong><%= t('Size') %>:</strong>
+      <span><%= t( obj.size ) %></span>
     </p>
     <% } %>
 
-    <% if (obj.comment) { %>
+    <% if (obj.colour) { %>
     <p>
-      <strong>Colour:</strong>
-      <span><%= obj.colour %></span>
+      <strong><%= t('Colour') %>:</strong>
+      <span><%= t( obj.colour ) %></span>
     </p>
     <% } %>
 
 
-    <% if (obj.comment) { %>
+    <% if (obj.pronotum) { %>
     <p>
-      <strong>Pronotum:</strong>
-      <span><%= obj.pronotum %></span>
+      <strong><%= t('Pronotum') %>:</strong>
+      <span><%= t( obj.pronotum ) %></span>
     </p>
     <% } %>
 
 
     <% if (obj.melanic) { %>
     <p>
-      <strong>Melanic:</strong>
-      <span><%= obj.melanic %></span>
+      <strong><%= t('Melanic') %>:</strong>
+      <span><%= t( obj.melanic ) %></span>
     </p>
     <% } %>
 
 
     <% if (obj.spot_fusions) { %>
     <p>
-      <strong>Spot fusions:</strong>
-      <span><%= obj.spot_fusions %></span>
+      <strong><%= t('Spot fusions') %>:</strong>
+      <span><%= t( obj.spot_fusions ) %></span>
     </p>
     <% } %>
 
     <% if (obj.leg) { %>
     <p>
-      <strong>Leg:</strong>
-      <span><%= obj.leg %></span>
+      <strong><%= t('Leg') %>:</strong>
+      <span><%= t( obj.leg ) %></span>
     </p>
     <% } %>
 
     <% if (obj.spots) { %>
     <p>
-      <strong>Spots:</strong>
-      <span><%= obj.spots %></span>
+      <strong><%= t('Spots') %>:</strong>
+      <span><%= t( obj.spots ) %></span>
     </p>
     <% } %>
 
     <% if (obj.food) { %>
     <p>
-      <strong>Food:</strong>
-      <span><%= obj.food %></span>
+      <strong><%= t('Food') %>:</strong>
+      <span><%= t( obj.food ) %></span>
     </p>
     <% } %>
 
     <% if (obj.habitat) { %>
     <p>
-      <strong>Habitat:</strong>
-      <span><%= obj.habitat %></span>
+      <strong><%= t('Habitat') %>:</strong>
+      <span><%= t( obj.habitat ) %></span>
     </p>
     <% } %>
 
     <% if (obj.plant) { %>
     <p>
-      <strong>Plant:</strong>
-      <span><%= obj.plant %></span>
+      <strong><%= t('Plant') %>:</strong>
+      <span><%= t( obj.plant ) %></span>
     </p>
     <% } %>
     <% if (obj.overwintering) { %>
     <p>
-      <strong>Overwintering:</strong>
-      <span><%= obj.overwintering %></span>
+      <strong><%= t('Overwintering') %>:</strong>
+      <span><%= t( obj.overwintering ) %></span>
     </p>
     <% } %>
     <% if (obj.comment) { %>
     <p>
-      <strong><u>Note:</u></strong>
-      <span><%= obj.comment %></span>
+      <strong><u><%= t('Note') %>:</u></strong>
+      <span><%= t( obj.comment ) %></span>
     </p>
     <% } %>
   </li>

@@ -1,5 +1,5 @@
 <div class="info-message">
-  <p>How many individuals of this type?</p>
+  <p><%= t('How many individual?') %></p>
 </div>
 <div class="list">
   <label class="item item-radio">
@@ -7,7 +7,7 @@
     <%- !_.keys(obj).length || obj['Present'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Present
+        <%= t('Present') %>
       </div>
       <i class="radio-icon icon-check"></i>
     </div>

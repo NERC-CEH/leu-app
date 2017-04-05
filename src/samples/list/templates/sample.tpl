@@ -24,23 +24,23 @@
       <% if (obj.taxon) { %>
       <div class="species"> <%= obj.taxon %></div>
       <% } else { %>
-      <div class="species error">Species missing</div>
+      <div class="species error"><%= t('Species missing') %></div>
       <% } %>
 
       <div class="core">
         <% if (obj.date) { %>
         <span class="date"><%= obj.date %></span>
         <% } else { %>
-        <span class="date error">Date</span>
+        <span class="date error"><%= t('Date') %></span>
         <% } %>
 
         @
 
         <% if (!obj.location) { %>
           <% if (obj.isLocating) { %>
-          <span class="location warn">Locating...</span>
+          <span class="location warn"><%= t('Locating...') %></span>
           <% } else { %>
-          <span class="location error">No location</span>
+          <span class="location error"><%= t('No location') %></span>
           <% } %>
         <% } else { %>
         <span class="location"><%= obj.location %></span>

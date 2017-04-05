@@ -11,7 +11,7 @@ import HeaderView from 'common/views/header_view';
 
 const API = {
   show(welcome) {
-    Log('Settings:Location:Controller: showing.');
+    Log('Settings:Language:Controller: showing.');
 
     const mainView = new MainView({
       model: appModel,
@@ -30,7 +30,7 @@ const API = {
     } else {
       const headerView = new HeaderView({
         model: new Backbone.Model({
-          title: t('Country'),
+          title: t('Language'),
         }),
       });
       radio.trigger('app:header', headerView);
@@ -39,10 +39,10 @@ const API = {
   },
 
   onExit(mainView, callback) {
-    Log('Settings:Location:Controller: exiting.');
+    Log('Settings:Language:Controller: exiting.');
     const value = mainView.getValues();
     if (value) {
-      appModel.set('country', value);
+      appModel.set('language', value);
       appModel.save();
       speciesCollection.filterList(); // update collection
       callback();

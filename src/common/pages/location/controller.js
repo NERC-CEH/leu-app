@@ -70,12 +70,6 @@ const API = {
           title: '<span class="icon icon-map"></span>',
           ContentView: MapView,
         },
-        {
-          active: active.gridref,
-          id: 'grid-ref',
-          title: 'GR',
-          ContentView: GridRefView,
-        },
       ],
       model: new Backbone.Model({ sample, appModel }),
       vent: App,
@@ -163,13 +157,13 @@ const API = {
         const errors = {};
 
         if (!attrs.gridref) {
-          errors.gridref = "can't be blank";
+          errors.gridref = t("can't be blank");
         } else {
           const gridref = attrs.gridref.replace(/\s/g, '');
           if (!Validate.gridRef(gridref)) {
-            errors.gridref = 'invalid';
+            errors.gridref = t('invalid');
           } else if (!LocHelp.grid2coord(gridref)) {
-            errors.gridref = 'invalid';
+            errors.gridref = t('invalid');
           }
         }
 
@@ -227,7 +221,7 @@ const API = {
         const title = this.model.printLocation();
         const $title = this.$el.find('h1');
 
-        $title.html(title || 'Location');
+        $title.html(title || t('Location'));
       },
 
       serializeData() {

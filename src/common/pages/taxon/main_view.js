@@ -36,7 +36,7 @@ const SpeciesView = Marionette.View.extend({
 const NoSpeciesView = Marionette.View.extend({
   tagName: 'li',
   className: 'table-view-cell empty',
-  template: _.template('<p>No species with selected filters.</p>'),
+  template: _.template('<p>' + t('No species with selected filters.') + '</p>'),
 });
 
 export default Marionette.CollectionView.extend({
