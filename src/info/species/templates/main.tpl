@@ -11,10 +11,6 @@
   </div>
 </div>
 
-<div class="segmented-control no-border">
-  <a id="gallery-button" class="control-item icon icon-camera">Gallery</a>
-</div>
-
 <ul id="species-info" class="table-view">
   <li>
     <div class="common-name"><%= obj.common_name %></div>

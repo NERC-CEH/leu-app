@@ -1,6 +1,16 @@
 <label class="item item-radio item-small">
+  <input type="radio" name="group" value="default"
+  <%- !_.keys(obj).length || obj['default'] ? 'checked' : ''%>>
+  <div class="radio-content">
+    <div class="item-content">
+      Default
+    </div>
+    <i class="radio-icon icon-check"></i>
+  </div>
+</label>
+<label class="item item-radio item-small">
   <input type="radio" name="group" value="common"
-  <%- !_.keys(obj).length || obj['common'] ? 'checked' : ''%>>
+  <%- obj['common'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
       Common Name

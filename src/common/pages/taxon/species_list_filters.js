@@ -23,7 +23,7 @@ const filters = {
     },
   },
   typeGroup: {
-    grass(list, filteredList) {
+    grassčč(list, filteredList) {
       for (let j = 0; j < list.length; j++) {
         if (list[j].type === 'G' || list[j].general) {
           filteredList.push(list[j]);

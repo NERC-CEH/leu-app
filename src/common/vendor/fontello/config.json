@@ -275,6 +275,18 @@
       "css": "heart-full",
       "code": 59431,
       "src": "fontawesome"
+    },
+    {
+      "uid": "4109c474ff99cad28fd5a2c38af2ec6f",
+      "css": "filter",
+      "code": 61616,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "96418ab910c40c3bf61a9ba7b718c49d",
+      "css": "list-nested",
+      "code": 59433,
+      "src": "iconic"
     }
   ]
 }
