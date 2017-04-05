@@ -22,80 +22,48 @@ const filters = {
       }
     },
   },
-  typeGroup: {
-    grassčč(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].type === 'G' || list[j].general) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    flower(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].type === 'F' || list[j].general) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-  },
-  colourGroup: {
-    yellow(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('y') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    purple(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('pu') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    white(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('w') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    green(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('gf') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    blue(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('b') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    orange(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('o') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    red(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('r') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-    pink(list, filteredList) {
-      for (let j = 0; j < list.length; j++) {
-        if (list[j].color.indexOf('p') >= 0) {
-          filteredList.push(list[j]);
-        }
-      }
-    },
-  },
 };
+
+function getFilter(attribute, lookup) {
+  const func = function(list, filteredList) {
+    for (let j = 0; j < list.length; j++) {
+      if (list[j][attribute].filter.indexOf(lookup) >= 0) {
+        filteredList.push(list[j]);
+      }
+    }
+  };
+  return func;
+}
+
+
+function getFilterGroup(attribute, values) {
+  const group = {};
+  values.forEach((colour) => {
+    group[colour] = getFilter(attribute, colour);
+  });
+
+  return group;
+}
+
+filters.colourGroup = getFilterGroup(
+  'colour',
+  ['black', 'brown', 'red', 'orange', 'yellow', 'pink', 'cream/beige', 'white']
+);
+
+filters.sizeGroup = getFilterGroup(
+  'size',
+  [3, 4, 5,	6, 7,	8, 9]
+);
+
+filters.pronotumGroup = getFilterGroup(
+  'pronotum',
+  [
+    'one colour',
+    'one colour with spots',
+    'M-shape',
+    'one colour with white patch on each side',
+    'none of them',	'Need to find name'
+  ]
+);
 
 export default filters;

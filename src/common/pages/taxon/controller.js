@@ -37,7 +37,6 @@ const API = {
         appModel.toggleFilter(filterGroup, filter);
       });
 
-
       radio.trigger('app:dialog', {
         title: new FiltersHeaderView({ model: appModel, speciesCollection }),
         body: filtersView,
