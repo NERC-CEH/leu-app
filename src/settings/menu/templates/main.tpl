@@ -21,6 +21,13 @@
 </li>
 <li class="table-view-divider">Application</li>
 <li class="table-view-cell">
+  <a href="#settings/locale" class="navigate-right">
+    <span class="media-object pull-right descript"><%= obj.country %></span>
+    <span class="media-object pull-left icon icon-location"></span>
+    Country
+  </a>
+</li>
+<li class="table-view-cell">
   <a id="app-reset-btn">
     <span class="media-object pull-left icon icon-undo"></span>
     Reset

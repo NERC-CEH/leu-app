@@ -40,6 +40,7 @@ export default Marionette.View.extend({
     const appModel = this.model;
     return {
       useTraining: appModel.get('useTraining'),
+      country: appModel.get('country'),
     };
   },
 });

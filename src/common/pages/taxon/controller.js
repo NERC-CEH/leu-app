@@ -2,7 +2,7 @@ import Log from 'helpers/log';
 import radio from 'radio';
 import appModel from 'app_model';
 import savedSamples from 'saved_samples';
-import speciesCollection from './species_collection';
+import speciesCollection from '../../species_collection';
 import MainView from './main_view';
 import HeaderView from './header_view';
 import FiltersHeaderView from './filters_header_view';

@@ -3,7 +3,7 @@ import App from 'app';
 import appModel from 'app_model';
 import radio from 'radio';
 import savedSamples from 'saved_samples';
-import speciesCollection from '../../common/pages/taxon/species_collection';
+import speciesCollection from '../../common/species_collection';
 import MainView from './main_view';
 import HeaderView from '../../common/views/header_view';
 import FavouriteButtonView from './favourite_button_view';
