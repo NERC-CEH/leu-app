@@ -37,25 +37,25 @@
     </p>
     <% } %>
 
-    <% if (obj.size_comment) { %>
+    <% if (obj.size.comment) { %>
     <p>
       <strong>Size:</strong>
-      <span><%= obj.size_comment %></span>
+      <span><%= obj.size.comment %></span>
     </p>
     <% } %>
 
-    <% if (obj.colour_comment) { %>
+    <% if (obj.colour.comment) { %>
     <p>
       <strong>Colour:</strong>
-      <span><%= obj.colour_comment %></span>
+      <span><%= obj.colour.comment %></span>
     </p>
     <% } %>
 
 
-    <% if (obj.pronotum_comment) { %>
+    <% if (obj.pronotum.comment) { %>
     <p>
       <strong>Pronotum:</strong>
-      <span><%= obj.pronotum_comment %></span>
+      <span><%= obj.pronotum.comment %></span>
     </p>
     <% } %>
 
@@ -94,6 +94,13 @@
     <p>
       <strong>Food:</strong>
       <span><%= obj.food %></span>
+    </p>
+    <% } %>
+
+    <% if (obj.habitat.comment) { %>
+    <p>
+      <strong>Habitat:</strong>
+      <span><%= obj.habitat.comment %></span>
     </p>
     <% } %>
   </li>

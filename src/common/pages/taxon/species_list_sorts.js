@@ -1,3 +1,5 @@
+import appModel from 'app_model';
+
 /******************************************************************************
  * Species list sorts.
  *****************************************************************************/
@@ -6,13 +8,24 @@
  * id - sort type identifier
  * label - label to represent the filter in the UI
  */
+function exist(locale, a, b) {
+  if (!a.attributes[locale].exist === 'NO') {
+    return 1;
+  }
+  if (!b.attributes[locale].exist === 'NO') {
+    return -1;
+  }
+}
+
 const sorts = {
   common(a, b) {
-    if (a.attributes.general || b.attributes.general){
-      return a.attributes.general ? 1 : -1;
+    const locale = appModel.get('country');
+    const doesNotExist = exist(locale, a, b);
+    if (!doesNotExist) {
+      return doesNotExist;
     }
-    a = a.attributes.common_name.toLowerCase();
-    b = b.attributes.common_name.toLowerCase();
+    a = a.attributes[locale].common_name.toLowerCase();
+    b = b.attributes[locale].common_name.toLowerCase();
 
     if (a === b) {
       return 0;
@@ -20,11 +33,12 @@ const sorts = {
     return a > b ? 1 : -1;
   },
   'common-reverse'(a, b) {
-    if (a.attributes.general || b.attributes.general){
-      return a.attributes.general ? 1 : -1;
-    }
-    a = a.attributes.common_name.toLowerCase();
-    b = b.attributes.common_name.toLowerCase();
+    const locale = appModel.get('country');
+    const doesNotExist = exist(locale, a, b);
+    if (!doesNotExist) {
+      return doesNotExist;
+    }    a = a.attributes[locale].common_name.toLowerCase();
+    b = b.attributes[locale].common_name.toLowerCase();
 
     if (a === b) {
       return 0;
@@ -32,11 +46,12 @@ const sorts = {
     return a < b ? 1 : -1;
   },
   scientific(a, b) {
-    if (a.attributes.general || b.attributes.general){
-      return a.attributes.general ? 1 : -1;
-    }
-    a = a.attributes.taxon.toLowerCase();
-    b = b.attributes.taxon.toLowerCase();
+    const locale = appModel.get('country');
+    const doesNotExist = exist(locale, a, b);
+    if (!doesNotExist) {
+      return doesNotExist;
+    }    a = a.attributes[locale].taxon.toLowerCase();
+    b = b.attributes[locale].taxon.toLowerCase();
 
     if (a === b) {
       return 0;
@@ -44,11 +59,13 @@ const sorts = {
     return a > b ? 1 : -1;
   },
   'scientific-reverse'(a, b) {
-    if (a.attributes.general || b.attributes.general){
-      return a.attributes.general ? 1 : -1;
+    const locale = appModel.get('country');
+    const doesNotExist = exist(locale, a, b);
+    if (!doesNotExist) {
+      return doesNotExist;
     }
-    a = a.attributes.taxon.toLowerCase();
-    b = b.attributes.taxon.toLowerCase();
+    a = a.attributes[locale].taxon.toLowerCase();
+    b = b.attributes[locale].taxon.toLowerCase();
 
     if (a === b) {
       return 0;

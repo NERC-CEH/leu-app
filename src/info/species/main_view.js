@@ -3,6 +3,7 @@
  *****************************************************************************/
 import $ from 'jquery';
 import Marionette from 'backbone.marionette';
+import appModel from 'app_model';
 import JST from 'JST';
 import 'jquery-touchswipe';
 import Device from 'helpers/device';
@@ -21,14 +22,13 @@ export default Marionette.View.extend({
   onAttach() {
     // photos
     this.startSwipe();
+  },
 
-    // add Map
-    const $mapsHolder = $('#maps-holder');
-    $.get(`images/${this.model.id}.svg`, function(data) {
-      const svg = data.documentElement ?
-        new XMLSerializer().serializeToString(data.documentElement) : data;
-      $mapsHolder.append(svg);
-    });
+  serializeData() {
+    const locale = appModel.get('country');
+    let data = $.extend(true, {}, this.model.attributes, this.model.attributes[locale]);
+    data.food = data.food.reduce((a, b) => `${a}, ${b}`);
+    return data;
   },
 
   startSwipe() {
