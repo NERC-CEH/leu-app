@@ -27,9 +27,9 @@ export default Marionette.View.extend({
   serializeData() {
     const locale = appModel.get('country');
     let data = $.extend(true, {}, this.model.attributes, this.model.attributes[locale]);
-    data.food = data.food.reduce((a, b) => `${a}, ${b}`);
-    data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.reduce((a, b) => `${a}, ${b}`);
-    data.plant = data[locale].plant && data[locale].plant.reduce((a, b) => `${a}, ${b}`);
+    data.food = data.food.reduce((a, b) => `${t(b)} ${a}`, '');
+    data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.reduce((a, b) => `${t(b)} ${a}`, '');
+    data.plant = data[locale].plant && data[locale].plant.reduce((a, b) => `${t(b)} ${a}`, '');
     data.overwintering = data[locale].overwintering;
     data.comment = data[locale].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;
