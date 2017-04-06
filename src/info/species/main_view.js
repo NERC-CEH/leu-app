@@ -10,6 +10,7 @@ import Device from 'helpers/device';
 import Gallery from '../../common/gallery';
 import './styles.scss';
 import './data/images/loader';
+import './data/thumbnails/loader';
 
 export default Marionette.View.extend({
   template: JST['info/species/main'],

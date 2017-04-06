@@ -19,6 +19,8 @@ let AppModel = Backbone.Model.extend({
     country: 'UK',
     language: 'EN',
 
+    showWelcome: true,
+
     locations: [],
     autosync: true,
     useGridRef: true,

@@ -14,7 +14,7 @@
     <%- obj['SK'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Slovensko
+        Slovakia
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
@@ -24,7 +24,7 @@
     <%- obj['CZ'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Česká republika
+        Czech Republic
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
@@ -34,7 +34,7 @@
     <%- obj['IT'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Italia
+        Italy
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
@@ -44,7 +44,7 @@
     <%- obj['PT'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        República Portuguesa
+        Portugal
       </div>
       <i class="radio-icon icon-check"></i>
     </div>
@@ -54,7 +54,7 @@
     <%- obj['BE'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        Belgique / België
+        Belgium
       </div>
       <i class="radio-icon icon-check"></i>
     </div>

@@ -22,7 +22,6 @@ const SpeciesView = Marionette.View.extend({
     const form = species.get('form');
     return {
       id: species.get('id'),
-      img: species.get('thumbnail'),
       taxon: species.get('taxon'),
       form,
       common_name,

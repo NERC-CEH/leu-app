@@ -3,18 +3,49 @@
  *****************************************************************************/
 import $ from 'jquery';
 import Marionette from 'backbone.marionette';
-import Device from 'helpers/device';
-import JST from 'JST';
+import appModel from 'app_model';
 
 export default Marionette.View.extend({
   tagName: 'ul',
   className: 'table-view',
-  template: JST['settings/language/main'],
+  template() {
+    const languages = {
+      NL: 'Dutch',
+      FR: 'Français',
+      PT: 'Português',
+      SK: 'Slovenčina',
+      CZ: 'Čeština',
+      EN: 'English',
+      IT: 'Italiano',
+    };
+
+    const current = appModel.get('language');
+    const locale = appModel.get('country');
+
+    let languagesTemplate = '';
+
+    for (const language of Object.keys(languages)) {
+      const langTpl = `
+      <label class="item item-radio">
+        <input type="radio" name="group" value="${language}" ${current === language ? 'checked' : ''}>
+        <div class="radio-content">
+          <div class="item-content">
+            ${languages[language]}
+          </div>
+          <i class="radio-icon icon-check"></i>
+        </div>
+      </label>
+    `;
+      languagesTemplate += langTpl;
+    }
+
+    const template = `<div class="list">${languagesTemplate}</div>`;
+    return template;
+  },
 
   triggers: {
     'click input[type="radio"]': 'save',
   },
-
 
   getValues() {
     let value;
@@ -27,12 +58,5 @@ export default Marionette.View.extend({
     });
 
     return value;
-  },
-
-  serializeData() {
-    const appModel = this.model;
-    const data = {};
-    data[appModel.get('language')] = true;
-    return data;
   },
 });

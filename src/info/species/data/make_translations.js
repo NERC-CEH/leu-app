@@ -3,6 +3,9 @@
 // # A, B, C[], C[], C[], D[], E{A}, E{B}, F{P{L[]}}
 // #
 // # {A, B, [C, C, C], [D], E:{A, B}}, F:{P:[L]}
+
+'use strict';
+
 const parse = require('csv-parse');
 const fs = require('fs');
 

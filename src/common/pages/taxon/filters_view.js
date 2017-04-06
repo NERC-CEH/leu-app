@@ -24,8 +24,8 @@ export default Marionette.View.extend({
           {
             name: 'favourite',
             label: t('My favourites only'),
-          }
-        ]
+          },
+        ],
       },
     ];
 
@@ -35,7 +35,7 @@ export default Marionette.View.extend({
       colourFilters.push({
         name: filter,
         label: capitalizeFirstLetter(filter),
-      })
+      });
     });
     filters.push({
       name: 'colour',
@@ -45,11 +45,11 @@ export default Marionette.View.extend({
 
     // add size
     const sizeFilters = [];
-    [3, 4, 5,	6, 7,	8, 9].forEach((filter) => {
+    [3, 4, 5, 6, 7, 8, 9].forEach((filter) => {
       sizeFilters.push({
         name: filter,
         label: filter,
-      })
+      });
     });
     filters.push({
       name: 'size',

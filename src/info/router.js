@@ -10,6 +10,7 @@ import radio from 'radio';
 import appModel from 'app_model';
 import CommonController from '../common/controller';
 import InfoMenuController from './menu/controller';
+import WelcomeController from './welcome/controller';
 import SpeciesController from './species/controller';
 import SpeciesListController from '../common/pages/taxon/controller';
 import HomeController from './home/controller';
@@ -23,6 +24,7 @@ const Router = Marionette.AppRouter.extend({
     home: HomeController.show,
 
     'info(/)': InfoMenuController.show,
+    'info/welcome(/)': WelcomeController.show,
     'info/about(/)': () => {
       CommonController.show({
         title: t('About'),
@@ -52,9 +54,14 @@ const Router = Marionette.AppRouter.extend({
 
 
 // home page
-App.on('home', () => {
+radio.on('home', () => {
   App.navigate('home');
   HomeController.show();
+});
+
+radio.on('info:welcome', (options) => {
+  App.navigate('info/welcome', options);
+  WelcomeController.show();
 });
 
 App.on('before:start', () => {

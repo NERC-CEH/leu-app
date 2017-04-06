@@ -2,10 +2,6 @@
   <img src="images/app_logo.png" alt="" class="app-logo">
 </div>
 
-<div id="intro-snippet">
-  //TODO
-</div>
-
 <ul id="buttons" class="table-view buttons">
   <li class="table-view-cell">
     <a href="#info/species" class="navigate-right">

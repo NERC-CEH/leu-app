@@ -5,8 +5,10 @@ import $ from 'jquery';
 import Marionette from 'backbone.marionette';
 import Device from 'helpers/device';
 import JST from 'JST';
+import './styles.scss';
 
 export default Marionette.View.extend({
+  id: 'settings',
   tagName: 'ul',
   className: 'table-view',
   template: JST['settings/menu/main'],

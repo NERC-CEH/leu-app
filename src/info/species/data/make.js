@@ -3,6 +3,9 @@
 // # A, B, C[], C[], C[], D[], E{A}, E{B}, F{P{L[]}}
 // #
 // # {A, B, [C, C, C], [D], E:{A, B}}, F:{P:[L]}
+
+'use strict';
+
 const parse = require('csv-parse');
 const fs = require('fs');
 
@@ -37,9 +40,10 @@ function setColumnObj(obj, columnName, value) {
     return obj[columnName] = value;
   }
 
+  let index, key;
   if (array) {
-    const index = keyFull.indexOf('[');
-    const key = keyFull.substring(0, index);
+    index = keyFull.indexOf('[');
+    key = keyFull.substring(0, index);
 
     // initialize if non existing
     if (!obj[key]) {
@@ -50,8 +54,8 @@ function setColumnObj(obj, columnName, value) {
   }
 
   if (object) {
-    const index = keyFull.indexOf('{');
-    const key = keyFull.substring(0, index);
+    index = keyFull.indexOf('{');
+    key = keyFull.substring(0, index);
 
     // initialize if non existing
     if (!obj[key]) {
