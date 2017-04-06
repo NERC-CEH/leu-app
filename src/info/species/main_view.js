@@ -27,7 +27,7 @@ export default Marionette.View.extend({
 
   serializeData() {
     const locale = appModel.get('country');
-    let data = $.extend(true, {}, this.model.attributes, this.model.attributes[locale]);
+    const data = $.extend(true, {}, this.model.attributes, this.model.attributes[locale]);
     data.food = data.food.reduce((a, b) => `${t(b)} ${a}`, '');
     data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.reduce((a, b) => `${t(b)} ${a}`, '');
     data.plant = data[locale].plant && data[locale].plant.reduce((a, b) => `${t(b)} ${a}`, '');
@@ -36,6 +36,9 @@ export default Marionette.View.extend({
     data.pronotum = data.pronotum && data.pronotum.comment;
     data.size = data.size && data.size.comment;
     data.colour = data.colour && data.colour.comment;
+
+    data.photos = 3; //todo
+    data.author = []; //todo
     return data;
   },
 
@@ -43,7 +46,7 @@ export default Marionette.View.extend({
     const that = this;
     const WIDTH = $('#species_gallery').width();
     let currentImg = 0;
-    const maxImages = this.model.get('photos');
+    const maxImages = 3; //todo: this.model.get('photos');
     const speed = 500;
     let imgs = null;
 
@@ -157,7 +160,7 @@ export default Marionette.View.extend({
     const items = [];
     const options = {};
 
-    const photos = this.model.get('photos');
+    const photos = 3;// todo this.model.get('photos');
     const author = this.model.get('author') || [];
     const width = this.model.get('width') || [];
     const height = this.model.get('height') || [];
@@ -169,7 +172,7 @@ export default Marionette.View.extend({
       }
       items.push({
         src: `images/${this.model.id}_${i}.jpg`,
-        w: width[i] || 800,
+        w: width[i] || 1024,
         h: height[i] || 800,
         title,
       });
