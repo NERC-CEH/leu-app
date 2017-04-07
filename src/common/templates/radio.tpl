@@ -9,7 +9,7 @@
   <input type="radio" name="group" value="<%= option %>" <%- option === obj.selected ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
-      <%= t('${option}') %>
+      <%= t(option) %>
     </div>
     <i class="radio-icon icon-check"></i>
   </div>

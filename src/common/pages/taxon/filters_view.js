@@ -106,7 +106,7 @@ export default Marionette.View.extend({
             ${t(filterGroupLabel)}
           </a>
           <div id="${filterGroup}" class="collapse">
-            <ul class="list">
+            <ul class="list" style="overflow: hidden;">
               ${filtersTemplates}
             </ul>
           </div>

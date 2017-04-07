@@ -50,6 +50,14 @@
     </a>
   </li>
   <li class="table-view-cell">
+    <a href="#samples/<%- obj.id %>/edit/habitat" id="habitat-button"
+       class="navigate-right">
+      <span class="media-object pull-left icon icon-habitat"></span>
+      <span class="media-object pull-right descript"><%- obj.habitat %></span>
+      <%= t('Habitat') %>
+    </a>
+  </li>
+  <li class="table-view-cell">
     <a href="#samples/<%- obj.id %>/edit/comment" id="comment-button"
        class="navigate-right">
       <span class="media-object pull-left icon icon-comment"></span>

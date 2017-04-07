@@ -98,6 +98,13 @@ const API = {
           sample.set('date', newVal);
         }
         break;
+      case 'habitat':
+        currentVal = sample.get(attr);
+        newVal = values[attr];
+
+        // todo:validate before setting up
+        sample.set(attr, values[attr]);
+        break;
       case 'number':
       case 'comment':
         currentVal = occ.get(attr);

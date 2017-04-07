@@ -3,6 +3,7 @@
  *****************************************************************************/
 import Marionette from 'backbone.marionette';
 import Indicia from 'indicia';
+import appModel from 'app_model';
 import JST from 'JST';
 import DateHelp from 'helpers/date';
 import StringHelp from 'helpers/string';
@@ -18,13 +19,14 @@ export default Marionette.View.extend({
   },
 
   serializeData() {
+    const locale = appModel.get('country');
     const sample = this.model.get('sample');
     const occ = sample.getOccurrence();
     const specie = occ.get('taxon') || {};
 
     // taxon
-    const scientificName = specie.scientific_name;
-    const commonName = specie.common_name;
+    const scientificName = specie.taxon;
+    const commonName = specie[locale] && specie[locale].common_name;
 
     const locationPrint = sample.printLocation();
     const location = sample.get('location') || {};
@@ -42,7 +44,7 @@ export default Marionette.View.extend({
       location_name: location.name,
       date: DateHelp.print(sample.get('date'), true),
       number,
-      stage: occ.get('stage') && StringHelp.limit(occ.get('stage')),
+      habitat: sample.get('habitat') && StringHelp.limit(sample.get('habitat')),
       comment: occ.get('comment') && StringHelp.limit(occ.get('comment')),
     };
   },

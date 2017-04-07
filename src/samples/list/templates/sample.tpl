@@ -1,8 +1,4 @@
-<% if (obj.taxon) { %>
 <a href="#samples/<%- obj.id %><%- obj.onDatabase ? '' : '/edit' %>" class="mobile">
-  <% } else { %>
-  <a href="#samples/<%- obj.id %>/edit/taxon" class="mobile">
-    <% } %>
     <% if (obj.training) { %>
     <div class="media-object pull-left training"></div>
     <% } %>

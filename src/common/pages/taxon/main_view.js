@@ -13,6 +13,15 @@ const SpeciesView = Marionette.View.extend({
 
   template: JST['common/taxon/species'],
 
+  events: {
+    'click a'(e) { // eslint-disable-line
+      if (this.options.sampleModel) {
+        e.preventDefault();
+      }
+      this.trigger('select', this.model.attributes);
+    },
+  },
+
   serializeData() {
     const species = this.model;
     const common_name = species.get(appModel.get('country')).common_name;
@@ -52,6 +61,7 @@ export default Marionette.CollectionView.extend({
   childViewOptions() {
     return {
       appModel: this.options.appModel,
+      sampleModel: this.options.sampleModel,
     };
   },
 });

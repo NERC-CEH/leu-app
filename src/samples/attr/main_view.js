@@ -12,8 +12,15 @@ import CONFIG from 'config';
 
 export default Marionette.View.extend({
   initialize(options) {
-    this.template = JST[`samples/attr/${options.attr}`];
-  },
+    switch (options.attr) {
+      case 'habitat':
+      case 'number':
+        this.template = JST['common/radio'];
+        break;
+
+      default:
+        this.template = JST[`samples/attr/${options.attr}`];
+    }  },
 
   triggers: {
     'click input[type="radio"]': 'save',
@@ -46,6 +53,19 @@ export default Marionette.View.extend({
           }
         });
         break;
+      case 'habitat':
+        const habitatConfig = CONFIG.indicia.sample['habitat'];
+        $inputs = this.$el.find('input[type="radio"]');
+        $inputs.each((int, elem) => {
+          if ($(elem).prop('checked')) {
+            const newVal = $(elem).val();
+            // don't set default
+            if (newVal !== habitatConfig.default) {
+              values['habitat'] = newVal;
+            }
+          }
+        });
+        break;
       case 'comment':
         value = this.$el.find('textarea').val();
         values[attr] = StringHelp.escape(value);
@@ -67,14 +87,24 @@ export default Marionette.View.extend({
         templateData.maxDate = DateHelp.toDateInputValue(new Date());
         break;
       case 'number': {
-        const numberConfig = CONFIG.indicia.occurrence['number'];
-        let number = occ.get('number');
-        number = occ.get('number') || numberConfig.default;
-        templateData[number] = true;
+        selected = occ.get('number') || {};
+        templateData = {
+          message: 'How many individual?',
+          selection: CONFIG.indicia.occurrence.number._values,
+          selected,
+        };
         break;
       }
       case 'comment':
         templateData.value = occ.get(this.options.attr);
+        break;
+      case 'habitat':
+        selected = this.model.get('habitat') || {};
+        templateData = {
+          message: 'What sort of habitat did you find the ladybirds in?',
+          selection: Object.keys(CONFIG.indicia.sample.habitat.values),
+          selected,
+        };
         break;
 
       default:
