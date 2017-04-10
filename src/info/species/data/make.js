@@ -9,6 +9,7 @@
 const parse = require('csv-parse');
 const fs = require('fs');
 
+const inputFileName = process.argv[2];
 
 function processRow(header, row) {
   const rowObj = {};
@@ -94,7 +95,7 @@ function main(output) {
 /**
  * Parse raw CSV file.
  */
-fs.readFile('./species.csv', 'utf8', function (err,data) {
+fs.readFile(`./${inputFileName}.csv`, 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
   }
@@ -102,7 +103,7 @@ fs.readFile('./species.csv', 'utf8', function (err,data) {
   parse(data, {}, function(err, output){
     const obj = main(output);
 
-    fs.writeFile("./species.data.json", JSON.stringify(obj), null, 4, function(err) {
+    fs.writeFile(`./${inputFileName}.data.json`, JSON.stringify(obj), null, 4, function(err) {
       if (err) {
         return console.log(err);
       }

@@ -8,6 +8,7 @@ import JST from 'JST';
 import 'jquery-touchswipe';
 import Device from 'helpers/device';
 import Gallery from '../../common/gallery';
+import photosData from 'photos.data';
 import './styles.scss';
 import './data/images/loader';
 import './data/thumbnails/loader';
@@ -28,17 +29,17 @@ export default Marionette.View.extend({
   serializeData() {
     const locale = appModel.get('country');
     const data = $.extend(true, {}, this.model.attributes, this.model.attributes[locale]);
-    data.food = data.food.reduce((a, b) => `${t(b)} ${a}`, '');
-    data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.reduce((a, b) => `${t(b)} ${a}`, '');
-    data.plant = data[locale].plant && data[locale].plant.reduce((a, b) => `${t(b)} ${a}`, '');
+    data.food = data.food.reduce((a, b) => `${t(b)}; ${a}`, '');
+    data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.reduce((a, b) => `${t(b)}; ${a}`, '');
+    data.plant = data[locale].plant && data[locale].plant.reduce((a, b) => `${t(b)}; ${a}`, '');
     data.overwintering = data[locale].overwintering;
     data.comment = data[locale].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;
     data.size = data.size && data.size.comment;
     data.colour = data.colour && data.colour.comment;
 
-    data.photos = 3; //todo
-    data.author = []; //todo
+    data.photos = photosData[data.id].width.length;
+    data.author = photosData[data.id].author;
     return data;
   },
 
@@ -46,7 +47,7 @@ export default Marionette.View.extend({
     const that = this;
     const WIDTH = $('#species_gallery').width();
     let currentImg = 0;
-    const maxImages = 3; //todo: this.model.get('photos');
+    const maxImages = photosData[this.model.id].width.length;
     const speed = 500;
     let imgs = null;
 
@@ -160,7 +161,7 @@ export default Marionette.View.extend({
     const items = [];
     const options = {};
 
-    const photos = 3;// todo this.model.get('photos');
+    const photos = photosData[this.model.id].width.length;
     const author = this.model.get('author') || [];
     const width = this.model.get('width') || [];
     const height = this.model.get('height') || [];
@@ -179,7 +180,7 @@ export default Marionette.View.extend({
     }
 
     // Initializes and opens PhotoSwipe
-    var gallery = new Gallery(items, options);
+    const gallery = new Gallery(items, options);
     gallery.init();
   },
 

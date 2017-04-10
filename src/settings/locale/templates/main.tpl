@@ -1,7 +1,7 @@
 <div class="list">
   <label class="item item-radio">
     <input type="radio" name="group" value="UK"
-    <%- !_.keys(obj).length || obj['UK'] ? 'checked' : ''%>>
+    <%- obj['UK'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
         United Kingdom
