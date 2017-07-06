@@ -7,26 +7,43 @@ import MainViewLanguage from '../../settings/language/main_view';
 
 const API = {
   show() {
-    const mainView = new MainView({ model: appModel });
-    radio.trigger('app:main', mainView);
-
     radio.trigger('app:header:hide');
     radio.trigger('app:footer:hide');
 
-    // if exit on selection click
-    mainView.on('save', () => {
-      API.onExit(mainView, () => {
-        radio.trigger('home');
-      });
-    });
-
-    radio.trigger('app:main', mainView);
+    API.showCountrySelection();
 
     radio.trigger('app:header:hide');
     radio.trigger('app:footer:hide');
   },
 
-  onExit(mainView, callback) {
+  showCountrySelection() {
+    const mainView = new MainView({ model: appModel });
+    radio.trigger('app:main', mainView);
+
+    // if exit on selection click
+    mainView.on('save', () => {
+      API.onExit(mainView);
+      const locale = appModel.get('country');
+      if (locale === 'BE') {
+        API.showLanguageSelection();
+        return;
+      }
+      radio.trigger('home');
+    });
+  },
+
+  showLanguageSelection() {
+    const mainView = new MainViewLanguage({ model: appModel });
+    radio.trigger('app:main', mainView);
+
+    // if exit on selection click
+    mainView.on('save', () => {
+      API.onExitLanguage(mainView);
+      radio.trigger('home');
+    });
+  },
+
+  onExit(mainView) {
     Log('Info:Welcome:Controller: exit country.');
     appModel.save({ showWelcome: false });
 
@@ -34,19 +51,16 @@ const API = {
     if (value) {
       appModel.save({ country: value });
       speciesCollection.filterList(); // update collection
-      callback();
     }
   },
 
-  onExitLanguage(mainView, callback) {
+  onExitLanguage(mainView) {
     Log('Info:Welcome:Controller: exit language.');
-    appModel.save({ showWelcome: false });
 
     const value = mainView.getValues();
     if (value) {
-      appModel.save({ country: value });
-      speciesCollection.filterList(); // update collection
-      callback();
+      appModel.set('language', value);
+      appModel.save();
     }
   },
 };
