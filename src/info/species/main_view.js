@@ -30,7 +30,7 @@ export default Marionette.View.extend({
     const locale = appModel.get('country');
 
     let common_name = this.model.get(locale).common_name;
-    common_name = common_name || species.get('UK').common_name;
+    common_name = common_name || this.model.get('UK').common_name;
 
     if (typeof common_name === 'object') {
        const language = appModel.get('language');
