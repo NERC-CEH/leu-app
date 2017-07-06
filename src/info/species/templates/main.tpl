@@ -13,7 +13,7 @@
 
 <ul id="species-info" class="table-view">
   <li>
-    <div class="common-name"><%= t( obj.common_name ) %></div>
+    <div class="common-name"><%= obj.common_name %></div>
     <div class="taxon"><%= t( obj.taxon ) %></div>
   </li>
 
