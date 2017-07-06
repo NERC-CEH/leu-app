@@ -28,7 +28,21 @@ export default Marionette.View.extend({
 
   serializeData() {
     const locale = appModel.get('country');
+
+    let common_name = this.model.get(locale).common_name;
+    common_name = common_name || species.get('UK').common_name;
+
+    if (typeof common_name === 'object') {
+       const language = appModel.get('language');
+       common_name = common_name[language] && common_name[language]
+       
+       if (!common_name) {
+        common_name = this.model.get('UK').common_name;
+       }
+    }
+
     const data = $.extend(true, {}, this.model.attributes, this.model.attributes[locale]);
+    data.common_name = common_name;
     data.food = data.food.join('; ');
     data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.join('; ');
     data.plant = data[locale].plant && data[locale].plant.join('; ');

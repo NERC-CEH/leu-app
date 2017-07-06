@@ -16,7 +16,7 @@ export default Marionette.View.extend({
       SK: 'Slovenčina',
       CZ: 'Čeština',
       EN: 'English',
-      IT: 'Italiano',
+      ITA: 'Italiano',
     };
 
     const current = appModel.get('language');
