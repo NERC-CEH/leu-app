@@ -6,27 +6,31 @@ import Indicia from 'indicia';
 import DateHelp from 'helpers/date';
 import LocHelp from 'helpers/location';
 
-const HOST = 'https://www.brc.ac.uk/irecord/';
+const HOST =
+  process.env.APP_INDICIA_API_HOST || 'https://www.brc.ac.uk/irecord/';
 
+
+const notInTest = process.env.ENV !== 'test';
 const CONFIG = {
   // variables replaced on build
-  /* global APP_VERSION, APP_BUILD, APP_NAME, REGISTER_URL, API_KEY, API_SECRET,
-   REPORT_URL, STATISTICS_URL, RECORD_URL, APP_SECRET */
-  version: APP_VERSION,
-  build: APP_BUILD,
-  name: APP_NAME,
+  version: process.env.APP_VERSION,
+  build: process.env.APP_BUILD,
+  name: process.env.APP_NAME,
+
+  environment: process.env.ENV,
+  experiments: process.env.APP_EXPERIMENTS,
+  training: process.env.APP_TRAINING,
 
   gps_accuracy_limit: 100,
 
   site_url: HOST,
 
-  // logging
-  log: true,
+  // use prod logging if testing otherwise full log
+  log: notInTest,
 
   // google analytics
   ga: {
-    status: true,
-    ID: 'UA-58378803-11',
+    id: notInTest && process.env.APP_GA,
   },
 
   supportEmail: {
@@ -40,7 +44,7 @@ const CONFIG = {
 
 // error analytics
   sentry: {
-    key: 'ffc9577e540144bea7574b7d180399f4',
+    key: notInTest && process.env.APP_SENTRY_KEY,
     project: '155047',
   },
 
@@ -50,22 +54,25 @@ const CONFIG = {
   },
 
   reports: {
-    url: `${HOST + Indicia.API_BASE + Indicia.API_VER + Indicia.API_REPORTS_PATH}`,
+    url: `${HOST +
+      Indicia.API_BASE +
+      Indicia.API_VER +
+      Indicia.API_REPORTS_PATH}`,
     timeout: 80000,
   },
 
-// mapping
+  // mapping
   map: {
-    os_api_key: '28994B5673A86451E0530C6CA40A91A5',
-    mapbox_api_key: 'pk.eyJ1IjoiY2VoYXBwcyIsImEiOiJjaXBxdTZyOWYwMDZoaWVuYjI3Y3Z0a2x5In0.YXrZA_DgWCdjyE0vnTCrmw',
+    os_api_key: process.env.APP_OS_MAP_KEY,
+    mapbox_api_key: process.env.APP_MAPBOX_MAP_KEY,
     mapbox_osm_id: 'cehapps.0fenl1fe',
     mapbox_satellite_id: 'cehapps.0femh3mh',
   },
 
-// indicia configuration
+  // indicia configuration
   indicia: {
     host: HOST,
-    api_key: API_KEY,
+    api_key: process.env.APP_INDICIA_API_KEY,
     website_id: 23,
     survey_id: 433,
     input_form: 'enter-app-record',
@@ -84,32 +91,26 @@ const CONFIG = {
       phone: {
         id: 20,
       },
-
       location: {
         values(location, submission) {
           // convert accuracy for map and gridref sources
-          let accuracy = location.accuracy;
-          if (location.source !== 'gps') {
-            if (location.source === 'map') {
-              accuracy = LocHelp.mapZoom2meters(location.accuracy);
-            } else {
-              accuracy = null;
-            }
-          }
-
+          const accuracy = location.accuracy;
           const attributes = {};
           const keys = CONFIG.indicia.sample;
           attributes.location_name = location.name; // this is a native indicia attr
           attributes[keys.location_source.id] = location.source;
           attributes[keys.location_gridref.id] = location.gridref;
           attributes[keys.location_altitude.id] = location.altitude;
-          attributes[keys.location_altitude_accuracy.id] = location.altitudeAccuracy;
+          attributes[keys.location_altitude_accuracy.id] =
+            location.altitudeAccuracy;
           attributes[keys.location_accuracy.id] = accuracy;
 
           // add other location related attributes
           $.extend(submission.fields, attributes);
 
-          return `${location.latitude}, ${location.longitude}`;
+          return `${parseFloat(location.latitude).toFixed(7)}, ${parseFloat(
+            location.longitude
+          ).toFixed(7)}`;
         },
       },
       location_accuracy: { id: 282 },

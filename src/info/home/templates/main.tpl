@@ -10,6 +10,12 @@
     </a>
   </li>
   <li class="table-view-cell">
+    <a id="sample-btn" class="navigate-right">
+      <span class="media-object pull-left icon icon-plus"></span>
+      <%= t('Record') %>
+    </a>
+  </li>
+  <li class="table-view-cell">
     <a href="#info" class="navigate-right">
       <span class="media-object pull-left icon icon-info"></span>
       <% if (obj.samples > 0) { %>

@@ -1,31 +1,32 @@
-require('dotenv').config({ silent: true }); // get local environment variables from .env
-
+/** ****************************************************************************
+ * A common webpack configuration.
+ **************************************************************************** */
 const path = require('path');
 const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const pkg = require('../package.json');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 
-const sassLoaders = [
-  'css-loader?-url',
-  'postcss-loader',
-  `sass-loader?includePaths[]=${path.resolve(__dirname, './src')}`,
-];
+const srcPath = path.resolve(__dirname, '../src');
+
+const extractSass = new ExtractTextPlugin({
+  filename: '[name].[contenthash].css',
+  disable: process.env.NODE_ENV === 'development',
+});
 
 module.exports = {
-  context: './src/',
+  context: srcPath,
   entry: {
     app: './main.js',
     vendor: './vendor.js',
   },
   output: {
-    path: 'dist/main',
-    filename: '[name].js', // Notice we use a variable
+    path: path.resolve(__dirname, '../dist/main'),
+    filename: '[name].js',
   },
   resolve: {
-    root: [
+    modules: [
       path.resolve('./dist/_build'),
       path.resolve('./node_modules/'),
       path.resolve('./src/'),
@@ -57,12 +58,29 @@ module.exports = {
         exclude: /(node_modules|bower_components|vendor(?!\.js))/,
         loader: 'babel-loader',
       },
-      { test: /\.json/, loader: 'json' },
-      { test: /(\.png)|(\.svg)|(\.jpg)/, loader: 'file?name=images/[name].[ext]' },
-      { test: /(\.woff)|(\.ttf)/, loader: 'file?name=font/[name].[ext]' },
+      { test: /\.json/, loader: 'json-loader' },
+      {
+        test: /(\.png)|(\.svg)|(\.jpg)/,
+        loader: 'file-loader?name=images/[name].[ext]',
+      },
+      {
+        test: /(\.woff)|(\.ttf)/,
+        loader: 'file-loader?name=font/[name].[ext]',
+      },
       {
         test: /\.s?css$/,
-        loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!')),
+        use: extractSass.extract({
+          use: [
+            {
+              loader: 'css-loader?-url',
+            },
+            {
+              loader: `sass-loader?includePaths[]=${srcPath}`,
+            },
+          ],
+          // use style-loader in development
+          fallback: 'style-loader',
+        }),
       },
     ],
   },
@@ -74,19 +92,35 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html',
     }),
+    // Extract environmental variables and replace references with values in the code
     new webpack.DefinePlugin({
-      'process.env.TRAINING': process.env.TRAINING || false,
-      APP_BUILD: JSON.stringify(process.env.TRAVIS_BUILD_ID || pkg.build || new Date().getTime()),
-      APP_NAME: JSON.stringify(pkg.name),
-      APP_VERSION: JSON.stringify(pkg.version),
-      API_KEY: JSON.stringify(process.env.API_KEY || ''),
+      'process.env': {
+        // package.json variables
+        APP_BUILD: JSON.stringify(
+          process.env.TRAVIS_BUILD_ID || pkg.build || new Date().getTime()
+        ),
+        APP_NAME: JSON.stringify(pkg.name), // no need to be an env value
+        APP_VERSION: JSON.stringify(pkg.version), // no need to be an env value
+
+        // mandatory env. variables
+        APP_INDICIA_API_KEY: JSON.stringify(
+          process.env.APP_INDICIA_API_KEY || ''
+        ),
+        APP_MAPBOX_MAP_KEY: JSON.stringify(
+          process.env.APP_MAPBOX_MAP_KEY || ''
+        ),
+
+        // compulsory env. variables
+        APP_INDICIA_API_HOST: JSON.stringify(
+          process.env.APP_INDICIA_API_HOST || ''
+        ),
+        APP_TRAINING: process.env.APP_TRAINING || false,
+        APP_EXPERIMENTS: process.env.APP_EXPERIMENTS || false,
+        APP_SENTRY_KEY: JSON.stringify(process.env.APP_SENTRY_KEY || ''),
+        APP_GA: JSON.stringify(process.env.APP_GA || false),
+      },
     }),
     new CircularDependencyPlugin(),
-  ],
-  postcss: [
-    autoprefixer({
-      browsers: ['last 2 versions'],
-    }),
   ],
   stats: {
     children: false,

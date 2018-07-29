@@ -109,7 +109,7 @@ export default {
         }
 
         // check if location is within UK
-        let prettyLocation = LocHelp.coord2grid(location, accuracy);
+        let prettyLocation = LocHelp.locationToGrid(location);
         if (!prettyLocation) {
           prettyLocation = `${parseFloat(location.latitude).toFixed(4)}, ${
             parseFloat(location.longitude).toFixed(4)}`;
