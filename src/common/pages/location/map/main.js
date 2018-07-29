@@ -17,7 +17,7 @@ const MIN_WGS84_ZOOM = 5;
 
 const DEFAULT_LAYER = 'Satellite';
 const DEFAULT_LAYER_ZOOM = MIN_WGS84_ZOOM; // 7 and not 1 because of WGS84 scale
-const DEFAULT_CENTER = [50.10441, 3.04826];
+const DEFAULT_CENTER = [51.78144, 8.9415];
 
 const API = {
   initMap() {
