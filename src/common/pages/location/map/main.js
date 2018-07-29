@@ -14,11 +14,10 @@ import mapMarker from './marker';
 import gpsFunctions from './gps';
 
 const MIN_WGS84_ZOOM = 5;
-const OS_ZOOM_DIFF = 6;
 
 const DEFAULT_LAYER = 'Satellite';
-const DEFAULT_LAYER_ZOOM = 1 + OS_ZOOM_DIFF; // 7 and not 1 because of WGS84 scale
-const DEFAULT_CENTER = [53.7326306, -2.6546124];
+const DEFAULT_LAYER_ZOOM = MIN_WGS84_ZOOM; // 7 and not 1 because of WGS84 scale
+const DEFAULT_CENTER = [50.10441, 3.04826];
 
 const API = {
   initMap() {
