@@ -7,8 +7,11 @@ function translate(key) {
 
   const translations = dictionary[key];
   if (!translations) {
-    dictionary[key] = { CK: '' };
-    console.log(`!new: ${key}`); // todo: remove
+    window.dic = window.dic || [];
+    if (!window.dic.includes(key)) {
+      window.dic.push(key);
+      console.log(`!new: ${key}`); // todo: remove
+    }
     return key;
   }
 

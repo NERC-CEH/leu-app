@@ -10,6 +10,7 @@ import Validate from 'helpers/validate';
 import StringHelp from 'helpers/string';
 import ImageHelp from 'helpers/image';
 import Analytics from 'helpers/analytics';
+import showErrMsg from 'helpers/show_err_msg';
 import Log from 'helpers/log';
 import App from 'app';
 import JST from 'JST';
@@ -26,9 +27,8 @@ const API = {
   show(sampleID) {
     // wait till savedSamples is fully initialized
     if (savedSamples.fetching) {
-      const that = this;
       savedSamples.once('fetching:done', () => {
-        API.show.apply(that, [sampleID]);
+        API.show.apply(this, [sampleID]);
       });
       return;
     }
@@ -49,7 +49,6 @@ const API = {
       radio.trigger('samples:show', sampleID, { replace: true });
       return;
     }
-
 
     // MAIN
     const mainView = new MainView({
@@ -76,7 +75,7 @@ const API = {
     });
 
     headerView.on('save', () => {
-      API.save(sample);
+      API.send(sample);
     });
 
     radio.trigger('app:header', headerView);
@@ -86,14 +85,13 @@ const API = {
       model: sample,
     });
 
-    footerView.on('photo:upload', (e) => {
+    footerView.on('photo:upload', e => {
       const photo = e.target.files[0];
       API.photoUpload(sample, photo);
     });
 
-    footerView.on('childview:photo:delete', (view) => {
-      const photo = view.model;
-      API.photoDelete(photo);
+    footerView.on('childview:photo:delete', model => {
+      API.photoDelete(model);
     });
 
     // android gallery/camera selection
@@ -104,9 +102,8 @@ const API = {
     radio.trigger('app:footer', footerView);
   },
 
-
-  save(sample) {
-    Log('Samples:Edit:Controller: save clicked.');
+  send(sample) {
+    Log('Samples:Edit:Controller: send clicked.');
 
     const promise = sample.setToSend();
 
@@ -130,11 +127,14 @@ const API = {
         function onError(err = {}) {
           Log(err, 'e');
 
-          const visibleDialog = App.regions.getRegion('dialog').$el.is(':visible');
+          const visibleDialog = App.regions
+            .getRegion('dialog')
+            .$el.is(':visible');
           // we don't want to close any other dialog
           if (err.message && !visibleDialog) {
-            radio.trigger('app:dialog:error',
-              `Sorry, we have encountered a problem while sending the record.
+            radio.trigger(
+              'app:dialog:error',
+              `${t('Sorry, we have encountered a problem while sending the record.')}
                 
                  <p><i>${err.message}</i></p>`
             );
@@ -163,7 +163,7 @@ const API = {
           }, { remote: true }).catch(onError);
         radio.trigger('sample:saved');
       })
-      .catch((err) => {
+      .catch(err => {
         Log(err, 'e');
         radio.trigger('app:dialog:error', err);
       });
@@ -171,22 +171,22 @@ const API = {
 
   showInvalidsMessage(invalids) {
     // it wasn't saved so of course this error
-    delete invalids.sample.saved; // eslint-disable-line
+    delete invalids.attributes.saved; // eslint-disable-line
 
     let missing = '';
     if (invalids.occurrences) {
       _.each(invalids.occurrences, (message, invalid) => {
-        missing += `<b>${invalid}</b> - ${message}</br>`;
+        missing += `<b>${t(invalid)}</b> - ${t(message)}</br>`;
       });
     }
-    if (invalids.sample) {
-      _.each(invalids.sample, (message, invalid) => {
-        missing += `<b>${invalid}</b> - ${message}</br>`;
+    if (invalids.attributes) {
+      _.each(invalids.attributes, (message, invalid) => {
+        missing += `<b>${t(invalid)}</b> - ${t(message)}</br>`;
       });
     }
 
     radio.trigger('app:dialog', {
-      title: t('Sorry'),
+      title: 'Sorry',
       body: missing,
       timeout: 2000,
     });
@@ -197,7 +197,7 @@ const API = {
 
     const occurrence = sample.getOccurrence();
     // todo: show loader
-    API.addPhoto(occurrence, photo).catch((err) => {
+    API.addPhoto(occurrence, photo).catch(err => {
       Log(err, 'e');
       radio.trigger('app:dialog:error', err);
     });
@@ -316,18 +316,20 @@ const API = {
 
   photoDelete(photo) {
     radio.trigger('app:dialog', {
-      title: t('Delete'),
-      body: 'Are you sure you want to remove this photo from the sample?' +
-      '</br><i><b>Note:</b> it will remain in the gallery.</i>',
+      title: 'Delete',
+      body:
+        t('Are you sure you want to remove this photo from the sample?') +
+        t('</br><i><b>Note:</b> it will remain in the gallery.</i>'),
       buttons: [
         {
-          title: t('Cancel'),
+          title: 'Cancel',
+          type: 'clear',
           onClick() {
             radio.trigger('app:dialog:hide');
           },
         },
         {
-          title: t('Delete'),
+          title: 'Delete',
           class: 'btn-negative',
           onClick() {
             // show loader
@@ -351,34 +353,40 @@ const API = {
     const occurrence = sample.getOccurrence();
 
     radio.trigger('app:dialog', {
-      title: t('Choose a method to upload a photo'),
+      title: 'Choose a method to upload a photo',
       buttons: [
         {
-          title: t('Camera'),
+          title: 'Camera',
           onClick() {
-            ImageHelp.getImage((entry) => {
-              API.addPhoto(occurrence, entry.nativeURL, (occErr) => {
-                if (occErr) {
-                  radio.trigger('app:dialog:error', occErr);
-                }
-              });
-            });
+            ImageHelp.getImage()
+              .then(entry => {
+                entry &&
+                  API.addPhoto(occurrence, entry.nativeURL, occErr => {
+                    if (occErr) {
+                      showErrMsg(occErr);
+                    }
+                  });
+              })
+              .catch(showErrMsg);
             radio.trigger('app:dialog:hide');
           },
         },
         {
-          title: t('Gallery'),
+          title: 'Gallery',
           onClick() {
-            ImageHelp.getImage((entry) => {
-              API.addPhoto(occurrence, entry.nativeURL, (occErr) => {
-                if (occErr) {
-                  radio.trigger('app:dialog:error', occErr);
-                }
-              });
-            }, {
+            ImageHelp.getImage({
               sourceType: window.Camera.PictureSourceType.PHOTOLIBRARY,
               saveToPhotoAlbum: false,
-            });
+            })
+              .then(entry => {
+                entry &&
+                  API.addPhoto(occurrence, entry.nativeURL, occErr => {
+                    if (occErr) {
+                      showErrMsg(occErr);
+                    }
+                  });
+              })
+              .catch(showErrMsg);
             radio.trigger('app:dialog:hide');
           },
         },
@@ -390,11 +398,10 @@ const API = {
    * Adds a new image to occurrence.
    */
   addPhoto(occurrence, photo) {
-    return ImageHelp.getImageModel(ImageModel, photo)
-      .then((image) => {
-        occurrence.addMedia(image);
-        return occurrence.save();
-      });
+    return ImageHelp.getImageModel(ImageModel, photo).then(image => {
+      occurrence.addMedia(image);
+      return occurrence.save();
+    });
   },
 };
 

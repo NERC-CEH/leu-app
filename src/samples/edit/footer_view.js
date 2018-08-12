@@ -1,6 +1,6 @@
 /** ****************************************************************************
  * Sample Edit footer view.
- *****************************************************************************/
+ **************************************************************************** */
 import Marionette from 'backbone.marionette';
 import _ from 'lodash';
 import Indicia from 'indicia';
@@ -9,8 +9,10 @@ import JST from 'JST';
 import Gallery from '../../common/gallery';
 
 const SavedImageView = Marionette.View.extend({
-  template: _.template('<span class="delete icon icon-cancel">' +
-    '</span><img src="<%- obj.data %>" alt="">'),
+  template: _.template(
+    '<span class="delete icon icon-cancel">' +
+      '</span><img src="<%- obj.data %>" alt="">'
+  ),
   className: 'img',
 
   events: {
@@ -23,12 +25,12 @@ const SavedImageView = Marionette.View.extend({
   },
 
   delete() {
-    this.trigger('photo:delete', this);
+    this.trigger('photo:delete', this.model);
   },
 
   serializeData() {
     return {
-      data: this.model.getURL(),
+      data: this.model.get('thumbnail'),
     };
   },
 });
@@ -47,10 +49,12 @@ export default Marionette.CompositeView.extend({
   },
 
   events: {
-    'change input'(e) { // eslint-disable-line
+    // eslint-disable-next-line
+    'change input': function(e) {
       this.trigger('photo:upload', e);
     },
-    'click .img-picker'() { // eslint-disable-line
+    // eslint-disable-next-line
+    'click .img-picker': function() {
       if (window.cordova) {
         this.trigger('photo:selection');
       }
@@ -63,7 +67,7 @@ export default Marionette.CompositeView.extend({
   emptyView: EmptyView,
 
   modelEvents: {
-    'request sync error': 'render',
+    'request:remote sync:remote error:remote': 'render',
   },
 
   serializeData() {
@@ -79,7 +83,9 @@ export default Marionette.CompositeView.extend({
     const options = {};
 
     this.collection.each((image, index) => {
-      if (image.cid === view.model.cid) options.index = index;
+      if (image.cid === view.model.cid) {
+        options.index = index;
+      }
 
       items.push({
         src: image.getURL(),
@@ -88,8 +94,19 @@ export default Marionette.CompositeView.extend({
       });
     });
 
-// Initializes and opens PhotoSwipe
+    // Initializes and opens PhotoSwipe
     const gallery = new Gallery(items, options);
     gallery.init();
+  },
+
+  onAttach() {
+    // create camera/gallery selection
+    if (window.cordova) {
+      this.$el.find('.img-picker input').remove();
+
+      this.$el.find('.img-picker').on('click', () => {
+        this.trigger('photo:selection');
+      });
+    }
   },
 });

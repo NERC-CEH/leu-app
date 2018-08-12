@@ -88,21 +88,21 @@
     <% if (obj.food) { %>
     <p>
       <strong><%= t('Food') %>:</strong>
-      <span><%= obj.food %></span>
+      <span><%= t(obj.food) %></span>
     </p>
     <% } %>
 
     <% if (obj.habitat) { %>
     <p>
       <strong><%= t('Habitat') %>:</strong>
-      <span><%= obj.habitat %></span>
+      <span><%= t(obj.habitat) %></span>
     </p>
     <% } %>
 
     <% if (obj.plant) { %>
     <p>
       <strong><%= t('Plant') %>:</strong>
-      <span><%= obj.plant %></span>
+      <span><%= t(obj.plant) %></span>
     </p>
     <% } %>
     <% if (obj.overwintering) { %>

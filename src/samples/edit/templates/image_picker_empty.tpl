@@ -1,1 +1,1 @@
-<%= t('No photo has been added') %>
+  <%= t("No photo has been added") %>
