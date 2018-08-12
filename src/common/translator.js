@@ -7,10 +7,12 @@ function translate(key) {
 
   const translations = dictionary[key];
   if (!translations) {
+    dictionary[key] = { CK: '' };
+    console.log(`!new: ${key}`); // todo: remove
     return key;
   }
 
-  if (locale === 'BE' && 
+  if (locale === 'BE' &&
     (language === 'NL' || language === 'FR')) {
     language = `${locale}_${language}`;
   }
