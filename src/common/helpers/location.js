@@ -84,6 +84,46 @@ const helpers = {
   },
 
   /**
+   *
+   * @param {string} gridrefString
+   * @returns {bigu.OSRef|null} SW corner of grid square
+   */
+  parseGrid(gridrefString) {
+    let gridRef;
+    const parser = bigu.GridRefParser.factory(gridrefString);
+
+    if (parser) {
+      // center gridref
+      parser.osRef.x += parser.length / 2;
+      parser.osRef.y += parser.length / 2;
+
+      gridRef = parser.osRef;
+    }
+
+    return gridRef;
+  },
+
+  /**
+   *
+   * @param {string} gridrefString
+   * @returns {unresolved}
+   */
+  gridrefStringToLatLng(gridrefString) {
+    try {
+      const parsedRef = bigu.GridRefParser.factory(gridrefString);
+      if (parsedRef) {
+        return parsedRef.osRef.to_latLng();
+      }
+
+      return null;
+    } catch (e) {
+      Log(e.message);
+    }
+
+    return null;
+  },
+
+  /**
    * Checks if the grid reference is valid and in GB land
    * @param gridrefString
    */
@@ -100,6 +140,47 @@ const helpers = {
     }
 
     return false;
+  },
+
+  /**
+   *
+   * @param {type} location
+   * @returns {Boolean}
+   */
+  isInGB(location) {
+    if (location.latitude) {
+      const nationaGridCoords = bigu.latlng_to_grid_coords(
+        location.latitude,
+        location.longitude
+      );
+      if (!nationaGridCoords) {
+        return false;
+      }
+      return nationaGridCoords.country === 'GB';
+    }
+    return false;
+  },
+
+  /**
+   * Checks if location gridref size matches the provided one.
+   * @param location
+   * @param gridRefSize
+   * @returns {boolean}
+   */
+  checkGridType(location, gridRefSize) {
+    if (!gridRefSize) {
+      return false;
+    }
+
+    const gridref = location.gridref || '';
+    let length = helpers.gridref_accuracy[gridRefSize].length;
+
+    if (/^.\d/.test(gridref)) {
+      // Irish is 1 char less than others
+      length -= 1;
+    }
+
+    return gridref.length === length;
   },
 };
 

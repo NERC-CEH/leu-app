@@ -26,7 +26,7 @@ const API = {
       timeout: API.TIMEOUT,
     };
 
-    const onSuccess = (position) => {
+    const onSuccess = position => {
       const location = {
         latitude: position.coords.latitude.toFixed(8),
         longitude: position.coords.longitude.toFixed(8),
@@ -47,7 +47,11 @@ const API = {
       callback && callback(new Error(err.message));
     };
 
-    const watchID = navigator.geolocation.watchPosition(onSuccess, onError, GPSoptions);
+    const watchID = navigator.geolocation.watchPosition(
+      onSuccess,
+      onError,
+      GPSoptions
+    );
     return watchID;
   },
 

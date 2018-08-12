@@ -1,6 +1,6 @@
 /** ****************************************************************************
  * Messages the user
- *****************************************************************************/
+ **************************************************************************** */
 import $ from 'jquery';
 import Backbone from 'backbone';
 import Marionette from 'backbone.marionette';
@@ -11,14 +11,17 @@ import '../styles/dialog.scss';
 
 const errorsTable = {
   25: {
-    body: 'Sorry, looks like there was a problem with the internal database.</br> ' +
-    '<b>Please close the app and start it again.</b>',
-    buttons: [{
-      title: 'Restart',
-      onClick: function onClick() {
-        radio.trigger('app:restart');
+    body:
+      'Sorry, looks like there was a problem with the internal database.</br> ' +
+      '<b>Please close the app and start it again.</b>',
+    buttons: [
+      {
+        title: 'Restart',
+        onClick: function onClick() {
+          radio.trigger('app:restart');
+        },
       },
-    }],
+    ],
   },
 };
 
@@ -50,7 +53,7 @@ const StandardDialogView = Marionette.View.extend({
       } else {
         const title = new Marionette.View({
           tagName: 'h3',
-          template: _.template(this.options.title),
+          template: _.template(t(this.options.title)),
         });
         this.showChildView('header', title);
       }
@@ -61,8 +64,13 @@ const StandardDialogView = Marionette.View.extend({
       if (this.options.body instanceof Marionette.View) {
         this.showChildView('body', this.options.body);
       } else {
+        let bodyView = this.options.body;
+        if (typeof this.options.body === 'string') {
+          bodyView = t(bodyView);
+        }
+
         const body = new Marionette.View({
-          template: _.template(this.options.body),
+          template: _.template(bodyView),
         });
         this.showChildView('body', body);
       }
@@ -82,7 +90,7 @@ const StandardDialogView = Marionette.View.extend({
             const className = this.model.get('class');
             return `btn ${(className || '')}`;
           },
-          template: _.template('<%- obj.title %>'),
+          template: _.template('<%- t(obj.title) %>'),
           events: {
             click() {
               const onClick = this.model.attributes.onClick;
@@ -139,19 +147,21 @@ export default Marionette.Region.extend({
    *  onclick
    */
   show(options) {
-    const that = this;
     let view;
 
-    if (!options) return;
+    if (!options) {
+      return;
+    }
 
     this.onHide = options.onHide;
-    this.hideAllowed = typeof options.hideAllowed !== 'undefined' ? options.hideAllowed : true;
+    this.hideAllowed =
+      typeof options.hideAllowed !== 'undefined' ? options.hideAllowed : true;
 
     if (!options.view || !(options.view instanceof Marionette.View)) {
       // create a standard dialog
       if (options.timeout) {
         this.timeout = setTimeout(() => {
-          that.hide();
+          this.hide();
         }, options.timeout);
       }
 
@@ -201,13 +211,15 @@ export default Marionette.Region.extend({
   error: function error(err = {}) {
     let options = {
       class: 'error',
-      title: t('Yikes!'),
+      title: 'Yikes!',
       body: err.message || err,
-      buttons: [{
-        id: 'ok',
-        title: 'OK',
-        onClick: this.hide,
-      }],
+      buttons: [
+        {
+          id: 'ok',
+          title: 'OK',
+          onClick: this.hide,
+        },
+      ],
     };
 
     // lookup for codes
