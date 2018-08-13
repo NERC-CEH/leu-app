@@ -16,7 +16,7 @@
     "build:cordova:android": "grunt cordova:android",
     "clean": "rm -rf node_modules dist yarn.lock package-lock.json",
     "postinstall": "grunt dev",
-    "start": "WEBPACK_SERVE=production webpack-serve --config other/webpack.dev.js --content dist/main --port $PORT",
+    "start": "node other/server.js",
     "start-dev": "webpack-serve --config other/webpack.dev.js --content dist/main --port 8000"
   },
   "dependencies": {
