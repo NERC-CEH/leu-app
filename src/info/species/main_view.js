@@ -52,7 +52,7 @@ export default Marionette.View.extend({
     data.size = data.size && data.size.comment;
     data.colour = data.colour && data.colour.comment;
 
-    data.photos = photosData[data.id].width.length;
+    data.photos = photosData[data.id - 1].width.length;
     data.author = photosData[data.id].author;
     return data;
   },
@@ -61,7 +61,7 @@ export default Marionette.View.extend({
     const that = this;
     const WIDTH = $('#species_gallery').width();
     let currentImg = 0;
-    const maxImages = photosData[this.model.id].width.length;
+    const maxImages = photosData[this.model.id - 1].width.length;
     const speed = 500;
     let imgs = null;
 
@@ -162,20 +162,13 @@ export default Marionette.View.extend({
   },
 
   /**
-   * Shows/hides the distribution map.
-   */
-  toggleMap() {
-    this.$el.find('#species-map').toggle('slow');
-  },
-
-  /**
    * Launches the species gallery viewing.
    */
   photoView() {
     const items = [];
     const options = {};
 
-    const photos = photosData[this.model.id].width.length;
+    const photos = photosData[this.model.id - 1].width.length;
     const author = this.model.get('author') || [];
     const width = this.model.get('width') || [];
     const height = this.model.get('height') || [];
