@@ -35,7 +35,7 @@ export default Marionette.View.extend({
     if (typeof common_name === 'object') {
        const language = appModel.get('language');
        common_name = common_name[language] && common_name[language]
-       
+
        if (!common_name) {
         common_name = this.model.get('UK').common_name;
        }
@@ -45,7 +45,7 @@ export default Marionette.View.extend({
     data.common_name = common_name;
     data.food = data.food.join('; ');
     data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.join('; ');
-    data.plant = data[locale].plant && data[locale].plant.join('; ');
+    data.plant = data[locale].plant && data[locale].plant.map(p => t(p)).join('; ');
     data.overwintering = data[locale].overwintering;
     data.comment = data[locale].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;

@@ -102,7 +102,7 @@
     <% if (obj.plant) { %>
     <p>
       <strong><%= t('Plant') %>:</strong>
-      <span><%= t(obj.plant) %></span>
+      <span><%= obj.plant %></span>
     </p>
     <% } %>
     <% if (obj.overwintering) { %>
