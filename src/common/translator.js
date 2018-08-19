@@ -3,7 +3,6 @@ import appModel from 'app_model';
 
 function translate(key) {
   let language = appModel.get('language');
-  const locale = appModel.get('country');
 
   const translations = dictionary[key];
   if (!translations) {
@@ -15,9 +14,8 @@ function translate(key) {
     return key;
   }
 
-  if (locale === 'BE' &&
-    (language === 'NL' || language === 'FR')) {
-    language = `${locale}_${language}`;
+  if (language === 'NL' || language === 'FR') {
+    language = `BE_${language}`;
   }
 
   const translated = translations[language];
