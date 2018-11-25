@@ -19,14 +19,14 @@ export default Marionette.View.extend({
   },
 
   serializeData() {
-    const locale = appModel.get('country');
+    const country = appModel.get('country');
     const sample = this.model.get('sample');
     const occ = sample.getOccurrence();
     const specie = occ.get('taxon') || {};
 
     // taxon
     const scientificName = specie.taxon;
-    const commonName = specie[locale] && specie[locale].common_name;
+    const commonName = specie[country] && specie[country].common_name;
 
     const locationPrint = sample.printLocation();
     const location = sample.get('location') || {};

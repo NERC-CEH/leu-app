@@ -105,7 +105,7 @@ const SampleView = Marionette.View.extend({
   },
 
   serializeData() {
-    const locale = appModel.get('country');
+    const country = appModel.get('country');
 
     const sample = this.model;
     const occ = sample.getOccurrence();
@@ -120,7 +120,7 @@ const SampleView = Marionette.View.extend({
       img = img[0];
     }
 
-    const taxon = specie.taxon || (specie[locale] && specie[locale].common_name);
+    const taxon = specie.taxon || (specie[country] && specie[country].common_name);
 
     const syncStatus = this.model.getSyncStatus();
 

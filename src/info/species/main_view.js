@@ -27,9 +27,9 @@ export default Marionette.View.extend({
   },
 
   serializeData() {
-    const locale = appModel.get('country');
+    const country = appModel.get('country');
 
-    let common_name = this.model.get(locale).common_name;
+    let common_name = this.model.get(country).common_name;
     common_name = common_name || this.model.get('UK').common_name;
 
     if (typeof common_name === 'object') {
@@ -41,13 +41,13 @@ export default Marionette.View.extend({
        }
     }
 
-    const data = $.extend(true, {}, this.model.attributes, this.model.attributes[locale]);
+    const data = $.extend(true, {}, this.model.attributes, this.model.attributes[country]);
     data.common_name = common_name;
     data.food = data.food.join('; ');
-    data.habitat = data[locale].habitat.comment && data[locale].habitat.comment.join('; ');
-    data.plant = data[locale].plant && data[locale].plant.map(p => t(p)).join('; ');
-    data.overwintering = data[locale].overwintering;
-    data.comment = data[locale].comment;
+    data.habitat = data[country].habitat.comment && data[country].habitat.comment.join('; ');
+    data.plant = data[country].plant && data[country].plant.map(p => t(p)).join('; ');
+    data.overwintering = data[country].overwintering;
+    data.comment = data[country].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;
     data.size = data.size && data.size.comment;
     data.colour = data.colour && data.colour.comment;

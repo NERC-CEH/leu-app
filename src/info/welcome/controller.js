@@ -2,15 +2,15 @@ import Log from 'helpers/log';
 import radio from 'radio';
 import appModel from 'app_model';
 import speciesCollection from 'common/species_collection';
-import MainView from '../../settings/locale/main_view';
+import MainView from '../../settings/country/main_view';
 import MainViewLanguage from '../../settings/language/main_view';
-
+window.appModel = appModel
 const API = {
   show() {
     radio.trigger('app:header:hide');
     radio.trigger('app:footer:hide');
 
-    API.showCountrySelection();
+    API.showLanguageSelection();
 
     radio.trigger('app:header:hide');
     radio.trigger('app:footer:hide');
@@ -22,12 +22,8 @@ const API = {
 
     // if exit on selection click
     mainView.on('save', () => {
-      API.onExit(mainView);
-      const locale = appModel.get('country');
-      if (locale === 'BE') {
-        API.showLanguageSelection();
-        return;
-      }
+      API.saveCountry(mainView);
+      appModel.save({ showWelcome: false });
       radio.trigger('home');
     });
   },
@@ -38,14 +34,31 @@ const API = {
 
     // if exit on selection click
     mainView.on('save', () => {
-      API.onExitLanguage(mainView);
+      API.saveLanguage(mainView);
+      const language = appModel.get('language');
+      if (language === 'NL' || language === 'FR') {
+        API.showCountrySelection();
+        return;
+      }
+
+      // apart from BE, the codes are the same for all the countries
+      const locales = {
+        EN: 'UK',
+        SK: 'SK',
+        CZ: 'CZ',
+        ITA: 'ITA',
+        PT: 'PT'
+      };
+
+      appModel.save({ country: locales[language]});
+
+      appModel.save({ showWelcome: false });
       radio.trigger('home');
     });
   },
 
-  onExit(mainView) {
+  saveCountry(mainView) {
     Log('Info:Welcome:Controller: exit country.');
-    appModel.save({ showWelcome: false });
 
     const value = mainView.getValues();
     if (value) {
@@ -54,7 +67,7 @@ const API = {
     }
   },
 
-  onExitLanguage(mainView) {
+  saveLanguage(mainView) {
     Log('Info:Welcome:Controller: exit language.');
 
     const value = mainView.getValues();

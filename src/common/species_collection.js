@@ -44,10 +44,10 @@ const SpeciesCollection = Backbone.Collection.extend({
     const list = _.cloneDeep(speciesData);
 
     // filter country species
-    const locale = appModel.get('country');
+    const country = appModel.get('country');
     let countryList = [];
     for (let j = 0; j < list.length; j++) {
-      if (list[j][locale].exist === 'YES') {
+      if (list[j][country].exist === 'YES') {
         countryList.push(list[j]);
       }
     }

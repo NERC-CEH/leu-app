@@ -21,7 +21,7 @@
 </li>
 <li class="table-view-divider"><%= t('Application') %></li>
 <li class="table-view-cell">
-  <a href="#settings/locale" class="navigate-right">
+  <a href="#settings/country" class="navigate-right">
     <span class="media-object pull-right descript"><%= obj.country %></span>
     <span class="media-object pull-left icon icon-location"></span>
     <%= t('Country') %>

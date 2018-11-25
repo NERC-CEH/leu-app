@@ -6,7 +6,7 @@ import App from 'app';
 import radio from 'radio';
 import Log from 'helpers/log';
 import MenuController from './menu/controller';
-import LocaleController from './locale/controller';
+import CountryController from './country/controller';
 import LanguageController from './language/controller';
 
 App.settings = {};
@@ -14,7 +14,7 @@ App.settings = {};
 const Router = Marionette.AppRouter.extend({
   routes: {
     'settings(/)': MenuController.show,
-    'settings/locale(/)': LocaleController.show,
+    'settings/country(/)': CountryController.show,
     'settings/language(/)': LanguageController.show,
     'settings/*path': () => { radio.trigger('app:404:show'); },
   },

@@ -20,7 +20,7 @@ export default Marionette.View.extend({
     };
 
     const current = appModel.get('language');
-    const locale = appModel.get('country');
+    const country = appModel.get('country');
 
     let languagesTemplate = '';
 

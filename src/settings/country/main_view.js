@@ -9,7 +9,7 @@ import JST from 'JST';
 export default Marionette.View.extend({
   tagName: 'ul',
   className: 'table-view',
-  template: JST['settings/locale/main'],
+  template: JST['settings/country/main'],
 
   triggers: {
     'click input[type="radio"]': 'save',
