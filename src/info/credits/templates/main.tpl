@@ -22,6 +22,11 @@
     </p>
   </li>
   <li>
+    <p>
+      Thanks to Anglia Ruskin University (Faculty of Science & Engineering) for work and financial support.
+    </p>
+  </li>
+  <li>
     <strong><%= t('Photographs and Illustrations:') %></strong>
     <p>
       <b><%= t('Front page') %></b>
