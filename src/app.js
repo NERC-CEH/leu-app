@@ -137,6 +137,13 @@ radio.on('app:main:hide', (options) => {
   App.regions.getRegion('main').hide(options).empty();
 });
 
+radio.on('app:header:hide', options => {
+  App.regions
+    .getRegion('header')
+    .hide(options)
+    .empty();
+});
+
 radio.on('app:footer:hide', options => {
   App.regions
     .getRegion('footer')

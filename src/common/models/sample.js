@@ -52,12 +52,6 @@ const Sample = Indicia.Sample.extend({
     const sample = {};
     const occurrences = {};
 
-    // todo: remove this bit once sample DB update is possible
-    // check if saved or already send
-    if (!this.metadata.saved || this.getSyncStatus() === Indicia.SYNCED) {
-      sample.send = false;
-    }
-
     // location
     const location = attrs.location || {};
     if (!location.latitude || !location.longitude) {
@@ -100,30 +94,6 @@ const Sample = Indicia.Sample.extend({
     }
 
     return null;
-  },
-
-  /**
-   * Set the sample for submission and send it.
-   */
-  setToSend() {
-    // don't change it's status if already saved
-    if (this.metadata.saved) {
-      return Promise.resolve(this);
-    }
-
-    this.metadata.saved = true;
-
-    if (!this.isValid({ remote: true })) {
-      // since the sample was invalid and so was not saved
-      // we need to revert it's status
-      this.metadata.saved = false;
-      return false;
-    }
-
-    Log('SampleModel: was set to send.');
-
-    // save sample
-    return this.save();
   },
 
   checkExpiredGroup() {

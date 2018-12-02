@@ -89,12 +89,12 @@ function syncSamples() {
     if (savedSamples.fetching) {
       savedSamples.once('fetching:done', () => {
         Log('Samples:router: syncing all samples.');
-        savedSamples.save(null, { remote: true });
+        savedSamples.syncAll();
       });
       return;
     }
     Log('Samples:router: syncing all samples.');
-    savedSamples.save(null, { remote: true });
+    savedSamples.syncAll();
   }
 }
 

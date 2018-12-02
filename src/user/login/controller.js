@@ -27,16 +27,16 @@ const API = {
     // HEADER
     const headerView = new HeaderView({
       model: new Backbone.Model({
-        title: t('Login'),
-      }),
+        title: t('Login')
+      })
     });
     radio.trigger('app:header', headerView);
 
-    mainView.on('form:submit', (data) => {
+    mainView.on('form:submit', data => {
       if (!Device.isOnline()) {
         radio.trigger('app:dialog', {
           title: t('Sorry'),
-          body: t('Looks like you are offline!'),
+          body: t('Looks like you are offline!')
         });
         return;
       }
@@ -50,7 +50,7 @@ const API = {
             radio.trigger('app:loader:hide');
             window.history.back();
           })
-          .catch((err) => {
+          .catch(err => {
             Log(err, 'e');
             radio.trigger('app:dialog:error', err);
           });
@@ -73,45 +73,51 @@ const API = {
    */
   login(details) {
     Log('User:Login:Controller: logging in.');
-    const promise = new Promise((fulfill, reject) => {
-      $.get({
-        async: true,
-        crossDomain: true,
-        url: CONFIG.users.url + encodeURIComponent(details.name), // url + user id
-        timeout: CONFIG.users.timeout,
-        beforeSend(xhr) {
-          const userAuth = btoa(`${details.name}:${details.password}`);
-          xhr.setRequestHeader('Authorization', `Basic ${userAuth}`);
-          xhr.setRequestHeader('x-api-key', CONFIG.indicia.api_key);
-          xhr.setRequestHeader('content-type', 'plain/text');
-        },
-        success(receivedData) {
-          const data = receivedData.data || {};
-          if (!data.id || !data.email || !data.name) {
-            const err = new Error('Error while retrieving login response.');
-            reject(err);
-            return;
-          }
+    const userAuth = btoa(`${details.name}:${details.password}`);
 
-          const fullData = _.extend(data, { password: details.password });
-          userModel.logIn(fullData);
-          fulfill(fullData);
-        },
-        error(xhr, textStatus) {
-          let message = textStatus;
-          if (xhr.responseJSON && xhr.responseJSON.errors) {
-            message = xhr.responseJSON.errors.reduce(
-              (name, err) => `${name}${err.title}\n`,
-              ''
-            );
-          }
-          reject(new Error(message));
-        },
-      });
-    });
+    const url = CONFIG.users.url + encodeURIComponent(details.name); // url + user id
+    const headers = {
+      Authorization: `Basic ${userAuth}`,
+      'x-api-key': CONFIG.indicia.api_key,
+      'content-type': 'plain/text'
+    };
 
-    return promise;
+    return fetch(url, {
+      headers
+    })
+      .then(this.tempCurlFix)
+      // .then(res => res.json())
+      .then(res => {
+        this.checkLoginErr(res);
+
+        const fullData = Object.assign({}, res.data, { password: details.password });
+        userModel.logIn(fullData);
+        return fullData;
+      })
   },
+
+  tempCurlFix(res) {
+    const curlErrText = '<div class="error">cUrl POST request failed. Please check cUrl is installed on the server and the $base_url setting is correct.<br/>URL:index.php/services/security/get_nonce<br/>Error number: 6<br/>Error message: Could not resolve host: index.php<br/>Server response<br/></div>';
+    return res.text().
+      then(textRes => {
+        if (textRes.includes(curlErrText)) {
+          textRes = textRes.replace(curlErrText, '');
+        }
+        return JSON.parse(textRes);
+      })
+  },
+
+  checkLoginErr(res) {
+    if (res.errors) {
+      let message = res.errors.reduce((name, err) => `${name}${err.title}\n`, '');
+      throw new Error(message);
+    }
+
+    const data = res.data || {};
+    if (!data.id || !data.email || !data.name) {
+      throw new Error('Error while retrieving login response.');
+    }
+  }
 };
 
 export { API as default };
