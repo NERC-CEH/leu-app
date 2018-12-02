@@ -4,7 +4,7 @@ import appModel from 'app_model';
 import speciesCollection from 'common/species_collection';
 import MainView from '../../settings/country/main_view';
 import MainViewLanguage from '../../settings/language/main_view';
-window.appModel = appModel
+
 const API = {
   show() {
     radio.trigger('app:header:hide');
@@ -47,10 +47,10 @@ const API = {
         SK: 'SK',
         CZ: 'CZ',
         ITA: 'ITA',
-        PT: 'PT'
+        PT: 'PT',
       };
 
-      appModel.save({ country: locales[language]});
+      appModel.save({ country: locales[language] });
 
       appModel.save({ showWelcome: false });
       radio.trigger('home');

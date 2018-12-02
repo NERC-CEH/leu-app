@@ -4,8 +4,10 @@
 import $ from 'jquery';
 import Marionette from 'backbone.marionette';
 import appModel from 'app_model';
+import './styles.scss';
 
 export default Marionette.View.extend({
+  id: 'language-selection',
   tagName: 'ul',
   className: 'table-view',
   template() {
@@ -20,14 +22,17 @@ export default Marionette.View.extend({
     };
 
     const current = appModel.get('language');
-    const country = appModel.get('country');
+    const isWelcomeScreen = !appModel.get('showWelcome');
 
     let languagesTemplate = '';
 
     for (const language of Object.keys(languages)) {
+      const isChecked = isWelcomeScreen && current === language;
       const langTpl = `
       <label class="item item-radio">
-        <input type="radio" name="group" value="${language}" ${current === language ? 'checked' : ''}>
+        <input type="radio" name="group" value="${language}" ${
+        isChecked ? 'checked' : ''
+      }>
         <div class="radio-content">
           <div class="item-content">
             ${languages[language]}
@@ -39,8 +44,7 @@ export default Marionette.View.extend({
       languagesTemplate += langTpl;
     }
 
-    const template = `<div class="list">${languagesTemplate}</div>`;
-    return template;
+    return `<div class="list">${languagesTemplate}</div>`;
   },
 
   triggers: {

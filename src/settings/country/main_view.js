@@ -3,10 +3,11 @@
  *****************************************************************************/
 import $ from 'jquery';
 import Marionette from 'backbone.marionette';
-import Device from 'helpers/device';
 import JST from 'JST';
+import './styles.scss';
 
 export default Marionette.View.extend({
+  id: 'country-selection',
   tagName: 'ul',
   className: 'table-view',
   template: JST['settings/country/main'],
@@ -31,7 +32,13 @@ export default Marionette.View.extend({
 
   serializeData() {
     const appModel = this.model;
+    const isWelcomeScreen = !appModel.get('showWelcome');
+
     const data = {};
+    if (!isWelcomeScreen) {
+      return data;
+    }
+
     data[appModel.get('country')] = true;
     return data;
   },
