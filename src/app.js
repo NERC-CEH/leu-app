@@ -1,8 +1,13 @@
 /** ****************************************************************************
  * App object.
- *****************************************************************************/
+ **************************************************************************** */
 // polyfills
-import 'es6-promise/auto';
+import 'core-js/es6/map';
+import 'core-js/es6/set';
+import 'core-js/fn/object/assign';
+import 'core-js/fn/array/fill';
+import 'core-js/fn/array/includes';
+import 'core-js/fn/string/includes';
 
 import $ from 'jquery';
 import Backbone from 'backbone';
@@ -11,23 +16,20 @@ import FastClick from 'fastclick';
 import radio from 'radio';
 import Log from 'helpers/log';
 import Update from 'helpers/update';
-import Analytics from 'helpers/analytics';
 import Device from 'helpers/device';
+import Analytics from 'helpers/analytics';
+import 'helpers/translator';
 import appModel from 'app_model';
 import CommonController from './common/controller';
 import DialogRegion from './common/views/dialog_region';
 import HideableRegion from './common/views/hideable_region';
-import './common/translator';
 import './common/router_extension';
-
-// init Analytics
-Analytics.init();
 
 const App = new Marionette.Application();
 
 App.navigate = (route, options = {}) => {
   Log(`App: navigating to ${route}.`);
-  const defaultOptions = { trigger: true };
+  const defaultOptions = { trigger: false };
   Backbone.history.navigate(route, $.extend(defaultOptions, options));
 };
 
@@ -63,7 +65,6 @@ App.on('start', () => {
 
     if (Backbone.history) {
       Backbone.history.start();
-
       if (App.getCurrentRoute() === '') {
         if (appModel.get('showWelcome')) {
           radio.trigger('info:welcome');
@@ -77,38 +78,35 @@ App.on('start', () => {
 
         // Although StatusB  ar in the global scope,
         // it is not available until after the deviceready event.
-        document.addEventListener('deviceready', () => {
-          Log('Showing the app.');
+        document.addEventListener(
+          'deviceready',
+          () => {
+            Log('Showing the app.');
 
-          window.StatusBar.overlaysWebView(true);
-          window.StatusBar.backgroundColorByName('black');
+            // iOS make space for statusbar
+            if (Device.isIOS()) {
+              $('body').addClass('ios');
+            }
 
-          // iOS make space for statusbar
-          if (Device.isIOS()) {
-            $('body').addClass('ios');
-          }
+            // hide loader
+            if (navigator && navigator.splashscreen) {
+              navigator.splashscreen.hide();
+            }
 
-          // hide loader
-          if (navigator && navigator.splashscreen) {
-            navigator.splashscreen.hide();
-          }
-
-          Analytics.trackEvent('App', 'initialized');
-        }, false);
-      } else {
-        // development loader
-        $(document).ready(() => {
-          $('#loader').remove();
-        });
+            Analytics.trackEvent('App', 'initialized');
+          },
+          false
+        );
       }
 
-      /**
-       import savedSamples from 'saved_samples';
-       $(document).ready(() => {
-         // For screenshots capture only
-          window.testing.screenshotsPopulate(savedSamples);
+      // For screenshots capture only
+      if (process.env.APP_SCREENSHOTS) {
+        $(document).ready(() => {
+          appModel.clear().set(appModel.defaults);
+          appModel.save();
+          window.screenshotsPopulate();
         });
-       */
+      }
     }
   });
 });
@@ -116,13 +114,13 @@ App.on('start', () => {
 // events
 radio.on('app:restart', App.restart);
 
-radio.on('app:dialog', (options) => {
+radio.on('app:dialog', options => {
   App.regions.getRegion('dialog').show(options);
 });
-radio.on('app:dialog:hide', (options) => {
+radio.on('app:dialog:hide', options => {
   App.regions.getRegion('dialog').hide(options);
 });
-radio.on('app:dialog:error', (options) => {
+radio.on('app:dialog:error', options => {
   App.regions.getRegion('dialog').error(options);
 });
 
@@ -138,11 +136,20 @@ radio.on('app:footer', (options) => {
 radio.on('app:main:hide', (options) => {
   App.regions.getRegion('main').hide(options).empty();
 });
-radio.on('app:header:hide', (options) => {
-  App.regions.getRegion('header').hide(options).empty();
+
+radio.on('app:footer:hide', options => {
+  App.regions
+    .getRegion('footer')
+    .hide(options)
+    .empty();
 });
-radio.on('app:footer:hide', (options) => {
-  App.regions.getRegion('footer').hide(options).empty();
+
+radio.on('app:loader', () => {
+  App.regions.getRegion('dialog').showLoader();
+});
+
+radio.on('app:loader:hide', () => {
+  App.regions.getRegion('dialog').hideLoader();
 });
 
 radio.on('app:404:show', () => {
@@ -154,4 +161,3 @@ radio.on('app:404:show', () => {
 });
 
 export { App as default };
-

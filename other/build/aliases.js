@@ -66,7 +66,8 @@ module.exports = grunt => ({
     'exec:cordova_copy_dist',
     'replace:cordova_config',
     'replace:cordova_build',
-    'exec:cordova_add_platforms',
+    'copy:cordova_hooks',
+    'exec:cordova_add_platforms'
   ],
 
   /**

@@ -8,7 +8,7 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const {BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const pkg = require('../package.json');
 
@@ -25,14 +25,14 @@ const config = {
 
   output: {
     path: DIST_DIR,
-    filename: '[name].js',
+    filename: '[name].js'
   },
   resolve: {
     modules: [
       path.resolve('./dist/_build'),
       path.resolve('./node_modules/'),
       path.resolve('./src/'),
-      path.resolve('./src/common/vendor'),
+      path.resolve('./src/common/vendor')
     ],
     alias: {
       app: 'app',
@@ -51,11 +51,12 @@ const config = {
       bootstrap: 'bootstrap/js/bootstrap',
       ratchet: 'ratchet/dist/js/ratchet',
       'photoswipe-lib': 'photoswipe/dist/photoswipe',
-      'photoswipe-ui-default': 'photoswipe/dist/photoswipe-ui-default',
-    },
+      'photoswipe-ui-default': 'photoswipe/dist/photoswipe-ui-default'
+    }
   },
   module: {
     rules: [
+      { test: /\.tpl/, loader: 'ejs-loader?variable=obj' },
       {
         test: /^((?!data\.).)*\.js$/,
         exclude: /(node_modules|bower_components|vendor(?!\.js))/,
@@ -69,11 +70,11 @@ const config = {
       },
       {
         test: /(\.png)|(\.svg)|(\.jpg)/,
-        loader: 'file-loader?name=images/[name].[ext]',
+        loader: 'file-loader?name=images/[name].[ext]'
       },
       {
         test: /(\.woff)|(\.ttf)/,
-        loader: 'file-loader?name=font/[name].[ext]',
+        loader: 'file-loader?name=font/[name].[ext]'
       },
       {
         test: /\.s?[c|a]ss$/,
@@ -87,13 +88,13 @@ const config = {
               sourceMap: true,
               plugins() {
                 return [autoprefixer('last 2 version')];
-              },
-            },
+              }
+            }
           },
-          `sass-loader?includePaths[]=${srcPath}`,
-        ],
-      },
-    ],
+          `sass-loader?includePaths[]=${srcPath}`
+        ]
+      }
+    ]
   },
 
   optimization: {
@@ -103,10 +104,16 @@ const config = {
         commons: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all',
-        },
-      },
-    },
+          chunks: 'all'
+        }
+      }
+    }
+  },
+
+  // ignore file sizes since cordova is localhost
+  performance: {
+    maxEntrypointSize: 10000000,
+    maxAssetSize: 10000000
   },
 
   plugins: [
@@ -137,24 +144,24 @@ const config = {
         APP_SCREENSHOTS: process.env.APP_SCREENSHOTS || false,
         APP_EXPERIMENTS: process.env.APP_EXPERIMENTS || false,
         APP_SENTRY_KEY: JSON.stringify(process.env.APP_SENTRY_KEY || ''),
-        APP_GA: JSON.stringify(process.env.APP_GA || false),
-      },
+        APP_GA: JSON.stringify(process.env.APP_GA || false)
+      }
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: 'style.css'
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: true,
       sourceMap: true,
-      chunksSortMode: 'dependency',
+      chunksSortMode: 'dependency'
     }),
-    new webpack.NamedModulesPlugin(),
+    new webpack.NamedModulesPlugin()
   ],
   stats: {
-    children: false,
+    children: false
   },
-  cache: true,
+  cache: true
 };
 
 if (process.env.NODE_ANALYZE) {
@@ -162,7 +169,7 @@ if (process.env.NODE_ANALYZE) {
 }
 
 if (process.env.APP_MANUAL_TESTING) {
-  config.entry.push('../test/manual-test-utils.js');
+  config.entry.push('./test/manual-test-utils.js');
 }
 
 if (process.env.APP_SCREENSHOTS) {

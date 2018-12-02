@@ -1,21 +1,17 @@
 /** ***************************************************************************
  * Load all vendor code here.
- **************************************************************************** */
+ *****************************************************************************/
 
-// polyfills
-import 'core-js/es6/map';
-import 'core-js/es6/set';
-import 'core-js/fn/object/assign';
-import 'core-js/fn/array/fill';
-import 'core-js/fn/array/includes';
-import 'core-js/fn/string/includes';
+// shims
+import 'es6-promise/auto';
+import 'indexeddbshim';
 
 import 'jquery';
 import 'lodash';
 import 'fastclick';
 import 'typeahead';
 import 'bootstrap';
-import 'ratchet';
+import '11';
 import 'hammerjs';
 import 'underscore';
 import 'backbone';
