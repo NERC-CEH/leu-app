@@ -112,7 +112,7 @@ const API = {
     });
   },
 
-  checkRegisterErr(res) {
+  checkLoginErr(res) {
     if (res.errors) {
       let message = res.errors.reduce(
         (name, err) => `${name}${err.title}\n`,
