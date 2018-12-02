@@ -29,7 +29,7 @@ const API = {
     radio.trigger('app:header', headerView);
 
     // Start registration
-    mainView.on('form:submit', (data) => {
+    mainView.on('form:submit', data => {
       if (!Device.isOnline()) {
         radio.trigger('app:dialog', {
           title: t('Sorry'),
@@ -47,7 +47,9 @@ const API = {
           .then(() => {
             radio.trigger('app:dialog', {
               title: t('Welcome aboard!'),
-              body: t('Before submitting any records please check your email and click on the verification link.'),
+              body: t(
+                'Before submitting any records please check your email and click on the verification link.'
+              ),
               buttons: [
                 {
                   title: t('OK, got it'),
@@ -63,7 +65,7 @@ const API = {
               },
             });
           })
-          .catch((err) => {
+          .catch(err => {
             Log(err, 'e');
             radio.trigger('app:dialog:error', err);
           });
@@ -76,57 +78,66 @@ const API = {
     radio.trigger('app:footer:hide');
   },
 
-  /**
-   * Starts an app sign in to the Drupal site process.
-   * The sign in endpoint is specified by CONFIG.login.url -
-   * should be a Drupal sight using iForm Mobile Auth Module.
-   *
-   * It is important that the app authorises itself providing
-   * api_key for the mentioned module.
-   */
   register(details) {
     Log('User:Register:Controller: registering.');
 
-    // app logins
-    const promise = new Promise((fulfill, reject) => {
-      $.ajax({
-        async: true,
-        crossDomain: true,
-        url: CONFIG.users.url,
-        method: 'POST',
-        processData: false,
-        data: JSON.stringify({ data: details }),
-        headers: {
-          'x-api-key': CONFIG.indicia.api_key,
-          'content-type': 'plain/text',
-        },
-        timeout: CONFIG.users.timeout,
-        success(receivedData) {
-          const data = receivedData.data || {};
-          if (!data.id || !data.email || !data.name ||
-            !data.firstname || !data.secondname) {
-            const err = new Error('Error while retrieving registration response.');
-            reject(err);
-            return;
-          }
-          const fullData = _.extend(receivedData.data, { password: details.password });
-          userModel.logIn(fullData);
-          fulfill(fullData);
-        },
-        error(xhr, textStatus) {
-          let message = textStatus;
-          if (xhr.responseJSON && xhr.responseJSON.errors) {
-            message = xhr.responseJSON.errors.reduce(
-              (name, err) => `${name}${err.title}\n`,
-              ''
-            );
-          }
-          reject(new Error(message));
-        },
-      });
-    });
+    const url = CONFIG.users.url;
+    const headers = {
+      'x-api-key': CONFIG.indicia.api_key,
+      'content-type': 'plain/text',
+    };
 
-    return promise;
+    return (
+      fetch(url, {
+        method: 'post',
+        mode: 'cors',
+        headers,
+        body: JSON.stringify({ data: details }),
+      })
+        .then(this.tempCurlFix)
+        // .then(res => res.json())
+        .then(res => {
+          this.checkRegisterErr(res);
+
+          const fullData = Object.assign({}, res, {
+            password: details.password,
+          });
+          userModel.logIn(fullData);
+          return fullData;
+        })
+    );
+  },
+
+  tempCurlFix(res) {
+    const curlErrText =
+      '<div class="error">cUrl POST request failed. Please check cUrl is installed on the server and the $base_url setting is correct.<br/>URL:index.php/services/security/get_nonce<br/>Error number: 6<br/>Error message: Could not resolve host: index.php<br/>Server response<br/></div>';
+    return res.text().then(textRes => {
+      if (textRes.includes(curlErrText)) {
+        textRes = textRes.replace(curlErrText, '');
+      }
+      return JSON.parse(textRes);
+    });
+  },
+
+  checkRegisterErr(res) {
+    if (res.errors) {
+      let message = res.errors.reduce(
+        (name, err) => `${name}${err.title}\n`,
+        ''
+      );
+      throw new Error(message);
+    }
+
+    const data = res || {};
+    if (
+      !data.id ||
+      !data.email ||
+      !data.name ||
+      !data.firstname ||
+      !data.secondname
+    ) {
+      throw new Error('Error while retrieving registration response.');
+    }
   },
 };
 

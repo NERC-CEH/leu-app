@@ -27,8 +27,8 @@ const API = {
     // HEADER
     const headerView = new HeaderView({
       model: new Backbone.Model({
-        title: t('Login')
-      })
+        title: t('Login'),
+      }),
     });
     radio.trigger('app:header', headerView);
 
@@ -36,7 +36,7 @@ const API = {
       if (!Device.isOnline()) {
         radio.trigger('app:dialog', {
           title: t('Sorry'),
-          body: t('Looks like you are offline!')
+          body: t('Looks like you are offline!'),
         });
         return;
       }
@@ -79,37 +79,45 @@ const API = {
     const headers = {
       Authorization: `Basic ${userAuth}`,
       'x-api-key': CONFIG.indicia.api_key,
-      'content-type': 'plain/text'
+      'content-type': 'plain/text',
     };
 
-    return fetch(url, {
-      headers
-    })
-      .then(this.tempCurlFix)
-      // .then(res => res.json())
-      .then(res => {
-        this.checkLoginErr(res);
-
-        const fullData = Object.assign({}, res.data, { password: details.password });
-        userModel.logIn(fullData);
-        return fullData;
+    return (
+      fetch(url, {
+        mode: 'cors',
+        headers,
       })
+        .then(this.tempCurlFix)
+        // .then(res => res.json())
+        .then(res => {
+          this.checkLoginErr(res);
+
+          const fullData = Object.assign({}, res.data, {
+            password: details.password,
+          });
+          userModel.logIn(fullData);
+          return fullData;
+        })
+    );
   },
 
   tempCurlFix(res) {
-    const curlErrText = '<div class="error">cUrl POST request failed. Please check cUrl is installed on the server and the $base_url setting is correct.<br/>URL:index.php/services/security/get_nonce<br/>Error number: 6<br/>Error message: Could not resolve host: index.php<br/>Server response<br/></div>';
-    return res.text().
-      then(textRes => {
-        if (textRes.includes(curlErrText)) {
-          textRes = textRes.replace(curlErrText, '');
-        }
-        return JSON.parse(textRes);
-      })
+    const curlErrText =
+      '<div class="error">cUrl POST request failed. Please check cUrl is installed on the server and the $base_url setting is correct.<br/>URL:index.php/services/security/get_nonce<br/>Error number: 6<br/>Error message: Could not resolve host: index.php<br/>Server response<br/></div>';
+    return res.text().then(textRes => {
+      if (textRes.includes(curlErrText)) {
+        textRes = textRes.replace(curlErrText, '');
+      }
+      return JSON.parse(textRes);
+    });
   },
 
-  checkLoginErr(res) {
+  checkRegisterErr(res) {
     if (res.errors) {
-      let message = res.errors.reduce((name, err) => `${name}${err.title}\n`, '');
+      let message = res.errors.reduce(
+        (name, err) => `${name}${err.title}\n`,
+        ''
+      );
       throw new Error(message);
     }
 
@@ -117,7 +125,7 @@ const API = {
     if (!data.id || !data.email || !data.name) {
       throw new Error('Error while retrieving login response.');
     }
-  }
+  },
 };
 
 export { API as default };
