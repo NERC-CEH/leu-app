@@ -8,6 +8,7 @@ import 'core-js/fn/object/assign';
 import 'core-js/fn/array/fill';
 import 'core-js/fn/array/includes';
 import 'core-js/fn/string/includes';
+import 'whatwg-fetch';
 
 import $ from 'jquery';
 import Backbone from 'backbone';
