@@ -10,7 +10,7 @@
 
   .app-logo {
     padding: 20px;
-    margin: -44px -15px 12%;
+    margin: 0 -15px 12%;
     background-color: rgba(165, 36, 43, 0.61);
     font-size: 53px;
     color: $color-white;
@@ -39,7 +39,6 @@
 // ios status bar fix
 .ios #app {
   #home {
-    margin: -60px -2% 0;
     overflow-x: hidden;
   }
 }
