@@ -65,6 +65,7 @@ App.on('start', () => {
     FastClick.attach(document.body);
 
     if (Backbone.history) {
+      Backbone.history.stop(); // https://stackoverflow.com/questions/7362989/backbone-history-has-already-been-started
       Backbone.history.start();
       if (App.getCurrentRoute() === '') {
         if (appModel.get('showWelcome')) {
