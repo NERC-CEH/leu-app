@@ -150,7 +150,6 @@ const CONFIG = {
           'Arable land, garden or park': 1716,
           'Industrial and Urban': 1722,
           'Mixed habitats': 1734,
-          Marine: 1758,
         },
       },
     },
