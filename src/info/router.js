@@ -17,11 +17,17 @@ import HomeController from './home/controller';
 import './credits/sponsor_logo.png';
 
 App.info = {};
+let scroll = 0;
 
 const Router = Marionette.AppRouter.extend({
   routes: {
     '': HomeController.show,
-    home: HomeController.show,
+
+    home: {
+      route:  HomeController.show,
+      after() {
+        scroll = 0;
+      }},
 
     'info(/)': InfoMenuController.show,
     'info/welcome(/)': WelcomeController.show,
@@ -52,7 +58,19 @@ const Router = Marionette.AppRouter.extend({
         title: t('Credits'), App, route: 'info/credits/main',
       }); },
     'info/species/:id(/)': SpeciesController.show,
-    'info/species(/)': SpeciesListController.show,
+    'info/species(/)':  {
+      route: SpeciesListController.show,
+      after() {
+        const mainRegion = App.regions.getRegion('main');
+        if (mainRegion.el !== 'string') {
+          mainRegion.el.scrollTop = scroll;
+        }
+      },
+      leave() {
+        const mainRegion = App.regions.getRegion('main');
+        scroll = mainRegion.el.scrollTop;
+      },
+    },
     'info/*path': () => { radio.trigger('app:404:show'); },
   },
 });
