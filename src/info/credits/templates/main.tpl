@@ -23,7 +23,7 @@
   </li>
   <li>
     <p>
-      Thanks to Anglia Ruskin University (Faculty of Science & Engineering) for work and financial support.
+      Thanks to the Centre of Ecology & Hydrology and Anglia Ruskin University (Faculty of Science & Engineering) for work and financial support
     </p>
   </li>
   <li>
