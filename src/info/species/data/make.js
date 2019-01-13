@@ -4,7 +4,6 @@
 // #
 // # {A, B, [C, C, C], [D], E:{A, B}}, F:{P:[L]}
 
-'use strict';
 
 const parse = require('csv-parse');
 const fs = require('fs');
@@ -36,12 +35,12 @@ function setColumnObj(obj, columnName, value) {
   const array = keyFull[keyFull.length - 1] === ']';
   const object = keyFull[keyFull.length - 1] === '}';
 
-
   if (!array && !object) {
-    return obj[columnName] = value;
+    return (obj[columnName] = value);
   }
 
-  let index, key;
+  let index,
+    key;
   if (array) {
     index = keyFull.indexOf('[');
     key = keyFull.substring(0, index);
@@ -63,14 +62,14 @@ function setColumnObj(obj, columnName, value) {
       obj[key] = {};
     }
 
-    const newColumnName = keyFull.substring(index + 1 , keyFull.length - 1);
+    const newColumnName = keyFull.substring(index + 1, keyFull.length - 1);
     return setColumnObj(obj[key], newColumnName, value);
   }
 }
 
 function normalizeValue(value) {
   // check if int
-  //https://coderwall.com/p/5tlhmw/converting-strings-to-number-in-javascript-pitfalls
+  // https://coderwall.com/p/5tlhmw/converting-strings-to-number-in-javascript-pitfalls
   const int = value * 1;
   if (!isNaN(int)) return int;
   return value;
@@ -95,20 +94,20 @@ function main(output) {
 /**
  * Parse raw CSV file.
  */
-fs.readFile(`./${inputFileName}.csv`, 'utf8', function (err,data) {
+fs.readFile(`./${inputFileName}.csv`, 'utf8', (err, data) => {
   if (err) {
     return console.log(err);
   }
 
-  parse(data, {}, function(err, output){
+  parse(data, {}, (err, output) => {
     const obj = main(output);
 
-    fs.writeFile(`./${inputFileName}.data.json`, JSON.stringify(obj), null, 4, function(err) {
+    fs.writeFile(`./${inputFileName}.data.json`, JSON.stringify(obj),  (err) => {
       if (err) {
         return console.log(err);
       }
 
-      console.log("The file was saved!");
+      console.log('The file was saved!');
     });
   });
 });

@@ -6,9 +6,8 @@ module.exports = function (grunt) {
     data: {
       command() {
         return 'cd src/info/species/data && ' +
-          'node --harmony make.js species &&' +
-          'node --harmony make.js photos &&' +
-          'node --harmony make_translations.js &&' +
+          'node make.js species &&' +
+          'node make.js photos &&' +
           'mkdir -p ../../../../dist/_build &&' +
           'mv *data.json ../../../../dist/_build';
       },
