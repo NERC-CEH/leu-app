@@ -2,7 +2,7 @@
   "env": {
     "browser": true
   },
-  "extends": "airbnb/base",
+  "extends": "airbnb-base" ,
   "rules": {
     "linebreak-style": 0,
     "import/no-extraneous-dependencies": 0, // TODO: remove once Webpack fixes it
