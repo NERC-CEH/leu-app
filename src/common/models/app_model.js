@@ -17,7 +17,7 @@ let AppModel = Backbone.Model.extend({
     filters: {},
 
     country: 'UK',
-    language: 'EN',
+    language: 'en_GB',
 
     showWelcome: true,
 
@@ -71,6 +71,25 @@ let AppModel = Backbone.Model.extend({
     this.set('filters', filters);
     this.save();
     this.trigger('change:filter');
+  },
+
+  getSpeciesLocalName(species) {
+    let common_name = species.attributes[this.get('country')].common_name;
+    common_name = common_name || species.attributes['UK'].common_name;
+
+    if (typeof common_name === 'object') {
+      const languageCode = appModel
+        .get('language')
+        .split('_')[0]
+        .toLocaleUpperCase();
+      common_name = common_name[languageCode] && common_name[languageCode];
+
+      if (!common_name) {
+        common_name = species.attributes['UK'].common_name;
+      }
+    }
+
+    return common_name;
   },
 });
 

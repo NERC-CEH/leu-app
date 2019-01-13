@@ -1,0 +1,1919 @@
+# Translators:
+# CEH Apps, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: temp\n"
+"Last-Translator: CEH Apps, 2019\n"
+"Language-Team: Slovak (Slovakia) (https://www.transifex.com/ceh/teams/95029/sk_SK/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sk_SK\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+"X-Generator: POEditor.com\n"
+
+msgid "Colour"
+msgstr "Farba"
+
+msgid "black"
+msgstr "Čierna"
+
+msgid "brown"
+msgstr "Hnedá"
+
+msgid "red"
+msgstr "Červená"
+
+msgid "orange"
+msgstr "Oranžová"
+
+msgid "yellow"
+msgstr "Žltá"
+
+msgid "pink"
+msgstr "Ružová"
+
+msgid "cream/beige"
+msgstr "Krémová/béžová"
+
+msgid "white"
+msgstr "Biela"
+
+msgid "Basic colour"
+msgstr "Základná farba"
+
+msgid "Beige"
+msgstr "Béžová"
+
+msgid "Black"
+msgstr "Čierna"
+
+msgid "Black, brown, maroon"
+msgstr "Čierna, hnedá, gaštanová"
+
+msgid "Chestnut"
+msgstr "Gaštanová"
+
+msgid "Dark orange"
+msgstr "Tmavo-oranžová"
+
+msgid "July-April = beige April-June = reddish"
+msgstr "Júl-apríl = béžová, apríl-jún = červenkastá"
+
+msgid "Maroon-brown"
+msgstr "Gaštanovo-hnedá"
+
+msgid "Orange"
+msgstr "Oranžová"
+
+msgid "Orange-red"
+msgstr "Oranžovo-červená"
+
+msgid "Red"
+msgstr "Červená"
+
+msgid "Russet or burgundy"
+msgstr "Červenohnedá"
+
+msgid "Salmon, orange-red"
+msgstr "Lososová, oranžovo-červená"
+
+msgid "Tan brown"
+msgstr "Bledo-hnedá"
+
+msgid "Yellow"
+msgstr "Žltá"
+
+msgid "Yellow or black"
+msgstr "Žltá alebo čierna"
+
+msgid "Yellow, orange-red"
+msgstr "Žltá, oranžovo-červená"
+
+msgid "Black, juvenile red brown"
+msgstr "Čierna, juvenilné štádiá červeno-hnedá"
+
+msgid "Ochroid or yellow"
+msgstr "Okrová alebo žltá"
+
+msgid "Beige to orange-red"
+msgstr "Béžová až oranžovo-červená"
+
+msgid "Light yellow-brown"
+msgstr "Bledo žlto-hnedá"
+
+msgid "Orange-red or ochroid"
+msgstr "Oranžovo-červená alebo okrová"
+
+msgid "Ochroid to red"
+msgstr "Okrová až červená"
+
+msgid "Matt brown"
+msgstr "Matná, hnedá"
+
+msgid "Brown-orange or rusty"
+msgstr "Hnedo-oranžová alebo hrdzavá"
+
+msgid "Cream, yellowish, pink or reddish"
+msgstr "Krémová, žltkastá, ružová alebo červenkastá"
+
+msgid "Rusty brown or black"
+msgstr "Hrdzavo-hnedá alebo čierna"
+
+msgid "White, cream, yellowish or pink"
+msgstr "Biela, krémová, žltkastá alebo ružová"
+
+msgid "Brown"
+msgstr "Hnedá"
+
+msgid "Pattern colour"
+msgstr "Farba vzoru"
+
+msgid "Black spots"
+msgstr "Čierne bodky"
+
+msgid "Black spots with or without cream rings around them"
+msgstr "Čierne bodky s alebo bez krémového lemu"
+
+msgid "Black stripes, spots and patches"
+msgstr "Čierne pásiky, bodky alebo škvrny"
+
+msgid "Brown or black spots "
+msgstr "Hnedé alebo čierne bodky"
+
+msgid "Cream spots"
+msgstr "Krémové bodky"
+
+msgid "Cream streaking"
+msgstr "Krémové pruhovanie"
+
+msgid "Cream stripes and spots"
+msgstr "Krémové pásiky a bodky"
+
+msgid "None or dark oblique line posteriorly"
+msgstr "Žiadne alebo vzadu prítomné tmavé šikmé čiarky"
+
+msgid "Orange-red spots"
+msgstr "Oranžovo-červené bodky"
+
+msgid "Orange stripes, spots and patches"
+msgstr "Oranžové pásiky, bodky a škvrny"
+
+msgid "Red spots"
+msgstr "Červené bodky"
+
+msgid "Red, orange, cream"
+msgstr "Červená, oranžová, krémová"
+
+msgid "White spots"
+msgstr "Biele bodky"
+
+msgid "Yellow or off-white spots"
+msgstr "Žlté alebo špinavo-biele bodky"
+
+msgid "No spots"
+msgstr "Bez bodiek"
+
+msgid "Yellow spots"
+msgstr "Žlté bodky"
+
+msgid "Orange spots"
+msgstr "Oranžové bodky"
+
+msgid "Yellow-orange spots"
+msgstr "Žlto-oranžové bodky"
+
+msgid "Diamond-shaped black spots "
+msgstr "Čiene bodky v tvare diamantov"
+
+msgid "None"
+msgstr "Žiadne"
+
+msgid "None or irregular light patches"
+msgstr "Žiadny alebo nepravidelné bledé škvrny"
+
+msgid "Angular black spots, black suture"
+msgstr "Hranaté čierne bodky, čierny šev"
+
+msgid "Yellow rounded spots"
+msgstr "Žlto-zaoblené bodky"
+
+msgid ""
+"White (mainly in rusty individuals) or lemon yellow (in black individuals)"
+msgstr ""
+"Biele (hlavne hrdzavé jedince) alebo citrónové či žlté (čierne jedince)"
+
+msgid "Black stripes"
+msgstr "Čierne pásiky"
+
+msgid "Black with wide yellow-orange lateral margins"
+msgstr "Čierny s veľmi žlto-oranžovým bočnými okrajmi"
+
+msgid "Number of spots"
+msgstr "Počet bodiek"
+
+msgid "0-7 (usually 2)"
+msgstr "0-7 (zvyčajne 2)"
+
+msgid "0-7 (usually 5)"
+msgstr "0-7 (zvyčajne 5)"
+
+msgid "0-9 but nearly always 7"
+msgstr "0-9 ale zvyčajne 7"
+
+msgid "0-10  (usually spotless)"
+msgstr "0-10 (zvyčajne bez bodiek)"
+
+msgid "0-15 (usually 10)"
+msgstr "0-15 (zvyčajne 10)"
+
+msgid "0-20"
+msgstr "0-20"
+
+msgid "0-23 (usually 15)"
+msgstr "0-23 (zvyčajne 15)"
+
+msgid "0-15 "
+msgstr "0-15"
+
+msgid "0-26 (usually 20)"
+msgstr "0-26 (zvyčajne 20)"
+
+msgid "2"
+msgstr "2"
+
+msgid "2-4 (usually 4)"
+msgstr "2-4 (zvyčajne 4)"
+
+msgid "2-6  (usually 6)"
+msgstr "2-6 (zvyčajne 6)"
+
+msgid "3-15  (usually 9)"
+msgstr "3-15 (zvyčajne 9)"
+
+msgid "4"
+msgstr "4"
+
+msgid "4-14 (usually 14)"
+msgstr "4-14 (zvyčajne 14)"
+
+msgid "5"
+msgstr "5"
+
+msgid "5-9 (usually 5)"
+msgstr "5-9 (zvyčajne 5)"
+
+msgid "5-11 (usually 7)"
+msgstr "5-11 (zvyčajne 7)"
+
+msgid "6"
+msgstr "6"
+
+msgid "7"
+msgstr "7"
+
+msgid "7-11 (usually 11)"
+msgstr "7-11 (zvyčajne 11)"
+
+msgid "7-15 (usually 13)"
+msgstr "7-15 (zvyčajne 13)"
+
+msgid "10"
+msgstr "10"
+
+msgid "11"
+msgstr "11"
+
+msgid "12"
+msgstr "12"
+
+msgid "12-16 (usually 16)"
+msgstr "12-16 (zvyčajne 16)"
+
+msgid "13-18 (usually 16)"
+msgstr "13-18 (zvyčajne 16)"
+
+msgid "14"
+msgstr "14"
+
+msgid "14-18"
+msgstr "14-18"
+
+msgid "15-21 (usually 19)"
+msgstr "15-21 (zvyčajne 19)"
+
+msgid "16"
+msgstr "16"
+
+msgid "20-22"
+msgstr "20-22"
+
+msgid "4-6"
+msgstr "4-6"
+
+msgid "19"
+msgstr "19"
+
+msgid "12-14"
+msgstr "12-14"
+
+msgid "7-11"
+msgstr "7-11"
+
+msgid "9-11"
+msgstr "9-11"
+
+msgid "0"
+msgstr "0"
+
+msgid "20"
+msgstr "20"
+
+msgid "12-13"
+msgstr "12-13"
+
+msgid "usually 3"
+msgstr "Zvyčajne 3"
+
+msgid "usually 0"
+msgstr "Zvyčajne 0"
+
+msgid "7-9"
+msgstr "7-9"
+
+msgid "16-20"
+msgstr "16-20"
+
+msgid "Spot fusions"
+msgstr "Splynutie (fúzia) bodiek"
+
+msgid "3 lateral spots usually fused"
+msgstr "3 bočné bodky zvyčajne spojené"
+
+msgid "Common"
+msgstr "Bežná"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Not common"
+msgstr "Nie bežné"
+
+msgid "Occasionally"
+msgstr "Občasné"
+
+msgid "Rare"
+msgstr "Zriedkavá"
+
+msgid "Very common"
+msgstr "Veľmi bežné"
+
+msgid "Very rare"
+msgstr "Veľmi zriedkavá"
+
+msgid "Sometimes"
+msgstr "Niekedy"
+
+msgid "Yes"
+msgstr "Áno"
+
+msgid "N/A"
+msgstr "Nezistená"
+
+msgid "Melanic (black) form"
+msgstr "Melanická (čierna) forma"
+
+msgid "Various and common "
+msgstr "Bežná, rôzne melanické formy"
+
+msgid "Black with a white patch on each side"
+msgstr "Čierna s bielymi škvrnami na každej strane"
+
+msgid "Black with anterior-lateral white marks"
+msgstr "Čierny s prednými alebo bočnými bielymi znakmi"
+
+msgid "Many and common"
+msgstr "U mnohých jedincov, bežná"
+
+msgid "Pronotum pattern"
+msgstr "Vzor štítu"
+
+msgid "one colour"
+msgstr "Jednofarebný"
+
+msgid "with spots"
+msgstr "S bodkami"
+
+msgid "M-shape"
+msgstr "Tvar písmena M"
+
+msgid "with white patch on each side"
+msgstr "S bielymi škvrami na každej strane"
+
+msgid "none of them"
+msgstr "Žiadny z ponuky"
+
+msgid "Pronotum"
+msgstr "Štít"
+
+msgid "Beige with black spots"
+msgstr "Béžový s čiernymi bodkami"
+
+msgid "Beige or red with 6 black spots"
+msgstr "Béžový alebo červený so 6 čiernymi bodkami"
+
+msgid "Beige with brown m-mark"
+msgstr "Béžový s hnedým M"
+
+msgid "Black with white patch at each side"
+msgstr "Čierny s bielymi škvrnami na každej strane"
+
+msgid "Black with white sides"
+msgstr "Čierny s bielym sfarbením po stranách"
+
+msgid "Maroon with lateral posterior off-white marks"
+msgstr "Gaštanový so špinavobielymi znakmi vzadu a po bokoch "
+
+msgid "Russet with black spots "
+msgstr "Červenohnedý s čiernymi bodkami"
+
+msgid ""
+"White or cream with up to 5 spots, or fused lateral spots forming 2 curved "
+"lines, M-shaped mark or solid trapezoid"
+msgstr ""
+"Biely alebo krémový so zvyčajne 5 bodkami, bočné bodky môžu splynúť a tvoriť"
+" 2 oblé čiary, tvar písmena M alebo lichobežník"
+
+msgid "White with 5 dark spots, which may be fused"
+msgstr "Biely s 5 tmavými bodkami, ktoré môžu byť zliate"
+
+msgid "White with 5-9 black spots"
+msgstr "Biely s 5-9 čienymi bodkami"
+
+msgid "White with black M-mark"
+msgstr "Biely s čiernym M"
+
+msgid "White with black pattern"
+msgstr "Biely s čiernym vzorom"
+
+msgid "White with chestnut m-mark or trapezium"
+msgstr "Biely s gaštanovým M alebo lichobežníkom"
+
+msgid "White with rounded m-mark"
+msgstr "Biely s oválnym M"
+
+msgid "Yellow or cream with black spots or trapezium or crown mark"
+msgstr "Žltý alebo krémový s čiernymi bodkami, lichobežníkom alebo \"korunou\""
+
+msgid "Yellow with five discrete black spots"
+msgstr "Žltý s 5 diskrétnymi čiernymi bodkami"
+
+msgid " White with 5 dark spots, which may be fused, or dark trapezium mark "
+msgstr ""
+"Biely s 5 tmavými bodkami, ktoré môžu byť zliate, alebo tmavého "
+"lichobežníkovitého tvaru"
+
+msgid ""
+"Beige with 6 black spots (VV pattern)  or up to nine spots with anterior "
+"pair and middle spot small."
+msgstr ""
+"Béžový s 6 čiernymi bodkami (vzor VV) alebo s bodkami (zvyčajne do 9), "
+"predné a bočné bodky sú malé "
+
+msgid "Yellow-brown"
+msgstr "Žlto-hnedá"
+
+msgid "Black, anterior angles and margins widely white"
+msgstr "Čierny, predné rohy a okraje štítu sú biele"
+
+msgid "Black with large white trapeziodal patches on anterior angle"
+msgstr "Čierny s veľkými lichobežníkovými škvrnami na predných rohoch"
+
+msgid ""
+"Posteriorly black, anterior margin and angles pale, border between colours "
+"wavy or four-lobed"
+msgstr ""
+"Vzadu čierny, predné okraje a rohy svetlé, hranica medzi farbami zvlnená"
+
+msgid "Brown with black spot at centre, rarely with other black markings."
+msgstr "Hnedý s čiernymi bodkami v strede, zriedkavo s iným čiernym vzorom"
+
+msgid ""
+"Black, anterior and lateral margins with equally wide white stripe, border "
+"between the two colours slightly wavy"
+msgstr ""
+"Čierny, predné a bočné okraje s bielymi pásmi, hranica medzi dvoma farbami "
+"mierne zvlnená"
+
+msgid "White to beige with seven black spots"
+msgstr "Biely až béžový so 7 čiernymi bodkami"
+
+msgid "Black with white lateral margins"
+msgstr "Čierny s bielymi bočnými okrajmi"
+
+msgid "Black with large white fore angles and middle white band"
+msgstr "Čierny, predné okraje biele, v strede biely pruh"
+
+msgid "Black with wide yellow or brown lateral margins and fore angles"
+msgstr "Čierny so silne žltými alebo hnedými prednými a bočnými okrajmi"
+
+msgid ""
+"Dark with wide white lateral margins, strongly arched in the shape of the "
+"letter C"
+msgstr "Tmavý s bielymi zadými okrajmi, silne klenutými v tvare písmena C"
+
+msgid "Brown-orange, transparent with opaque white patches"
+msgstr "Hnedo-oranžový, transparentný s nepriehľadnými bielymi škvrnami"
+
+msgid "Black with white anterior and lateral margins"
+msgstr "Čierny s bielymi prednými a bočnými okrajmi"
+
+msgid "Black, anterior angles with small white area"
+msgstr "Čierny, predné okraje s malými bielymi plôškami"
+
+msgid ""
+"Black, fore corners (or sometimes both lateral and fore margins) of pronotum"
+" yellowish."
+msgstr "Čierny, predné rohy (občas aj celé predné a zadné okraje) žltkasté "
+
+msgid ""
+"Black, fore angles of pronotum may be slightly cleared to yellowish colour"
+msgstr "Čierny, predné okraje môžu byť mierne žltkastej farby"
+
+msgid ""
+"Yellow-brown, with white lateral and fore margin feebly cut around head, "
+"transparent, partially covering eyes. "
+msgstr ""
+"Žlto-hnedý, s bielymi prednými a bočnými okrajmi okolo hlavy, transparentný,"
+" čiastočne prekrývajúci oči"
+
+msgid ""
+"Yellow-brown, with white patches at\n"
+"fore and hind angles, sometimes with a white patch behind at the centre"
+msgstr ""
+"Žlto-hnedý, s bielymi škvrnami na predných a zadných okrajoch, občas s "
+"bielou škvrnou v strede"
+
+msgid "Black, anterior angles widely white, fore margin in males white"
+msgstr "Čierny, vnútorné rohy biele, predné okraje u samcov biele"
+
+msgid ""
+"Black, anterior angles and margins widely white, border between the two "
+"colours with four deep lobes"
+msgstr ""
+"Čierny, vnútorné rohy a okraje biele, hranica medzi farbami je tvorená "
+"hlbokými lalokmi"
+
+msgid "Reddish yellow"
+msgstr "Črveno-žltý"
+
+msgid "Habitat"
+msgstr "Stanovište"
+
+msgid "Grassland, meadow"
+msgstr "trávnaté a spásané lúky"
+
+msgid "Deciduous trees and hedgerows "
+msgstr "listnaté stromy a živé ploty"
+
+msgid "Conifer woodlands"
+msgstr "ihličnaté lesy"
+
+msgid "Deciduous trees"
+msgstr "listnaté stromy"
+
+msgid "Deciduous woodland"
+msgstr "listnanté lesy"
+
+msgid "Grassland, meadows "
+msgstr "trávnaté a spásané lúky"
+
+msgid "Heather heathland"
+msgstr "vresoviská"
+
+msgid "Heather heathland, conifer scrub"
+msgstr "vresoviská, ihličnaté kroviny"
+
+msgid "Hedgerows and deciduous trees"
+msgstr "listnaté stromy a živé ploty"
+
+msgid "Herbage and shrub layers on well drained soils"
+msgstr "byliny a kríky na dobre odvodnených pôdach"
+
+msgid "Low herbage"
+msgstr "nízika vegetácia"
+
+msgid "Low vegetation"
+msgstr "nízka vegetácia"
+
+msgid "Mature Scots pine"
+msgstr "borovica lesná"
+
+msgid "Needled conifers"
+msgstr "ihličnany"
+
+msgid "Reed-beds and wetlands"
+msgstr "trstiny a mokrade"
+
+msgid "Scots pine woodland"
+msgstr "lesy s prevahou borovice lesnej"
+
+msgid "Trees"
+msgstr "stromy"
+
+msgid "Unstable river shingle"
+msgstr "nestabilné brehy riek"
+
+msgid "Varied"
+msgstr "rôzne"
+
+msgid "Varied but close to ant nests"
+msgstr "rôzne, ale v blízkosti mravenísk"
+
+msgid "Varied, but often low herbage"
+msgstr "rôzne, ale často na bylinách"
+
+msgid "Varied, but particularly dune systems"
+msgstr "rôzne, ale najmä na dunách"
+
+msgid "Various heathers"
+msgstr "rôzne vresy"
+
+msgid "Very varied"
+msgstr "veľmi variabilná"
+
+msgid "Wetlands"
+msgstr "mokrade"
+
+msgid "Coniferous trees"
+msgstr "ihličnaté stromy"
+
+msgid "Mixed woodlands"
+msgstr "zmiešané lesy"
+
+msgid "Peat bogs"
+msgstr "pašeliniská"
+
+msgid "Gardens"
+msgstr "záhrady"
+
+msgid "Wet and shaded stands on herbs"
+msgstr "mokré a zatienené porasty bylín"
+
+msgid "Lowland steppes"
+msgstr "nížinné stepy"
+
+msgid "Herbs"
+msgstr "byliny"
+
+msgid "Wet woodlands"
+msgstr "vlhké lesy"
+
+msgid "Steppes"
+msgstr "stepy"
+
+msgid "Meadows"
+msgstr "Spásané lúky"
+
+msgid "Fields"
+msgstr "polia"
+
+msgid "Grassland"
+msgstr "trávnaté lúky"
+
+msgid "Heather"
+msgstr "vresoviská"
+
+msgid "Allotments"
+msgstr "záhrady s vysadenými plodinami"
+
+msgid "Marshes"
+msgstr "močiare"
+
+msgid "Mountains"
+msgstr "hory"
+
+msgid "Shrubs"
+msgstr "kroviny"
+
+msgid "Forest margins"
+msgstr "okraje lesov"
+
+msgid "Dry stands"
+msgstr "suché porasty bylín"
+
+msgid "Bushes"
+msgstr "kríky"
+
+msgid "Alpine meadows"
+msgstr "alpínske lúky"
+
+msgid "Vegetation among rocks"
+msgstr "vegetácia medzi kameňmi"
+
+msgid "Coniferous forests in highlands and mountains"
+msgstr "ihličnaté lesy vo vysokých nadmorských výškach a horách"
+
+msgid "Wet deciduous woodlands"
+msgstr "vlhké listnaté lesy"
+
+msgid "Warmer and drier sites"
+msgstr "teplejšie a suchšie lokality"
+
+msgid "Canopy"
+msgstr "koruny stromov"
+
+msgid "Mixed trees"
+msgstr "rôzne dreviny"
+
+msgid "Forests"
+msgstr "lesy"
+
+msgid "Pine forests"
+msgstr "borovicové lesy"
+
+msgid "Wet deciduous forests"
+msgstr "vlhké listnaté lesy"
+
+msgid "Rocks"
+msgstr "skaly"
+
+msgid "Marine"
+msgstr "Morský"
+
+msgid "Coast"
+msgstr "Pobrežný"
+
+msgid "Inland waters"
+msgstr "Sladkovodné habitaty"
+
+msgid "Bogs and fens"
+msgstr "Rašeliniská a močiare"
+
+msgid "Grasslands"
+msgstr "Trávnaté lúky"
+
+msgid "Heathland, scrub, hedgerow"
+msgstr "Vresoviská, kroviny a živé ploty"
+
+msgid "Woodland"
+msgstr "Lesy"
+
+msgid "Unvegetated or sparsely vegetated habitats"
+msgstr "Habitaty bez vegetácie alebo len  riedko zarastené"
+
+msgid "Arable land, garden or park"
+msgstr "Ornice, záhrady a parky"
+
+msgid "Industrial and Urban"
+msgstr "Mestské a priemyselné zóny"
+
+msgid "Mixed habitats"
+msgstr "Zmiešané habitaty"
+
+msgid "Leg colour"
+msgstr "Farba nôh"
+
+msgid "Russet "
+msgstr "Červenohnedá"
+
+msgid "Yellow-brown with black spots on tibiae"
+msgstr "Žlto-hnedá s čiernymi bodkami na tíbiách"
+
+msgid "Red-yellow"
+msgstr "Červeno-žltá"
+
+msgid "Black-brown"
+msgstr "Čierno-hnedá"
+
+msgid "Rusty-brown"
+msgstr "Hrdzavo-hnedá"
+
+msgid "Orange-brown"
+msgstr "Oranžovo-hnedá"
+
+msgid "Black, fore and mid tibiae brown at tip."
+msgstr "Čierna, prvé dva páry tíbii na konci hnedé"
+
+msgid "Black, fore tibiae brown inside and at tip."
+msgstr "Čierna, predný pár tíbií vo vnútri a na koncoch hnedý"
+
+msgid ""
+"Femora black, fore tibiae brown with black outer margin, mid and hind tibiae"
+" black with brown tips"
+msgstr ""
+"Stehná čierne, prvý pár tíbií hnedý s čiernym vonkajším okrajom, druhý a "
+"tretí pár tíbií čierny s hnedým koncom"
+
+msgid ""
+"Forelegs mostly\n"
+"yellow-brown, middle legs partially, hind legs mostly black"
+msgstr ""
+"Prvý pár nôh zvyčajne žlto-hnedý, druhý pár iba čiastočne, tretí pár "
+"zvyčajne čierny"
+
+msgid "Yellow-brown, femora partly black"
+msgstr "Žlto-hnedá, stehná zčasti čierne"
+
+msgid "Black, knees and tarsi brown"
+msgstr "Čierne, kolená a chodidlá (tarsi) hnedé"
+
+msgid "Black, brown or bicolour"
+msgstr "Čierna, hnedá, dvojfarebná"
+
+msgid "Habitat for selecting"
+msgstr "Stanovište"
+
+msgid "Sand dunes"
+msgstr "Pieskové duny"
+
+msgid "River shingle"
+msgstr "Brehy riek"
+
+msgid "Wet habitats"
+msgstr "Vlhké habitaty"
+
+msgid "Agricultural areas"
+msgstr "Poľnohospodárske oblasti"
+
+msgid "Heathland"
+msgstr "Vresoviská"
+
+msgid "Gardens, allotments and parklands"
+msgstr "Záhrady, záhrady s vysadenými plodinami a parky"
+
+msgid "Urban, artificial habitats"
+msgstr "Mestké, neprírodné habitaty"
+
+msgid "Forests and woodlands"
+msgstr "Lesy"
+
+msgid "Host plant"
+msgstr "Hostiteľská rastlina"
+
+msgid "Various grasses and low plants"
+msgstr "rôzne trávy a nízke rastliny"
+
+msgid "Various trees "
+msgstr "rôzne stromy"
+
+msgid "Deciduous trees, particularly sycamore and ash"
+msgstr "listnaté stromy, hlavne javor horský a jaseň štíhly"
+
+msgid "Larch, firs, pines, etc"
+msgstr "smrekovec opadavý, jedle a borovice"
+
+msgid "Litter under heather"
+msgstr "V opadnke pod vresmi"
+
+msgid "Various conifers"
+msgstr "rôzne ihličnany"
+
+msgid "Needled conifers, particularly pines"
+msgstr "ihličnany, najmä borovice"
+
+msgid "Needled conifers, sallows and willows"
+msgstr "ihličnany a vŕby"
+
+msgid "Reeds"
+msgstr "trstiny"
+
+msgid "Reeds and rushes"
+msgstr "trstiny (z čeľade Poaceae) a sitiny (z čeľade Juncaceae)"
+
+msgid "Scots pine"
+msgstr "borovica lesná"
+
+msgid "Various"
+msgstr "rôzne druhy"
+
+msgid "Various deciduous trees and shrubs"
+msgstr "rôzne opadavé stromy a kríky"
+
+msgid "Various deciduous trees, particularly sallows and ash"
+msgstr "rôzne opadavé stromy, najmä vŕby a jaseň štíhly"
+
+msgid "Various grasses and low growing plants "
+msgstr "rôzne trávy a nízke rastliny"
+
+msgid "Various heathers, occasionally trees esp. Leylandii"
+msgstr "rôzne vresy, niekedy stromy, špeciálne Cyprusovec leylandský"
+
+msgid "Various bushes"
+msgstr "rôzne kríky"
+
+msgid "Various, particularly hogweed"
+msgstr "rôzne, najmä boľševník"
+
+msgid "Various, particularly lime and sycamore"
+msgstr "rôzne, najmä lipy a javor horský"
+
+msgid "White bryony"
+msgstr "posed biely"
+
+msgid "Spruce"
+msgstr "smrek obyčajný"
+
+msgid "Scots Pine"
+msgstr "borovica lesná"
+
+msgid "Firs"
+msgstr "jedľa"
+
+msgid "Oak"
+msgstr "dub"
+
+msgid "Juniper"
+msgstr "tuja"
+
+msgid "family Chenopodiaceae"
+msgstr "rastliny z čeľade Chenopodiaceae (klinčekotvaré)"
+
+msgid "Linden"
+msgstr "lipa"
+
+msgid "Elm"
+msgstr "brest"
+
+msgid "Alder"
+msgstr "jelša"
+
+msgid "Willow"
+msgstr "vŕba"
+
+msgid "Nettle"
+msgstr "pŕhľava"
+
+msgid "Thistle"
+msgstr "bodliak"
+
+msgid "family Asteraceae"
+msgstr "rastliny z čeľade Asteraceae (astrovité)"
+
+msgid "Broad-leaved grasses (family Poaceae)"
+msgstr "rastliny z čeľade Poaceae (lipnicovité)"
+
+msgid "Plants of the family Cucurbitaceae"
+msgstr "rastliny z čeľade Cucurbitaceae (tekvicovité)"
+
+msgid "Squirting cucumber"
+msgstr "tekvičník striekavý (Ecballium elaterium)"
+
+msgid "Poplar"
+msgstr "topoľ"
+
+msgid "Sycamore"
+msgstr "javor horský"
+
+msgid "Hornbeam"
+msgstr "hrab"
+
+msgid "Goosefoot"
+msgstr "mrlík (Chenopodium sp.)"
+
+msgid "Sugar beet"
+msgstr "cuktorvá trstina"
+
+msgid "Tamarisk"
+msgstr "tamariška"
+
+msgid "Unknown"
+msgstr "neznáma"
+
+msgid "Spindle"
+msgstr ""
+
+msgid "Overwintering"
+msgstr "Zimovanie"
+
+msgid ""
+"Low herbage, in gorse, in plant litter, on fence posts and stone walls, "
+"often in large aggregations"
+msgstr ""
+"Na nízkych trávnatých porastoch, v kríkoch, na plotoch, pri kamenných "
+"múroch, často vo veľkých zhlukoch"
+
+msgid "Leaf litter, beech nuts "
+msgstr "V listovej opadanke, v bukviciach"
+
+msgid "Bark crevices of conifers"
+msgstr "V puklinách kôry borovíc"
+
+msgid "Between leaves and in stems of reeds, grass tussocks"
+msgstr "V listoch, stonkách rákosia a trávových trsoch"
+
+msgid "Gorse, under shingle stones, in leaf litter"
+msgstr "V blízkosti útesovca (Ulex sp.), pod brehovými kameňmi a v opadanke"
+
+msgid "High on Scots pine"
+msgstr "Vysoko na konároch borovice lesnej"
+
+msgid "In houses, on bark"
+msgstr "V domoch, pod kôrou stromov"
+
+msgid "In houses, on rocky surfaces"
+msgstr "V domoch, v kamenných štrbinách"
+
+msgid "In leaf litter or on low plants"
+msgstr "V opadanke alebo v blízkosti nízkych rastlín"
+
+msgid ""
+"In leaf litter, foliage and bark crevices of evergreen trees and shrubs"
+msgstr "V opadanke, listoch, v štrbinách kôry vždyzelených stromov a kríkov"
+
+msgid "In litter or in bark crevices"
+msgstr "V opadanke alebo v štrbinách kôry"
+
+msgid "In low herbage"
+msgstr "V nízkej bylinnej vegetácií"
+
+msgid "In low herbage, in conifer foliage"
+msgstr "V nízkej bylinnej vegetácií, medzi ihlicami ihličnanov"
+
+msgid "In sheltered positions on deciduous trees, usually near base"
+msgstr ""
+"Na chránených miestach listnantých stromov, zvyčajne pri spodnom kmeni"
+
+msgid "In soil or leaf litter"
+msgstr "V zemi alebo opadanke"
+
+msgid "Leaf litter or in sheltered positions on trees"
+msgstr "V listovej opadanke alebo na chránených miestah listnantých stromov"
+
+msgid "Low herbage  "
+msgstr "Na nízkej vegetácii"
+
+msgid "Low herbage, grass tussocks "
+msgstr "Na nízkej vegetácii, v trsoch tráv"
+
+msgid "On conifers"
+msgstr "Na boroviciach"
+
+msgid "Plant litter"
+msgstr "V rastlinnej opadanke"
+
+msgid "Plant litter, bark crevices, beech nuts"
+msgstr "V rastlinnej opadanke, v puklinách kôry, v bukviciach"
+
+msgid "Various, but close to ant nests"
+msgstr "Rôzne, ale v blízkosti mravenísk"
+
+msgid "Various, usually low down"
+msgstr "Rôzne, ale zvyčajne blízko pri zemi"
+
+msgid "Litter"
+msgstr "V opadanke"
+
+msgid "Rock crevices"
+msgstr "V skalných puklinách "
+
+msgid "Grass tussocks"
+msgstr "V trsoch tráv"
+
+msgid "Often in large groups"
+msgstr "Častov vo veľkých skupinách"
+
+msgid "In Soil (during winter and summer)"
+msgstr "V zemi (zvyčajne v zime a v lete)"
+
+msgid "On the ground in dry plants"
+msgstr "Na zemi v suchých rastlinách"
+
+msgid "Leaf litter"
+msgstr "V listovej opadanke"
+
+msgid "Under the bark of solitary tree"
+msgstr "Pod kôrov solitérne stojacich stromov"
+
+msgid "Food"
+msgstr "Potrava"
+
+msgid "Pollen, nectar, fungi"
+msgstr "peľ, nektár, huby"
+
+msgid "Aphids "
+msgstr "vošky (Aphididae)"
+
+msgid "Adelgids, coccids"
+msgstr "kôrovnice (Adelgidae) a červce (Coccoidea)"
+
+msgid "Aphids and psyllids"
+msgstr "vošky a méry (Psylloidea)"
+
+msgid "Aphids, coccids, adelgids, coccinellids, fruit"
+msgstr ""
+"vošky (Aphididae), červce (Coccoidea), kôrovnice (Adelgidae), lienky a "
+"ovocie"
+
+msgid "Coccids"
+msgstr "červce (Coccoidea)"
+
+msgid "Larvae of heather leaf beetle"
+msgstr "larvy chrobáka Lochmaea suturalis"
+
+msgid "Leaves "
+msgstr "listy"
+
+msgid "Leaves of white bryony and other cucurbits"
+msgstr "listy posedu bieleho alebo iných tekvicovitých rastlín"
+
+msgid "Mildews"
+msgstr "povlaky plesní"
+
+msgid "Vary greatly in abundance from year to year due to prey availability"
+msgstr "značne varíruje počas roka z dôvodu dostupnosti korysti"
+
+msgid "Adelgids"
+msgstr "kôrovnice (Adelgidae)"
+
+msgid "Pollen"
+msgstr "peľ"
+
+msgid "Psyllids"
+msgstr "méry (Psylloidea)"
+
+msgid "Chrysomelid larvae"
+msgstr "larvy chrobákov z čeľade Chrysomelidae (liskavkovité)"
+
+msgid "Leaf beetle larvae"
+msgstr "larvy chrobákov zo skupiny Chrysomelidae (liskavkovité)"
+
+msgid "Plant material"
+msgstr "rastlinný materiál"
+
+msgid "Pollen of family Chenopodiaceae"
+msgstr "peľ rastlín z čeľade Chenopodiaceae (klinčekotvaré)"
+
+msgid "Immature stages of chrysomelids and psocopterans"
+msgstr ""
+"nedospelé jedince hmyzu zo skupín Chrysomellidae (liskavkovité) a psocoptera"
+" (pavši)"
+
+msgid "Probably leaf beetle larvae"
+msgstr "pravdepodobne larvy chrobákov z čeľade Chrysomelidae (liskavkovité)"
+
+msgid "Phytophagous on grasses"
+msgstr "trávy"
+
+msgid "Larvae mainly aphidophagous"
+msgstr "larvy sa živia hlavne voškami"
+
+msgid "Plant leaves"
+msgstr "listy rastlín"
+
+msgid "True or False"
+msgstr "Pravda alebo lož"
+
+msgid "YES"
+msgstr "Áno"
+
+msgid "NO"
+msgstr "Nie"
+
+msgid "About the Project"
+msgstr "O projekte"
+
+msgid ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe. "
+msgstr ""
+"Centrum pre ekológiu a hydrológiu (UK, Wallingford) a európsky partneri "
+"spojili svoje sily pri mapovaní lienok v Európe."
+
+msgid ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species. "
+msgstr ""
+"Už storočia ľudia v Európe hľadajú a zaznamenávajú výskyt rôznych rastlín, "
+"zvierat a ďalších voľne žijúcich živočíchov. V rámci výskumného projektu "
+"budú mapované druhy lienok. Záznamy o ich rozšírení budú využité na "
+"stanovenie zmien v prírode v dôsledku klimatickej zmeny a príchodu nových "
+"druhov. Vzhľadom k tomu, že mapovanie druhov v prírode je veľmi náročná "
+"práca, vedci sa nezaobídu bez Vás dobrovoľníkov, ktorích zaujíma príroda, a "
+"sú ochotní hľadať a zaznamenávať výskyty lienok prostredníctvom tejto "
+"aplikácie."
+
+msgid ""
+"The development of this app was funded by the Natural Environment Research "
+"Council and the Centre for Ecology & Hydrology (UK)."
+msgstr ""
+"Vývoj tejto aplikácie bol financovaný pracoviskami Natural Environment "
+"Research Council a Centrom pre ekológiu a hydrológiu (UK)."
+
+msgid ""
+"Thanks for taking part! For results from the project and further information"
+" please visit XXXXXXX"
+msgstr ""
+"Ďakujeme Vám za účasť! Výsledky z projektu a ďalšie informácie nájdete na "
+"XXXXXXX"
+
+msgid "Photographs and Illustrations"
+msgstr "Fotografie a ilustrácie"
+
+msgid ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries: XXXXXXX"
+msgstr ""
+"Ďakujeme Chrisovi Shieldsovi za jeho fantastické ilustrácie lienok použitých"
+" v aplikácií. Ďalej ďakujeme fotografom, ktorí láskavo poskytli vynikajúce "
+"fotografie pre použitie v obrazových galériách jednotlivých druhov: XXXXXXX"
+
+msgid "Privacy policy"
+msgstr "Zásady ochrany osobných údajov"
+
+msgid ""
+"Thank you for your interest in the app and for your help in providing data "
+"on ladybirds. This page explains how any personal data collected in the "
+"process of using this application will be stored and used."
+msgstr ""
+"Ďakujeme za Váš záujem o aplikáciu, a aj za Vašu pomoc pri poskytovaní "
+"údajov o lienkach. Tu nájdete informácie o ochrane osobných údajov "
+"zhromaždených v procese prípravy, a ich využití v aplikácii."
+
+msgid ""
+"To support the conservation of ladybirds and scientific research, all data "
+"(including photos) submitted via the app will be licenced under a Creative "
+"Commons licence (CC0 - https://wiki.creativecommons.org/wiki/CC0_FAQ)."
+msgstr ""
+"Na podporu ochrany lienok a ich vedeckého výskumu budú všetky dáta (vrátane "
+"fotografií) uložené prostredníctvom aplikácie pod licenciou Creative Commons"
+" (CC0 - https://wiki.creativecommons.org/wiki/CC0_FAQ)."
+
+msgid "Name"
+msgstr "Meno"
+
+msgid ""
+"If you choose to create an account using this app it will be created on a "
+"database hosted by the Biological Record Centre. This will be linked to a "
+"website to enable you to log into the system to see your records and those "
+"submitted by other people for ladybirds and all other taxa. Your name, as "
+"specified when you create the account, will appear next to your records and "
+"will be publicly viewable. Your email address will not be shown next to your"
+" records but will be made available to ladybird experts in case they need to"
+" contact you about your sightings."
+msgstr ""
+"Pre možnosť využívania tejto aplikácie je potrebné založiť si svoj vlastný "
+"účet, ktorý bude vytvorený v databáze spravovanej Biological Record Centrom."
+" Po prihlásení do systému budete môcť prostredníctvom webovej stránky "
+"prehliadať nielen Vaše záznamy, ale i tie, ktoré zaznamenali ďalší ľudia. "
+"Vaše meno uvedené na účte sa objaví vedľa Vašich záznamov a bude verejne "
+"prístupné. Vaša e-mailová adresa nikdy nebude pri záznamoch uvedená, bude "
+"prístupná len vedcom zapojeným do projektu v prípade potreby kontaktu "
+"ohľadom Vašich pozorovaní."
+
+msgid "E-mail address"
+msgstr "E-mailová adresa"
+
+msgid ""
+"To create an account you will need to supply your e-mail address. This will "
+"be used in order to validate your account and send you relevant information "
+"about the project and to update you on the project's findings and future "
+"activities if you choose. It may also be used by ladybird experts in case "
+"they need to contact you about your sightings."
+msgstr ""
+"K vytvoreniu účtu budete musieť zadať Vašu e-mailovú adresu. Na túto adresu "
+"Vám bude zaslané potvrdenie o vytvorení Vášho účtu, a ak si to budete priať,"
+" budú Vám naň zasielané aj relevantné informácie o zistených nálezoch a "
+"budúcich aktivitách. Vaša adresa tiež môže byť použitá pre vedcov, v prípade"
+" potreby overenia Vašich nálezov."
+
+msgid "How long will my data be stored?"
+msgstr "Ako dlho budú moje údaje uložené?"
+
+msgid ""
+"The records you submit containing your details will be stored for the "
+"duration of the Ladybird Survey project and used to further the scientific "
+"study of ladybirds. "
+msgstr ""
+"Odoslané záznamy obsahujúce Vaše údaje budú uložené na dobu trvania projektu"
+" o prieskume lienok a použité k ďalším vedeckým štúdiám o lienkach."
+
+msgid "Other information collected by the application"
+msgstr "Ďalšie informácie zhromaždené aplikáciou"
+
+msgid ""
+"Your phone's unique user identification number will be collected but not "
+"made available to any 3rd party or made visible publicly."
+msgstr ""
+"Vaše jedinečné identifikačné číslo užívateľa telefónu bude zaznamenané ale "
+"nebude k dispozícií žiadnej ďalšej osobe alebo verejne viditeľné."
+
+msgid ""
+"All data collected will be stored on a secure server at the Centre for "
+"Ecology & Hydrology (UK). UK records that are verified will be passed to the"
+" NBN Atlas and data for other European countries will be made available via "
+"GBIF (http://www.gbif.org/)."
+msgstr ""
+"Všetky zhromaždené údaje budú uložené na zabezpečenom serveri Centra pre "
+"ekológiu a hydrológiu (UK, Wallingford). Overené záznamy z Veľkej Británie "
+"budú posunuté do NBN Atlasu; dáta z ostatných európskych štátov budú k "
+"dispozícií cez GBIF (http://www.gbif.org/)."
+
+msgid "Who will have access to my personal data?"
+msgstr "Kto bude mať prístup k mojim osobným údajom?"
+
+msgid ""
+"No one outside of the Ladybird Survey project will have access to your "
+"personal data. Unless required by law data will not be made available to any"
+" third parties (third parties may include researchers and scientists from "
+"outside the project undertaking research on ladybirds) unless they are "
+"directly related to the project and we have first obtained your permission "
+"to do so."
+msgstr ""
+"Nikto mimo projekt o výskume lienok nebude mať prístup k Vašim osobným "
+"údajom. Ak to nevyžaduje zákon, tak údaje nebudú sprístupnené tretím osobám "
+"(tretie strany môžu zahŕňať výskumných pracovníkov a vedcov mimo projekt "
+"prieskumu lienok) ak k tomu nedáte Vaše povolenie."
+
+msgid "Where and When to Look"
+msgstr "Kde a ako hľadať lienky"
+
+msgid ""
+"All ladybirds are terrestrial and searching plants is the best way to find "
+"them."
+msgstr ""
+"Všetky lienky sú suchozemské a úspešne ich môžete nájsť na rastlinách."
+
+msgid ""
+"Different ladybird species occur in different habitats. Some species are "
+"generalists and may occur on a very wide range of plants, whilst others are "
+"specialists and are generally limited to one or a few plant species. "
+msgstr ""
+"Rôzne druhy lienok sa vyskytujú na rôznych stanovištiach. Niektoré druhy sú "
+"generalisti a môžu sa vyskytovať na veľmi širokej škále druhov rastlín, "
+"zatiaľ čo iné sú špecialisti, a sú obmedzené len na jeden alebo niekoľko "
+"druhov rastlín."
+
+msgid ""
+"Good habitats for ladybirds include trees, hedgerows and low herbaceous "
+"plants such as nettles. Deciduous trees generally have a different suite of "
+"species to coniferous trees. Coniferous trees are home to several of the "
+"more specialist species and so are worth looking at."
+msgstr ""
+"Vhodnými stanovištiami pre lienky sú stromy (listnanté i ihličnaté), kry, "
+"nízke byliny (napr. pŕhľava), a všade, kde sa vyskytujú vošky. Listnaté "
+"stromy majú obecne iné druhové spektrum ako ihličnaté stromy, ale i tie si "
+"zaslúžia pri hľadaní lienok rovnakú pozornosť."
+
+msgid ""
+"Adult ladybirds may be found at any time of year, although more tend to be "
+"seen between March and September. Ladybirds are diurnal (active during the "
+"day), but the weather and time of year effects when they are most active and"
+" more likely to be seen. The best time to look for ladybirds is between 10am"
+" and 4pm on a sunny day."
+msgstr ""
+"Dospelé lienky môžeme nájsť v každom ročnom období, no napriek tomu "
+"najvyššiu aktivitu majú od apríla do septembra počas slnečných dní."
+
+msgid "Happy ladybird spotting!"
+msgstr "Veľa šťastia pri hľadaní lienok!"
+
+msgid "Species Info"
+msgstr "Zoznam druhov"
+
+msgid "Record"
+msgstr "Nový záznam"
+
+msgid "App Info"
+msgstr "O aplikácii"
+
+msgid "About"
+msgstr "O projekte"
+
+msgid "Credits"
+msgstr "Zásluhy"
+
+msgid "Settings"
+msgstr "Nastavenia"
+
+msgid "App"
+msgstr "Aplikácia"
+
+msgid "Account"
+msgstr "Účet"
+
+msgid "Records"
+msgstr "Záznamy"
+
+msgid "Logout"
+msgstr "Odhlásiť sa"
+
+msgid "Login"
+msgstr "Prihlásiť sa"
+
+msgid "Register"
+msgstr "Zaregistrovať sa"
+
+msgid "App Development"
+msgstr "Vývoj aplikáce"
+
+msgid ""
+"This app was hand crafted with love by the BRC mobile development team. For "
+"suggestions and feedback please do not hesitate to"
+msgstr ""
+"Táto aplikácia bola vyrobená s láskou tímom vývojárov z Biological Record "
+"Centre (UK). Podnety a spätnú väzbu prosím neváhajte zasielať"
+
+msgid ""
+"We are very grateful for all the people that helped to create this app:"
+msgstr ""
+"Všetkým ľuďom, ktorí pomohli vytvoriť túto aplikáciu sme veľmi vďační:"
+
+msgid "Photographs and Illustrations:"
+msgstr "Fotografie a ilustrácie:"
+
+msgid "Front page"
+msgstr "Úvodná strana"
+
+msgid "Species pages"
+msgstr "Stránky druhov"
+
+msgid ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries:"
+msgstr ""
+"Ďakujeme Chrisovi Shieldsovi za jeho fantastické ilustrácie lienok použitých"
+" v aplikácií. Ďalej ďakujeme fotografom, ktorí láskavo poskytli vynikajúce "
+"fotografie pre použitie v obrazových galériách jednotlivých druhov:"
+
+msgid "Form"
+msgstr "Farebná forma"
+
+msgid "Size"
+msgstr "Veľkosť (v mm)"
+
+msgid "Melanic"
+msgstr "Melanická forma"
+
+msgid "Leg"
+msgstr "Farba nôh"
+
+msgid "Spots"
+msgstr "Počet bodiek"
+
+msgid "Plant"
+msgstr "Hostiteľská rastlina"
+
+msgid "Note"
+msgstr "Poznámka"
+
+msgid "Favourite"
+msgstr "Obľúbené"
+
+msgid "Please sign in with your account or register."
+msgstr "Prosím, prihláste sa k svojmu účtu alebo sa zaregistrujte."
+
+msgid "Username or email"
+msgstr "Používateľské meno alebo e-mail"
+
+msgid "Password"
+msgstr "Heslo"
+
+msgid "Sign in"
+msgstr "Prihlásiť sa"
+
+msgid "Request a new password"
+msgstr "Žiadosť o nové heslo"
+
+msgid "Enter your username or email address to request a password reset."
+msgstr "Zadajte svoje prihlasovacie meno alebo e-mail na zresetovanie hesla."
+
+msgid "Request"
+msgstr "Žiadosť"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Firstname"
+msgstr "Meno"
+
+msgid "Surname"
+msgstr "Priezvisko"
+
+msgid "Confirm password"
+msgstr "Potvrďte heslo"
+
+msgid "I agree to Terms and Conditions"
+msgstr "Súhlasím s podmienkami"
+
+msgid "Create"
+msgstr "Vytvoriť"
+
+msgid "Page not found"
+msgstr "Stránka sa nenašla"
+
+msgid "Training"
+msgstr "Tréning"
+
+msgid "required"
+msgstr "povinné"
+
+msgid "Species"
+msgstr "Druh"
+
+msgid "Locating..."
+msgstr "Lokalizácia..."
+
+msgid "Location"
+msgstr "Výskyt"
+
+msgid "Date"
+msgstr "Dátum"
+
+msgid "Number"
+msgstr "Počet"
+
+msgid "Comment"
+msgstr "Poznámka"
+
+msgid "Send"
+msgstr "Odoslať"
+
+msgid "Phone"
+msgstr "Telefónne číslo"
+
+msgid "No photo has been added"
+msgstr "Žiadna fotka nebola vložená"
+
+msgid "Looks like you have not signed in to your account yet."
+msgstr "Zdá sa, že ste sa ešte neprihlásili do svojho účtu"
+
+msgid "Saved recordings."
+msgstr "Záznamy uložené."
+
+msgid "Species missing"
+msgstr "Chýbajúci druh"
+
+msgid "No location"
+msgstr "Žiadna lokalita"
+
+msgid "Empty"
+msgstr "Prázdne"
+
+msgid "This record has been submitted and cannot be edited within this App."
+msgstr "Tento záznam bol odoslaný a v aplikácii už nemôže byť upravovaný."
+
+msgid "Submit All"
+msgstr "Odoslať všetko"
+
+msgid "Delete All Saved"
+msgstr "Vymazať všetky záznamy"
+
+msgid "Training Mode"
+msgstr "Tréningový mód"
+
+msgid "Application"
+msgstr "Aplikácia"
+
+msgid "Country"
+msgstr "Krajina"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Reset"
+msgstr "Obnoviť pôvodné nastavenia"
+
+msgid ""
+"Are you sure you want to reset the application to its initial state? This "
+"will wipe all the locally stored app data!"
+msgstr ""
+"Ste si istí, že chcete obnoviť aplikáciu do pôvodného stavu? Toto zmaže "
+"všetky údaje uložené v aplikácii!"
+
+msgid "Cancel"
+msgstr "Zrušiť"
+
+msgid "Done!"
+msgstr "Hotovo!"
+
+msgid "Delete All"
+msgstr "Vymazať všetko"
+
+msgid "Delete"
+msgstr "Vymazať"
+
+msgid "Are you sure you want to set all valid records for submission?"
+msgstr "Ste si istí, že chcete uložiť všetky záznamy?"
+
+msgid ""
+"Are you sure you want to delete all successfully synchronised local records?"
+msgstr ""
+"Ste si istí, že chcete odstrániť všetky záznamy zosynchronizované s "
+"databázou?"
+
+msgid "records on the server will not be touched"
+msgstr "záznamy z databázy nebudú vymazané"
+
+msgid "can't be blank"
+msgstr "nemôže zostať nevyplnené"
+
+msgid "passwords are not equal"
+msgstr "heslá sa nezhodujú"
+
+msgid "you must agree to the terms"
+msgstr "musíte súhlasiť s podmienkami"
+
+msgid "is too short"
+msgstr "príliš krátke"
+
+msgid "invalid"
+msgstr "neplatné"
+
+msgid "contact us"
+msgstr "a kontaktujte nás"
+
+msgid "Today"
+msgstr "Dnes"
+
+msgid "Updating"
+msgstr "Aktualizuje sa"
+
+msgid "This should take only a moment..."
+msgstr "Toto bude trvať len chvíľku..."
+
+msgid "Sort"
+msgstr "Typ"
+
+msgid "Restart"
+msgstr "Reštartovať"
+
+msgid "Yikes!"
+msgstr "Chyba!"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Sorry"
+msgstr "Prepáčte"
+
+msgid ""
+"Please select <b>Login</b> if you have an account or would like to register,"
+" otherwise select <b>Send</b> and enter your contact details."
+msgstr ""
+"Prosím, vyberte <b> Prihlásiť sa </ b>, ak máte účet, alebo sa chcete "
+"zaregistrovať, inak vyberte <b> Odoslať </ b> a zadajte svoje kontaktné "
+"údaje."
+
+msgid "Your details"
+msgstr "Vaše detaily"
+
+msgid "Camera"
+msgstr "Fotoaparát"
+
+msgid "Choose a method to upload a photo"
+msgstr "Zvoľte si metódu pre nahratie fotografie"
+
+msgid "Gallery"
+msgstr "Galéria"
+
+msgid "Looks like you are offline!"
+msgstr "Vyzerá to že nemáte internetové pripojenie!"
+
+msgid "Welcome aboard!"
+msgstr "Vytajte na palube!"
+
+msgid ""
+"Before submitting any records please check your email and click on the "
+"verification link"
+msgstr ""
+"Pred odoslaním záznamov skontrolujte svoj e-mail a kliknite na overovací "
+"odkaz"
+
+msgid "OK, got it"
+msgstr "OK, rozumiem"
+
+msgid "Success"
+msgstr "Úspech"
+
+msgid "Further instructions have been sent to your e-mail address."
+msgstr "Ďalšie inštrukcie boli odoslané na vašu e-mailovú adresu."
+
+msgid "date"
+msgstr "dátum"
+
+msgid "number"
+msgstr "počet"
+
+msgid "comment"
+msgstr "poznámka"
+
+msgid "Please add any extra info about this record."
+msgstr "Prosím, pridajte akékoľvek ďalšie informácie o tomto zázname."
+
+msgid "How many individual?"
+msgstr "Koľko jedincov?"
+
+msgid "Present"
+msgstr "Prítomný"
+
+msgid "We will try to determine your location using the inbuilt phone GPS."
+msgstr ""
+"Budeme sa snažiť určiť vašu polohu pomocou vstavaného GPS vo Vašom telefóne."
+
+msgid ""
+"Please make sure you have turned the phone's geolocation on and are well "
+"away from large objects.<br/> e.g. <i>trees, buildings </i>"
+msgstr ""
+"Prosím, uistite sa, že ste zapli GPS a ste v dostatočnej vzdialenosti od "
+"veľkých objektov.<br/> e.g. <i>stromy, budovy </ i>"
+
+msgid "Nearest Named Place"
+msgstr "Najbližšie miesto"
+
+msgid "Locate"
+msgstr "Lokalizuj"
+
+msgid "Sorry!"
+msgstr "Mrzí nás to!"
+
+msgid "We could not find your location."
+msgstr "Nemôžeme nájsť Vašu polohu."
+
+msgid "We are trying to get your location. This might take a few minutes..."
+msgstr "Snažíme sa zistiť Vašu polohu. Môže to chvíľku trvať..."
+
+msgid "Accuracy"
+msgstr "Presnosť"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Refresh GPS"
+msgstr "Obnoviť GPS signál"
+
+msgid "Filter"
+msgstr "Filtrovať"
+
+msgid "Default"
+msgstr "Predvolené"
+
+msgid "Common Name"
+msgstr "Slovenský názov A-Z"
+
+msgid "Common Name Reverse"
+msgstr "Slovenský názov Z-A"
+
+msgid "Scientific Name"
+msgstr "Vedecký názov A-Z"
+
+msgid "Scientific Name Reverse"
+msgstr "Vedecký názov Z-A"
+
+msgid "Favourites"
+msgstr "Obľúbené"
+
+msgid "My favourites only"
+msgstr "Moje obľúbené"
+
+msgid "Size in mm"
+msgstr "Veľkosť v mm"
+
+msgid "No species with selected filters."
+msgstr "Žiadne druhy nesplňujú tieto podmienky."
+
+msgid "Privacy Policy"
+msgstr "Zásady ochrany osobných údajov"
+
+msgid ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe."
+msgstr ""
+"Centrum pre ekológiu a hydrológiu (UK, Wallingford) a európsky partneri "
+"spojili svoje sily pri mapovaní lienok v Európe."
+
+msgid ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species."
+msgstr ""
+"Už storočia ľudia v Európe hľadajú a zaznamenávajú výskyt rôznych rastlín, "
+"zvierat a ďalších voľne žijúcich živočíchov. V rámci výskumného projektu "
+"budú mapované druhy lienok. Záznamy o ich rozšírení budú využité na "
+"stanovenie zmien v prírode v dôsledku klimatickej zmeny a príchodu nových "
+"druhov. Vzhľadom k tomu, že mapovanie druhov v prírode je veľmi náročná "
+"práca, vedci sa nezaobídu bez Vás dobrovoľníkov, ktorích zaujíma príroda, a "
+"sú ochotní hľadať a zaznamenávať výskyty lienok prostredníctvom tejto "
+"aplikácie."
+
+msgid "decempunctata"
+msgstr "decempunctata"
+
+msgid "bimaculata"
+msgstr "bimaculata"
+
+msgid "decempustulata"
+msgstr "decempustulata"
+
+msgid "non-melanic"
+msgstr "nemelanická (svetlá)"
+
+msgid "melanic"
+msgstr "melanická (čierna)"
+
+msgid "typica"
+msgstr "typica"
+
+msgid "sexpustulata"
+msgstr "sexpustulata"
+
+msgid "quadrimaculata"
+msgstr "quadrimaculata"
+
+msgid "nebulosa"
+msgstr "nebulosa"
+
+msgid "sedecimpunctata"
+msgstr "sedecimpunctata"
+
+msgid "spectabilis"
+msgstr "spectabilis"
+
+msgid "conspicua"
+msgstr "conspicua"
+
+msgid "succinea"
+msgstr "succinea"
+
+msgid "axyridis"
+msgstr "axyridis"
+
+msgid "intermedia"
+msgstr "intermedia"
+
+msgid "areata"
+msgstr "areata"
+
+msgid "livida"
+msgstr "livida"
+
+msgid "sexnotata"
+msgstr "sexnotata"
+
+msgid "nigra"
+msgstr "nigra"
+
+msgid "red form"
+msgstr "červená"
+
+msgid "yellow form"
+msgstr "žltá"
+
+msgid "Grid reference"
+msgstr "Odkaz na sieťové mapovanie"
+
+msgid "Nearest named place"
+msgstr "Najbližšie pomenované miesto"
+
+msgid "What sort of habitat did you find the ladybirds in?"
+msgstr "V akom type habitatu ste našli túto lienku?"
+
+msgid "Not recorded"
+msgstr "Nezaznamenané"
+
+msgid "habitat"
+msgstr "Habitat"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Are you sure you want to remove this photo from the sample?"
+msgstr "Ste si istý, že chcete odstrániť túto fotku?"
+
+msgid "</br><i><b>Note:</b> it will remain in the gallery.</i>"
+msgstr "</br><i><b>Note:</b> ostene to v galérii.</i>"
+
+msgid ""
+"Are you sure you want to remove this photo from the "
+"sample?</br><i><b>Note:</b> it will remain in the gallery.</i>"
+msgstr ""
+"Ste si istý, že chcete odstrániť túto fotku?</br><i><b>Note:</b> ostene to v"
+" galérii.</i>"
+
+msgid ""
+"Are you sure you want to remove this record from your "
+"device?</br><i><b>Note:</b> it will remain on the server.</i>"
+msgstr ""
+"Ste si istý že chcete odstrániť tento záznam z Vašeho "
+"zariadenie?</br><i><b>Note:</b> Zostane na serveri.</i>"
+
+msgid ""
+"Are you sure you want to delete all successfully synchronised local "
+"records?</br><i><b>Note:</b>records on the server will not be touched.</i>"
+msgstr ""
+"Ste si istý, že chcete odstrániť všetky úspešne synchronizované miestne "
+"záznamy?</br><i><b>Note:</b>Záznamy sa uchovajú na serveri.</i>"

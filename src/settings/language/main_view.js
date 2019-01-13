@@ -4,6 +4,7 @@
 import $ from 'jquery';
 import Marionette from 'backbone.marionette';
 import appModel from 'app_model';
+import { languages } from 'helpers/translator';
 import './styles.scss';
 
 export default Marionette.View.extend({
@@ -11,16 +12,6 @@ export default Marionette.View.extend({
   tagName: 'ul',
   className: 'table-view',
   template() {
-    const languages = {
-      NL: 'Dutch',
-      FR: 'Français',
-      PT: 'Português',
-      SK: 'Slovenčina',
-      CZ: 'Čeština',
-      EN: 'English',
-      ITA: 'Italiano',
-    };
-
     const current = appModel.get('language');
     const isWelcomeScreen = !appModel.get('showWelcome');
 

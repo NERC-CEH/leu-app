@@ -31,7 +31,7 @@
   </label>
   <label class="item item-radio">
     <input type="radio" name="group" value="ITA"
-    <%- obj['ITA'] ? 'checked' : ''%>>
+    <%- obj['IT'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
         Italy

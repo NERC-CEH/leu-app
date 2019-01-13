@@ -1,0 +1,1917 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: temp\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
+"X-Generator: POEditor.com\n"
+
+msgid "Colour"
+msgstr "Colour"
+
+msgid "black"
+msgstr "black"
+
+msgid "brown"
+msgstr "brown"
+
+msgid "red"
+msgstr "red"
+
+msgid "orange"
+msgstr "orange"
+
+msgid "yellow"
+msgstr "yellow"
+
+msgid "pink"
+msgstr "pink"
+
+msgid "cream/beige"
+msgstr "cream/beige"
+
+msgid "white"
+msgstr "white"
+
+msgid "Basic colour"
+msgstr "Basic colour"
+
+msgid "Beige"
+msgstr "Beige"
+
+msgid "Black"
+msgstr "Black"
+
+msgid "Black, brown, maroon"
+msgstr "Black, brown, maroon"
+
+msgid "Chestnut"
+msgstr "Chestnut"
+
+msgid "Dark orange"
+msgstr "Dark orange"
+
+msgid "July-April = beige April-June = reddish"
+msgstr "July-April = beige April-June = reddish"
+
+msgid "Maroon-brown"
+msgstr "Maroon-brown"
+
+msgid "Orange"
+msgstr "Orange"
+
+msgid "Orange-red"
+msgstr "Orange-red"
+
+msgid "Red"
+msgstr "Red"
+
+msgid "Russet or burgundy"
+msgstr "Russet or burgundy"
+
+msgid "Salmon, orange-red"
+msgstr "Salmon, orange-red"
+
+msgid "Tan brown"
+msgstr "Tan brown"
+
+msgid "Yellow"
+msgstr "Yellow"
+
+msgid "Yellow or black"
+msgstr "Yellow or black"
+
+msgid "Yellow, orange-red"
+msgstr "Yellow, orange-red"
+
+msgid "Black, juvenile red brown"
+msgstr "Black, juvenile red brown"
+
+msgid "Ochroid or yellow"
+msgstr "Ochroid or yellow"
+
+msgid "Beige to orange-red"
+msgstr "Beige to orange-red"
+
+msgid "Light yellow-brown"
+msgstr "Light yellow-brown"
+
+msgid "Orange-red or ochroid"
+msgstr "Orange-red or ochroid"
+
+msgid "Ochroid to red"
+msgstr "Ochroid to red"
+
+msgid "Matt brown"
+msgstr "Matt brown"
+
+msgid "Brown-orange or rusty"
+msgstr "Brown-orange or rusty"
+
+msgid "Cream, yellowish, pink or reddish"
+msgstr "Cream, yellowish, pink or reddish"
+
+msgid "Rusty brown or black"
+msgstr "Rusty brown or black"
+
+msgid "White, cream, yellowish or pink"
+msgstr "White, cream, yellowish or pink"
+
+msgid "Brown"
+msgstr "Brown"
+
+msgid "Pattern colour"
+msgstr "Pattern colour"
+
+msgid "Black spots"
+msgstr "Black spots"
+
+msgid "Black spots with or without cream rings around them"
+msgstr "Black spots with or without cream rings around them"
+
+msgid "Black stripes, spots and patches"
+msgstr "Black stripes, spots and patches"
+
+msgid "Brown or black spots "
+msgstr "Brown or black spots "
+
+msgid "Cream spots"
+msgstr "Cream spots"
+
+msgid "Cream streaking"
+msgstr "Cream streaking"
+
+msgid "Cream stripes and spots"
+msgstr "Cream stripes and spots"
+
+msgid "None or dark oblique line posteriorly"
+msgstr "None or dark oblique line posteriorly"
+
+msgid "Orange-red spots"
+msgstr "Orange-red spots"
+
+msgid "Orange stripes, spots and patches"
+msgstr "Orange stripes, spots and patches"
+
+msgid "Red spots"
+msgstr "Red spots"
+
+msgid "Red, orange, cream"
+msgstr "Red, orange, cream"
+
+msgid "White spots"
+msgstr "White spots"
+
+msgid "Yellow or off-white spots"
+msgstr "Yellow or off-white spots"
+
+msgid "No spots"
+msgstr "No spots"
+
+msgid "Yellow spots"
+msgstr "Yellow spots"
+
+msgid "Orange spots"
+msgstr "Orange spots"
+
+msgid "Yellow-orange spots"
+msgstr "Yellow-orange spots"
+
+msgid "Diamond-shaped black spots "
+msgstr "Diamond-shaped black spots "
+
+msgid "None"
+msgstr "None"
+
+msgid "None or irregular light patches"
+msgstr "None or irregular light patches"
+
+msgid "Angular black spots, black suture"
+msgstr "Angular black spots, black suture"
+
+msgid "Yellow rounded spots"
+msgstr "Yellow rounded spots"
+
+msgid ""
+"White (mainly in rusty individuals) or lemon yellow (in black individuals)"
+msgstr ""
+"White (mainly in rusty individuals) or lemon yellow (in black individuals)"
+
+msgid "Black stripes"
+msgstr "Black stripes"
+
+msgid "Black with wide yellow-orange lateral margins"
+msgstr "Black with wide yellow-orange lateral margins"
+
+msgid "Number of spots"
+msgstr "Number of spots"
+
+msgid "0-7 (usually 2)"
+msgstr "0-7 (usually 2)"
+
+msgid "0-7 (usually 5)"
+msgstr "0-7 (usually 5)"
+
+msgid "0-9 but nearly always 7"
+msgstr "0-9 but nearly always 7"
+
+msgid "0-10  (usually spotless)"
+msgstr "0-10  (usually spotless)"
+
+msgid "0-15 (usually 10)"
+msgstr "0-15 (usually 10)"
+
+msgid "0-20"
+msgstr "0-20"
+
+msgid "0-23 (usually 15)"
+msgstr "0-23 (usually 15)"
+
+msgid "0-15 "
+msgstr "0-15 "
+
+msgid "0-26 (usually 20)"
+msgstr "0-26 (usually 20)"
+
+msgid "2"
+msgstr "2"
+
+msgid "2-4 (usually 4)"
+msgstr "2-4 (usually 4)"
+
+msgid "2-6  (usually 6)"
+msgstr "2-6  (usually 6)"
+
+msgid "3-15  (usually 9)"
+msgstr "3-15  (usually 9)"
+
+msgid "4"
+msgstr "4"
+
+msgid "4-14 (usually 14)"
+msgstr "4-14 (usually 14)"
+
+msgid "5"
+msgstr "5"
+
+msgid "5-9 (usually 5)"
+msgstr "5-9 (usually 5)"
+
+msgid "5-11 (usually 7)"
+msgstr "5-11 (usually 7)"
+
+msgid "6"
+msgstr "6"
+
+msgid "7"
+msgstr "7"
+
+msgid "7-11 (usually 11)"
+msgstr "7-11 (usually 11)"
+
+msgid "7-15 (usually 13)"
+msgstr "7-15 (usually 13)"
+
+msgid "10"
+msgstr "10"
+
+msgid "11"
+msgstr "11"
+
+msgid "12"
+msgstr "12"
+
+msgid "12-16 (usually 16)"
+msgstr "12-16 (usually 16)"
+
+msgid "13-18 (usually 16)"
+msgstr "13-18 (usually 16)"
+
+msgid "14"
+msgstr "14"
+
+msgid "14-18"
+msgstr "14-18"
+
+msgid "15-21 (usually 19)"
+msgstr "15-21 (usually 19)"
+
+msgid "16"
+msgstr "16"
+
+msgid "20-22"
+msgstr "20-22"
+
+msgid "4-6"
+msgstr "4-6"
+
+msgid "19"
+msgstr "19"
+
+msgid "12-14"
+msgstr "12-14"
+
+msgid "7-11"
+msgstr "7-11"
+
+msgid "9-11"
+msgstr "9-11"
+
+msgid "0"
+msgstr "0"
+
+msgid "20"
+msgstr "20"
+
+msgid "12-13"
+msgstr "12-13"
+
+msgid "usually 3"
+msgstr "usually 3"
+
+msgid "usually 0"
+msgstr "usually 0"
+
+msgid "7-9"
+msgstr "7-9"
+
+msgid "16-20"
+msgstr "16-20"
+
+msgid "Spot fusions"
+msgstr "Spot fusions"
+
+msgid "3 lateral spots usually fused"
+msgstr "3 lateral spots usually fused"
+
+msgid "Common"
+msgstr "Common"
+
+msgid "No"
+msgstr "No"
+
+msgid "Not common"
+msgstr "Not common"
+
+msgid "Occasionally"
+msgstr "Occasionally"
+
+msgid "Rare"
+msgstr "Rare"
+
+msgid "Very common"
+msgstr "Very common"
+
+msgid "Very rare"
+msgstr "Very rare"
+
+msgid "Sometimes"
+msgstr "Sometimes"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "Melanic (black) form"
+msgstr "Melanic (black) form"
+
+msgid "Various and common "
+msgstr "Various and common "
+
+msgid "Black with a white patch on each side"
+msgstr "Black with a white patch on each side"
+
+msgid "Black with anterior-lateral white marks"
+msgstr "Black with anterior-lateral white marks"
+
+msgid "Many and common"
+msgstr "Many and common"
+
+msgid "Pronotum pattern"
+msgstr "Pronotum pattern"
+
+msgid "one colour"
+msgstr "one colour"
+
+msgid "with spots"
+msgstr "with spots"
+
+msgid "M-shape"
+msgstr "M-shape"
+
+msgid "with white patch on each side"
+msgstr "with white patch on each side"
+
+msgid "none of them"
+msgstr "none of them"
+
+msgid "Pronotum"
+msgstr "Pronotum"
+
+msgid "Beige with black spots"
+msgstr "Beige with black spots"
+
+msgid "Beige or red with 6 black spots"
+msgstr "Beige or red with 6 black spots"
+
+msgid "Beige with brown m-mark"
+msgstr "Beige with brown m-mark"
+
+msgid "Black with white patch at each side"
+msgstr "Black with white patch at each side"
+
+msgid "Black with white sides"
+msgstr "Black with white sides"
+
+msgid "Maroon with lateral posterior off-white marks"
+msgstr "Maroon with lateral posterior off-white marks"
+
+msgid "Russet with black spots "
+msgstr "Russet with black spots "
+
+msgid ""
+"White or cream with up to 5 spots, or fused lateral spots forming 2 curved "
+"lines, M-shaped mark or solid trapezoid"
+msgstr ""
+"White or cream with up to 5 spots, or fused lateral spots forming 2 curved "
+"lines, M-shaped mark or solid trapezoid"
+
+msgid "White with 5 dark spots, which may be fused"
+msgstr "White with 5 dark spots, which may be fused"
+
+msgid "White with 5-9 black spots"
+msgstr "White with 5-9 black spots"
+
+msgid "White with black M-mark"
+msgstr "White with black M-mark"
+
+msgid "White with black pattern"
+msgstr "White with black pattern"
+
+msgid "White with chestnut m-mark or trapezium"
+msgstr "White with chestnut m-mark or trapezium"
+
+msgid "White with rounded m-mark"
+msgstr "White with rounded m-mark"
+
+msgid "Yellow or cream with black spots or trapezium or crown mark"
+msgstr "Yellow or cream with black spots or trapezium or crown mark"
+
+msgid "Yellow with five discrete black spots"
+msgstr "Yellow with five discrete black spots"
+
+msgid " White with 5 dark spots, which may be fused, or dark trapezium mark "
+msgstr " White with 5 dark spots, which may be fused, or dark trapezium mark "
+
+msgid ""
+"Beige with 6 black spots (VV pattern)  or up to nine spots with anterior "
+"pair and middle spot small."
+msgstr ""
+"Beige with 6 black spots (VV pattern)  or up to nine spots with anterior "
+"pair and middle spot small."
+
+msgid "Yellow-brown"
+msgstr "Yellow-brown"
+
+msgid "Black, anterior angles and margins widely white"
+msgstr "Black, anterior angles and margins widely white"
+
+msgid "Black with large white trapeziodal patches on anterior angle"
+msgstr "Black with large white trapeziodal patches on anterior angle"
+
+msgid ""
+"Posteriorly black, anterior margin and angles pale, border between colours "
+"wavy or four-lobed"
+msgstr ""
+"Posteriorly black, anterior margin and angles pale, border between colours "
+"wavy or four-lobed"
+
+msgid "Brown with black spot at centre, rarely with other black markings."
+msgstr "Brown with black spot at centre, rarely with other black markings."
+
+msgid ""
+"Black, anterior and lateral margins with equally wide white stripe, border "
+"between the two colours slightly wavy"
+msgstr ""
+"Black, anterior and lateral margins with equally wide white stripe, border "
+"between the two colours slightly wavy"
+
+msgid "White to beige with seven black spots"
+msgstr "White to beige with seven black spots"
+
+msgid "Black with white lateral margins"
+msgstr "Black with white lateral margins"
+
+msgid "Black with large white fore angles and middle white band"
+msgstr "Black with large white fore angles and middle white band"
+
+msgid "Black with wide yellow or brown lateral margins and fore angles"
+msgstr "Black with wide yellow or brown lateral margins and fore angles"
+
+msgid ""
+"Dark with wide white lateral margins, strongly arched in the shape of the "
+"letter C"
+msgstr ""
+"Dark with wide white lateral margins, strongly arched in the shape of the "
+"letter C"
+
+msgid "Brown-orange, transparent with opaque white patches"
+msgstr "Brown-orange, transparent with opaque white patches"
+
+msgid "Black with white anterior and lateral margins"
+msgstr "Black with white anterior and lateral margins"
+
+msgid "Black, anterior angles with small white area"
+msgstr "Black, anterior angles with small white area"
+
+msgid ""
+"Black, fore corners (or sometimes both lateral and fore margins) of pronotum"
+" yellowish."
+msgstr ""
+"Black, fore corners (or sometimes both lateral and fore margins) of pronotum"
+" yellowish."
+
+msgid ""
+"Black, fore angles of pronotum may be slightly cleared to yellowish colour"
+msgstr ""
+"Black, fore angles of pronotum may be slightly cleared to yellowish colour"
+
+msgid ""
+"Yellow-brown, with white lateral and fore margin feebly cut around head, "
+"transparent, partially covering eyes. "
+msgstr ""
+"Yellow-brown, with white lateral and fore margin feebly cut around head, "
+"transparent, partially covering eyes. "
+
+msgid ""
+"Yellow-brown, with white patches at\n"
+"fore and hind angles, sometimes with a white patch behind at the centre"
+msgstr ""
+"Yellow-brown, with white patches at\n"
+"fore and hind angles, sometimes with a white patch behind at the centre"
+
+msgid "Black, anterior angles widely white, fore margin in males white"
+msgstr "Black, anterior angles widely white, fore margin in males white"
+
+msgid ""
+"Black, anterior angles and margins widely white, border between the two "
+"colours with four deep lobes"
+msgstr ""
+"Black, anterior angles and margins widely white, border between the two "
+"colours with four deep lobes"
+
+msgid "Reddish yellow"
+msgstr "Reddish yellow"
+
+msgid "Habitat"
+msgstr "Habitat"
+
+msgid "Grassland, meadow"
+msgstr "Grassland, meadow"
+
+msgid "Deciduous trees and hedgerows "
+msgstr "Deciduous trees and hedgerows "
+
+msgid "Conifer woodlands"
+msgstr "Conifer woodlands"
+
+msgid "Deciduous trees"
+msgstr "Deciduous trees"
+
+msgid "Deciduous woodland"
+msgstr "Deciduous woodland"
+
+msgid "Grassland, meadows "
+msgstr "Grassland, meadows "
+
+msgid "Heather heathland"
+msgstr "Heather heathland"
+
+msgid "Heather heathland, conifer scrub"
+msgstr "Heather heathland, conifer scrub"
+
+msgid "Hedgerows and deciduous trees"
+msgstr "Hedgerows and deciduous trees"
+
+msgid "Herbage and shrub layers on well drained soils"
+msgstr "Herbage and shrub layers on well drained soils"
+
+msgid "Low herbage"
+msgstr "Low herbage"
+
+msgid "Low vegetation"
+msgstr "Low vegetation"
+
+msgid "Mature Scots pine"
+msgstr "Mature Scots pine"
+
+msgid "Needled conifers"
+msgstr "Needled conifers"
+
+msgid "Reed-beds and wetlands"
+msgstr "Reed-beds and wetlands"
+
+msgid "Scots pine woodland"
+msgstr "Scots pine woodland"
+
+msgid "Trees"
+msgstr "Trees"
+
+msgid "Unstable river shingle"
+msgstr "Unstable river shingle"
+
+msgid "Varied"
+msgstr "Varied"
+
+msgid "Varied but close to ant nests"
+msgstr "Varied but close to ant nests"
+
+msgid "Varied, but often low herbage"
+msgstr "Varied, but often low herbage"
+
+msgid "Varied, but particularly dune systems"
+msgstr "Varied, but particularly dune systems"
+
+msgid "Various heathers"
+msgstr "Various heathers"
+
+msgid "Very varied"
+msgstr "Very varied"
+
+msgid "Wetlands"
+msgstr "Wetlands"
+
+msgid "Coniferous trees"
+msgstr "Coniferous trees"
+
+msgid "Mixed woodlands"
+msgstr "Mixed woodlands"
+
+msgid "Peat bogs"
+msgstr "Peat bogs"
+
+msgid "Gardens"
+msgstr "Gardens"
+
+msgid "Wet and shaded stands on herbs"
+msgstr "Wet and shaded stands on herbs"
+
+msgid "Lowland steppes"
+msgstr "Lowland steppes"
+
+msgid "Herbs"
+msgstr "Herbs"
+
+msgid "Wet woodlands"
+msgstr "Wet woodlands"
+
+msgid "Steppes"
+msgstr "Steppes"
+
+msgid "Meadows"
+msgstr "Meadows"
+
+msgid "Fields"
+msgstr "Fields"
+
+msgid "Grassland"
+msgstr "Grassland"
+
+msgid "Heather"
+msgstr "Heather"
+
+msgid "Allotments"
+msgstr "Allotments"
+
+msgid "Marshes"
+msgstr "Marshes"
+
+msgid "Mountains"
+msgstr "Mountains"
+
+msgid "Shrubs"
+msgstr "Shrubs"
+
+msgid "Forest margins"
+msgstr "Forest margins"
+
+msgid "Dry stands"
+msgstr "Dry stands"
+
+msgid "Bushes"
+msgstr "Bushes"
+
+msgid "Alpine meadows"
+msgstr "Alpine meadows"
+
+msgid "Vegetation among rocks"
+msgstr "Vegetation among rocks"
+
+msgid "Coniferous forests in highlands and mountains"
+msgstr "Coniferous forests in highlands and mountains"
+
+msgid "Wet deciduous woodlands"
+msgstr "Wet deciduous woodlands"
+
+msgid "Warmer and drier sites"
+msgstr "Warmer and drier sites"
+
+msgid "Canopy"
+msgstr "Canopy"
+
+msgid "Mixed trees"
+msgstr "Mixed trees"
+
+msgid "Forests"
+msgstr "Forests"
+
+msgid "Pine forests"
+msgstr "Pine forests"
+
+msgid "Wet deciduous forests"
+msgstr "Wet deciduous forests"
+
+msgid "Rocks"
+msgstr "Rocks"
+
+msgid "Marine"
+msgstr "Marine"
+
+msgid "Coast"
+msgstr "Coast"
+
+msgid "Inland waters"
+msgstr "Inland waters"
+
+msgid "Bogs and fens"
+msgstr "Bogs and fens"
+
+msgid "Grasslands"
+msgstr "Grasslands"
+
+msgid "Heathland, scrub, hedgerow"
+msgstr "Heathland, scrub, hedgerow"
+
+msgid "Woodland"
+msgstr "Woodland"
+
+msgid "Unvegetated or sparsely vegetated habitats"
+msgstr "Unvegetated or sparsely vegetated habitats"
+
+msgid "Arable land, garden or park"
+msgstr "Arable land, garden or park"
+
+msgid "Industrial and Urban"
+msgstr "Industrial and Urban"
+
+msgid "Mixed habitats"
+msgstr "Mixed habitats"
+
+msgid "Leg colour"
+msgstr "Leg colour"
+
+msgid "Russet "
+msgstr "Russet "
+
+msgid "Yellow-brown with black spots on tibiae"
+msgstr "Yellow-brown with black spots on tibiae"
+
+msgid "Red-yellow"
+msgstr "Red-yellow"
+
+msgid "Black-brown"
+msgstr "Black-brown"
+
+msgid "Rusty-brown"
+msgstr "Rusty-brown"
+
+msgid "Orange-brown"
+msgstr "Orange-brown"
+
+msgid "Black, fore and mid tibiae brown at tip."
+msgstr "Black, fore and mid tibiae brown at tip."
+
+msgid "Black, fore tibiae brown inside and at tip."
+msgstr "Black, fore tibiae brown inside and at tip."
+
+msgid ""
+"Femora black, fore tibiae brown with black outer margin, mid and hind tibiae"
+" black with brown tips"
+msgstr ""
+"Femora black, fore tibiae brown with black outer margin, mid and hind tibiae"
+" black with brown tips"
+
+msgid ""
+"Forelegs mostly\n"
+"yellow-brown, middle legs partially, hind legs mostly black"
+msgstr ""
+"Forelegs mostly\n"
+"yellow-brown, middle legs partially, hind legs mostly black"
+
+msgid "Yellow-brown, femora partly black"
+msgstr "Yellow-brown, femora partly black"
+
+msgid "Black, knees and tarsi brown"
+msgstr "Black, knees and tarsi brown"
+
+msgid "Black, brown or bicolour"
+msgstr "Black, brown or bicolour"
+
+msgid "Habitat for selecting"
+msgstr "Habitat for selecting"
+
+msgid "Sand dunes"
+msgstr "Sand dunes"
+
+msgid "River shingle"
+msgstr "River shingle"
+
+msgid "Wet habitats"
+msgstr "Wet habitats"
+
+msgid "Agricultural areas"
+msgstr "Agricultural areas"
+
+msgid "Heathland"
+msgstr "Heathland"
+
+msgid "Gardens, allotments and parklands"
+msgstr "Gardens, allotments and parklands"
+
+msgid "Urban, artificial habitats"
+msgstr "Urban, artificial habitats"
+
+msgid "Forests and woodlands"
+msgstr "Forests and woodlands"
+
+msgid "Host plant"
+msgstr "Host plant"
+
+msgid "Various grasses and low plants"
+msgstr "Various grasses and low plants"
+
+msgid "Various trees "
+msgstr "Various trees "
+
+msgid "Deciduous trees, particularly sycamore and ash"
+msgstr "Deciduous trees, particularly sycamore and ash"
+
+msgid "Larch, firs, pines, etc"
+msgstr "Larch, firs, pines, etc"
+
+msgid "Litter under heather"
+msgstr "Litter under heather"
+
+msgid "Various conifers"
+msgstr "Various conifers"
+
+msgid "Needled conifers, particularly pines"
+msgstr "Needled conifers, particularly pines"
+
+msgid "Needled conifers, sallows and willows"
+msgstr "Needled conifers, sallows and willows"
+
+msgid "Reeds"
+msgstr "Reeds"
+
+msgid "Reeds and rushes"
+msgstr "Reeds and rushes"
+
+msgid "Scots pine"
+msgstr "Scots pine"
+
+msgid "Various"
+msgstr "Various"
+
+msgid "Various deciduous trees and shrubs"
+msgstr "Various deciduous trees and shrubs"
+
+msgid "Various deciduous trees, particularly sallows and ash"
+msgstr "Various deciduous trees, particularly sallows and ash"
+
+msgid "Various grasses and low growing plants "
+msgstr "Various grasses and low growing plants "
+
+msgid "Various heathers, occasionally trees esp. Leylandii"
+msgstr "Various heathers, occasionally trees esp. Leylandii"
+
+msgid "Various bushes"
+msgstr "Various bushes"
+
+msgid "Various, particularly hogweed"
+msgstr "Various, particularly hogweed"
+
+msgid "Various, particularly lime and sycamore"
+msgstr "Various, particularly lime and sycamore"
+
+msgid "White bryony"
+msgstr "White bryony"
+
+msgid "Spruce"
+msgstr "Spruce"
+
+msgid "Scots Pine"
+msgstr "Scots Pine"
+
+msgid "Firs"
+msgstr "Firs"
+
+msgid "Oak"
+msgstr "Oak"
+
+msgid "Juniper"
+msgstr "Juniper"
+
+msgid "family Chenopodiaceae"
+msgstr "family Chenopodiaceae"
+
+msgid "Linden"
+msgstr "Linden"
+
+msgid "Elm"
+msgstr "Elm"
+
+msgid "Alder"
+msgstr "Alder"
+
+msgid "Willow"
+msgstr "Willow"
+
+msgid "Nettle"
+msgstr "Nettle"
+
+msgid "Thistle"
+msgstr "Thistle"
+
+msgid "family Asteraceae"
+msgstr "family Asteraceae"
+
+msgid "Broad-leaved grasses (family Poaceae)"
+msgstr "Broad-leaved grasses (family Poaceae)"
+
+msgid "Plants of the family Cucurbitaceae"
+msgstr "Plants of the family Cucurbitaceae"
+
+msgid "Squirting cucumber"
+msgstr "Squirting cucumber"
+
+msgid "Poplar"
+msgstr "Poplar"
+
+msgid "Sycamore"
+msgstr "Sycamore"
+
+msgid "Hornbeam"
+msgstr "Hornbeam"
+
+msgid "Goosefoot"
+msgstr "Goosefoot"
+
+msgid "Sugar beet"
+msgstr "Sugar beet"
+
+msgid "Tamarisk"
+msgstr "Tamarisk"
+
+msgid "Unknown"
+msgstr "Unknown"
+
+msgid "Spindle"
+msgstr "Spindle"
+
+msgid "Overwintering"
+msgstr "Overwintering"
+
+msgid ""
+"Low herbage, in gorse, in plant litter, on fence posts and stone walls, "
+"often in large aggregations"
+msgstr ""
+"Low herbage, in gorse, in plant litter, on fence posts and stone walls, "
+"often in large aggregations"
+
+msgid "Leaf litter, beech nuts "
+msgstr "Leaf litter, beech nuts "
+
+msgid "Bark crevices of conifers"
+msgstr "Bark crevices of conifers"
+
+msgid "Between leaves and in stems of reeds, grass tussocks"
+msgstr "Between leaves and in stems of reeds, grass tussocks"
+
+msgid "Gorse, under shingle stones, in leaf litter"
+msgstr "Gorse, under shingle stones, in leaf litter"
+
+msgid "High on Scots pine"
+msgstr "High on Scots pine"
+
+msgid "In houses, on bark"
+msgstr "In houses, on bark"
+
+msgid "In houses, on rocky surfaces"
+msgstr "In houses, on rocky surfaces"
+
+msgid "In leaf litter or on low plants"
+msgstr "In leaf litter or on low plants"
+
+msgid ""
+"In leaf litter, foliage and bark crevices of evergreen trees and shrubs"
+msgstr ""
+"In leaf litter, foliage and bark crevices of evergreen trees and shrubs"
+
+msgid "In litter or in bark crevices"
+msgstr "In litter or in bark crevices"
+
+msgid "In low herbage"
+msgstr "In low herbage"
+
+msgid "In low herbage, in conifer foliage"
+msgstr "In low herbage, in conifer foliage"
+
+msgid "In sheltered positions on deciduous trees, usually near base"
+msgstr "In sheltered positions on deciduous trees, usually near base"
+
+msgid "In soil or leaf litter"
+msgstr "In soil or leaf litter"
+
+msgid "Leaf litter or in sheltered positions on trees"
+msgstr "Leaf litter or in sheltered positions on trees"
+
+msgid "Low herbage  "
+msgstr "Low herbage  "
+
+msgid "Low herbage, grass tussocks "
+msgstr "Low herbage, grass tussocks "
+
+msgid "On conifers"
+msgstr "On conifers"
+
+msgid "Plant litter"
+msgstr "Plant litter"
+
+msgid "Plant litter, bark crevices, beech nuts"
+msgstr "Plant litter, bark crevices, beech nuts"
+
+msgid "Various, but close to ant nests"
+msgstr "Various, but close to ant nests"
+
+msgid "Various, usually low down"
+msgstr "Various, usually low down"
+
+msgid "Litter"
+msgstr "Litter"
+
+msgid "Rock crevices"
+msgstr "Rock crevices"
+
+msgid "Grass tussocks"
+msgstr "Grass tussocks"
+
+msgid "Often in large groups"
+msgstr "Often in large groups"
+
+msgid "In Soil (during winter and summer)"
+msgstr "In Soil (during winter and summer)"
+
+msgid "On the ground in dry plants"
+msgstr "On the ground in dry plants"
+
+msgid "Leaf litter"
+msgstr "Leaf litter"
+
+msgid "Under the bark of solitary tree"
+msgstr "Under the bark of solitary tree"
+
+msgid "Food"
+msgstr "Food"
+
+msgid "Pollen, nectar, fungi"
+msgstr "Pollen, nectar, fungi"
+
+msgid "Aphids "
+msgstr "Aphids "
+
+msgid "Adelgids, coccids"
+msgstr "Adelgids, coccids"
+
+msgid "Aphids and psyllids"
+msgstr "Aphids and psyllids"
+
+msgid "Aphids, coccids, adelgids, coccinellids, fruit"
+msgstr "Aphids, coccids, adelgids, coccinellids, fruit"
+
+msgid "Coccids"
+msgstr "Coccids"
+
+msgid "Larvae of heather leaf beetle"
+msgstr "Larvae of heather leaf beetle"
+
+msgid "Leaves "
+msgstr "Leaves "
+
+msgid "Leaves of white bryony and other cucurbits"
+msgstr "Leaves of white bryony and other cucurbits"
+
+msgid "Mildews"
+msgstr "Mildews"
+
+msgid "Vary greatly in abundance from year to year due to prey availability"
+msgstr "Vary greatly in abundance from year to year due to prey availability"
+
+msgid "Adelgids"
+msgstr "Adelgids"
+
+msgid "Pollen"
+msgstr "Pollen"
+
+msgid "Psyllids"
+msgstr "Psyllids"
+
+msgid "Chrysomelid larvae"
+msgstr "Chrysomelid larvae"
+
+msgid "Leaf beetle larvae"
+msgstr "Leaf beetle larvae"
+
+msgid "Plant material"
+msgstr "Plant material"
+
+msgid "Pollen of family Chenopodiaceae"
+msgstr "Pollen of family Chenopodiaceae"
+
+msgid "Immature stages of chrysomelids and psocopterans"
+msgstr "Immature stages of chrysomelids and psocopterans"
+
+msgid "Probably leaf beetle larvae"
+msgstr "Probably leaf beetle larvae"
+
+msgid "Phytophagous on grasses"
+msgstr "Phytophagous on grasses"
+
+msgid "Larvae mainly aphidophagous"
+msgstr "Larvae mainly aphidophagous"
+
+msgid "Plant leaves"
+msgstr "Plant leaves"
+
+msgid "True or False"
+msgstr "True or False"
+
+msgid "YES"
+msgstr "YES"
+
+msgid "NO"
+msgstr "NO"
+
+msgid "About the Project"
+msgstr "About the Project"
+
+msgid ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe. "
+msgstr ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe. "
+
+msgid ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species. "
+msgstr ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species. "
+
+msgid ""
+"The development of this app was funded by the Natural Environment Research "
+"Council and the Centre for Ecology & Hydrology (UK)."
+msgstr ""
+"The development of this app was funded by the Natural Environment Research "
+"Council and the Centre for Ecology & Hydrology (UK)."
+
+msgid ""
+"Thanks for taking part! For results from the project and further information"
+" please visit XXXXXXX"
+msgstr ""
+"Thanks for taking part! For results from the project and further information"
+" please visit XXXXXXX"
+
+msgid "Photographs and Illustrations"
+msgstr "Photographs and Illustrations"
+
+msgid ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries: XXXXXXX"
+msgstr ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries: XXXXXXX"
+
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
+msgid ""
+"Thank you for your interest in the app and for your help in providing data "
+"on ladybirds. This page explains how any personal data collected in the "
+"process of using this application will be stored and used."
+msgstr ""
+"Thank you for your interest in the app and for your help in providing data "
+"on ladybirds. This page explains how any personal data collected in the "
+"process of using this application will be stored and used."
+
+msgid ""
+"To support the conservation of ladybirds and scientific research, all data "
+"(including photos) submitted via the app will be licenced under a Creative "
+"Commons licence (CC0 - https://wiki.creativecommons.org/wiki/CC0_FAQ)."
+msgstr ""
+"To support the conservation of ladybirds and scientific research, all data "
+"(including photos) submitted via the app will be licenced under a Creative "
+"Commons licence (CC0 - https://wiki.creativecommons.org/wiki/CC0_FAQ)."
+
+msgid "Name"
+msgstr "Name"
+
+msgid ""
+"If you choose to create an account using this app it will be created on a "
+"database hosted by the Biological Record Centre. This will be linked to a "
+"website to enable you to log into the system to see your records and those "
+"submitted by other people for ladybirds and all other taxa. Your name, as "
+"specified when you create the account, will appear next to your records and "
+"will be publicly viewable. Your email address will not be shown next to your"
+" records but will be made available to ladybird experts in case they need to"
+" contact you about your sightings."
+msgstr ""
+"If you choose to create an account using this app it will be created on a "
+"database hosted by the Biological Record Centre. This will be linked to a "
+"website to enable you to log into the system to see your records and those "
+"submitted by other people for ladybirds and all other taxa. Your name, as "
+"specified when you create the account, will appear next to your records and "
+"will be publicly viewable. Your email address will not be shown next to your"
+" records but will be made available to ladybird experts in case they need to"
+" contact you about your sightings."
+
+msgid "E-mail address"
+msgstr "E-mail address"
+
+msgid ""
+"To create an account you will need to supply your e-mail address. This will "
+"be used in order to validate your account and send you relevant information "
+"about the project and to update you on the project's findings and future "
+"activities if you choose. It may also be used by ladybird experts in case "
+"they need to contact you about your sightings."
+msgstr ""
+"To create an account you will need to supply your e-mail address. This will "
+"be used in order to validate your account and send you relevant information "
+"about the project and to update you on the project's findings and future "
+"activities if you choose. It may also be used by ladybird experts in case "
+"they need to contact you about your sightings."
+
+msgid "How long will my data be stored?"
+msgstr "How long will my data be stored?"
+
+msgid ""
+"The records you submit containing your details will be stored for the "
+"duration of the Ladybird Survey project and used to further the scientific "
+"study of ladybirds. "
+msgstr ""
+"The records you submit containing your details will be stored for the "
+"duration of the Ladybird Survey project and used to further the scientific "
+"study of ladybirds. "
+
+msgid "Other information collected by the application"
+msgstr "Other information collected by the application"
+
+msgid ""
+"Your phone's unique user identification number will be collected but not "
+"made available to any 3rd party or made visible publicly."
+msgstr ""
+"Your phone's unique user identification number will be collected but not "
+"made available to any 3rd party or made visible publicly."
+
+msgid ""
+"All data collected will be stored on a secure server at the Centre for "
+"Ecology & Hydrology (UK). UK records that are verified will be passed to the"
+" NBN Atlas and data for other European countries will be made available via "
+"GBIF (http://www.gbif.org/)."
+msgstr ""
+"All data collected will be stored on a secure server at the Centre for "
+"Ecology & Hydrology (UK). UK records that are verified will be passed to the"
+" NBN Atlas and data for other European countries will be made available via "
+"GBIF (http://www.gbif.org/)."
+
+msgid "Who will have access to my personal data?"
+msgstr "Who will have access to my personal data?"
+
+msgid ""
+"No one outside of the Ladybird Survey project will have access to your "
+"personal data. Unless required by law data will not be made available to any"
+" third parties (third parties may include researchers and scientists from "
+"outside the project undertaking research on ladybirds) unless they are "
+"directly related to the project and we have first obtained your permission "
+"to do so."
+msgstr ""
+"No one outside of the Ladybird Survey project will have access to your "
+"personal data. Unless required by law data will not be made available to any"
+" third parties (third parties may include researchers and scientists from "
+"outside the project undertaking research on ladybirds) unless they are "
+"directly related to the project and we have first obtained your permission "
+"to do so."
+
+msgid "Where and When to Look"
+msgstr "Where and When to Look"
+
+msgid ""
+"All ladybirds are terrestrial and searching plants is the best way to find "
+"them."
+msgstr ""
+"All ladybirds are terrestrial and searching plants is the best way to find "
+"them."
+
+msgid ""
+"Different ladybird species occur in different habitats. Some species are "
+"generalists and may occur on a very wide range of plants, whilst others are "
+"specialists and are generally limited to one or a few plant species. "
+msgstr ""
+"Different ladybird species occur in different habitats. Some species are "
+"generalists and may occur on a very wide range of plants, whilst others are "
+"specialists and are generally limited to one or a few plant species. "
+
+msgid ""
+"Good habitats for ladybirds include trees, hedgerows and low herbaceous "
+"plants such as nettles. Deciduous trees generally have a different suite of "
+"species to coniferous trees. Coniferous trees are home to several of the "
+"more specialist species and so are worth looking at."
+msgstr ""
+"Good habitats for ladybirds include trees, hedgerows and low herbaceous "
+"plants such as nettles. Deciduous trees generally have a different suite of "
+"species to coniferous trees. Coniferous trees are home to several of the "
+"more specialist species and so are worth looking at."
+
+msgid ""
+"Adult ladybirds may be found at any time of year, although more tend to be "
+"seen between March and September. Ladybirds are diurnal (active during the "
+"day), but the weather and time of year effects when they are most active and"
+" more likely to be seen. The best time to look for ladybirds is between 10am"
+" and 4pm on a sunny day."
+msgstr ""
+"Adult ladybirds may be found at any time of year, although more tend to be "
+"seen between March and September. Ladybirds are diurnal (active during the "
+"day), but the weather and time of year effects when they are most active and"
+" more likely to be seen. The best time to look for ladybirds is between 10am"
+" and 4pm on a sunny day."
+
+msgid "Happy ladybird spotting!"
+msgstr "Happy ladybird spotting!"
+
+msgid "Species Info"
+msgstr "Species Info"
+
+msgid "Record"
+msgstr "Record"
+
+msgid "App Info"
+msgstr "App Info"
+
+msgid "About"
+msgstr "About"
+
+msgid "Credits"
+msgstr "Credits"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "App"
+msgstr "App"
+
+msgid "Account"
+msgstr "Account"
+
+msgid "Records"
+msgstr "Records"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "App Development"
+msgstr "App Development"
+
+msgid ""
+"This app was hand crafted with love by the BRC mobile development team. For "
+"suggestions and feedback please do not hesitate to"
+msgstr ""
+"This app was hand crafted with love by the BRC mobile development team. For "
+"suggestions and feedback please do not hesitate to"
+
+msgid ""
+"We are very grateful for all the people that helped to create this app:"
+msgstr ""
+"We are very grateful for all the people that helped to create this app:"
+
+msgid "Photographs and Illustrations:"
+msgstr "Photographs and Illustrations:"
+
+msgid "Front page"
+msgstr "Front page"
+
+msgid "Species pages"
+msgstr "Species pages"
+
+msgid ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries:"
+msgstr ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries:"
+
+msgid "Form"
+msgstr "Form"
+
+msgid "Size"
+msgstr "Size"
+
+msgid "Melanic"
+msgstr "Melanic"
+
+msgid "Leg"
+msgstr "Leg"
+
+msgid "Spots"
+msgstr "Spots"
+
+msgid "Plant"
+msgstr "Plant"
+
+msgid "Note"
+msgstr "Note"
+
+msgid "Favourite"
+msgstr "Favourite"
+
+msgid "Please sign in with your account or register."
+msgstr "Please sign in with your account or register."
+
+msgid "Username or email"
+msgstr "Username or email"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Sign in"
+msgstr "Sign in"
+
+msgid "Request a new password"
+msgstr "Request a new password"
+
+msgid "Enter your username or email address to request a password reset."
+msgstr "Enter your username or email address to request a password reset."
+
+msgid "Request"
+msgstr "Request"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Firstname"
+msgstr "Firstname"
+
+msgid "Surname"
+msgstr "Surname"
+
+msgid "Confirm password"
+msgstr "Confirm password"
+
+msgid "I agree to Terms and Conditions"
+msgstr "I agree to Terms and Conditions"
+
+msgid "Create"
+msgstr "Create"
+
+msgid "Page not found"
+msgstr "Page not found"
+
+msgid "Training"
+msgstr "Training"
+
+msgid "required"
+msgstr "required"
+
+msgid "Species"
+msgstr "Species"
+
+msgid "Locating..."
+msgstr "Locating..."
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Number"
+msgstr "Number"
+
+msgid "Comment"
+msgstr "Comment"
+
+msgid "Send"
+msgstr "Send"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "No photo has been added"
+msgstr "No photo has been added"
+
+msgid "Looks like you have not signed in to your account yet."
+msgstr "Looks like you have not signed in to your account yet."
+
+msgid "Saved recordings."
+msgstr "Saved recordings."
+
+msgid "Species missing"
+msgstr "Species missing"
+
+msgid "No location"
+msgstr "No location"
+
+msgid "Empty"
+msgstr "Empty"
+
+msgid "This record has been submitted and cannot be edited within this App."
+msgstr "This record has been submitted and cannot be edited within this App."
+
+msgid "Submit All"
+msgstr "Submit All"
+
+msgid "Delete All Saved"
+msgstr "Delete All Saved"
+
+msgid "Training Mode"
+msgstr "Training Mode"
+
+msgid "Application"
+msgstr "Application"
+
+msgid "Country"
+msgstr "Country"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid ""
+"Are you sure you want to reset the application to its initial state? This "
+"will wipe all the locally stored app data!"
+msgstr ""
+"Are you sure you want to reset the application to its initial state? This "
+"will wipe all the locally stored app data!"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Done!"
+msgstr "Done!"
+
+msgid "Delete All"
+msgstr "Delete All"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Are you sure you want to set all valid records for submission?"
+msgstr "Are you sure you want to set all valid records for submission?"
+
+msgid ""
+"Are you sure you want to delete all successfully synchronised local records?"
+msgstr ""
+"Are you sure you want to delete all successfully synchronised local records?"
+
+msgid "records on the server will not be touched"
+msgstr "records on the server will not be touched"
+
+msgid "can't be blank"
+msgstr "can't be blank"
+
+msgid "passwords are not equal"
+msgstr "passwords are not equal"
+
+msgid "you must agree to the terms"
+msgstr "you must agree to the terms"
+
+msgid "is too short"
+msgstr "is too short"
+
+msgid "invalid"
+msgstr "invalid"
+
+msgid "contact us"
+msgstr "contact us"
+
+msgid "Today"
+msgstr "Today"
+
+msgid "Updating"
+msgstr "Updating"
+
+msgid "This should take only a moment..."
+msgstr "This should take only a moment..."
+
+msgid "Sort"
+msgstr "Sort"
+
+msgid "Restart"
+msgstr "Restart"
+
+msgid "Yikes!"
+msgstr "Yikes!"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Sorry"
+msgstr "Sorry"
+
+msgid ""
+"Please select <b>Login</b> if you have an account or would like to register,"
+" otherwise select <b>Send</b> and enter your contact details."
+msgstr ""
+"Please select <b>Login</b> if you have an account or would like to register,"
+" otherwise select <b>Send</b> and enter your contact details."
+
+msgid "Your details"
+msgstr "Your details"
+
+msgid "Camera"
+msgstr "Camera"
+
+msgid "Choose a method to upload a photo"
+msgstr "Choose a method to upload a photo"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "Looks like you are offline!"
+msgstr "Looks like you are offline!"
+
+msgid "Welcome aboard!"
+msgstr "Welcome aboard!"
+
+msgid ""
+"Before submitting any records please check your email and click on the "
+"verification link"
+msgstr ""
+"Before submitting any records please check your email and click on the "
+"verification link"
+
+msgid "OK, got it"
+msgstr "OK, got it"
+
+msgid "Success"
+msgstr "Success"
+
+msgid "Further instructions have been sent to your e-mail address."
+msgstr "Further instructions have been sent to your e-mail address."
+
+msgid "date"
+msgstr "date"
+
+msgid "number"
+msgstr "number"
+
+msgid "comment"
+msgstr "comment"
+
+msgid "Please add any extra info about this record."
+msgstr "Please add any extra info about this record."
+
+msgid "How many individual?"
+msgstr "How many individual?"
+
+msgid "Present"
+msgstr "Present"
+
+msgid "We will try to determine your location using the inbuilt phone GPS."
+msgstr "We will try to determine your location using the inbuilt phone GPS."
+
+msgid ""
+"Please make sure you have turned the phone's geolocation on and are well "
+"away from large objects.<br/> e.g. <i>trees, buildings </i>"
+msgstr ""
+"Please make sure you have turned the phone's geolocation on and are well "
+"away from large objects.<br/> e.g. <i>trees, buildings </i>"
+
+msgid "Nearest Named Place"
+msgstr "Nearest Named Place"
+
+msgid "Locate"
+msgstr "Locate"
+
+msgid "Sorry!"
+msgstr "Sorry!"
+
+msgid "We could not find your location."
+msgstr "We could not find your location."
+
+msgid "We are trying to get your location. This might take a few minutes..."
+msgstr "We are trying to get your location. This might take a few minutes..."
+
+msgid "Accuracy"
+msgstr "Accuracy"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Refresh GPS"
+msgstr "Refresh GPS"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "Common Name"
+msgstr "Common Name"
+
+msgid "Common Name Reverse"
+msgstr "Common Name Reverse"
+
+msgid "Scientific Name"
+msgstr "Scientific Name"
+
+msgid "Scientific Name Reverse"
+msgstr "Scientific Name Reverse"
+
+msgid "Favourites"
+msgstr "Favourites"
+
+msgid "My favourites only"
+msgstr "My favourites only"
+
+msgid "Size in mm"
+msgstr "Size in mm"
+
+msgid "No species with selected filters."
+msgstr "No species with selected filters."
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe."
+msgstr ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe."
+
+msgid ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species."
+msgstr ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species."
+
+msgid "decempunctata"
+msgstr "decempunctata"
+
+msgid "bimaculata"
+msgstr "bimaculata"
+
+msgid "decempustulata"
+msgstr "decempustulata"
+
+msgid "non-melanic"
+msgstr "non-melanic"
+
+msgid "melanic"
+msgstr "melanic"
+
+msgid "typica"
+msgstr "typica"
+
+msgid "sexpustulata"
+msgstr "sexpustulata"
+
+msgid "quadrimaculata"
+msgstr "quadrimaculata"
+
+msgid "nebulosa"
+msgstr "nebulosa"
+
+msgid "sedecimpunctata"
+msgstr "sedecimpunctata"
+
+msgid "spectabilis"
+msgstr "spectabilis"
+
+msgid "conspicua"
+msgstr "conspicua"
+
+msgid "succinea"
+msgstr "succinea"
+
+msgid "axyridis"
+msgstr "axyridis"
+
+msgid "intermedia"
+msgstr "intermedia"
+
+msgid "areata"
+msgstr "areata"
+
+msgid "livida"
+msgstr "livida"
+
+msgid "sexnotata"
+msgstr "sexnotata"
+
+msgid "nigra"
+msgstr "nigra"
+
+msgid "red form"
+msgstr "red form"
+
+msgid "yellow form"
+msgstr "yellow form"
+
+msgid "Grid reference"
+msgstr "Grid reference"
+
+msgid "Nearest named place"
+msgstr "Nearest named place"
+
+msgid "What sort of habitat did you find the ladybirds in?"
+msgstr "What sort of habitat did you find the ladybirds in?"
+
+msgid "Not recorded"
+msgstr "Not recorded"
+
+msgid "habitat"
+msgstr "habitat"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Are you sure you want to remove this photo from the sample?"
+msgstr "Are you sure you want to remove this photo from the sample?"
+
+msgid "</br><i><b>Note:</b> it will remain in the gallery.</i>"
+msgstr "</br><i><b>Note:</b> it will remain in the gallery.</i>"
+
+msgid ""
+"Are you sure you want to remove this photo from the "
+"sample?</br><i><b>Note:</b> it will remain in the gallery.</i>"
+msgstr ""
+"Are you sure you want to remove this photo from the "
+"sample?</br><i><b>Note:</b> it will remain in the gallery.</i>"
+
+msgid ""
+"Are you sure you want to remove this record from your "
+"device?</br><i><b>Note:</b> it will remain on the server.</i>"
+msgstr ""
+"Are you sure you want to remove this record from your "
+"device?</br><i><b>Note:</b> it will remain on the server.</i>"
+
+msgid ""
+"Are you sure you want to delete all successfully synchronised local "
+"records?</br><i><b>Note:</b>records on the server will not be touched.</i>"
+msgstr ""
+"Are you sure you want to delete all successfully synchronised local "
+"records?</br><i><b>Note:</b>records on the server will not be touched.</i>"

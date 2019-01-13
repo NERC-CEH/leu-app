@@ -24,17 +24,8 @@ const SpeciesView = Marionette.View.extend({
 
   serializeData() {
     const species = this.model;
-    let common_name = species.get(appModel.get('country')).common_name;
-    common_name = common_name || species.get('UK').common_name;
+    const common_name = appModel.getSpeciesLocalName(species);
 
-    if (typeof common_name === 'object') {
-       const language = appModel.get('language');
-       common_name = common_name[language] && common_name[language]
-       
-       if (!common_name) {
-        common_name = species.get('UK').common_name;
-       }
-    }
     const sort = this.options.appModel.get('sort');
     const sortScientific = sort === 'scientific' || sort === 'scientific-reverse';
 

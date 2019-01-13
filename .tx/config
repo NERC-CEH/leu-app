@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[european-ladybirds.en-GB-pot]
+file_filter = src/common/translations/<lang>.po
+minimum_perc = 0
+source_file = src/common/translations/en_GB.pot
+source_lang = en_GB
+type = PO
+

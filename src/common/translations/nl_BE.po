@@ -1,0 +1,1928 @@
+# Translators:
+# CEH Apps, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: temp\n"
+"Last-Translator: CEH Apps, 2019\n"
+"Language-Team: Dutch (Belgium) (https://www.transifex.com/ceh/teams/95029/nl_BE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl_BE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: POEditor.com\n"
+
+msgid "Colour"
+msgstr "kleur"
+
+msgid "black"
+msgstr "zwart"
+
+msgid "brown"
+msgstr "bruin"
+
+msgid "red"
+msgstr "rood"
+
+msgid "orange"
+msgstr "oranje"
+
+msgid "yellow"
+msgstr "geel"
+
+msgid "pink"
+msgstr "roze"
+
+msgid "cream/beige"
+msgstr "roomkleurig/beige"
+
+msgid "white"
+msgstr "wit"
+
+msgid "Basic colour"
+msgstr "basiskleur"
+
+msgid "Beige"
+msgstr "beige"
+
+msgid "Black"
+msgstr "zwart"
+
+msgid "Black, brown, maroon"
+msgstr "zwart, bruin, kastanjekleurig"
+
+msgid "Chestnut"
+msgstr "kastanjekleurig"
+
+msgid "Dark orange"
+msgstr "donker oranje"
+
+msgid "July-April = beige April-June = reddish"
+msgstr "juli-april = beige april-june = roodachtig"
+
+msgid "Maroon-brown"
+msgstr "kastanje-bruin"
+
+msgid "Orange"
+msgstr "oranje"
+
+msgid "Orange-red"
+msgstr "oranje-rood"
+
+msgid "Red"
+msgstr "rood"
+
+msgid "Russet or burgundy"
+msgstr "bordeaux"
+
+msgid "Salmon, orange-red"
+msgstr "zalmkleurig, oranje-rood"
+
+msgid "Tan brown"
+msgstr "donkerbruin"
+
+msgid "Yellow"
+msgstr "geel"
+
+msgid "Yellow or black"
+msgstr "geel of zwart"
+
+msgid "Yellow, orange-red"
+msgstr "geel, oranje-rood"
+
+msgid "Black, juvenile red brown"
+msgstr "zwart, juveniel rood bruin"
+
+msgid "Ochroid or yellow"
+msgstr "strokleurig of geel"
+
+msgid "Beige to orange-red"
+msgstr "beige tot oranje-rood"
+
+msgid "Light yellow-brown"
+msgstr "lichtgeel-bruin"
+
+msgid "Orange-red or ochroid"
+msgstr "oranjerood of strokleurig"
+
+msgid "Ochroid to red"
+msgstr "strokleurig tot rood"
+
+msgid "Matt brown"
+msgstr "bleekbruin"
+
+msgid "Brown-orange or rusty"
+msgstr "bruin-oranje of roestkleurig"
+
+msgid "Cream, yellowish, pink or reddish"
+msgstr "roomkleurig, geelachtig, roze of roodachtig"
+
+msgid "Rusty brown or black"
+msgstr "roestbruin of zwart"
+
+msgid "White, cream, yellowish or pink"
+msgstr "wit, roomkleurig, geelachtig of roze"
+
+msgid "Brown"
+msgstr "bruin"
+
+msgid "Pattern colour"
+msgstr "kleurpatroon"
+
+msgid "Black spots"
+msgstr "zwarte stippen"
+
+msgid "Black spots with or without cream rings around them"
+msgstr "zwarte stippen met of zonder roomkleurige ringen errond"
+
+msgid "Black stripes, spots and patches"
+msgstr "zwarte strepen, stippen en vlekken"
+
+msgid "Brown or black spots "
+msgstr "bruine of zwarte stippen"
+
+msgid "Cream spots"
+msgstr "roomkleurige stippen"
+
+msgid "Cream streaking"
+msgstr "roomkleurige streping"
+
+msgid "Cream stripes and spots"
+msgstr "roomkleurige strepen en stippen"
+
+msgid "None or dark oblique line posteriorly"
+msgstr "Geen of donkere schuine lijn aan achterkant"
+
+msgid "Orange-red spots"
+msgstr "oranje-rode stippen"
+
+msgid "Orange stripes, spots and patches"
+msgstr "Oranje strepen, stippen en vlekken"
+
+msgid "Red spots"
+msgstr "rode stippen"
+
+msgid "Red, orange, cream"
+msgstr "rood, oranje, roomkleurig"
+
+msgid "White spots"
+msgstr "witte stippen"
+
+msgid "Yellow or off-white spots"
+msgstr "Geel of witachtige vlekken"
+
+msgid "No spots"
+msgstr "geen stippen"
+
+msgid "Yellow spots"
+msgstr "gele stippen"
+
+msgid "Orange spots"
+msgstr "oranje stippen"
+
+msgid "Yellow-orange spots"
+msgstr "geel-oranje stippen"
+
+msgid "Diamond-shaped black spots "
+msgstr "Diamantvormige zwarte vlekken"
+
+msgid "None"
+msgstr "geen"
+
+msgid "None or irregular light patches"
+msgstr "geen of onregelmatige lichte vlekken"
+
+msgid "Angular black spots, black suture"
+msgstr "Hoekige zwarte vlekken, zwarte middenstreep"
+
+msgid "Yellow rounded spots"
+msgstr "afgeronde gele stippen"
+
+msgid ""
+"White (mainly in rusty individuals) or lemon yellow (in black individuals)"
+msgstr ""
+"Wit (voornamelijk in roestkleurige exx.) of citroengeel (in zwarte "
+"exemplaren)"
+
+msgid "Black stripes"
+msgstr "zwarte strepen"
+
+msgid "Black with wide yellow-orange lateral margins"
+msgstr "zwart met brede geeloranje zijrand"
+
+msgid "Number of spots"
+msgstr "Aantal stippen"
+
+msgid "0-7 (usually 2)"
+msgstr "0-7 (gewoonlijk 2)"
+
+msgid "0-7 (usually 5)"
+msgstr "0-7 (gewoonlijk 5)"
+
+msgid "0-9 but nearly always 7"
+msgstr "0-9 maar bijna altijd 7"
+
+msgid "0-10  (usually spotless)"
+msgstr "0-10 (gewoonlijk geen stippen)"
+
+msgid "0-15 (usually 10)"
+msgstr "0-15 (gewoonlijk 10)"
+
+msgid "0-20"
+msgstr "0-20"
+
+msgid "0-23 (usually 15)"
+msgstr "0-23 (gewoonlijk 15)"
+
+msgid "0-15 "
+msgstr "0-15"
+
+msgid "0-26 (usually 20)"
+msgstr "0-26 (gewoonlijk 20)"
+
+msgid "2"
+msgstr "2"
+
+msgid "2-4 (usually 4)"
+msgstr "2-4 (gewoonlijk 4)"
+
+msgid "2-6  (usually 6)"
+msgstr "2-6 (gewoonlijk 6)"
+
+msgid "3-15  (usually 9)"
+msgstr "3-15 (gewoonlijk 9)"
+
+msgid "4"
+msgstr "4"
+
+msgid "4-14 (usually 14)"
+msgstr "4-14 (gewoonlijk 14)"
+
+msgid "5"
+msgstr "5"
+
+msgid "5-9 (usually 5)"
+msgstr "5-9 (gewoonlijk 5)"
+
+msgid "5-11 (usually 7)"
+msgstr "5-11 (gewoonlijk 7)"
+
+msgid "6"
+msgstr "6"
+
+msgid "7"
+msgstr "7"
+
+msgid "7-11 (usually 11)"
+msgstr "7-11 (gewoonlijk 11)"
+
+msgid "7-15 (usually 13)"
+msgstr "7-15 (gewoonlijk 13)"
+
+msgid "10"
+msgstr "10"
+
+msgid "11"
+msgstr "11"
+
+msgid "12"
+msgstr "12"
+
+msgid "12-16 (usually 16)"
+msgstr "12-16 (gewoonlijk 16)"
+
+msgid "13-18 (usually 16)"
+msgstr "13-18 (gewoonlijk 16)"
+
+msgid "14"
+msgstr "14"
+
+msgid "14-18"
+msgstr "14-18"
+
+msgid "15-21 (usually 19)"
+msgstr "15-21 (gewoonlijk 19)"
+
+msgid "16"
+msgstr "16"
+
+msgid "20-22"
+msgstr "20-22"
+
+msgid "4-6"
+msgstr "4-6"
+
+msgid "19"
+msgstr "19"
+
+msgid "12-14"
+msgstr "12-14"
+
+msgid "7-11"
+msgstr "7-11"
+
+msgid "9-11"
+msgstr "9-11"
+
+msgid "0"
+msgstr "0"
+
+msgid "20"
+msgstr "20"
+
+msgid "12-13"
+msgstr "12-13"
+
+msgid "usually 3"
+msgstr "gewoonlijk 3"
+
+msgid "usually 0"
+msgstr "gewoonlijk 0"
+
+msgid "7-9"
+msgstr "7-9"
+
+msgid "16-20"
+msgstr "16-20"
+
+msgid "Spot fusions"
+msgstr "samengesmolten stippen"
+
+msgid "3 lateral spots usually fused"
+msgstr "3 laterale stippen meestal samengesmolten"
+
+msgid "Common"
+msgstr "algemeen"
+
+msgid "No"
+msgstr "nee"
+
+msgid "Not common"
+msgstr "niet algemeen"
+
+msgid "Occasionally"
+msgstr "sporadisch"
+
+msgid "Rare"
+msgstr "zeldzaam"
+
+msgid "Very common"
+msgstr "zeer algemeen"
+
+msgid "Very rare"
+msgstr "zeer zeldzaam"
+
+msgid "Sometimes"
+msgstr "soms"
+
+msgid "Yes"
+msgstr "ja"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "Melanic (black) form"
+msgstr "melanistische (zwarte) vorm"
+
+msgid "Various and common "
+msgstr "Divers en algemeen"
+
+msgid "Black with a white patch on each side"
+msgstr "zwart met een witte vlek op de zijkant"
+
+msgid "Black with anterior-lateral white marks"
+msgstr "zwart met anterio-laterale witte tekening"
+
+msgid "Many and common"
+msgstr "abundant en algemeen"
+
+msgid "Pronotum pattern"
+msgstr "patroon op halsschild"
+
+msgid "one colour"
+msgstr "eenkleurig"
+
+msgid "with spots"
+msgstr "met stippen"
+
+msgid "M-shape"
+msgstr "M-vorm"
+
+msgid "with white patch on each side"
+msgstr "met witte vlek op zijkanten"
+
+msgid "none of them"
+msgstr "geen van deze"
+
+msgid "Pronotum"
+msgstr "Pronotum"
+
+msgid "Beige with black spots"
+msgstr "Beige met zwarte stippen"
+
+msgid "Beige or red with 6 black spots"
+msgstr "beige of rood met 6 zwarte stippen"
+
+msgid "Beige with brown m-mark"
+msgstr "Beige met bruine M-vormige tekening"
+
+msgid "Black with white patch at each side"
+msgstr "zwart met witte vlek aan elke kant"
+
+msgid "Black with white sides"
+msgstr "zwart met witte zijkanten"
+
+msgid "Maroon with lateral posterior off-white marks"
+msgstr "kastanjekleurig met posterio-lateraal witachtige tekening"
+
+msgid "Russet with black spots "
+msgstr "donker bruine kleur met een rood-oranje tint met zwarte vlekken"
+
+msgid ""
+"White or cream with up to 5 spots, or fused lateral spots forming 2 curved "
+"lines, M-shaped mark or solid trapezoid"
+msgstr ""
+"Wit of roomkleurig met maximaal 5 stippen of versmolten laterale stippen die"
+" 2 gebogen lijnen vormen, M-vormige tekening of trapeziumvormige tekening"
+
+msgid "White with 5 dark spots, which may be fused"
+msgstr "Wit met 5 donkere stippen, die verbonden kunnen zijn"
+
+msgid "White with 5-9 black spots"
+msgstr "Wit met 5-9 zwarte stippen"
+
+msgid "White with black M-mark"
+msgstr "wit met zwarte M-vormige tekening"
+
+msgid "White with black pattern"
+msgstr "wit met zwart patroon"
+
+msgid "White with chestnut m-mark or trapezium"
+msgstr "Wit met kastanjekleurige m-vorm van trapezium"
+
+msgid "White with rounded m-mark"
+msgstr "Wit met afgeronde M-vormige tekening"
+
+msgid "Yellow or cream with black spots or trapezium or crown mark"
+msgstr ""
+"geel of roomkleurig met zwarte stippen of trapezium of kroonvormige tekening"
+
+msgid "Yellow with five discrete black spots"
+msgstr "Geel met vijf afzonderlijke zwarte stippen"
+
+msgid " White with 5 dark spots, which may be fused, or dark trapezium mark "
+msgstr ""
+"wit met 5 donkere stippen, soms versmolten, of donkeren trapezium vorm"
+
+msgid ""
+"Beige with 6 black spots (VV pattern)  or up to nine spots with anterior "
+"pair and middle spot small."
+msgstr ""
+"beige met 6 zwarte stippen (VV patroon) of tot 9 stippen met voorste en "
+"middenste paar stippen klein"
+
+msgid "Yellow-brown"
+msgstr "geel-brun"
+
+msgid "Black, anterior angles and margins widely white"
+msgstr "zwart, voorhoeken en randen breed wit gerand"
+
+msgid "Black with large white trapeziodal patches on anterior angle"
+msgstr "zwart met grote witte trapezoidale vlekken op voorhoeken"
+
+msgid ""
+"Posteriorly black, anterior margin and angles pale, border between colours "
+"wavy or four-lobed"
+msgstr ""
+"achterkant zwart, voorrand en voorhoeken bleek, overgang tussen de kleuren "
+"golvend of vierlobbig"
+
+msgid "Brown with black spot at centre, rarely with other black markings."
+msgstr ""
+"bruin met zwarte stip in het midden, zelden met andere zwarte tekening"
+
+msgid ""
+"Black, anterior and lateral margins with equally wide white stripe, border "
+"between the two colours slightly wavy"
+msgstr ""
+"zwart, voor- en rijranden met even brede witte streep, overgang tussen de "
+"twee kleuren licht golvend"
+
+msgid "White to beige with seven black spots"
+msgstr "Wit tot beige met 7 zwarte stippen"
+
+msgid "Black with white lateral margins"
+msgstr "Zwart met witte laterale randen"
+
+msgid "Black with large white fore angles and middle white band"
+msgstr "zwart met brede witte voorhoeken en witte band over het midden"
+
+msgid "Black with wide yellow or brown lateral margins and fore angles"
+msgstr "zwart met brede gele of bruine zijrand and voorhoeken"
+
+msgid ""
+"Dark with wide white lateral margins, strongly arched in the shape of the "
+"letter C"
+msgstr "donker met brede witte randen, sterk gehoekt in de vorm van een C"
+
+msgid "Brown-orange, transparent with opaque white patches"
+msgstr "bruin-oranje, doorschijnend met ondoorzichtige witte vlekken"
+
+msgid "Black with white anterior and lateral margins"
+msgstr "zwart met witte voor- en zijranden"
+
+msgid "Black, anterior angles with small white area"
+msgstr "zwart, voorhoeken met kleine witte vlek"
+
+msgid ""
+"Black, fore corners (or sometimes both lateral and fore margins) of pronotum"
+" yellowish."
+msgstr ""
+"zwart, voorhoeken (soms zowel zij- en voorrand) van pronotum geelachtig"
+
+msgid ""
+"Black, fore angles of pronotum may be slightly cleared to yellowish colour"
+msgstr "zwart, voorhoeken pronotum kunnen lichtgekleurd tot geelachtig zijn"
+
+msgid ""
+"Yellow-brown, with white lateral and fore margin feebly cut around head, "
+"transparent, partially covering eyes. "
+msgstr ""
+"geel-bruin met witte zij- en voorranden, zwak ingesneden rond de kop, "
+"transparant en gedeeltelijk de ogen bedekkend"
+
+msgid ""
+"Yellow-brown, with white patches at\n"
+"fore and hind angles, sometimes with a white patch behind at the centre"
+msgstr ""
+"geelbruin, met witte vlekken in voor- en achterhoeken, soms met een witte "
+"vlek achteraan in het midden"
+
+msgid "Black, anterior angles widely white, fore margin in males white"
+msgstr "zwart, voorhoeken breed wit, voorrand wit bij mannetjes"
+
+msgid ""
+"Black, anterior angles and margins widely white, border between the two "
+"colours with four deep lobes"
+msgstr ""
+"zwart, voorhoeken en randen breed wit, overgang tussen de kleuren diep "
+"vierlobbig"
+
+msgid "Reddish yellow"
+msgstr "roodachtig geel"
+
+msgid "Habitat"
+msgstr "habitat"
+
+msgid "Grassland, meadow"
+msgstr "grasland, hooiland"
+
+msgid "Deciduous trees and hedgerows "
+msgstr "loofbomen en heggen"
+
+msgid "Conifer woodlands"
+msgstr "naaldbossen"
+
+msgid "Deciduous trees"
+msgstr "loofbomen"
+
+msgid "Deciduous woodland"
+msgstr "loofbossen"
+
+msgid "Grassland, meadows "
+msgstr "grasland, hooiland"
+
+msgid "Heather heathland"
+msgstr "heides"
+
+msgid "Heather heathland, conifer scrub"
+msgstr "droge heide en naaldopslag"
+
+msgid "Hedgerows and deciduous trees"
+msgstr "heggen en loofbomen"
+
+msgid "Herbage and shrub layers on well drained soils"
+msgstr "kruid- en struiklaag op goed gedraineerde bodems"
+
+msgid "Low herbage"
+msgstr "lage kruidachtige vegetatie"
+
+msgid "Low vegetation"
+msgstr "lage vegetatie"
+
+msgid "Mature Scots pine"
+msgstr "oude grove dennen"
+
+msgid "Needled conifers"
+msgstr "naaldbomen"
+
+msgid "Reed-beds and wetlands"
+msgstr "rietlanden en natte gebieden"
+
+msgid "Scots pine woodland"
+msgstr "bossen met grove den"
+
+msgid "Trees"
+msgstr "bomen"
+
+msgid "Unstable river shingle"
+msgstr "grindbanken en oevers van dynamische grindrivieren "
+
+msgid "Varied"
+msgstr "variabel"
+
+msgid "Varied but close to ant nests"
+msgstr "variabel maar in de buurt van mierennesten"
+
+msgid "Varied, but often low herbage"
+msgstr "variabel, maar vaak lage kruidachtigen"
+
+msgid "Varied, but particularly dune systems"
+msgstr "variabel, maar vooral duingebieden"
+
+msgid "Various heathers"
+msgstr "heide"
+
+msgid "Very varied"
+msgstr "zeer variabel"
+
+msgid "Wetlands"
+msgstr "natte gebieden"
+
+msgid "Coniferous trees"
+msgstr "naaldbomen"
+
+msgid "Mixed woodlands"
+msgstr "gemengde bossen"
+
+msgid "Peat bogs"
+msgstr "bergvenen"
+
+msgid "Gardens"
+msgstr "tuinen"
+
+msgid "Wet and shaded stands on herbs"
+msgstr "natte en beschaduwde plekken met kruiden"
+
+msgid "Lowland steppes"
+msgstr "laaglandsteppes"
+
+msgid "Herbs"
+msgstr "kruidachtigen"
+
+msgid "Wet woodlands"
+msgstr "vochtige bossen"
+
+msgid "Steppes"
+msgstr "steppes"
+
+msgid "Meadows"
+msgstr "hooilanden"
+
+msgid "Fields"
+msgstr "velden"
+
+msgid "Grassland"
+msgstr "graslanden"
+
+msgid "Heather"
+msgstr "heide"
+
+msgid "Allotments"
+msgstr "tuintjes"
+
+msgid "Marshes"
+msgstr "moerassen"
+
+msgid "Mountains"
+msgstr "bergen"
+
+msgid "Shrubs"
+msgstr "struiken"
+
+msgid "Forest margins"
+msgstr "bosranden"
+
+msgid "Dry stands"
+msgstr "droge standplaatsen"
+
+msgid "Bushes"
+msgstr "struiken"
+
+msgid "Alpine meadows"
+msgstr "alpiene graslanden"
+
+msgid "Vegetation among rocks"
+msgstr "rotsige vegetatie"
+
+msgid "Coniferous forests in highlands and mountains"
+msgstr "naaldbossen in hoogland en bergen"
+
+msgid "Wet deciduous woodlands"
+msgstr "vochtige loofbossen"
+
+msgid "Warmer and drier sites"
+msgstr "warme en droge gebieden"
+
+msgid "Canopy"
+msgstr "kruin"
+
+msgid "Mixed trees"
+msgstr "gemengde bossen"
+
+msgid "Forests"
+msgstr "bossen"
+
+msgid "Pine forests"
+msgstr "naaldbossen"
+
+msgid "Wet deciduous forests"
+msgstr "vochtige loofbossen"
+
+msgid "Rocks"
+msgstr "rotsen"
+
+msgid "Marine"
+msgstr "marien"
+
+msgid "Coast"
+msgstr "kust"
+
+msgid "Inland waters"
+msgstr "binnenwateren"
+
+msgid "Bogs and fens"
+msgstr "moerassen, venen en vennen"
+
+msgid "Grasslands"
+msgstr "graslanden"
+
+msgid "Heathland, scrub, hedgerow"
+msgstr "heides, struwelen en heggen"
+
+msgid "Woodland"
+msgstr "bossen"
+
+msgid "Unvegetated or sparsely vegetated habitats"
+msgstr "braakliggende en ruderale terreinen"
+
+msgid "Arable land, garden or park"
+msgstr "akkers, tuinen en parken"
+
+msgid "Industrial and Urban"
+msgstr "industriële en urbane milieus"
+
+msgid "Mixed habitats"
+msgstr "gemengd habitat"
+
+msgid "Leg colour"
+msgstr "pootkleur"
+
+msgid "Russet "
+msgstr "donkerbruin met roodoranje tint"
+
+msgid "Yellow-brown with black spots on tibiae"
+msgstr "geel-bruin met zwarte stippen op tibiae"
+
+msgid "Red-yellow"
+msgstr "rood-geel"
+
+msgid "Black-brown"
+msgstr "zwart-bruin"
+
+msgid "Rusty-brown"
+msgstr "roestkleurig-bruin"
+
+msgid "Orange-brown"
+msgstr "oranje-bruin"
+
+msgid "Black, fore and mid tibiae brown at tip."
+msgstr "zwart, voor- en middentibia bruin aan de top"
+
+msgid "Black, fore tibiae brown inside and at tip."
+msgstr "zwart, voortibia bruin aan binnenzijde en aan de top"
+
+msgid ""
+"Femora black, fore tibiae brown with black outer margin, mid and hind tibiae"
+" black with brown tips"
+msgstr ""
+"femora zwart, voortibia bruin met zwarte buitenzijde, midden- en achtertibia"
+" zwart met bruine top"
+
+msgid ""
+"Forelegs mostly\n"
+"yellow-brown, middle legs partially, hind legs mostly black"
+msgstr ""
+"Voorpoten in hoofzaak geel-bruin, middenpoten gedeeltelijk en achterpoten "
+"geheel zwart"
+
+msgid "Yellow-brown, femora partly black"
+msgstr "geel-brun, femora gedeeltelijk zwart"
+
+msgid "Black, knees and tarsi brown"
+msgstr "zwart, knieën en tarsen bruin"
+
+msgid "Black, brown or bicolour"
+msgstr "zwarte, bruin of tweekleurig"
+
+msgid "Habitat for selecting"
+msgstr "Habitat voor selectie"
+
+msgid "Sand dunes"
+msgstr "zandduinen"
+
+msgid "River shingle"
+msgstr "grindbanken"
+
+msgid "Wet habitats"
+msgstr "wetlands"
+
+msgid "Agricultural areas"
+msgstr "landbouwgebieden"
+
+msgid "Heathland"
+msgstr "heides"
+
+msgid "Gardens, allotments and parklands"
+msgstr "tuinen en parken"
+
+msgid "Urban, artificial habitats"
+msgstr "urbane habitats"
+
+msgid "Forests and woodlands"
+msgstr "bossen"
+
+msgid "Host plant"
+msgstr "voedselplant"
+
+msgid "Various grasses and low plants"
+msgstr "grassen en lage kruidachtigen"
+
+msgid "Various trees "
+msgstr "bomen"
+
+msgid "Deciduous trees, particularly sycamore and ash"
+msgstr "loofbomen, vooral esdoorn en es"
+
+msgid "Larch, firs, pines, etc"
+msgstr "lorken, sparren, dennen etc."
+
+msgid "Litter under heather"
+msgstr "heidestrooisel"
+
+msgid "Various conifers"
+msgstr "naaldbomen"
+
+msgid "Needled conifers, particularly pines"
+msgstr "naaldbomen, vooral dennen"
+
+msgid "Needled conifers, sallows and willows"
+msgstr "coniferen, wilgen"
+
+msgid "Reeds"
+msgstr "riet"
+
+msgid "Reeds and rushes"
+msgstr "riet en russen"
+
+msgid "Scots pine"
+msgstr "grove den"
+
+msgid "Various"
+msgstr "variabel"
+
+msgid "Various deciduous trees and shrubs"
+msgstr "verschillende loofbomen en struiken"
+
+msgid "Various deciduous trees, particularly sallows and ash"
+msgstr "diverse loofbomen, vooral wilgen en es"
+
+msgid "Various grasses and low growing plants "
+msgstr "diverse grassen en laagblijvende planten"
+
+msgid "Various heathers, occasionally trees esp. Leylandii"
+msgstr "heidesoorten, soms op bomen zoals leylandcipres "
+
+msgid "Various bushes"
+msgstr "diverse struikachtigen"
+
+msgid "Various, particularly hogweed"
+msgstr "divers, vooral berenklauw"
+
+msgid "Various, particularly lime and sycamore"
+msgstr "allerlei, vooral linde en esdoorn"
+
+msgid "White bryony"
+msgstr "heggenrank"
+
+msgid "Spruce"
+msgstr "Spar"
+
+msgid "Scots Pine"
+msgstr "grove den"
+
+msgid "Firs"
+msgstr "Zilverspar"
+
+msgid "Oak"
+msgstr "eik"
+
+msgid "Juniper"
+msgstr "jeneverbes"
+
+msgid "family Chenopodiaceae"
+msgstr "ganzenvoetfamilie"
+
+msgid "Linden"
+msgstr "linde"
+
+msgid "Elm"
+msgstr "olm"
+
+msgid "Alder"
+msgstr "els"
+
+msgid "Willow"
+msgstr "wilg"
+
+msgid "Nettle"
+msgstr "brandnetel"
+
+msgid "Thistle"
+msgstr "distel"
+
+msgid "family Asteraceae"
+msgstr "samengesteldbloemigen"
+
+msgid "Broad-leaved grasses (family Poaceae)"
+msgstr "breedbladige grassen"
+
+msgid "Plants of the family Cucurbitaceae"
+msgstr "planten van de komkommerfamilie"
+
+msgid "Squirting cucumber"
+msgstr "Springkomkommer"
+
+msgid "Poplar"
+msgstr "populier"
+
+msgid "Sycamore"
+msgstr "esdoorn"
+
+msgid "Hornbeam"
+msgstr "haagbeuk"
+
+msgid "Goosefoot"
+msgstr "ganzevoet"
+
+msgid "Sugar beet"
+msgstr "suikerbiet"
+
+msgid "Tamarisk"
+msgstr "Tamarisk"
+
+msgid "Unknown"
+msgstr "onbekend"
+
+msgid "Spindle"
+msgstr ""
+
+msgid "Overwintering"
+msgstr "overwintering"
+
+msgid ""
+"Low herbage, in gorse, in plant litter, on fence posts and stone walls, "
+"often in large aggregations"
+msgstr ""
+"lage kruiden, in gaspeldoorn, in plantenafval, op afsluitingen en muurtjes, "
+"vaak in grote groepen"
+
+msgid "Leaf litter, beech nuts "
+msgstr "bladval, beukennootjes"
+
+msgid "Bark crevices of conifers"
+msgstr "spleten in schors van naaldbomen"
+
+msgid "Between leaves and in stems of reeds, grass tussocks"
+msgstr "tussen bladeren en in rietstengels, graspollen"
+
+msgid "Gorse, under shingle stones, in leaf litter"
+msgstr "gaspeldoorn, onder grind op rivieroevers, in bladstrooisel"
+
+msgid "High on Scots pine"
+msgstr "hoog in grove den"
+
+msgid "In houses, on bark"
+msgstr "in huizen, op schors"
+
+msgid "In houses, on rocky surfaces"
+msgstr "In huizen, op stenige oppervlakken"
+
+msgid "In leaf litter or on low plants"
+msgstr "in bladval of op lage planten"
+
+msgid ""
+"In leaf litter, foliage and bark crevices of evergreen trees and shrubs"
+msgstr ""
+"in bladstrooisel en spleten in schors van altijdgroene bomen en struiken"
+
+msgid "In litter or in bark crevices"
+msgstr "in strooisel of achter schors"
+
+msgid "In low herbage"
+msgstr "lage kruidachtigen"
+
+msgid "In low herbage, in conifer foliage"
+msgstr "in lage kruiden, in dennennaalden"
+
+msgid "In sheltered positions on deciduous trees, usually near base"
+msgstr "verscholen op loofbomen, vooral aan de basis"
+
+msgid "In soil or leaf litter"
+msgstr "strooisel of bladval"
+
+msgid "Leaf litter or in sheltered positions on trees"
+msgstr "bladstrooisel, verscholen plekjes in bomen"
+
+msgid "Low herbage  "
+msgstr "lage kruiden"
+
+msgid "Low herbage, grass tussocks "
+msgstr "lage kruiden, pollenvormende grassen"
+
+msgid "On conifers"
+msgstr "op naaldbomen"
+
+msgid "Plant litter"
+msgstr "plantafval"
+
+msgid "Plant litter, bark crevices, beech nuts"
+msgstr "plantafval, schors, beukennootjes"
+
+msgid "Various, but close to ant nests"
+msgstr "variabel, maar in de buurt van mierennesten"
+
+msgid "Various, usually low down"
+msgstr "variabel, gewoonlijk laag bij de grond"
+
+msgid "Litter"
+msgstr "strooisel"
+
+msgid "Rock crevices"
+msgstr "rotsspleten"
+
+msgid "Grass tussocks"
+msgstr "pollenvormende grassen"
+
+msgid "Often in large groups"
+msgstr "vaak in grote groepen"
+
+msgid "In Soil (during winter and summer)"
+msgstr "in strooisel (winter en zomer)"
+
+msgid "On the ground in dry plants"
+msgstr "op de grond in droog plantmateriaal"
+
+msgid "Leaf litter"
+msgstr "bladval"
+
+msgid "Under the bark of solitary tree"
+msgstr "achter schors van bomen"
+
+msgid "Food"
+msgstr "voedsel"
+
+msgid "Pollen, nectar, fungi"
+msgstr "stuifmeel, nectar, schimmels"
+
+msgid "Aphids "
+msgstr "bladluizen"
+
+msgid "Adelgids, coccids"
+msgstr "dennenluizen en schildluizen "
+
+msgid "Aphids and psyllids"
+msgstr "bladluizen en bladvlooien"
+
+msgid "Aphids, coccids, adelgids, coccinellids, fruit"
+msgstr "bladluizen, schildluizen, dennenluizen, lieveheersbeestjes, fruit"
+
+msgid "Coccids"
+msgstr "schildluizen"
+
+msgid "Larvae of heather leaf beetle"
+msgstr "larven van heidehaantje"
+
+msgid "Leaves "
+msgstr "bladeren"
+
+msgid "Leaves of white bryony and other cucurbits"
+msgstr "bladeren van heggenrank en andere cucurbitaceae"
+
+msgid "Mildews"
+msgstr "meeldauwschimmels"
+
+msgid "Vary greatly in abundance from year to year due to prey availability"
+msgstr "grote jaarlijkse aantalschommelingen door prooibeschikbaarheid"
+
+msgid "Adelgids"
+msgstr "dennenluizen"
+
+msgid "Pollen"
+msgstr "pollen"
+
+msgid "Psyllids"
+msgstr "bladvlooien"
+
+msgid "Chrysomelid larvae"
+msgstr "larven van bladhaantjes"
+
+msgid "Leaf beetle larvae"
+msgstr "larven van bladhaantjes"
+
+msgid "Plant material"
+msgstr "plantaardig materiaal"
+
+msgid "Pollen of family Chenopodiaceae"
+msgstr "pollen van chenopodiaceae"
+
+msgid "Immature stages of chrysomelids and psocopterans"
+msgstr "jonge stadia van bladhaantjes en stofluizen"
+
+msgid "Probably leaf beetle larvae"
+msgstr "waarschijnlijk larven van bladhaantjes"
+
+msgid "Phytophagous on grasses"
+msgstr "bladeter op grassen"
+
+msgid "Larvae mainly aphidophagous"
+msgstr "larven eten voornamelijk bladluizen"
+
+msgid "Plant leaves"
+msgstr "bladeren"
+
+msgid "True or False"
+msgstr "waar of niet waar"
+
+msgid "YES"
+msgstr "ja"
+
+msgid "NO"
+msgstr "nee"
+
+msgid "About the Project"
+msgstr "Over dit project"
+
+msgid ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe. "
+msgstr ""
+"Het Centre for Ecology & Hydrology (UK) en Europese partners bundelden hun "
+"krachten om lieveheersbeestje in kaart te brengen in Europa."
+
+msgid ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species. "
+msgstr ""
+"Reeds honderden jaren noteren mensen in Europa welke planten en dieren ze "
+"waarnemen. De gegevens verzameld met deze app zullen gebruikt worden om meer"
+" inzicht te krijgen in de verspreiding en ecologie van lieveheersbeestjes. "
+"De verzamelde informatie wordt gebruikt door wetenschappers om te "
+"onderzoeken zien hoe dieren reageren op veranderingen in hun leefmilieu, "
+"zoals klimaatverandering en de opkomst van exoten. Dit onderzoek zou nooit "
+"mogelijk zijn zonder jouw bijdrage."
+
+msgid ""
+"The development of this app was funded by the Natural Environment Research "
+"Council and the Centre for Ecology & Hydrology (UK)."
+msgstr ""
+"De ontwikkeling van deze app werd gefinancierd door de Natural Environment "
+"Research Council en het Centre for Ecology & Hydrology (UK)."
+
+msgid ""
+"Thanks for taking part! For results from the project and further information"
+" please visit XXXXXXX"
+msgstr ""
+"Dank voor je medewerking! Resultaten van het project en meer informatie op "
+"XXXXXXX"
+
+msgid "Photographs and Illustrations"
+msgstr "Foto's en illustraties"
+
+msgid ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries: XXXXXXX"
+msgstr ""
+"Speciale dank gaat naar Chris Shields voor zijn fantastische "
+"lieveheersbeestje illustraties gebruikt binnen deze app. We willen ook graag"
+" de volgende fotografen bedanken die zo vriendelijk waren hun uitstekende "
+"beelden ter beschikking te stellen voor de foto albums: XXXXXXX"
+
+msgid "Privacy policy"
+msgstr "Privacy en copyright"
+
+msgid ""
+"Thank you for your interest in the app and for your help in providing data "
+"on ladybirds. This page explains how any personal data collected in the "
+"process of using this application will be stored and used."
+msgstr ""
+"Dank u voor uw interesse in de app en voor uw hulp bij het verzamelen van "
+"gegevens over lieveheersbeestjes. Op deze pagina leggen we uit hoe we omgaan"
+" met uw persoonlijke gegevens en met de gegevens U verzamelt met de app."
+
+msgid ""
+"To support the conservation of ladybirds and scientific research, all data "
+"(including photos) submitted via the app will be licenced under a Creative "
+"Commons licence (CC0 - https://wiki.creativecommons.org/wiki/CC0_FAQ)."
+msgstr ""
+"Ter bescherming van lieveheersbeestjes en voor wetenschappelijke doeleinden "
+"worden alle gegevens (inclusief foto's) die via de app ingediend worden "
+"onder een Creative Commons licentie (CC0 - "
+"https://wiki.creativecommons.org/wiki/CC0_FAQ) ter beschikking gesteld."
+
+msgid "Name"
+msgstr "Naam"
+
+msgid ""
+"If you choose to create an account using this app it will be created on a "
+"database hosted by the Biological Record Centre. This will be linked to a "
+"website to enable you to log into the system to see your records and those "
+"submitted by other people for ladybirds and all other taxa. Your name, as "
+"specified when you create the account, will appear next to your records and "
+"will be publicly viewable. Your email address will not be shown next to your"
+" records but will be made available to ladybird experts in case they need to"
+" contact you about your sightings."
+msgstr ""
+"Als u ervoor kiest om een account aan te maken met behulp van deze app zal "
+"deze geregistreerd worden in een database van het Biological Records Centre "
+"(UK). Uw account wordt gekoppeld aan een website waarop u kunt inloggen, en "
+"waar u uw gegevens kunt beheren en raadplegen. U kunt er ook gegevens van "
+"anderen over lieveheersbeestjes en andere soorten bekijken. Uw naam, zoals "
+"gespecificeerd wanneer u de account hebt gemaakt, zal zichtbaar zijn bij uw "
+"waarnemingen en is openbaar. Uw e-mailadres wordt niet getoond naast uw "
+"waarnemingen, maar zal zichtbaar zijn voor experts in het geval ze contact "
+"met u willen opnemen over uw waarnemingen ."
+
+msgid "E-mail address"
+msgstr "e-mail"
+
+msgid ""
+"To create an account you will need to supply your e-mail address. This will "
+"be used in order to validate your account and send you relevant information "
+"about the project and to update you on the project's findings and future "
+"activities if you choose. It may also be used by ladybird experts in case "
+"they need to contact you about your sightings."
+msgstr ""
+"Om een account aan te maken, hebben we uw e-mail adres nodig. Dit wordt "
+"gebruikt om uw account te valideren en om relevante informatie over het "
+"project, resultaten en toekomstige activiteiten te bezorgen indien u dat "
+"wenst. Uw e-mail adres kan ook gebruikt worden door experts in het geval ze "
+"contact met u moeten opnemen over uw waarnemingen."
+
+msgid "How long will my data be stored?"
+msgstr "Hoelang worden mijn data bewaard?"
+
+msgid ""
+"The records you submit containing your details will be stored for the "
+"duration of the Ladybird Survey project and used to further the scientific "
+"study of ladybirds. "
+msgstr ""
+"De records die u indient, met uw persoonsgegevens, worden opgeslagen voor de"
+" duur van het Ladybird Survey project en worden enkel gebruikt om de "
+"wetenschappelijke studie van lieveheersbeestjes te bevorderen."
+
+msgid "Other information collected by the application"
+msgstr "Andere informatie verzameld door deze applicatie"
+
+msgid ""
+"Your phone's unique user identification number will be collected but not "
+"made available to any 3rd party or made visible publicly."
+msgstr ""
+"De applicatie verzamelt tevens het unieke gebruikers identificatienummer van"
+" uw telefoon. Dit wordt in geen geval aan derden ter beschikking gesteld "
+"noch zichtbaar gemaakt in het openbaar."
+
+msgid ""
+"All data collected will be stored on a secure server at the Centre for "
+"Ecology & Hydrology (UK). UK records that are verified will be passed to the"
+" NBN Atlas and data for other European countries will be made available via "
+"GBIF (http://www.gbif.org/)."
+msgstr ""
+"Alle verzamelde gegevens worden opgeslagen op een beveiligde server van het "
+"Centre for Ecology & Hydrology (CEH, UK). UK records die geverifieerd zijn "
+"worden doorgegeven aan de NBN Atlas. Gegevens van andere Europese landen "
+"zullen via GBIF (http://www.gbif.org/) ter beschikking gesteld worden."
+
+msgid "Who will have access to my personal data?"
+msgstr "Wie heeft toegang tot mijn persoonlijke gegevens?"
+
+msgid ""
+"No one outside of the Ladybird Survey project will have access to your "
+"personal data. Unless required by law data will not be made available to any"
+" third parties (third parties may include researchers and scientists from "
+"outside the project undertaking research on ladybirds) unless they are "
+"directly related to the project and we have first obtained your permission "
+"to do so."
+msgstr ""
+"Niemand buiten het Ladybird Survey project zal toegang krijgen tot uw "
+"persoonlijke gegevens. Tenzij vereist door de wet worden uw gegevens niet "
+"ter beschikking gesteld aan derden (waaronder onderzoekers en wetenschappers"
+" van buiten het project die onderzoek verrichten op lieveheersbeestjes), "
+"tenzij ze rechtstreeks verband houden met het project en we eerst uw "
+"toestemming verkregen om dat te doen."
+
+msgid "Where and When to Look"
+msgstr "Waar en wanneer zoeken"
+
+msgid ""
+"All ladybirds are terrestrial and searching plants is the best way to find "
+"them."
+msgstr ""
+"Lieveheersbeestjes moet je gaan zoeken op planten, bijvoorbeeld met een "
+"insectennet of een klopscherm. De beste periodes zijn het voor- en najaar."
+
+msgid ""
+"Different ladybird species occur in different habitats. Some species are "
+"generalists and may occur on a very wide range of plants, whilst others are "
+"specialists and are generally limited to one or a few plant species. "
+msgstr ""
+"Verschillende soorten lieveheersbeestjes komen in verschillende habitats "
+"voor. Sommige soorten zijn generalisten en vind je overal. Andere zijn "
+"specialisten en zijn over het algemeen beperkt tot één of enkele "
+"plantensoorten of bijzondere habitats."
+
+msgid ""
+"Good habitats for ladybirds include trees, hedgerows and low herbaceous "
+"plants such as nettles. Deciduous trees generally have a different suite of "
+"species to coniferous trees. Coniferous trees are home to several of the "
+"more specialist species and so are worth looking at."
+msgstr ""
+"Goede habitats voor lieveheersbeestjes zijn bomen, hagen en lage "
+"kruidachtige planten zoals brandnetels, vaak met bladluizen erop. Loofbomen "
+"herbergen een andere lieveheersbeestjesfauna dan naaldbomen. Naaldbomen zijn"
+" de thuisbasis van een aantal meer gespecialiseerde soorten en zijn dus de "
+"moeite waard om te onderzoeken."
+
+msgid ""
+"Adult ladybirds may be found at any time of year, although more tend to be "
+"seen between March and September. Ladybirds are diurnal (active during the "
+"day), but the weather and time of year effects when they are most active and"
+" more likely to be seen. The best time to look for ladybirds is between 10am"
+" and 4pm on a sunny day."
+msgstr ""
+"Volwassen lieveheersbeestjes kunnen op elk moment van het jaar gevonden "
+"worden, maar zijn meestal gemakkelijker te vinden tussen maart en september."
+" Lieveheersbeestjes zijn vooral dagactief maar het weer en de tijd van het "
+"jaar beïnvloeden de kans om ze te vinden. Op zonnige dagen heb je de meeste "
+"kans ze te vinden."
+
+msgid "Happy ladybird spotting!"
+msgstr "Goede vangst!"
+
+msgid "Species Info"
+msgstr "Soortinformatie"
+
+msgid "Record"
+msgstr "Invoeren"
+
+msgid "App Info"
+msgstr "Over de app"
+
+msgid "About"
+msgstr "Het project"
+
+msgid "Credits"
+msgstr "Dankwoord"
+
+msgid "Settings"
+msgstr "Configuratie"
+
+msgid "App"
+msgstr "App"
+
+msgid "Account"
+msgstr "Account"
+
+msgid "Records"
+msgstr "Waarnemingen"
+
+msgid "Logout"
+msgstr "Uitloggen"
+
+msgid "Login"
+msgstr "Inloggen"
+
+msgid "Register"
+msgstr "Registreer"
+
+msgid "App Development"
+msgstr "App ontwikkeling"
+
+msgid ""
+"This app was hand crafted with love by the BRC mobile development team. For "
+"suggestions and feedback please do not hesitate to"
+msgstr ""
+"Deze applicatie werd met liefde ontworpen door het BRC mobile development "
+"team. Aarzel niet om ons te contacteren met suggesties en commentaar."
+
+msgid ""
+"We are very grateful for all the people that helped to create this app:"
+msgstr "We zijn iedereen die meehielp deze app te ontwikkelen erg dankbaar:"
+
+msgid "Photographs and Illustrations:"
+msgstr "Foto's"
+
+msgid "Front page"
+msgstr "Homepage"
+
+msgid "Species pages"
+msgstr "Soortenpagina's"
+
+msgid ""
+"The project would like to extend its thanks to Chris Shields for his "
+"fantastic ladybird illustrations used within the app. We would also like to "
+"thank the following photographers who kindly provided their excellent images"
+" to us for use in the ladybird image galleries:"
+msgstr ""
+"Speciale dank gaat naar Chris Shields voor zijn fantastische "
+"lieveheersbeestje illustraties gebruikt binnen deze app. We willen ook graag"
+" de volgende fotografen bedanken die zo vriendelijk waren hun uitstekende "
+"beelden ter beschikking te stellen voor de foto albums: "
+
+msgid "Form"
+msgstr "Vorm"
+
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Melanic"
+msgstr "Melanistisch"
+
+msgid "Leg"
+msgstr "Poot"
+
+msgid "Spots"
+msgstr "Stippen"
+
+msgid "Plant"
+msgstr "Plant"
+
+msgid "Note"
+msgstr "Opmerking"
+
+msgid "Favourite"
+msgstr "Favoriet"
+
+msgid "Please sign in with your account or register."
+msgstr "Log in met je account of registreer"
+
+msgid "Username or email"
+msgstr "Gebruikersnaam of e-mail"
+
+msgid "Password"
+msgstr "Paswoord"
+
+msgid "Sign in"
+msgstr "Log in"
+
+msgid "Request a new password"
+msgstr "Vraag een nieuw wachtwoord aan"
+
+msgid "Enter your username or email address to request a password reset."
+msgstr "Voer uw gebruikersnaam of e-mailadres in om uw paswoord te resetten."
+
+msgid "Request"
+msgstr "Vraag aan"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Firstname"
+msgstr "Voornaam"
+
+msgid "Surname"
+msgstr "Familienaam"
+
+msgid "Confirm password"
+msgstr "Bevestig paswoord"
+
+msgid "I agree to Terms and Conditions"
+msgstr "Ik aanvaard de gebruikersvoorwaarden"
+
+msgid "Create"
+msgstr "Maak aan"
+
+msgid "Page not found"
+msgstr "Pagina niet gevonden"
+
+msgid "Training"
+msgstr "Oefenen"
+
+msgid "required"
+msgstr "Vereist veld"
+
+msgid "Species"
+msgstr "Soort"
+
+msgid "Locating..."
+msgstr "Locatie zoeken"
+
+msgid "Location"
+msgstr "Vindplaats"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Number"
+msgstr "Aantal"
+
+msgid "Comment"
+msgstr "Opmerking"
+
+msgid "Send"
+msgstr "Verzenden"
+
+msgid "Phone"
+msgstr "Telefoonnummer"
+
+msgid "No photo has been added"
+msgstr "Er is geen foto toegevoegd"
+
+msgid "Looks like you have not signed in to your account yet."
+msgstr "Het lijkt erop dat je nog niet hebt ingelogd op je account."
+
+msgid "Saved recordings."
+msgstr "Opgeslagen waarnemingen"
+
+msgid "Species missing"
+msgstr "Soort ontbreekt"
+
+msgid "No location"
+msgstr "Geen locatie"
+
+msgid "Empty"
+msgstr "Leeg"
+
+msgid "This record has been submitted and cannot be edited within this App."
+msgstr "Deze waarneming is ingediend en kan niet worden bewerkt in deze App."
+
+msgid "Submit All"
+msgstr "Verzend alles"
+
+msgid "Delete All Saved"
+msgstr "Verwijder alle opgeslagen waarnemingen"
+
+msgid "Training Mode"
+msgstr "Oefenmodus"
+
+msgid "Application"
+msgstr "Applicatie"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid ""
+"Are you sure you want to reset the application to its initial state? This "
+"will wipe all the locally stored app data!"
+msgstr ""
+"Weet je zeker dat je de toepassing wil herstellen naar de oorspronkelijke "
+"toestand? Hierdoor worden alle lokaal opgeslagen appgegevens gewist!"
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "Done!"
+msgstr "Gelukt!"
+
+msgid "Delete All"
+msgstr "Alles verwijderen"
+
+msgid "Delete"
+msgstr "Verwijder"
+
+msgid "Are you sure you want to set all valid records for submission?"
+msgstr "Weet u zeker dat u alle geldige records wilt indienen?"
+
+msgid ""
+"Are you sure you want to delete all successfully synchronised local records?"
+msgstr ""
+"Weet u zeker dat u alle succesvol gesynchroniseerde lokaal opgeslagen "
+"records wilt verwijderen?"
+
+msgid "records on the server will not be touched"
+msgstr "Observaties op de server worden niet beïnvloed"
+
+msgid "can't be blank"
+msgstr "Mag niet leeg zijn"
+
+msgid "passwords are not equal"
+msgstr "Wachtwoorden zijn niet gelijk"
+
+msgid "you must agree to the terms"
+msgstr "Je moet akkoord gaan met de voorwaarden"
+
+msgid "is too short"
+msgstr "is te kort"
+
+msgid "invalid"
+msgstr "Ongeldig"
+
+msgid "contact us"
+msgstr "Contacteer ons"
+
+msgid "Today"
+msgstr "Vandaag"
+
+msgid "Updating"
+msgstr "Updaten"
+
+msgid "This should take only a moment..."
+msgstr "Dit zou maar even duren ..."
+
+msgid "Sort"
+msgstr "Sorteren"
+
+msgid "Restart"
+msgstr "Herstart"
+
+msgid "Yikes!"
+msgstr "123"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Sorry"
+msgstr "Sorry"
+
+msgid ""
+"Please select <b>Login</b> if you have an account or would like to register,"
+" otherwise select <b>Send</b> and enter your contact details."
+msgstr "128"
+
+msgid "Your details"
+msgstr "uw gegevens"
+
+msgid "Camera"
+msgstr "Fototoestel"
+
+msgid "Choose a method to upload a photo"
+msgstr "Kies een methode voor foto upload"
+
+msgid "Gallery"
+msgstr "Gallerij"
+
+msgid "Looks like you are offline!"
+msgstr "Het ziet ernaar uit dat je offline bent!"
+
+msgid "Welcome aboard!"
+msgstr "Welkom aan boord!"
+
+msgid ""
+"Before submitting any records please check your email and click on the "
+"verification link"
+msgstr ""
+"Voordat u waarnemingen indient, controleer uw e-mail en klik op de "
+"verificatie link"
+
+msgid "OK, got it"
+msgstr "OK ik snap het"
+
+msgid "Success"
+msgstr "Succes"
+
+msgid "Further instructions have been sent to your e-mail address."
+msgstr "Verdere instructies zijn verzonden naar uw e-mailadres."
+
+msgid "date"
+msgstr "Datum"
+
+msgid "number"
+msgstr "Aantal"
+
+msgid "comment"
+msgstr "Opmerking"
+
+msgid "Please add any extra info about this record."
+msgstr "Voeg extra informatie over deze observatie toe."
+
+msgid "How many individual?"
+msgstr "Hoeveel exemplaren?"
+
+msgid "Present"
+msgstr "Aanwezig"
+
+msgid "We will try to determine your location using the inbuilt phone GPS."
+msgstr "We proberen uw locatie te bepalen met behulp van de ingebouwde GPS."
+
+msgid ""
+"Please make sure you have turned the phone's geolocation on and are well "
+"away from large objects.<br/> e.g. <i>trees, buildings </i>"
+msgstr ""
+"Zorg ervoor dat u de geolocatie van de telefoon hebt ingeschakeld en dat u "
+"verwijderd weg bent van grote objecten <br/> vb. <i>bomen, gebouwen</i>"
+
+msgid "Nearest Named Place"
+msgstr "Dichtstbijzijnde plaatsnaam"
+
+msgid "Locate"
+msgstr "Localiseer"
+
+msgid "Sorry!"
+msgstr "Sorry!"
+
+msgid "We could not find your location."
+msgstr "We kunnen uw locatie niet vinden."
+
+msgid "We are trying to get your location. This might take a few minutes..."
+msgstr ""
+"Wij proberen uw locatie te bepalen. Dit kan een paar minuten duren ..."
+
+msgid "Accuracy"
+msgstr "Nauwkeurigheid"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Refresh GPS"
+msgstr "GPS vernieuwen"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "Common Name"
+msgstr "Nederlandse naam"
+
+msgid "Common Name Reverse"
+msgstr "Omgekeerd sorteren op Nederlandse naam"
+
+msgid "Scientific Name"
+msgstr "Wetenschappelijke naam"
+
+msgid "Scientific Name Reverse"
+msgstr "Omgekeerd sorteren op wetenschappelijke naam"
+
+msgid "Favourites"
+msgstr "Favorieten"
+
+msgid "My favourites only"
+msgstr "Enkel mijn favorieten"
+
+msgid "Size in mm"
+msgstr "Grootte in mm"
+
+msgid "No species with selected filters."
+msgstr "Geen soorten gevonden met deze filter"
+
+msgid "Privacy Policy"
+msgstr "Privacy en copyright"
+
+msgid ""
+"The Centre for Ecology & Hydrology (UK) and European partners have joined "
+"forces to help map species of ladybird within Europe."
+msgstr ""
+"Het Centre for Ecology & Hydrology (UK) en Europese partners bundelden hun "
+"krachten om lieveheersbeestje in kaart te brengen in Europa."
+
+msgid ""
+"For hundreds of years people in Europe have been recording when and where "
+"they see plants, animals and other wildlife. Ladybird species records will "
+"be used to learn more about the distribution and ecology of ladybirds. The "
+"information gathered is used by scientists to see how wildlife is changing "
+"due to factors such as climate change and the arrival of new species. "
+"Scientists could not do this work without the help of people, like you, "
+"reporting when and where they find a species."
+msgstr ""
+"Reeds honderden jaren noteren mensen in Europa welke planten en dieren ze "
+"waarnemen. De gegevens verzameld met deze app zullen gebruikt worden om meer"
+" inzicht te krijgen in de verspreiding en ecologie van lieveheersbeestjes. "
+"De verzamelde informatie wordt gebruikt door wetenschappers om te "
+"onderzoeken zien hoe dieren reageren op veranderingen in hun leefmilieu, "
+"zoals klimaatverandering en de opkomst van exoten. Dit onderzoek zou nooit "
+"mogelijk zijn zonder jouw bijdrage."
+
+msgid "decempunctata"
+msgstr "decempunctata"
+
+msgid "bimaculata"
+msgstr "bimaculata"
+
+msgid "decempustulata"
+msgstr "decempustulata"
+
+msgid "non-melanic"
+msgstr "niet-melanistische vorm"
+
+msgid "melanic"
+msgstr "melanistische vorm"
+
+msgid "typica"
+msgstr "typica"
+
+msgid "sexpustulata"
+msgstr "sexpustulata"
+
+msgid "quadrimaculata"
+msgstr "quadrimaculata"
+
+msgid "nebulosa"
+msgstr "nebulosa"
+
+msgid "sedecimpunctata"
+msgstr "sedecimpunctata"
+
+msgid "spectabilis"
+msgstr "spectabilis"
+
+msgid "conspicua"
+msgstr "conspicua"
+
+msgid "succinea"
+msgstr "succinea"
+
+msgid "axyridis"
+msgstr "axyridis"
+
+msgid "intermedia"
+msgstr "intermedia"
+
+msgid "areata"
+msgstr "areata"
+
+msgid "livida"
+msgstr "livida"
+
+msgid "sexnotata"
+msgstr "sexnotata"
+
+msgid "nigra"
+msgstr "nigra"
+
+msgid "red form"
+msgstr "rode vorm"
+
+msgid "yellow form"
+msgstr "gele vorm"
+
+msgid "Grid reference"
+msgstr "Referentie hok"
+
+msgid "Nearest named place"
+msgstr "Dichtstbijzijnde plaats"
+
+msgid "What sort of habitat did you find the ladybirds in?"
+msgstr "In welk habitat vond je de lieveheerbeestjes"
+
+msgid "Not recorded"
+msgstr "Niet waargenomen"
+
+msgid "habitat"
+msgstr "Habitat"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Are you sure you want to remove this photo from the sample?"
+msgstr "Ben je zeker dat je deze foto wil verwijderen?"
+
+msgid "</br><i><b>Note:</b> it will remain in the gallery.</i>"
+msgstr "De foto blijft in de gallerij."
+
+msgid ""
+"Are you sure you want to remove this photo from the "
+"sample?</br><i><b>Note:</b> it will remain in the gallery.</i>"
+msgstr ""
+"Ben je zeker dat je deze foto wil verwijderen?</br><i><b>Opmerking:</b> De "
+"foto blijft in de gallerij.</i>"
+
+msgid ""
+"Are you sure you want to remove this record from your "
+"device?</br><i><b>Note:</b> it will remain on the server.</i>"
+msgstr ""
+"Ben je zeker dat je deze waarneming wil verwijderen van je "
+"toestel?</br><i><b>Opmerking:</b> de waarneming blijft bewaard op de "
+"server.</i>"
+
+msgid ""
+"Are you sure you want to delete all successfully synchronised local "
+"records?</br><i><b>Note:</b>records on the server will not be touched.</i>"
+msgstr ""
+"Weet je zeker dat je alle lokaal bewaarde, gesynchroniseerde waarnemingen "
+"wilt verwijderen?</br><i><b>Opmerking:</b>waarnemingen op de server worden "
+"niet gewist.</i>"

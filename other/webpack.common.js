@@ -93,7 +93,8 @@ const config = {
           },
           `sass-loader?includePaths[]=${srcPath}`
         ]
-      }
+      },
+      {test: /\.pot?$/, loader: 'json-loader!po-loader?format=mf'},
     ]
   },
 

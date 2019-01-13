@@ -28,18 +28,7 @@ export default Marionette.View.extend({
 
   serializeData() {
     const country = appModel.get('country');
-
-    let common_name = this.model.get(country).common_name;
-    common_name = common_name || this.model.get('UK').common_name;
-
-    if (typeof common_name === 'object') {
-       const language = appModel.get('language');
-       common_name = common_name[language] && common_name[language]
-
-       if (!common_name) {
-        common_name = this.model.get('UK').common_name;
-       }
-    }
+    let common_name = appModel.getSpeciesLocalName(this.model);
 
     const data = $.extend(true, {}, this.model.attributes, this.model.attributes[country]);
     data.common_name = common_name;
