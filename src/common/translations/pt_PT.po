@@ -1,6 +1,6 @@
 # Translators:
 # CEH Apps, 2019
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
@@ -903,6 +903,9 @@ msgstr "Pinheiros escoceses"
 
 msgid "Various"
 msgstr "Vários"
+
+msgid "Various deciduous trees"
+msgstr "Várias árvores"
 
 msgid "Various deciduous trees and shrubs"
 msgstr "Várias árvores e arbustos caducifólios"

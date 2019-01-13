@@ -897,6 +897,9 @@ msgstr "pin sylvestre"
 msgid "Various"
 msgstr "variable"
 
+msgid "Various deciduous trees"
+msgstr "divers arbres"
+
 msgid "Various deciduous trees and shrubs"
 msgstr "divers arbres et arbustes"
 

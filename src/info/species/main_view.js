@@ -1,6 +1,6 @@
 /** ****************************************************************************
  * Home main view.
- *****************************************************************************/
+ **************************************************************************** */
 import $ from 'jquery';
 import Marionette from 'backbone.marionette';
 import appModel from 'app_model';
@@ -28,13 +28,13 @@ export default Marionette.View.extend({
 
   serializeData() {
     const country = appModel.get('country');
-    let common_name = appModel.getSpeciesLocalName(this.model);
-
+    const translateFn = p => t(p);
     const data = $.extend(true, {}, this.model.attributes, this.model.attributes[country]);
-    data.common_name = common_name;
-    data.food = data.food.join('; ');
-    data.habitat = data[country].habitat.comment && data[country].habitat.comment.join('; ');
-    data.plant = data[country].plant && data[country].plant.map(p => t(p)).join('; ');
+    data.common_name = appModel.getSpeciesLocalName(this.model);
+    data.food = data.food.map(translateFn).join('; ');
+    data.habitat =
+      data[country].habitat.comment && data[country].habitat.comment.map(translateFn).join('; ');
+    data.plant = data[country].plant && data[country].plant.map(translateFn).join('; ');
     data.overwintering = data[country].overwintering;
     data.comment = data[country].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;
@@ -63,14 +63,13 @@ export default Marionette.View.extend({
     function swipeStatus(event, phase, direction, distance) {
       // If we are moving before swipe, and we are going L or R in X mode, or U or D in Y mode then drag.
       if (phase === 'move' && (direction === 'left' || direction === 'right')) {
-        var duration = 0;
+        const duration = 0;
 
         if (direction === 'left') {
-          scrollImages((WIDTH * currentImg) + distance, duration);
+          scrollImages(WIDTH * currentImg + distance, duration);
         } else if (direction == 'right') {
-          scrollImages((WIDTH * currentImg) - distance, duration);
+          scrollImages(WIDTH * currentImg - distance, duration);
         }
-
       } else if (phase === 'cancel') {
         scrollImages(WIDTH * currentImg, speed);
       } else if (phase === 'end') {
@@ -98,11 +97,11 @@ export default Marionette.View.extend({
      * Manually update the position of the imgs on drag
      */
     function scrollImages(distance, duration) {
-      imgs.css('transition-duration', (duration / 1000).toFixed(1) + 's');
+      imgs.css('transition-duration', `${(duration / 1000).toFixed(1)}s`);
 
-      //inverse the number we set in the css
-      var value = (distance < 0 ? '' : '-') + Math.abs(distance).toString();
-      imgs.css('transform', 'translate(' + value + 'px,0)');
+      // inverse the number we set in the css
+      const value = (distance < 0 ? '' : '-') + Math.abs(distance).toString();
+      imgs.css('transform', `translate(${value}px,0)`);
     }
 
     function updateCircleProgress(number) {
@@ -179,5 +178,4 @@ export default Marionette.View.extend({
     const gallery = new Gallery(items, options);
     gallery.init();
   },
-
 });

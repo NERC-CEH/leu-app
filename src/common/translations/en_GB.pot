@@ -887,6 +887,9 @@ msgstr "Scots pine"
 msgid "Various"
 msgstr "Various"
 
+msgid "Various deciduous trees"
+msgstr "Various deciduous trees"
+
 msgid "Various deciduous trees and shrubs"
 msgstr "Various deciduous trees and shrubs"
 

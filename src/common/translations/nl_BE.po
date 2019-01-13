@@ -892,6 +892,9 @@ msgstr "grove den"
 msgid "Various"
 msgstr "variabel"
 
+msgid "Various deciduous trees"
+msgstr "verschillende loofbomen"
+
 msgid "Various deciduous trees and shrubs"
 msgstr "verschillende loofbomen en struiken"
 

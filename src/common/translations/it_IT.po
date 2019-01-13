@@ -903,6 +903,9 @@ msgstr "Pino silvestre"
 msgid "Various"
 msgstr "Vari"
 
+msgid "Various deciduous trees"
+msgstr "Vari alberi"
+
 msgid "Various deciduous trees and shrubs"
 msgstr "Vari alberi e arbusti decidui"
 

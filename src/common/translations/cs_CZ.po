@@ -894,6 +894,9 @@ msgstr "borovice lesní"
 msgid "Various"
 msgstr "různé"
 
+msgid "Various deciduous trees"
+msgstr "opadavé listnaté stromy"
+
 msgid "Various deciduous trees and shrubs"
 msgstr "opadavé listnaté stromy a křoviny"
 
