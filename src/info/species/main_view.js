@@ -8,7 +8,7 @@ import JST from 'JST';
 import 'jquery-touchswipe';
 import Device from 'helpers/device';
 import Gallery from '../../common/gallery';
-import photosData from 'photos.data';
+import photosData from './data/images/metadata';
 import './styles.scss';
 import './data/images/loader';
 import './data/thumbnails/loader';

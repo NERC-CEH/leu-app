@@ -1,0 +1,1145 @@
+[
+  {
+    "id": 1,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      683,
+      850,
+      782
+    ],
+    "author": [
+      "Michael Majerus",
+      "Lindsay Bowes",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 2,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      683,
+      718
+    ],
+    "author": [
+      "APP",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 3,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      794,
+      683,
+      658
+    ],
+    "author": [
+      "David Benham",
+      "Michael Majerus",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 4,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      772,
+      665,
+      839
+    ],
+    "author": [
+      "Stephen Barlow",
+      "Stephen Barlow",
+      "Philip Appleyard"
+    ]
+  },
+  {
+    "id": 5,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      716,
+      678,
+      678
+    ],
+    "author": [
+      "Peter Brown",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 6,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      731,
+      839,
+      683
+    ],
+    "author": [
+      "Maris Midgley",
+      "Richard Comont",
+      "Stephen Barlow"
+    ]
+  },
+  {
+    "id": 7,
+    "width": [
+      1024
+    ],
+    "height": [
+      762
+    ],
+    "author": [
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 8,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      778,
+      768
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Bruce Martin"
+    ]
+  },
+  {
+    "id": 9,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      683,
+      686
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Michael Majerus",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 10,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      641,
+      680
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Stephen Barlow",
+      "Richard Comont"
+    ]
+  },
+  {
+    "id": 11,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      683,
+      685,
+      678
+    ],
+    "author": [
+      "Michael Majerus",
+      "Richard Comont",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 12,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      683,
+      683,
+      712
+    ],
+    "author": [
+      "Michael Kilner",
+      "Michael Kilner",
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 13,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      840,
+      683
+    ],
+    "author": [
+      "Richard Comont",
+      "Richard Comont",
+      "Ignacio Alonso"
+    ]
+  },
+  {
+    "id": 14,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      686,
+      683,
+      683
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Michael Majerus",
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 15,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      678,
+      768
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Helen Roy"
+    ]
+  },
+  {
+    "id": 16,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      682,
+      854,
+      802
+    ],
+    "author": [
+      "Michael Kilner",
+      "Michael Majerus",
+      "Roger Wilson"
+    ]
+  },
+  {
+    "id": 17,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      683,
+      685,
+      686
+    ],
+    "author": [
+      "Michael Majerus",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 18,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      804,
+      678,
+      788
+    ],
+    "author": [
+      "Richard Comont",
+      "Gilles San Martins",
+      "Richard Comont"
+    ]
+  },
+  {
+    "id": 19,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      730,
+      683,
+      686
+    ],
+    "author": [
+      "Maris Midgley",
+      "Remy Poland",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 20,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      683
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 21,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      686,
+      678,
+      685
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 22,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      999,
+      731
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Claire Watson",
+      "Claire Watson"
+    ]
+  },
+  {
+    "id": 23,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      819,
+      732,
+      732
+    ],
+    "author": [
+      "Anne Sorbes",
+      "Maris Midgley",
+      "Maris Midgley"
+    ]
+  },
+  {
+    "id": 24,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      685,
+      845
+    ],
+    "author": [
+      "Handy",
+      "Richard Comont"
+    ]
+  },
+  {
+    "id": 25,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      731,
+      844
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Maris Midgley",
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 26,
+    "width": [
+      1024
+    ],
+    "height": [
+      763
+    ],
+    "author": [
+      "Peter Brown"
+    ]
+  },
+  {
+    "id": 27,
+    "width": [
+      1024
+    ],
+    "height": [
+      721
+    ],
+    "author": [
+      "Koenraad Bracke"
+    ]
+  },
+  {
+    "id": 28,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      685,
+      683,
+      742
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Michael Majerus",
+      "Richard Comont"
+    ]
+  },
+  {
+    "id": 29,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      685,
+      683
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 30,
+    "width": [
+      1024
+    ],
+    "height": [
+      683
+    ],
+    "author": [
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 31,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      784,
+      685,
+      879
+    ],
+    "author": [
+      "Ken Dolbear",
+      "Gilles San Martins",
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 32,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      819,
+      730,
+      865
+    ],
+    "author": [
+      "Paul Brothers",
+      "Maris Midgley",
+      "Michael Majerus"
+    ]
+  },
+  {
+    "id": 33,
+    "width": [
+      1024
+    ],
+    "height": [
+      683
+    ],
+    "author": [
+      "Miroslav Fiala"
+    ]
+  },
+  {
+    "id": 34,
+    "width": [
+      1024
+    ],
+    "height": [
+      797
+    ],
+    "author": [
+      "Stanislav Krejčík"
+    ]
+  },
+  {
+    "id": 35,
+    "width": [
+      1024
+    ],
+    "height": [
+      794
+    ],
+    "author": [
+      "Stanislav Krejčík"
+    ]
+  },
+  {
+    "id": 36,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      683,
+      768
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Edward Bartoszewicz",
+      "Toni Watt"
+    ]
+  },
+  {
+    "id": 37,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      678,
+      886
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Richard Comont"
+    ]
+  },
+  {
+    "id": 38,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      736,
+      716,
+      1357
+    ],
+    "author": [
+      "Ken Dolbear",
+      "Michael Majerus",
+      "Ken Dolbear"
+    ]
+  },
+  {
+    "id": 39,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      683,
+      781,
+      686
+    ],
+    "author": [
+      "Michael Majerus",
+      "Michael Majerus",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 40,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      875,
+      678,
+      682
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Alby Oakshott"
+    ]
+  },
+  {
+    "id": 41,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      685,
+      828,
+      685
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Paul Brothers",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 42,
+    "width": [
+      1024
+    ],
+    "height": [
+      1441
+    ],
+    "author": [
+      "Josef Dvořák"
+    ]
+  },
+  {
+    "id": 43,
+    "width": [
+      1024
+    ],
+    "height": [
+      1364
+    ],
+    "author": [
+      "Josef Dvořák"
+    ]
+  },
+  {
+    "id": 44,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      678
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 45,
+    "width": [
+      1024
+    ],
+    "height": [
+      1343
+    ],
+    "author": [
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 46,
+    "width": [
+      1024
+    ],
+    "height": [
+      780
+    ],
+    "author": [
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 47,
+    "width": [
+      1024
+    ],
+    "height": [
+      881
+    ],
+    "author": [
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 48,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      685,
+      686,
+      678
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 49,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      1365
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 50,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      685,
+      686,
+      1365
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 51,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      685,
+      769,
+      1365
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Jelena Pincta",
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 52,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      686,
+      686,
+      686
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 53,
+    "width": [
+      1024
+    ],
+    "height": [
+      796
+    ],
+    "author": [
+      "Jiří Skuhrovec"
+    ]
+  },
+  {
+    "id": 54,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      686,
+      686,
+      1365
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 55,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      686,
+      1148
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Jiří Skuhrovec"
+    ]
+  },
+  {
+    "id": 56,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      678,
+      678
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 57,
+    "width": [
+      1024
+    ],
+    "height": [
+      1365
+    ],
+    "author": [
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 58,
+    "width": [
+      1024
+    ],
+    "height": [
+      1212
+    ],
+    "author": [
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 59,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      678,
+      678
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 60,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      686,
+      686,
+      685
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 61,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      683,
+      1365
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 62,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      686,
+      1145
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Jiří Skuhrovec"
+    ]
+  },
+  {
+    "id": 63,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      740,
+      772
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 64,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      787,
+      678
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 65,
+    "width": [
+      1024
+    ],
+    "height": [
+      795
+    ],
+    "author": [
+      "Jiří Skuhrovec"
+    ]
+  },
+  {
+    "id": 66,
+    "width": [
+      1024
+    ],
+    "height": [
+      747
+    ],
+    "author": [
+      "Jiří Skuhrovec"
+    ]
+  },
+  {
+    "id": 67,
+    "width": [
+      1024,
+      1024
+    ],
+    "height": [
+      707,
+      683
+    ],
+    "author": [
+      "Andgelo Mombert",
+      "H. Bouyon Permision"
+    ]
+  },
+  {
+    "id": 68,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      821,
+      1001,
+      823
+    ],
+    "author": [
+      "Nicola Bormolini",
+      "Nicola Bormolini",
+      "Nicola Bormolini"
+    ]
+  },
+  {
+    "id": 69,
+    "width": [
+      1024
+    ],
+    "height": [
+      1365
+    ],
+    "author": [
+      "Oldřich Nedvěd"
+    ]
+  },
+  {
+    "id": 70,
+    "width": [
+      1024
+    ],
+    "height": [
+      776
+    ],
+    "author": [
+      "Jiří Skuhrovec"
+    ]
+  },
+  {
+    "id": 71,
+    "width": [
+      1024,
+      1024,
+      1024
+    ],
+    "height": [
+      678,
+      678,
+      678
+    ],
+    "author": [
+      "Gilles San Martins",
+      "Gilles San Martins",
+      "Gilles San Martins"
+    ]
+  },
+  {
+    "id": 72,
+    "width": [
+      1024
+    ],
+    "height": [
+      839
+    ],
+    "author": [
+      "Saulo Bambi"
+    ]
+  }
+]

@@ -7,7 +7,6 @@ module.exports = function (grunt) {
       command() {
         return 'cd src/info/species/data && ' +
           'node make.js species &&' +
-          'node make.js photos &&' +
           'mkdir -p ../../../../dist/_build &&' +
           'mv *data.json ../../../../dist/_build';
       },
