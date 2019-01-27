@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[european-ladybirds.en-GB-pot]
+[european-ladybirds.app]
 file_filter = src/common/translations/<lang>.po
 minimum_perc = 0
 source_file = src/common/translations/en_GB.pot
