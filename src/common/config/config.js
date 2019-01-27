@@ -1,16 +1,14 @@
 /** ****************************************************************************
  * Main app configuration file.
- *****************************************************************************/
-import $ from 'jquery';
-import Indicia from 'indicia';
-import DateHelp from 'helpers/date';
-import LocHelp from 'helpers/location';
+ **************************************************************************** */
+import $ from "jquery";
+import Indicia from "indicia";
+import DateHelp from "helpers/date";
 
 const HOST =
-  process.env.APP_INDICIA_API_HOST || 'https://european-ladybirds.brc.ac.uk/';
+  process.env.APP_INDICIA_API_HOST || "https://european-ladybirds.brc.ac.uk/";
 
-
-const notInTest = process.env.ENV !== 'test';
+const notInTest = process.env.ENV !== "test";
 const CONFIG = {
   // variables replaced on build
   version: process.env.APP_VERSION,
@@ -34,18 +32,18 @@ const CONFIG = {
   },
 
   supportEmail: {
-    'UK': 'apps%40ceh.ac.uk',
-    'ITA': 'apps%40ceh.ac.uk',
-    'PT': 'apps%40ceh.ac.uk',
-    'SK': 'apps%40ceh.ac.uk',
-    'CZ': 'apps%40ceh.ac.uk',
-    'BE': 'apps%40ceh.ac.uk',
+    UK: "apps%40ceh.ac.uk",
+    ITA: "apps%40ceh.ac.uk",
+    PT: "apps%40ceh.ac.uk",
+    SK: "apps%40ceh.ac.uk",
+    CZ: "apps%40ceh.ac.uk",
+    BE: "apps%40ceh.ac.uk",
   },
 
-// error analytics
+  // error analytics
   sentry: {
     key: notInTest && process.env.APP_SENTRY_KEY,
-    project: '155047',
+    project: "155047",
   },
 
   users: {
@@ -65,8 +63,8 @@ const CONFIG = {
   map: {
     os_api_key: process.env.APP_OS_MAP_KEY,
     mapbox_api_key: process.env.APP_MAPBOX_MAP_KEY,
-    mapbox_osm_id: 'cehapps.0fenl1fe',
-    mapbox_satellite_id: 'cehapps.0femh3mh',
+    mapbox_osm_id: "cehapps.0fenl1fe",
+    mapbox_satellite_id: "cehapps.0femh3mh",
   },
 
   // indicia configuration
@@ -75,7 +73,7 @@ const CONFIG = {
     api_key: process.env.APP_INDICIA_API_KEY,
     website_id: 115,
     survey_id: 525,
-    input_form: 'enter-app-record',
+    input_form: "enter-app-record",
 
     sample: {
       // anonymouse user info
@@ -85,7 +83,8 @@ const CONFIG = {
       secondname: {
         id: 7,
       },
-      user_email: { // email key is taken
+      user_email: {
+        // email key is taken
         id: 8,
       },
       phone: {
@@ -94,7 +93,7 @@ const CONFIG = {
       location: {
         values(location, submission) {
           // convert accuracy for map and gridref sources
-          const accuracy = location.accuracy;
+          const { accuracy } = location;
           const attributes = {};
           const keys = CONFIG.indicia.sample;
           attributes.location_name = location.name; // this is a native indicia attr
@@ -109,7 +108,7 @@ const CONFIG = {
           $.extend(submission.fields, attributes);
 
           return `${parseFloat(location.latitude).toFixed(7)}, ${parseFloat(
-            location.longitude
+            location.longitude,
           ).toFixed(7)}`;
         },
       },
@@ -137,25 +136,25 @@ const CONFIG = {
 
       habitat: {
         id: 209,
-        default: 'Not recorded',
+        default: "Not recorded",
         values: {
-          'Not recorded': null,
+          "Not recorded": null,
           Coast: 1640,
-          'Inland waters': 1648,
-          'Bogs and fens': 1656,
+          "Inland waters": 1648,
+          "Bogs and fens": 1656,
           Grasslands: 1668,
-          'Heathland, scrub, hedgerow': 1680,
+          "Heathland, scrub, hedgerow": 1680,
           Woodland: 1692,
-          'Unvegetated or sparsely vegetated habitats': 1704,
-          'Arable land, garden or park': 1716,
-          'Industrial and Urban': 1722,
-          'Mixed habitats': 1734,
+          "Unvegetated or sparsely vegetated habitats": 1704,
+          "Arable land, garden or park": 1716,
+          "Industrial and Urban": 1722,
+          "Mixed habitats": 1734,
         },
       },
     },
     occurrence: {
       training: {
-        id: 'training',
+        id: "training",
       },
 
       taxon: {
@@ -166,16 +165,16 @@ const CONFIG = {
 
       number: {
         id: 143,
-        default: 'Present',
+        default: "Present",
         values: {
           Present: null,
           1: 1783,
-          '2-5': 1784,
-          '6-20': 1785,
-          '21-50': 1786,
-          '50+': 1787,
+          "2-5": 1784,
+          "6-20": 1785,
+          "21-50": 1786,
+          "50+": 1787,
         },
-        _values: ['Present', 1, '2-5', '6-20', '21-50', '50+'],
+        _values: ["Present", 1, "2-5", "6-20", "21-50", "50+"],
       },
     },
   },

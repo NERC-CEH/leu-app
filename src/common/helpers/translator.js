@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import appModel from 'app_model';
 import cs_CZ from '../translations/cs_CZ.po';
 import en_GB from '../translations/en_GB.pot';
@@ -14,7 +15,7 @@ const dictionary = {
   it_IT,
   nl_BE,
   pt_PT,
-  sk_SK,
+  sk_SK
 };
 
 export const languages = {
@@ -24,7 +25,7 @@ export const languages = {
   fr_BE: 'Français',
   it_IT: 'Italiano',
   pt_PT: 'Português',
-  sk_SK: 'Slovenčina',
+  sk_SK: 'Slovenčina'
 };
 
 export const languageToCountryMap = {
@@ -32,7 +33,7 @@ export const languageToCountryMap = {
   en_GB: 'UK', // different!
   it_IT: 'IT',
   pt_PT: 'PT',
-  sk_SK: 'SK',
+  sk_SK: 'SK'
   // nl_BE: '',
   // fr_BE: '',
 };

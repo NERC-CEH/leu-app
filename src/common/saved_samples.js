@@ -1,17 +1,17 @@
-import Indicia from 'indicia';
-import Log from 'helpers/log';
-import Sample from 'sample';
-import store from './store';
+import Indicia from "indicia";
+import Log from "helpers/log";
+import Sample from "sample";
+import store from "./store";
 
 const Collection = Indicia.Collection.extend({
   store,
   model: Sample,
 
   removeAllSynced() {
-    Log('SavedSamples: removing all synced samples.');
+    Log("SavedSamples: removing all synced samples.");
 
     const toWait = [];
-    this.models.forEach((sample) => {
+    this.models.forEach(sample => {
       if (sample.getSyncStatus() === Indicia.SYNCED) {
         toWait.push(sample.destroy());
       }
@@ -21,7 +21,7 @@ const Collection = Indicia.Collection.extend({
   },
 
   syncAll() {
-    Log('SavedSamples: setting all samples to send.');
+    Log("SavedSamples: setting all samples to send.");
 
     this.models
       .filter(sample => sample.metadata.saved && sample.isLocalOnly())
@@ -32,25 +32,24 @@ const Collection = Indicia.Collection.extend({
   },
 });
 
-
 const savedSamples = new Collection();
-Log('SavedSamples: fetching all samples.');
+Log("SavedSamples: fetching all samples.");
 
 // load all the samples from storage
 savedSamples.fetching = true;
 savedSamples
   .fetch()
   .then(() => {
-    Log('SavedSamples: fetching all samples done.');
+    Log("SavedSamples: fetching all samples done.");
 
     savedSamples.fetching = false;
-    savedSamples.trigger('fetching:done');
+    savedSamples.trigger("fetching:done");
   })
-  .catch((err) => {
-    Log(err, 'e');
+  .catch(err => {
+    Log(err, "e");
 
     savedSamples.fetching = false;
-    savedSamples.trigger('fetching:error');
+    savedSamples.trigger("fetching:error");
   });
 
 export { savedSamples as default, Collection };

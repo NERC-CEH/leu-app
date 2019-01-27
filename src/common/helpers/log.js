@@ -12,19 +12,19 @@
  *
  * Levels values defined in core app module.
  **************************************************************************** */
-import Raven from 'raven-js';
-import CONFIG from 'config';
+import Raven from "raven-js";
+import CONFIG from "config";
 
-const ERROR = 'e';
-const WARNING = 'w';
-const INFO = 'i';
-const DEBUG = 'd';
+const ERROR = "e";
+const WARNING = "w";
+const INFO = "i";
+const DEBUG = "d";
 
 function _removeUUID(string) {
   // remove UUIDs
   return string.replace(
     /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/gi,
-    'UUID'
+    "UUID",
   );
 }
 
@@ -36,7 +36,7 @@ function _removeUUID(string) {
  * @private
  */
 function error(err = {}) {
-  if (typeof err === 'string' || err instanceof String) {
+  if (typeof err === "string" || err instanceof String) {
     err = {
       // eslint-disable-line
       message: err,
@@ -44,7 +44,7 @@ function error(err = {}) {
   }
 
   if (Raven) {
-    if (typeof err.stack === 'string') {
+    if (typeof err.stack === "string") {
       err.stack = _removeUUID(err.stack);
     }
     Raven.captureException(err, { culprit: null }); // culprit=null to remove UUIDS from iOS files

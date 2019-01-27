@@ -1,18 +1,18 @@
-import appModel from 'app_model';
+import appModel from "app_model";
 
-/******************************************************************************
+/** ****************************************************************************
  * Species list sorts.
- *****************************************************************************/
+ **************************************************************************** */
 /**
  * A collection of sorting options used to manage lists.
  * id - sort type identifier
  * label - label to represent the filter in the UI
  */
 function exist(country, species1, species2) {
-  if (!species1.attributes[country].exist === 'YES') {
+  if (!species1.attributes[country].exist === "YES") {
     return false;
   }
-  if (!species2.attributes[country].exist === 'YES') {
+  if (!species2.attributes[country].exist === "YES") {
     return false;
   }
 
@@ -21,12 +21,12 @@ function exist(country, species1, species2) {
 
 const sorts = {
   default(species1, species2) {
-    const country = appModel.get('country');
+    const country = appModel.get("country");
     if (!exist(country, species1, species2)) {
       return 1;
     }
-    let commonName1 = species1.attributes[country].order;
-    let commonName2 = species2.attributes[country].order;
+    const commonName1 = species1.attributes[country].order;
+    const commonName2 = species2.attributes[country].order;
 
     if (commonName1 === commonName2) {
       return 0;
@@ -34,39 +34,39 @@ const sorts = {
     return commonName1 > commonName2 ? 1 : -1;
   },
   common(species1, species2) {
-    const country = appModel.get('country');
+    const country = appModel.get("country");
     if (!exist(country, species1, species2)) {
       return 1;
     }
 
-    let commonName1 = appModel.getSpeciesLocalName(species1);
-    let commonName2 = appModel.getSpeciesLocalName(species2);
+    const commonName1 = appModel.getSpeciesLocalName(species1);
+    const commonName2 = appModel.getSpeciesLocalName(species2);
     if (!commonName1) return 1;
     if (!commonName2) return -1;
 
-    if (!isNaN(commonName1[0]) && isNaN(commonName2[0])) {
+    if (!Number.isNaN(commonName1[0]) && Number.isNaN(commonName2[0])) {
       return 1;
     }
-    if (!isNaN(commonName2[0]) && isNaN(commonName1[0])) {
+    if (!Number.isNaN(commonName2[0]) && Number.isNaN(commonName1[0])) {
       return -1;
     }
 
     return commonName1.localeCompare(commonName2, undefined, { numeric: true });
   },
-  'common-reverse'(species1, species2) {
-    const country = appModel.get('country');
+  commonReverse(species1, species2) {
+    const country = appModel.get("country");
     if (!exist(country, species1, species2)) {
       return 1;
     }
-    let commonName1 = appModel.getSpeciesLocalName(species1);
-    let commonName2 = appModel.getSpeciesLocalName(species2);
+    const commonName1 = appModel.getSpeciesLocalName(species1);
+    const commonName2 = appModel.getSpeciesLocalName(species2);
     if (!commonName1) return 1;
     if (!commonName2) return -1;
 
-    if (!isNaN(commonName1[0]) && isNaN(commonName2[0])) {
+    if (!Number.isNaN(commonName1[0]) && Number.isNaN(commonName2[0])) {
       return -1;
     }
-    if (!isNaN(commonName2[0]) && isNaN(commonName1[0])) {
+    if (!Number.isNaN(commonName2[0]) && Number.isNaN(commonName1[0])) {
       return 1;
     }
 
@@ -84,7 +84,7 @@ const sorts = {
     }
     return aTaxon > bTaxon ? 1 : -1;
   },
-  'scientific-reverse'(species1, species2) {
+  scientificReverse(species1, species2) {
     const aTaxon = species1.attributes.taxon.toLowerCase();
     const bTaxon = species2.attributes.taxon.toLowerCase();
 

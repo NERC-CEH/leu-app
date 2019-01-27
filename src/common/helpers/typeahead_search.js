@@ -1,7 +1,7 @@
 /**
  * Returns a location name search function.
  */
-import _ from 'lodash';
+import _ from "lodash";
 
 export default function(strs = [], max = 30, strProcessor) {
   /**
@@ -11,15 +11,15 @@ export default function(strs = [], max = 30, strProcessor) {
    * @private
    */
   function escapeRegExp(string) {
-    return string.replace(/[-.*+?^${}()|[\]\\]/g, '\\$&');
+    return string.replace(/[-.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
-  return function findMatches(query = '', callback) {
+  return function findMatches(query = "", callback) {
     // an array that will be populated with substring matches
     const matches = [];
 
     // regex used to determine if a string contains the substring `q`
-    const substrRegex = new RegExp(escapeRegExp(query), 'i');
+    const substrRegex = new RegExp(escapeRegExp(query), "i");
 
     // iterate through the pool of strings and for any string that
     // contains the substring `q`, add it to the `matches` array

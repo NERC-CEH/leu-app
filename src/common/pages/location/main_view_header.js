@@ -1,37 +1,37 @@
 /** ****************************************************************************
  * Location main view header functions.
  **************************************************************************** */
-import $ from 'jquery';
-import LocHelp from 'helpers/location';
-import Marionette from 'backbone.marionette';
-import JST from 'JST';
-import Log from 'helpers/log';
-import typeaheadSearchFn from 'helpers/typeahead_search';
-import 'typeahead'; // eslint-disable-line
+import $ from "jquery";
+import LocHelp from "helpers/location";
+import Marionette from "backbone.marionette";
+import JST from "JST";
+import Log from "helpers/log";
+import typeaheadSearchFn from "helpers/typeahead_search";
+import "typeahead"; // eslint-disable-line
 
 const HeaderView = Marionette.View.extend({
-  template: JST['common/location/header'],
+  template: JST["common/location/header"],
 
   events: {
-    'change #location-name': 'changeName',
-    'typeahead:select #location-name': 'changeName',
-    'change #location-gridref': 'changeGridRef',
-    'keyup #location-gridref': 'keyupGridRef',
-    'blur #location-name': 'blurInput',
-    'blur #location-gridref': 'blurInput',
+    "change #location-name": "changeName",
+    "typeahead:select #location-name": "changeName",
+    "change #location-gridref": "changeGridRef",
+    "keyup #location-gridref": "keyupGridRef",
+    "blur #location-name": "blurInput",
+    "blur #location-gridref": "blurInput",
   },
 
   initialize() {
-    Log('Location:Controller:MainViewHeader: initializing.');
-    const sample = this.model.get('sample');
-    this.listenTo(sample, 'change:location', this.onLocationChange);
+    Log("Location:Controller:MainViewHeader: initializing.");
+    const sample = this.model.get("sample");
+    this.listenTo(sample, "change:location", this.onLocationChange);
   },
 
   onLocationChange() {
-    Log('Location:Controller:MainViewHeader: on location change.');
+    Log("Location:Controller:MainViewHeader: on location change.");
     const location = this._getCurrentLocation();
 
-    if (location.source !== 'gridref') {
+    if (location.source !== "gridref") {
       this.render();
       return;
     }
@@ -45,10 +45,10 @@ const HeaderView = Marionette.View.extend({
    * Attaches suggestions to the location name search.
    */
   onAttach() {
-    const appModel = this.model.get('appModel');
-    const strs = appModel.get('locations');
+    const appModel = this.model.get("appModel");
+    const strs = appModel.get("locations");
 
-    this.$el.find('.typeahead').typeahead(
+    this.$el.find(".typeahead").typeahead(
       {
         hint: false,
         highlight: false,
@@ -56,18 +56,18 @@ const HeaderView = Marionette.View.extend({
       },
       {
         limit: 3,
-        name: 'names',
+        name: "names",
         source: typeaheadSearchFn(strs, 3, a => a.name),
-      }
+      },
     );
   },
 
   changeName(e) {
-    this.triggerMethod('name:change', $(e.target).val());
+    this.triggerMethod("name:change", $(e.target).val());
   },
 
   blurInput() {
-    this.triggerMethod('input:blur');
+    this.triggerMethod("input:blur");
   },
 
   /**
@@ -86,7 +86,7 @@ const HeaderView = Marionette.View.extend({
         break;
       default:
         // Other
-        const value = e.target.value.replace(/\s+/g, '').toUpperCase();
+        const value = e.target.value.replace(/\s+/g, "").toUpperCase();
 
         const location = this._getCurrentLocation();
         const latlong = `${location.latitude}, ${location.longitude}`;
@@ -99,7 +99,7 @@ const HeaderView = Marionette.View.extend({
         // eslint-disable-next-line
         const LATLONG_REGEX = /^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?),\s*[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)$/g;
 
-        const empty = value === '';
+        const empty = value === "";
         const validGridRef = LocHelp.isValidGridRef(value);
         const validLatLong = value.match(LATLONG_REGEX);
         if (empty || validGridRef || validLatLong) {
@@ -108,7 +108,7 @@ const HeaderView = Marionette.View.extend({
           // Set new timeout - don't run if user is typing
           this.grRefreshTimeout = setTimeout(() => {
             // let controller know
-            this.triggerMethod('gridref:change', value);
+            this.triggerMethod("gridref:change", value);
           }, 200);
         } else {
           this._refreshGrErrorState(true);
@@ -120,7 +120,7 @@ const HeaderView = Marionette.View.extend({
    * stop any delayed gridref refresh
    */
   _clearGrTimeout() {
-    Log('Location:MainView:Header: executing _clearGrTimeout.');
+    Log("Location:MainView:Header: executing _clearGrTimeout.");
 
     if (this.grRefreshTimeout) {
       clearTimeout(this.grRefreshTimeout);
@@ -129,53 +129,53 @@ const HeaderView = Marionette.View.extend({
   },
 
   changeGridRef(e) {
-    Log('Location:MainView:Header: executing changeGridRef.');
+    Log("Location:MainView:Header: executing changeGridRef.");
 
     this._clearGrTimeout();
-    this.triggerMethod('gridref:change', $(e.target).val());
+    this.triggerMethod("gridref:change", $(e.target).val());
   },
 
   _refreshGrErrorState(isError) {
-    const grInputEl = document.getElementById('location-gridref');
+    const grInputEl = document.getElementById("location-gridref");
     if (grInputEl) {
       if (isError) {
-        grInputEl.setAttribute('data-gr-error', 'error');
+        grInputEl.setAttribute("data-gr-error", "error");
         // this._removeMapMarker();
       } else {
-        grInputEl.removeAttribute('data-gr-error');
+        grInputEl.removeAttribute("data-gr-error");
       }
     }
   },
 
   _refreshGridRefElement(location) {
-    Log('Location:MainView:Header: executing _refreshGridRefElement.');
+    Log("Location:MainView:Header: executing _refreshGridRefElement.");
 
     // rather than full refresh of the view, directly update the relavant input element
-    const $GR = this.$el.find('#location-gridref');
+    const $GR = this.$el.find("#location-gridref");
     let value = location.gridref;
 
-    const appModel = this.model.get('appModel');
-    if ((!appModel.get('useGridRef') || !value) && location.latitude) {
+    const appModel = this.model.get("appModel");
+    if ((!appModel.get("useGridRef") || !value) && location.latitude) {
       value = `${location.latitude}, ${location.longitude}`;
     }
 
     $GR.val(value);
-    $GR.attr('data-source', location.source);
+    $GR.attr("data-source", location.source);
   },
 
   _getCurrentLocation() {
-    return this.model.get('sample').get('location') || {};
+    return this.model.get("sample").get("location") || {};
   },
 
   serializeData() {
-    Log('Location:Controller:MainViewHeader: serializing.');
+    Log("Location:Controller:MainViewHeader: serializing.");
 
-    const appModel = this.model.get('appModel');
+    const appModel = this.model.get("appModel");
     const location = this._getCurrentLocation();
     let value = location.gridref;
 
     // avoid testing location.longitude as this can validly be zero within the UK
-    if ((!appModel.get('useGridRef') || !value) && location.latitude) {
+    if ((!appModel.get("useGridRef") || !value) && location.latitude) {
       value = `${location.latitude}, ${location.longitude}`;
     }
 

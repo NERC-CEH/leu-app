@@ -1,73 +1,73 @@
 /** ****************************************************************************
  * Sample Edit footer view.
  **************************************************************************** */
-import Marionette from 'backbone.marionette';
-import _ from 'lodash';
-import Indicia from 'indicia';
-import Log from 'helpers/log';
-import JST from 'JST';
-import Gallery from '../../common/gallery';
+import Marionette from "backbone.marionette";
+import _ from "lodash";
+import Indicia from "indicia";
+import Log from "helpers/log";
+import JST from "JST";
+import Gallery from "../../common/gallery";
 
 const SavedImageView = Marionette.View.extend({
   template: _.template(
     '<span class="delete icon icon-cancel">' +
-      '</span><img src="<%- obj.data %>" alt="">'
+      '</span><img src="<%- obj.data %>" alt="">',
   ),
-  className: 'img',
+  className: "img",
 
   events: {
-    'click span.delete': 'delete',
-    'click img': 'photoView',
+    "click span.delete": "delete",
+    "click img": "photoView",
   },
 
   photoView() {
-    this.trigger('photo:view', this);
+    this.trigger("photo:view", this);
   },
 
   delete() {
-    this.trigger('photo:delete', this.model);
+    this.trigger("photo:delete", this.model);
   },
 
   serializeData() {
     return {
-      data: this.model.get('thumbnail'),
+      data: this.model.get("thumbnail"),
     };
   },
 });
 
 const EmptyView = Marionette.View.extend({
-  template: JST['samples/edit/image_picker_empty'],
-  tagName: 'span',
-  className: 'empty',
+  template: JST["samples/edit/image_picker_empty"],
+  tagName: "span",
+  className: "empty",
 });
 
 export default Marionette.CompositeView.extend({
-  id: 'edit-footer',
-  template: JST['samples/edit/image_picker_array'],
+  id: "edit-footer",
+  template: JST["samples/edit/image_picker_array"],
   initialize() {
     this.collection = this.model.getOccurrence().media;
   },
 
   events: {
     // eslint-disable-next-line
-    'change input': function(e) {
-      this.trigger('photo:upload', e);
+    "change input": function(e) {
+      this.trigger("photo:upload", e);
     },
     // eslint-disable-next-line
-    'click .img-picker': function() {
+    "click .img-picker": function() {
       if (window.cordova) {
-        this.trigger('photo:selection');
+        this.trigger("photo:selection");
       }
     },
   },
 
-  childViewContainer: '#img-array',
+  childViewContainer: "#img-array",
   childView: SavedImageView,
 
   emptyView: EmptyView,
 
   modelEvents: {
-    'request:remote sync:remote error:remote': 'render',
+    "request:remote sync:remote error:remote": "render",
   },
 
   serializeData() {
@@ -77,7 +77,7 @@ export default Marionette.CompositeView.extend({
   },
 
   onChildviewPhotoView(view) {
-    Log('Samples:Edit:Footer: photo view.');
+    Log("Samples:Edit:Footer: photo view.");
 
     const items = [];
     const options = {};
@@ -89,8 +89,8 @@ export default Marionette.CompositeView.extend({
 
       items.push({
         src: image.getURL(),
-        w: image.get('width') || 800,
-        h: image.get('height') || 800,
+        w: image.get("width") || 800,
+        h: image.get("height") || 800,
       });
     });
 
@@ -102,10 +102,10 @@ export default Marionette.CompositeView.extend({
   onAttach() {
     // create camera/gallery selection
     if (window.cordova) {
-      this.$el.find('.img-picker input').remove();
+      this.$el.find(".img-picker input").remove();
 
-      this.$el.find('.img-picker').on('click', () => {
-        this.trigger('photo:selection');
+      this.$el.find(".img-picker").on("click", () => {
+        this.trigger("photo:selection");
       });
     }
   },

@@ -7,7 +7,7 @@
  * Note: Chrome has to have and ID of both Chrome and Safari therefore
  * Safari has to have an ID of only Safari and not Chrome
  **************************************************************************** */
-import Log from './log';
+import Log from "./log";
 
 const ua = navigator.userAgent.toLowerCase();
 
@@ -15,24 +15,24 @@ function is(string) {
   return ua.search(string) >= 0;
 }
 
-const isIPhone = is('iphone');
-const isIPad = is('ipad');
-const isIPod = is('ipad');
-const isChrome = is('chrome') || is('crmo');
-const isFirefox = is('firefox');
+const isIPhone = is("iphone");
+const isIPad = is("ipad");
+const isIPod = is("ipad");
+const isChrome = is("chrome") || is("crmo");
+const isFirefox = is("firefox");
 
 function isMobile() {
-  return is('mobile') || is('android');
+  return is("mobile") || is("android");
 }
 
 function detect(browserName) {
   const browser = browserName.toLowerCase();
 
-  if (browser === 'chrome' || browser === 'safari') {
-    const isSafari = is('safari');
+  if (browser === "chrome" || browser === "safari") {
+    const isSafari = is("safari");
 
     if (isSafari) {
-      if (browser === 'chrome') {
+      if (browser === "chrome") {
         // Chrome
         return isChrome;
       }
@@ -50,14 +50,14 @@ function detect(browserName) {
 
 function isIOS() {
   if (window.cordova && window.device) {
-    return window.device.platform === 'iOS';
+    return window.device.platform === "iOS";
   }
 
   return isIPad || isIPod || isIPhone;
 }
 
 function isAndroidChrome() {
-  return is('android') && isChrome;
+  return is("android") && isChrome;
 }
 
 function getIOSVersion() {
@@ -75,7 +75,7 @@ function isHomeMode() {
 
     return iOS || IE;
   } catch (err) {
-    Log(err, 'e');
+    Log(err, "e");
 
     return false;
   }
@@ -83,9 +83,9 @@ function isHomeMode() {
 
 function isAndroid() {
   if (window.cordova && window.device) {
-    return window.device.platform === 'Android';
+    return window.device.platform === "Android";
   }
-  return is('android');
+  return is("android");
 }
 
 function isOnline() {
@@ -106,7 +106,7 @@ function getVersion() {
   if (window.cordova) {
     return window.device.version;
   }
-  return '';
+  return "";
 }
 
 function getPlatform() {
@@ -114,9 +114,9 @@ function getPlatform() {
   if (window.cordova) {
     devicePlatform = window.device.platform;
   } else if (isAndroidChrome()) {
-    devicePlatform = 'Android';
+    devicePlatform = "Android";
   } else if (isIOS()) {
-    devicePlatform = 'iOS';
+    devicePlatform = "iOS";
   }
 
   return devicePlatform;

@@ -1,24 +1,24 @@
 /** ****************************************************************************
  * Messages the user
  **************************************************************************** */
-import $ from 'jquery';
-import Backbone from 'backbone';
-import Marionette from 'backbone.marionette';
-import _ from 'lodash';
-import radio from 'radio';
-import JST from 'JST';
-import '../styles/dialog.scss';
+import $ from "jquery";
+import Backbone from "backbone";
+import Marionette from "backbone.marionette";
+import _ from "lodash";
+import radio from "radio";
+import JST from "JST";
+import "../styles/dialog.scss";
 
 const errorsTable = {
   25: {
     body:
-      'Sorry, looks like there was a problem with the internal database.</br> ' +
-      '<b>Please close the app and start it again.</b>',
+      "Sorry, looks like there was a problem with the internal database.</br> " +
+      "<b>Please close the app and start it again.</b>",
     buttons: [
       {
-        title: 'Restart',
+        title: "Restart",
         onClick: function onClick() {
-          radio.trigger('app:restart');
+          radio.trigger("app:restart");
         },
       },
     ],
@@ -26,9 +26,9 @@ const errorsTable = {
 };
 
 const StandardDialogView = Marionette.View.extend({
-  template: JST['common/dialog'],
+  template: JST["common/dialog"],
   className() {
-    let classes = 'content';
+    let classes = "content";
     if (this.options.class) {
       classes += ` ${this.options.class}`;
     }
@@ -36,9 +36,9 @@ const StandardDialogView = Marionette.View.extend({
   },
 
   regions: {
-    header: '.dialog-header',
-    body: '.dialog-body',
-    footer: '.dialog-footer',
+    header: ".dialog-header",
+    body: ".dialog-body",
+    footer: ".dialog-footer",
   },
 
   initialize(options = {}) {
@@ -49,48 +49,48 @@ const StandardDialogView = Marionette.View.extend({
     // add header
     if (this.options.title) {
       if (this.options.title instanceof Marionette.View) {
-        this.showChildView('header', this.options.title);
+        this.showChildView("header", this.options.title);
       } else {
         const title = new Marionette.View({
-          tagName: 'h3',
+          tagName: "h3",
           template: _.template(t(this.options.title)),
         });
-        this.showChildView('header', title);
+        this.showChildView("header", title);
       }
     }
 
     // add body
     if (this.options.body) {
       if (this.options.body instanceof Marionette.View) {
-        this.showChildView('body', this.options.body);
+        this.showChildView("body", this.options.body);
       } else {
         let bodyView = this.options.body;
-        if (typeof this.options.body === 'string') {
+        if (typeof this.options.body === "string") {
           bodyView = t(bodyView);
         }
 
         const body = new Marionette.View({
           template: _.template(bodyView),
         });
-        this.showChildView('body', body);
+        this.showChildView("body", body);
       }
     }
 
     // add buttons
     if (this.options.buttons) {
       if (this.options.buttons instanceof Marionette.View) {
-        this.showChildView('footer', this.options.buttons);
+        this.showChildView("footer", this.options.buttons);
       } else {
         const ButtonView = Marionette.View.extend({
           id() {
             return this.model.id || Math.floor(Math.random() * 10000);
           },
-          tagName: 'button',
+          tagName: "button",
           className() {
-            const className = this.model.get('class');
-            return `btn ${(className || '')}`;
+            const className = this.model.get("class");
+            return `btn ${className || ""}`;
           },
-          template: _.template('<%- t(obj.title) %>'),
+          template: _.template("<%- t(obj.title) %>"),
           events: {
             click() {
               const onClick = this.model.attributes.onClick;
@@ -100,34 +100,34 @@ const StandardDialogView = Marionette.View.extend({
         });
 
         const ButtonsArrayView = Marionette.CollectionView.extend({
-          className: 'dialog-buttons',
+          className: "dialog-buttons",
           collection: new Backbone.Collection(this.options.buttons),
           childView: ButtonView,
         });
 
-        this.showChildView('footer', new ButtonsArrayView());
+        this.showChildView("footer", new ButtonsArrayView());
       }
     }
   },
 });
 
 export default Marionette.Region.extend({
-  el: '#dialog',
+  el: "#dialog",
 
   constructor(...args) {
     _.bindAll(this);
     Marionette.Region.prototype.constructor.apply(this, args);
 
     // attach events
-    this.on('view:show', this.showModal, this);
-    this.$el.on('click #dialog', this._onContainerClick);
+    this.on("view:show", this.showModal, this);
+    this.$el.on("click #dialog", this._onContainerClick);
   },
 
   hideAllowed: true, // hide the dialog on clicking the container
 
   getEl(selector) {
     const $el = $(selector);
-    $el.on('hidden', this.close);
+    $el.on("hidden", this.close);
     return $el;
   },
 
@@ -155,7 +155,7 @@ export default Marionette.Region.extend({
 
     this.onHide = options.onHide;
     this.hideAllowed =
-      typeof options.hideAllowed !== 'undefined' ? options.hideAllowed : true;
+      typeof options.hideAllowed !== "undefined" ? options.hideAllowed : true;
 
     if (!options.view || !(options.view instanceof Marionette.View)) {
       // create a standard dialog
@@ -166,7 +166,7 @@ export default Marionette.Region.extend({
       }
 
       view = new StandardDialogView(options);
-      view.on('hide', this.hide);
+      view.on("hide", this.hide);
     } else {
       // passed a view so lets just show it
       view = options.view;
@@ -174,7 +174,7 @@ export default Marionette.Region.extend({
 
     this.$el.fadeIn(300);
 
-    view.on('close', this.hide, this);
+    view.on("close", this.hide, this);
     Marionette.Region.prototype.show.call(this, view);
   },
 
@@ -210,13 +210,13 @@ export default Marionette.Region.extend({
 
   error: function error(err = {}) {
     let options = {
-      class: 'error',
-      title: 'Yikes!',
+      class: "error",
+      title: "Yikes!",
       body: err.message || err,
       buttons: [
         {
-          id: 'ok',
-          title: 'OK',
+          id: "ok",
+          title: "OK",
           onClick: this.hide,
         },
       ],
@@ -234,7 +234,7 @@ export default Marionette.Region.extend({
   },
 
   _onContainerClick(e) {
-    if ($(e.target).prop('id') === 'dialog') {
+    if ($(e.target).prop("id") === "dialog") {
       this.hide(e);
     }
   },

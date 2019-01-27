@@ -1,28 +1,28 @@
 /** ****************************************************************************
  * Setting Menu main view.
- *****************************************************************************/
-import $ from 'jquery';
-import Marionette from 'backbone.marionette';
-import appModel from 'app_model';
-import { languages } from 'helpers/translator';
-import './styles.scss';
+ **************************************************************************** */
+import $ from "jquery";
+import Marionette from "backbone.marionette";
+import appModel from "app_model";
+import { languages } from "helpers/translator";
+import "./styles.scss";
 
 export default Marionette.View.extend({
-  id: 'language-selection',
-  tagName: 'ul',
-  className: 'table-view',
+  id: "language-selection",
+  tagName: "ul",
+  className: "table-view",
   template() {
-    const current = appModel.get('language');
-    const isWelcomeScreen = !appModel.get('showWelcome');
+    const current = appModel.get("language");
+    const isWelcomeScreen = !appModel.get("showWelcome");
 
-    let languagesTemplate = '';
+    let languagesTemplate = "";
 
-    for (const language of Object.keys(languages)) {
+    Object.keys(languages).forEach(language => {
       const isChecked = isWelcomeScreen && current === language;
       const langTpl = `
       <label class="item item-radio">
         <input type="radio" name="group" value="${language}" ${
-        isChecked ? 'checked' : ''
+        isChecked ? "checked" : ""
       }>
         <div class="radio-content">
           <div class="item-content">
@@ -33,21 +33,21 @@ export default Marionette.View.extend({
       </label>
     `;
       languagesTemplate += langTpl;
-    }
+    });
 
     return `<div class="list">${languagesTemplate}</div>`;
   },
 
   triggers: {
-    'click input[type="radio"]': 'save',
+    'click input[type="radio"]': "save",
   },
 
   getValues() {
     let value;
 
-    let $inputs = this.$el.find('input[type="radio"]');
+    const $inputs = this.$el.find('input[type="radio"]');
     $inputs.each((int, elem) => {
-      if ($(elem).prop('checked')) {
+      if ($(elem).prop("checked")) {
         value = $(elem).val();
       }
     });

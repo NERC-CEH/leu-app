@@ -1,52 +1,52 @@
-import Backbone from 'backbone';
-import _ from 'lodash';
-import Marionette from 'backbone.marionette';
-import JST from 'JST';
-import '../styles/tabs.scss';
+import Backbone from "backbone";
+import _ from "lodash";
+import Marionette from "backbone.marionette";
+import JST from "JST";
+import "../styles/tabs.scss";
 
 const Tab = Marionette.View.extend({
-  tagName: 'li',
-  template: _.template('<%= obj.title %>'),
+  tagName: "li",
+  template: _.template("<%= obj.title %>"),
 
   className() {
-    return this.model.get('active') ? 'active' : '';
+    return this.model.get("active") ? "active" : "";
   },
 
   attributes() {
     return {
-      'data-id': this.model.id,
+      "data-id": this.model.id,
     };
   },
 
   triggers: {
-    click: 'open:tab',
+    click: "open:tab",
   },
 });
 
 const Tabs = Marionette.CollectionView.extend({
-  tagName: 'ul',
+  tagName: "ul",
   childView: Tab,
 
   onChildviewOpenTab(view) {
     const tabId = view.model.id;
-    const active = this.collection.find(model => model.get('active'));
-    active.set('active', false);
-    view.model.set('active', true);
+    const active = this.collection.find(model => model.get("active"));
+    active.set("active", false);
+    view.model.set("active", true);
 
     this.render();
 
-    this.trigger('showTab', tabId);
+    this.trigger("showTab", tabId);
   },
 });
 
 export default Marionette.View.extend({
-  template: JST['common/tabs_container'],
+  template: JST["common/tabs_container"],
 
-  className: 'tabs-container',
+  className: "tabs-container",
 
   regions: {
-    tabs: '.tabs',
-    content: '.content',
+    tabs: ".tabs",
+    content: ".content",
   },
 
   childViewOptions() {
@@ -64,9 +64,9 @@ export default Marionette.View.extend({
     const tabsCollectionView = new Tabs({
       collection: this.tabsCollection,
     });
-    this.getRegion('tabs').show(tabsCollectionView);
+    this.getRegion("tabs").show(tabsCollectionView);
 
-    tabsCollectionView.on('showTab', this._showContent, this);
+    tabsCollectionView.on("showTab", this._showContent, this);
 
     this._showContent();
   },
@@ -82,6 +82,6 @@ export default Marionette.View.extend({
       model: this.model,
       vent: this.options.vent,
     });
-    this.getRegion('content').show(contentView);
+    this.getRegion("content").show(contentView);
   },
 });

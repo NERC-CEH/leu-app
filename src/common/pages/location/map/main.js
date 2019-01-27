@@ -2,26 +2,26 @@
  * Location main view map functions.
  **************************************************************************** */
 
-import $ from 'jquery';
-import 'leaflet/dist/leaflet.css';
-import 'leaflet/dist/images/layers-2x.png';
-import 'leaflet/dist/images/layers.png';
-import L from 'leaflet';
-import CONFIG from 'config';
-import Log from 'helpers/log';
-import 'os-leaflet';
-import mapMarker from './marker';
-import gpsFunctions from './gps';
+import $ from "jquery";
+import "leaflet/dist/leaflet.css";
+import "leaflet/dist/images/layers-2x.png";
+import "leaflet/dist/images/layers.png";
+import L from "leaflet";
+import CONFIG from "config";
+import Log from "helpers/log";
+import "os-leaflet";
+import mapMarker from "./marker";
+import gpsFunctions from "./gps";
 
 const MIN_WGS84_ZOOM = 5;
 
-const DEFAULT_LAYER = 'Satellite';
+const DEFAULT_LAYER = "Satellite";
 const DEFAULT_LAYER_ZOOM = MIN_WGS84_ZOOM; // 7 and not 1 because of WGS84 scale
 const DEFAULT_CENTER = [51.78144, 8.9415];
 
 const API = {
   initMap() {
-    Log('Location:MainView:Map: initializing.');
+    Log("Location:MainView:Map: initializing.");
 
     this.map = null;
     this.layers = this.getLayers();
@@ -42,7 +42,6 @@ const API = {
     this.layers[this.currentLayer].addTo(this.map);
     this.$container.dataset.layer = this.currentLayer; // fix the lines between the tiles
 
-
     // Controls
     this.addControls();
 
@@ -56,7 +55,7 @@ const API = {
   getLayers() {
     const layers = {};
     layers.Satellite = L.tileLayer(
-      'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+      "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
       {
         attribution:
           'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -64,11 +63,11 @@ const API = {
         accessToken: CONFIG.map.mapbox_api_key,
         tileSize: 256, // specify as, OS layer overwites this with 200 otherwise,
         minZoom: MIN_WGS84_ZOOM,
-      }
+      },
     );
 
     layers.OSM = L.tileLayer(
-      'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+      "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
       {
         attribution:
           'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -76,21 +75,21 @@ const API = {
         accessToken: CONFIG.map.mapbox_api_key,
         tileSize: 256, // specify as, OS layer overwites this with 200 otherwise
         minZoom: MIN_WGS84_ZOOM,
-      }
+      },
     );
 
     return layers;
   },
 
   addControls() {
-    Log('Location:MainView:Map: adding layer controls.');
+    Log("Location:MainView:Map: adding layer controls.");
 
     this.controls = L.control.layers(
       {
-        'Open Street Map': this.layers.OSM,
+        "Open Street Map": this.layers.OSM,
         Satellite: this.layers.Satellite,
       },
-      {}
+      {},
     );
     this.map.addControl(this.controls);
   },
@@ -101,15 +100,11 @@ const API = {
    * @returns {*}
    */
   getMapZoom(zoom) {
-    let normalZoom = zoom || this.map.getZoom();
+    const normalZoom = zoom || this.map.getZoom();
 
-    if (this.currentLayer === 'OS') {
-      normalZoom += OS_ZOOM_DIFF;
-    }
 
     return normalZoom;
   },
-
 
   _repositionMap(dontZoom) {
     const location = this._getCurrentLocation();
@@ -130,9 +125,9 @@ const API = {
    * Set full remaining height.
    */
   _refreshMapHeight() {
-    Log('Location:MainView:Map: refreshing map height.');
-    this.$container = this.$el.find('#map')[0];
-    $(this.$container).style = 'height: 100vh;';
+    Log("Location:MainView:Map: refreshing map height.");
+    this.$container = this.$el.find("#map")[0];
+    $(this.$container).style = "height: 100vh;";
   },
 
   _getCenter(location = {}) {

@@ -1,4 +1,4 @@
-import Log from './log';
+import Log from "./log";
 
 const API = {
   GPS_ACCURACY_LIMIT: 100, // meters
@@ -13,8 +13,8 @@ const API = {
 
     // Early return if geolocation not supported.
     if (!navigator.geolocation) {
-      const error = new Error('Geolocation is not supported.');
-      Log(error, 'e');
+      const error = new Error("Geolocation is not supported.");
+      Log(error, "e");
       callback && callback(error);
       return null;
     }
@@ -50,7 +50,7 @@ const API = {
     const watchID = navigator.geolocation.watchPosition(
       onSuccess,
       onError,
-      GPSoptions
+      GPSoptions,
     );
     return watchID;
   },

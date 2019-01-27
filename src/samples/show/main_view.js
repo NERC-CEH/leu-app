@@ -1,6 +1,6 @@
 /** ****************************************************************************
  * Sample Show main view.
- *****************************************************************************/
+ **************************************************************************** */
 import Indicia from 'indicia';
 import Marionette from 'backbone.marionette';
 import JST from 'JST';
@@ -22,7 +22,7 @@ export default Marionette.View.extend({
 
     const items = [];
     const sample = this.model.get('sample');
-    sample.getOccurrence().media.each((image) => {
+    sample.getOccurrence().media.each(image => {
       items.push({
         src: image.getURL(),
         w: image.get('width') || 800,
@@ -30,7 +30,7 @@ export default Marionette.View.extend({
       });
     });
 
-// Initializes and opens PhotoSwipe
+    // Initializes and opens PhotoSwipe
     const gallery = new Gallery(items);
     gallery.init();
   },
@@ -51,19 +51,20 @@ export default Marionette.View.extend({
 
     let number = occ.get('number') && StringHelp.limit(occ.get('number'));
     if (!number) {
-      number = occ.get('number-ranges') && StringHelp.limit(occ.get('number-ranges'));
+      number =
+        occ.get('number-ranges') && StringHelp.limit(occ.get('number-ranges'));
     }
 
     return {
       id: occ.id,
       cid: occ.cid,
-      site_url: CONFIG.site_url,
+      siteUrl: CONFIG.site_url,
       isSynchronising: syncStatus === Indicia.SYNCHRONISING,
       onDatabase: syncStatus === Indicia.SYNCED,
-      scientific_name: scientificName,
+      scientificName,
       commonName,
       location: locationPrint,
-      location_name: location.name,
+      locationName: location.name,
       date: DateHelp.print(sample.get('date'), true),
       number,
       comment: occ.get('comment'),
@@ -71,4 +72,3 @@ export default Marionette.View.extend({
     };
   },
 });
-

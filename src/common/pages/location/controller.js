@@ -1,20 +1,20 @@
 /** ****************************************************************************
  * Location controller.
  **************************************************************************** */
-import $ from 'jquery';
-import _ from 'lodash';
-import Backbone from 'backbone';
-import Indicia from 'indicia';
-import Log from 'helpers/log';
-import StringHelp from 'helpers/string';
-import LocHelp from 'helpers/location';
-import GridRefUtils from 'bigu';
-import App from 'app';
-import radio from 'radio';
-import savedSamples from 'saved_samples';
-import appModel from 'app_model';
-import MainView from './main_view';
-import './styles.scss';
+import $ from "jquery";
+import _ from "lodash";
+import Backbone from "backbone";
+import Indicia from "indicia";
+import Log from "helpers/log";
+import StringHelp from "helpers/string";
+import LocHelp from "helpers/location";
+import GridRefUtils from "bigu";
+import App from "app";
+import radio from "radio";
+import savedSamples from "saved_samples";
+import appModel from "app_model";
+import MainView from "./main_view";
+import "./styles.scss";
 
 const LATLONG_REGEX = /^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?),\s*[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)$/g; // eslint-disable-line
 
@@ -25,7 +25,7 @@ const API = {
   show(sampleID, subSampleID, options = {}) {
     // wait till savedSamples is fully initialized
     if (savedSamples.fetching) {
-      savedSamples.once('fetching:done', () => {
+      savedSamples.once("fetching:done", () => {
         API.show.apply(this, [sampleID]);
       });
       return;
@@ -35,14 +35,14 @@ const API = {
 
     // Not found
     if (!sample) {
-      radio.trigger('app:404:show', { replace: true });
+      radio.trigger("app:404:show", { replace: true });
       return;
     }
 
     // can't edit a saved one - to be removed when sample update
     // is possible on the server
     if (sample.getSyncStatus() === Indicia.SYNCED) {
-      radio.trigger('samples:show', sampleID, { replace: true });
+      radio.trigger("samples:show", sampleID, { replace: true });
       return;
     }
 
@@ -62,13 +62,13 @@ const API = {
     });
     API.attachMainViewEvents(mainView, sample);
 
-    radio.trigger('app:main', mainView);
+    radio.trigger("app:main", mainView);
 
     // HEADER
-    radio.trigger('app:header:hide');
+    radio.trigger("app:header:hide");
 
     // FOOTER
-    radio.trigger('app:footer:hide');
+    radio.trigger("app:footer:hide");
   },
 
   /**
@@ -78,26 +78,26 @@ const API = {
    */
   attachMainViewEvents(mainView, sample) {
     // past locations
-    mainView.on('past:click', () => API.onPastLocationsClick(sample));
+    mainView.on("past:click", () => API.onPastLocationsClick(sample));
 
     // map
-    mainView.on('location:select:map', (loc, createNew) =>
-      API.setLocation(sample, loc, createNew)
+    mainView.on("location:select:map", (loc, createNew) =>
+      API.setLocation(sample, loc, createNew),
     );
 
     // gridref
-    mainView.on('location:gridref:change', data =>
-      API.onManualGridrefChange(sample, data)
+    mainView.on("location:gridref:change", data =>
+      API.onManualGridrefChange(sample, data),
     );
 
     // gps
-    mainView.on('gps:click', () => API.onGPSClick(sample));
+    mainView.on("gps:click", () => API.onGPSClick(sample));
 
     // location name
-    mainView.on('location:name:change', locationName =>
-      API.updateLocationName(sample, locationName)
+    mainView.on("location:name:change", locationName =>
+      API.updateLocationName(sample, locationName),
     );
-    mainView.on('navigateBack', () => {
+    mainView.on("navigateBack", () => {
       API.exit(sample);
     });
   },
@@ -109,11 +109,11 @@ const API = {
    * @param createNew
    */
   setLocation(sample, loc, reset) {
-    if (typeof loc !== 'object') {
+    if (typeof loc !== "object") {
       // jQuery event object bug fix
       // todo clean up if not needed anymore
-      Log('Location:Controller:setLocation: loc is not an object.', 'e');
-      return Promise.reject(new Error('Invalid location'));
+      Log("Location:Controller:setLocation: loc is not an object.", "e");
+      return Promise.reject(new Error("Invalid location"));
     }
 
     // check if we need custom location setting functionality
@@ -129,7 +129,7 @@ const API = {
 
     if (!reset) {
       // extend old location to preserve its previous attributes like name or id
-      let oldLocation = sample.get('location');
+      let oldLocation = sample.get("location");
       if (!_.isObject(oldLocation)) {
         oldLocation = {};
       } // check for locked true
@@ -140,34 +140,34 @@ const API = {
     const locationID = appModel.setLocation(location);
     location.id = locationID;
 
-    sample.set('location', location);
-    sample.trigger('change:location');
+    sample.set("location", location);
+    sample.trigger("change:location");
 
     return sample.save().catch(error => {
-      Log(error, 'e');
-      radio.trigger('app:dialog:error', error);
+      Log(error, "e");
+      radio.trigger("app:dialog:error", error);
     });
   },
 
   exit(sample) {
-    Log('Location:Controller: exiting.');
+    Log("Location:Controller: exiting.");
 
     sample
       .save()
       .then(() => {
         // save to past locations and update location ID on record
-        const location = sample.get('location') || {};
+        const location = sample.get("location") || {};
         if (location.latitude) {
           const locationID = appModel.setLocation(location);
           location.id = locationID;
-          sample.set('location', location);
+          sample.set("location", location);
         }
 
         window.history.back();
       })
       .catch(error => {
-        Log(error, 'e');
-        radio.trigger('app:dialog:error', error);
+        Log(error, "e");
+        radio.trigger("app:dialog:error", error);
       });
   },
 
@@ -186,12 +186,12 @@ const API = {
    * @param locationName
    */
   updateLocationName(sample, locationName) {
-    if (!locationName || typeof locationName !== 'string') {
+    if (!locationName || typeof locationName !== "string") {
       return;
     }
 
     const escapedName = StringHelp.escape(locationName);
-    const location = sample.get('location') || {};
+    const location = sample.get("location") || {};
     location.name = escapedName;
 
     // check if we need custom location setting functionality
@@ -200,7 +200,7 @@ const API = {
       return;
     }
 
-    sample.set('location', location);
+    sample.set("location", location);
     sample.save();
   },
 
@@ -210,19 +210,19 @@ const API = {
    * @param gridref
    */
   onManualGridrefChange(sample, gridref) {
-    Log('Location:Controller: executing onManualGridrefChange.');
-    const normalizedGridref = gridref.replace(/\s/g, '').toUpperCase();
+    Log("Location:Controller: executing onManualGridrefChange.");
+    const normalizedGridref = gridref.replace(/\s/g, "").toUpperCase();
 
-    if (gridref !== '') {
+    if (gridref !== "") {
       const location = {};
       // check if it is in GB land and not in the sea
       if (LocHelp.isValidGridRef(normalizedGridref)) {
         // GB Grid Reference
         const parsedGridRef = GridRefUtils.GridRefParser.factory(
-          normalizedGridref
+          normalizedGridref,
         );
 
-        location.source = 'gridref';
+        location.source = "gridref";
         location.gridref = parsedGridRef.preciseGridRef;
         location.accuracy = parsedGridRef.length / 2; // radius rather than square dimension
 
@@ -234,22 +234,22 @@ const API = {
         API.setLocation(sample, location);
       } else if (gridref.match(LATLONG_REGEX)) {
         // Lat Long
-        location.source = 'gridref';
+        location.source = "gridref";
         location.accuracy = 1;
-        const latitude = parseFloat(gridref.split(',')[0]);
+        const latitude = parseFloat(gridref.split(",")[0]);
         location.latitude = parseFloat(latitude);
-        const longitude = parseFloat(gridref.split(',')[1]);
+        const longitude = parseFloat(gridref.split(",")[1]);
         location.longitude = parseFloat(longitude);
 
         API.setLocation(sample, location);
       } else {
         // invalid
-        App.trigger('gridref:form:data:invalid', { gridref: 'invalid' });
+        App.trigger("gridref:form:data:invalid", { gridref: "invalid" });
       }
     } else {
-      const location = sample.get('location') || {};
+      const location = sample.get("location") || {};
       delete location.source;
-      location.gridref = '';
+      location.gridref = "";
       location.latitude = null;
       location.longitude = null;
       location.accuracy = null;
@@ -263,7 +263,7 @@ const API = {
    * @param sample
    */
   onPastLocationsClick(sample) {
-    radio.trigger('settings:locations', {
+    radio.trigger("settings:locations", {
       onSelect(location) {
         if (sample.isGPSRunning()) {
           sample.stopGPS();
@@ -275,7 +275,7 @@ const API = {
         //   return;
         // }
 
-        sample.set('location', location);
+        sample.set("location", location);
         window.history.back();
       },
     });

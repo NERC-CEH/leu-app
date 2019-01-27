@@ -1,79 +1,79 @@
 /** ****************************************************************************
  * Location main view.
  **************************************************************************** */
-import Backbone from 'backbone';
-import Marionette from 'backbone.marionette';
-import JST from 'JST';
-import Log from 'helpers/log';
-import CONFIG from 'config';
-import 'typeahead'; // eslint-disable-line
-import HeaderView from './main_view_header';
-import mapFunctions from './map/main';
-import './styles.scss';
+import Backbone from "backbone";
+import Marionette from "backbone.marionette";
+import JST from "JST";
+import Log from "helpers/log";
+import CONFIG from "config";
+import "typeahead"; // eslint-disable-line
+import HeaderView from "./main_view_header";
+import mapFunctions from "./map/main";
+import "./styles.scss";
 
 const LocationView = Marionette.View.extend({
-  id: 'location-container',
-  template: JST['common/location/main'],
+  id: "location-container",
+  template: JST["common/location/main"],
 
   regions: {
     header: {
-      el: '#map-header',
+      el: "#map-header",
       replaceElement: true,
     },
   },
 
   triggers: {
-    'click a[data-rel="back"]': 'navigateBack',
+    'click a[data-rel="back"]': "navigateBack",
   },
 
   childViewEvents: {
     // eslint-disable-next-line
-    'gridref:change': function(val) {
-      this.triggerMethod('location:gridref:change', val);
+    "gridref:change": function(val) {
+      this.triggerMethod("location:gridref:change", val);
     },
 
     // eslint-disable-next-line
-    'name:change': function(val) {
-      this.triggerMethod('location:name:change', val);
+    "name:change": function(val) {
+      this.triggerMethod("location:name:change", val);
     },
     // eslint-disable-next-line
-    'input:blur': function() {
+    "input:blur": function() {
       this._refreshMapHeight();
     },
   },
 
   initialize() {
-    Log('Location:Controller:MainView: initializing.');
-    const sample = this.model.get('sample');
+    Log("Location:Controller:MainView: initializing.");
+    const sample = this.model.get("sample");
 
     // this.listenTo(sample,
     // 'geolocation:start geolocation:stop geolocation:error', this.render);
-    this.listenTo(sample, 'geolocation:start', this.geolocationStart);
-    this.listenTo(sample, 'geolocation:stop', this.geolocationStop);
-    this.listenTo(sample, 'geolocation:error', this.geolocationError);
-    this.listenTo(sample, 'geolocation:update', this.geolocationUpdate);
-    this.listenTo(sample, 'geolocation:success', this.geolocationSuccess);
-    this.listenTo(sample, 'change:location', this.onLocationChange);
+    this.listenTo(sample, "geolocation:start", this.geolocationStart);
+    this.listenTo(sample, "geolocation:stop", this.geolocationStop);
+    this.listenTo(sample, "geolocation:error", this.geolocationError);
+    this.listenTo(sample, "geolocation:update", this.geolocationUpdate);
+    this.listenTo(sample, "geolocation:success", this.geolocationSuccess);
+    this.listenTo(sample, "change:location", this.onLocationChange);
   },
 
   onAttach() {
-    Log('Location:Controller:MainView: attaching.');
+    Log("Location:Controller:MainView: attaching.");
     this.initMap();
   },
 
   onRender() {
-    const appModel = this.model.get('appModel');
-    const sample = this.model.get('sample');
+    const appModel = this.model.get("appModel");
+    const sample = this.model.get("sample");
 
     const headerView = new HeaderView({
       model: new Backbone.Model({ appModel, sample }),
       hideName: this.options.hideName,
     });
-    this.showChildView('header', headerView);
+    this.showChildView("header", headerView);
   },
 
   serializeData() {
-    Log('Location:Controller:MainView: serializing.');
+    Log("Location:Controller:MainView: serializing.");
     const location = this._getCurrentLocation();
 
     return {
@@ -87,26 +87,26 @@ const LocationView = Marionette.View.extend({
   },
 
   onLocationChange() {
-    Log('Location:MainView: executing onLocationChange.');
+    Log("Location:MainView: executing onLocationChange.");
 
     const location = this._getCurrentLocation();
 
     this.updateMapMarker(location);
 
-    this._repositionMap(location.source === 'map');
+    this._repositionMap(location.source === "map");
 
-    const $gpsBtn = this.$el.find('.gps-btn');
+    const $gpsBtn = this.$el.find(".gps-btn");
     if ($gpsBtn) {
-      $gpsBtn.attr('data-source', location.source);
+      $gpsBtn.attr("data-source", location.source);
 
-      if (location.source !== 'gps') {
-        this._set_gps_progress_feedback('');
+      if (location.source !== "gps") {
+        this._set_gps_progress_feedback("");
       }
     }
   },
 
   _getCurrentLocation() {
-    return this.model.get('sample').get('location') || {};
+    return this.model.get("sample").get("location") || {};
   },
 });
 

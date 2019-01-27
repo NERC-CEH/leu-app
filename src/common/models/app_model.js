@@ -1,23 +1,24 @@
 /** ****************************************************************************
  * App model. Persistent.
- *****************************************************************************/
-import Backbone from 'backbone';
-import Store from 'backbone.localstorage';
-import CONFIG from 'config';
-import pastLocationsExtension from './app_model_past_loc_ext';
+ **************************************************************************** */
+import _ from 'lodash';
+import Backbone from "backbone";
+import Store from "backbone.localstorage";
+import CONFIG from "config";
+import pastLocationsExtension from "./app_model_past_loc_ext";
 
 let AppModel = Backbone.Model.extend({
-  id: 'app',
+  id: "app",
 
   defaults: {
     exceptions: [],
 
     favouriteSpecies: [],
-    sort: 'default',
+    sort: "default",
     filters: {},
 
-    country: 'UK',
-    language: 'en_GB',
+    country: "UK",
+    language: "en_GB",
 
     showWelcome: true,
 
@@ -38,26 +39,26 @@ let AppModel = Backbone.Model.extend({
   },
 
   toggleFavouriteSpecies(species) {
-    const favSpecies = this.get('favouriteSpecies');
+    const favSpecies = this.get("favouriteSpecies");
     if (this.isFavouriteSpecies(species.id)) {
       const foundIndex = _.indexOf(favSpecies, species.id);
       favSpecies.splice(foundIndex, 1);
     } else {
       favSpecies.push(species.id);
     }
-    this.set('favouriteSpecies', favSpecies);
+    this.set("favouriteSpecies", favSpecies);
     this.save();
-    this.trigger('change:favourite');
+    this.trigger("change:favourite");
   },
 
   isFavouriteSpecies(speciesID) {
-    const favSpecies = this.get('favouriteSpecies');
+    const favSpecies = this.get("favouriteSpecies");
     const foundIndex = _.indexOf(favSpecies, speciesID);
     return foundIndex >= 0;
   },
 
   toggleFilter(filterGroup, filter) {
-    const filters = this.get('filters');
+    const filters = this.get("filters");
     const foundIndex = _.indexOf(filters[filterGroup], filter);
     if (foundIndex >= 0) {
       // remove filter
@@ -68,28 +69,29 @@ let AppModel = Backbone.Model.extend({
       // add filter
       filters[filterGroup].push(filter);
     }
-    this.set('filters', filters);
+    this.set("filters", filters);
     this.save();
-    this.trigger('change:filter');
+    this.trigger("change:filter");
   },
 
   getSpeciesLocalName(species) {
-    let common_name = species.attributes[this.get('country')].common_name;
-    common_name = common_name || species.attributes['UK'].common_name;
+    let commonName = species.attributes[this.get("country")].common_name;
+    commonName = commonName || species.attributes.UK.common_name;
 
-    if (typeof common_name === 'object') {
+    if (typeof commonName === "object") {
+      // eslint-disable-next-line
       const languageCode = appModel
-        .get('language')
-        .split('_')[0]
+        .get("language")
+        .split("_")[0]
         .toLocaleUpperCase();
-      common_name = common_name[languageCode] && common_name[languageCode];
+      commonName = commonName[languageCode] && commonName[languageCode];
 
-      if (!common_name) {
-        common_name = species.attributes['UK'].common_name;
+      if (!commonName) {
+        commonName = species.attributes.UK.common_name;
       }
     }
 
-    return common_name;
+    return commonName;
   },
 });
 

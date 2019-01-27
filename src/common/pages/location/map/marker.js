@@ -1,7 +1,7 @@
-import LocHelp from 'helpers/location';
-import Log from 'helpers/log';
-import L from 'leaflet';
-import './leaflet_singleclick_ext';
+import LocHelp from "helpers/location";
+import Log from "helpers/log";
+import L from "leaflet";
+import "./leaflet_singleclick_ext";
 
 class ComplexMarker {
   constructor(square, circle) {
@@ -17,9 +17,9 @@ class ComplexMarker {
 
 const marker = {
   addMapMarker() {
-    this.map.on('singleclick', this._onMapClick, this);
+    this.map.on("singleclick", this._onMapClick, this);
     this.updateMapMarker(this._getCurrentLocation());
-    this.addParentMarker(this.model.get('sample'));
+    this.addParentMarker(this.model.get("sample"));
   },
 
   /**
@@ -31,7 +31,7 @@ const marker = {
       return;
     }
 
-    Log('Common:Location:Map view: updating map marker.');
+    Log("Common:Location:Map view: updating map marker.");
 
     // remove previous marker
     this._removeMapMarker();
@@ -47,10 +47,10 @@ const marker = {
 
   addParentMarker(sample) {
     if (sample.parent) {
-      const location = sample.parent.get('location') || {};
+      const location = sample.parent.get("location") || {};
       if (location.latitude) {
         const parentMarker = this.generateRectangleMarker(location, {
-          color: 'blue',
+          color: "blue",
           fillOpacity: 0.01,
         });
         parentMarker.addTo(this.map);
@@ -66,17 +66,17 @@ const marker = {
 
   _setGBMarker(location) {
     // check if user wants no Grid Reference
-    const appModel = this.model.get('appModel');
-    if (!appModel.get('useGridRef')) {
+    const appModel = this.model.get("appModel");
+    if (!appModel.get("useGridRef")) {
       this._setNonGBMarker(location);
       return;
     }
 
     // GPS sourced marker is both square and circle
-    if (location.source === 'gps') {
+    if (location.source === "gps") {
       this.marker = new ComplexMarker(
         this.generateRectangleMarker(location),
-        this.generateCircleMarker(location, true)
+        this.generateCircleMarker(location, true),
       );
       this.marker.square.addTo(this.map);
       this.marker.circle.addTo(this.map);
@@ -97,7 +97,7 @@ const marker = {
     const dimensions = LocHelp.getSquareBounds(location) || [[0, 0], [0, 0]];
 
     const newMarker = L.polygon(dimensions, {
-      color: options.color || 'red',
+      color: options.color || "red",
       weight: 2,
       opacity: 1,
       fillOpacity: options.fillOpacity || 0.2,
@@ -116,7 +116,7 @@ const marker = {
     const latLng = L.latLng([location.latitude, location.longitude]);
 
     const options = {
-      color: 'red',
+      color: "red",
       weight: 1,
       opacity: 1,
       fillOpacity: 0.7,
@@ -141,7 +141,7 @@ const marker = {
    */
   _getCircleRadius(location) {
     let radius = 10;
-    if (location.source === 'gps') {
+    if (location.source === "gps") {
       radius = location.accuracy;
     }
 
@@ -152,7 +152,7 @@ const marker = {
     const location = {
       latitude: parseFloat(e.latlng.lat.toFixed(5)),
       longitude: parseFloat(e.latlng.lng.toFixed(5)),
-      source: 'map',
+      source: "map",
     };
 
     const zoom = this.getMapZoom();
@@ -160,7 +160,7 @@ const marker = {
     location.gridref = LocHelp.locationToGrid(location);
 
     // trigger won't work to bubble up
-    this.triggerMethod('location:select:map', location);
+    this.triggerMethod("location:select:map", location);
   },
 
   /**

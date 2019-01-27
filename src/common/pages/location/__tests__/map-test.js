@@ -1,17 +1,17 @@
-import API from '../map/main';
+import API from "../map/main";
 
 const OS_ZOOM_DIFF = 6;
 
-describe('Map', () => {
+describe("Map", () => {
   beforeEach(() => {
     API.map = {};
   });
 
-  it('should have getMapZoom', () => {
-    expect(API.getMapZoom).to.be.a('function');
+  it("should have getMapZoom", () => {
+    expect(API.getMapZoom).to.be.a("function");
   });
 
-  it('should return WGS84 zoom', () => {
+  it("should return WGS84 zoom", () => {
     const zoom = 5;
     API.map.getZoom = () => zoom; // spy
 
@@ -19,10 +19,10 @@ describe('Map', () => {
     expect(normalized).to.be.equal(zoom);
   });
 
-  it('should return WGS84 zoom if OSGB map', () => {
+  it("should return WGS84 zoom if OSGB map", () => {
     const zoom = 7;
     API.map.getZoom = () => zoom; // spy
-    API.currentLayer = 'OS';
+    API.currentLayer = "OS";
 
     const normalized = API.getMapZoom();
     expect(normalized).to.be.equal(zoom + OS_ZOOM_DIFF);

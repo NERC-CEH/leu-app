@@ -1,11 +1,11 @@
 /** ****************************************************************************
  * Main app development configuration file.
- *****************************************************************************/
-import $ from 'jquery';
-import Indicia from 'indicia';
-import config from './config';
+ **************************************************************************** */
+import $ from "jquery";
+import Indicia from "indicia";
+import config from "./config";
 
-const HOST = 'https://test.brc.ac.uk/irecord7/'; // Backend URL - needs trailing slash
+const HOST = "https://test.brc.ac.uk/irecord7/"; // Backend URL - needs trailing slash
 
 const newConfig = $.extend(true, config, {
   // google analytics
@@ -16,7 +16,7 @@ const newConfig = $.extend(true, config, {
   site_url: HOST,
 
   // use prod logging if testing otherwise full log
-  log: process.env.ENV !== 'testing',
+  log: process.env.ENV !== "testing",
 
   users: {
     url: `${HOST + Indicia.API_BASE + Indicia.API_VER}/users/`,
@@ -24,7 +24,10 @@ const newConfig = $.extend(true, config, {
   },
 
   reports: {
-    url: `${HOST + Indicia.API_BASE + Indicia.API_VER + Indicia.API_REPORTS_PATH}`,
+    url: `${HOST +
+      Indicia.API_BASE +
+      Indicia.API_VER +
+      Indicia.API_REPORTS_PATH}`,
     timeout: 80000,
   },
 

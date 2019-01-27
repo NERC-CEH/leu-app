@@ -1,8 +1,8 @@
 /** ****************************************************************************
  * Validation.
  **************************************************************************** */
-import $ from 'jquery';
-import _ from 'lodash';
+import $ from "jquery";
+import _ from "lodash";
 
 export default {
   email(email) {
@@ -18,18 +18,18 @@ export default {
 
   updateViewFormErrors($view, errors, selector) {
     const clearFormErrors = () => {
-      $view.find('.input-row.error').each((int, elem) => {
-        $(elem).removeClass('error');
-        $(elem).attr('error-message', null);
+      $view.find(".input-row.error").each((int, elem) => {
+        $(elem).removeClass("error");
+        $(elem).attr("error-message", null);
       });
     };
 
     clearFormErrors();
 
     _.each(errors, (value, key) => {
-      const $controlGroup = $view.find(selector + key).closest('div.input-row');
-      $controlGroup.addClass('error');
-      $controlGroup.attr('error-message', value);
+      const $controlGroup = $view.find(selector + key).closest("div.input-row");
+      $controlGroup.addClass("error");
+      $controlGroup.attr("error-message", value);
     });
   },
 };

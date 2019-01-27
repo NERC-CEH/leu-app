@@ -1,29 +1,30 @@
 /** ****************************************************************************
  * Sample Attribute main view.
- *****************************************************************************/
-import $ from 'jquery';
-import Marionette from 'backbone.marionette';
-import Device from 'helpers/device';
-import DateHelp from 'helpers/date';
-import StringHelp from 'helpers/string';
-import Log from 'helpers/log';
-import JST from 'JST';
-import CONFIG from 'config';
+ **************************************************************************** */
+import $ from "jquery";
+import Marionette from "backbone.marionette";
+import Device from "helpers/device";
+import DateHelp from "helpers/date";
+import StringHelp from "helpers/string";
+import Log from "helpers/log";
+import JST from "JST";
+import CONFIG from "config";
 
 export default Marionette.View.extend({
   initialize(options) {
     switch (options.attr) {
-      case 'habitat':
-      case 'number':
-        this.template = JST['common/radio'];
+      case "habitat":
+      case "number":
+        this.template = JST["common/radio"];
         break;
 
       default:
         this.template = JST[`samples/attr/${options.attr}`];
-    }  },
+    }
+  },
 
   triggers: {
-    'click input[type="radio"]': 'save',
+    'click input[type="radio"]': "save",
   },
 
   getValues() {
@@ -32,42 +33,42 @@ export default Marionette.View.extend({
     const attr = this.options.attr;
     let $inputs;
     switch (attr) {
-      case 'date': {
-        value = this.$el.find('input').val();
+      case "date": {
+        value = this.$el.find("input").val();
         const date = new Date(value);
-        if (date.toString() !== 'Invalid Date') {
+        if (date.toString() !== "Invalid Date") {
           values[attr] = new Date(date);
         }
         break;
       }
-      case 'number':
-        const numberConfig = CONFIG.indicia.occurrence['number'];
+      case "number":
+        const numberConfig = CONFIG.indicia.occurrence.number;
         $inputs = this.$el.find('input[type="radio"]');
         $inputs.each((int, elem) => {
-          if ($(elem).prop('checked')) {
+          if ($(elem).prop("checked")) {
             const newVal = $(elem).val();
             // don't set default
             if (newVal !== numberConfig.default) {
-              values['number'] = newVal;
+              values.number = newVal;
             }
           }
         });
         break;
-      case 'habitat':
-        const habitatConfig = CONFIG.indicia.sample['habitat'];
+      case "habitat":
+        const habitatConfig = CONFIG.indicia.sample.habitat;
         $inputs = this.$el.find('input[type="radio"]');
         $inputs.each((int, elem) => {
-          if ($(elem).prop('checked')) {
+          if ($(elem).prop("checked")) {
             const newVal = $(elem).val();
             // don't set default
             if (newVal !== habitatConfig.default) {
-              values['habitat'] = newVal;
+              values.habitat = newVal;
             }
           }
         });
         break;
-      case 'comment':
-        value = this.$el.find('textarea').val();
+      case "comment":
+        value = this.$el.find("textarea").val();
         values[attr] = StringHelp.escape(value);
         break;
       default:
@@ -82,33 +83,33 @@ export default Marionette.View.extend({
     let selected;
 
     switch (this.options.attr) {
-      case 'date':
-        templateData.date = DateHelp.toDateInputValue(this.model.get('date'));
+      case "date":
+        templateData.date = DateHelp.toDateInputValue(this.model.get("date"));
         templateData.maxDate = DateHelp.toDateInputValue(new Date());
         break;
-      case 'number': {
-        selected = occ.get('number') || {};
+      case "number": {
+        selected = occ.get("number") || {};
         templateData = {
-          message: 'How many individual?',
+          message: "How many individual?",
           selection: CONFIG.indicia.occurrence.number._values,
           selected,
         };
         break;
       }
-      case 'comment':
+      case "comment":
         templateData.value = occ.get(this.options.attr);
         break;
-      case 'habitat':
-        selected = this.model.get('habitat') || {};
+      case "habitat":
+        selected = this.model.get("habitat") || {};
         templateData = {
-          message: 'What sort of habitat did you find the ladybirds in?',
+          message: "What sort of habitat did you find the ladybirds in?",
           selection: Object.keys(CONFIG.indicia.sample.habitat.values),
           selected,
         };
         break;
 
       default:
-        Log('Samples:Attribute:MainView: no such attribute.', 'e');
+        Log("Samples:Attribute:MainView: no such attribute.", "e");
         return null;
     }
 
@@ -118,24 +119,24 @@ export default Marionette.View.extend({
   onAttach() {
     let $input;
     switch (this.options.attr) {
-      case 'date':
-        $input = this.$el.find('input').focus();
+      case "date":
+        $input = this.$el.find("input").focus();
         if (Device.isAndroid()) {
           const options = {
-            date: new Date(this.model.get('date')),
-            mode: 'date',
+            date: new Date(this.model.get("date")),
+            mode: "date",
             androidTheme: 5,
             allowOldDates: true,
             allowFutureDates: false,
           };
 
-          window.datePicker.show(options, (date) => {
+          window.datePicker.show(options, date => {
             $input.val(DateHelp.toDateInputValue(new Date(date)));
           });
         }
         break;
-      case 'comment':
-        $input = this.$el.find('textarea').focus();
+      case "comment":
+        $input = this.$el.find("textarea").focus();
         if (window.cordova && Device.isAndroid()) {
           window.Keyboard.show();
           $input.focusout(() => {
@@ -147,4 +148,3 @@ export default Marionette.View.extend({
     }
   },
 });
-

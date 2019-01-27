@@ -1,8 +1,8 @@
-import radio from 'radio';
+import radio from "radio";
 
 export default err => {
-  if (typeof err !== 'string') {
-    err = 'Sorry, some problem has occurred';
+  if (typeof err !== "string") {
+    err = "Sorry, some problem has occurred";
   }
-  radio.trigger('app:dialog:error', err);
+  radio.trigger("app:dialog:error", err);
 };

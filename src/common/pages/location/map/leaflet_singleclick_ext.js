@@ -1,5 +1,5 @@
 // https://github.com/Outdooractive/leaflet-singleclick_0.7
-import L from 'leaflet';
+import L from "leaflet";
 
 /* eslint-disable */
 
@@ -8,8 +8,8 @@ L.Map.addInitHook(function() {
     h;
 
   if (that.on) {
-    that.on('click', check_later);
-    that.on('dblclick', function() {
+    that.on("click", check_later);
+    that.on("dblclick", function() {
       setTimeout(clear_h, 0);
     });
   }
@@ -20,7 +20,7 @@ L.Map.addInitHook(function() {
     h = setTimeout(check, 250);
 
     function check() {
-      that.fire('singleclick', L.Util.extend(e, { type: 'singleclick' }));
+      that.fire("singleclick", L.Util.extend(e, { type: "singleclick" }));
     }
   }
 

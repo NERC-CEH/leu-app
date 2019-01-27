@@ -20,7 +20,7 @@ export default {
       1}/${today.getFullYear()}`;
     const isToday = todayDateOnly === sampleDate;
 
-    return pretty && isToday ? t('Today') : sampleDate;
+    return pretty && isToday ? t("Today") : sampleDate;
   },
 
   /**
@@ -29,6 +29,6 @@ export default {
    * @returns {boolean}
    */
   validate(date) {
-    return date.toString() !== 'Invalid Date' && date <= new Date();
+    return date.toString() !== "Invalid Date" && date <= new Date();
   },
 };

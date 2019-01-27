@@ -1,12 +1,12 @@
-import Indicia from 'indicia';
-import CONFIG from 'config';
-import ImageHelp from 'helpers/image';
-import Log from 'helpers/log';
-import Device from 'helpers/device';
+import Indicia from "indicia";
+import CONFIG from "config";
+import ImageHelp from "helpers/image";
+import Log from "helpers/log";
+import Device from "helpers/device";
 
 export default Indicia.Media.extend({
   destroy(...args) {
-    Log('MediaModel: destroying.');
+    Log("MediaModel: destroying.");
 
     // remove from internal storage
     if (window.cordova) {
@@ -20,11 +20,11 @@ export default Indicia.Media.extend({
   },
 
   getURL() {
-    let URL = this.get('data');
+    let URL = this.get("data");
     if (window.cordova && Device.isIOS() && !window.testing) {
-      if (CONFIG.build >= 8 && URL.search('file://') >= 0) {
+      if (CONFIG.build >= 8 && URL.search("file://") >= 0) {
         // fix previous versions
-        const pathArray = URL.split('/');
+        const pathArray = URL.split("/");
         URL = cordova.file.dataDirectory + pathArray[pathArray.length - 1];
       } else {
         URL = cordova.file.dataDirectory + URL;

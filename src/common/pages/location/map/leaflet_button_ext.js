@@ -1,13 +1,13 @@
-import $ from 'jquery';
-import L from 'leaflet';
-import './leaflet_button_ext.scss';
+import $ from "jquery";
+import L from "leaflet";
+import "./leaflet_button_ext.scss";
 
 /**
  * https://gist.github.com/ejh/2935327
  */
 export default L.Control.extend({
   options: {
-    position: 'bottomleft',
+    position: "bottomleft",
   },
   initialize(options) {
     this._button = {};
@@ -18,8 +18,8 @@ export default L.Control.extend({
   onAdd(map) {
     this._map = map;
     const containerClassName =
-      'leaflet-control-button ' + (this.options.containerClassName || ''); // eslint-disable-line
-    const container = L.DomUtil.create('div', containerClassName);
+      "leaflet-control-button " + (this.options.containerClassName || ""); // eslint-disable-line
+    const container = L.DomUtil.create("div", containerClassName);
 
     if (this.options.title) {
       container.title = this.options.title;
@@ -43,7 +43,7 @@ export default L.Control.extend({
       maxWidth: options.maxWidth || 70, // number
       doToggle: options.doToggle, // bool
       toggleStatus: options.toggleStatus, // bool
-      title: options.title ? options.title : '', // string
+      title: options.title ? options.title : "", // string
     };
 
     this._button = button;
@@ -64,7 +64,7 @@ export default L.Control.extend({
   },
 
   toggle(e) {
-    if (typeof e === 'boolean') {
+    if (typeof e === "boolean") {
       this._button.toggleStatus = e;
     } else {
       this._button.toggleStatus = !this._button.toggleStatus;
@@ -77,47 +77,47 @@ export default L.Control.extend({
       return;
     }
 
-    this._container.innerHTML = '';
+    this._container.innerHTML = "";
     this._makeButton(this._button);
   },
 
   _makeButton(button) {
     const className =
-      'leaflet-buttons-control-button ' + (this.options.className || ''); // eslint-disable-line
-    const newButton = L.DomUtil.create('div', className, this._container);
+      "leaflet-buttons-control-button " + (this.options.className || ""); // eslint-disable-line
+    const newButton = L.DomUtil.create("div", className, this._container);
     if (button.toggleStatus) {
-      L.DomUtil.addClass(newButton, 'leaflet-buttons-control-toggleon');
+      L.DomUtil.addClass(newButton, "leaflet-buttons-control-toggleon");
     }
     if (button.body) {
       // MY MOD
       newButton.innerHTML = button.body;
     } else {
       const image = L.DomUtil.create(
-        'img',
-        'leaflet-buttons-control-img',
-        newButton
+        "img",
+        "leaflet-buttons-control-img",
+        newButton,
       );
-      image.setAttribute('src', button.iconUrl);
+      image.setAttribute("src", button.iconUrl);
 
-      if (button.text !== '') {
-        L.DomUtil.create('br', '', newButton); // there must be a better way
+      if (button.text !== "") {
+        L.DomUtil.create("br", "", newButton); // there must be a better way
 
         const span = L.DomUtil.create(
-          'span',
-          'leaflet-buttons-control-text',
-          newButton
+          "span",
+          "leaflet-buttons-control-text",
+          newButton,
         );
         const text = document.createTextNode(button.text); // is there an L.DomUtil for this?
         span.appendChild(text);
         if (button.hideText) {
-          L.DomUtil.addClass(span, 'leaflet-buttons-control-text-hide');
+          L.DomUtil.addClass(span, "leaflet-buttons-control-text-hide");
         }
       }
     }
 
-    L.DomEvent.addListener(newButton, 'click', L.DomEvent.stop)
-      .addListener(newButton, 'click', button.onClick, this)
-      .addListener(newButton, 'click', this._clicked, this);
+    L.DomEvent.addListener(newButton, "click", L.DomEvent.stop)
+      .addListener(newButton, "click", button.onClick, this)
+      .addListener(newButton, "click", this._clicked, this);
     L.DomEvent.disableClickPropagation(newButton);
     return newButton;
   },
@@ -129,12 +129,12 @@ export default L.Control.extend({
         // currently true, remove class
         L.DomUtil.removeClass(
           this._container.childNodes[0],
-          'leaflet-buttons-control-toggleon'
+          "leaflet-buttons-control-toggleon",
         );
       } else {
         L.DomUtil.addClass(
           this._container.childNodes[0],
-          'leaflet-buttons-control-toggleon'
+          "leaflet-buttons-control-toggleon",
         );
       }
       this.toggle();

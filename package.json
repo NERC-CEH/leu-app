@@ -14,6 +14,7 @@
     "build:cordova": "grunt cordova",
     "build:cordova:update": "grunt cordova:update",
     "build:cordova:android": "grunt cordova:android",
+    "test:eslint": "mocha test/eslint-test.js",
     "clean": "rm -rf node_modules dist yarn.lock package-lock.json",
     "postinstall": "grunt dev",
     "start": "node other/server.js",
@@ -60,6 +61,7 @@
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-exponentiation-operator": "6.24.1",
     "babel-preset-env": "1.6.1",
+    "chai": "^4.2.0",
     "circular-dependency-plugin": "4.2.0",
     "css-loader": "1.0.0",
     "csv": "1.1.1",
@@ -83,8 +85,10 @@
     "grunt-prompt": "1.3.3",
     "grunt-text-replace": "0.4.0",
     "grunt-webpack": "3.1.2",
+    "husky": "^1.3.1",
     "load-grunt-config": "0.19.2",
     "load-grunt-tasks": "3.5.2",
+    "mocha": "^5.2.0",
     "mock-geolocation": "1.0.11",
     "node-sass": "4.5.3",
     "po-loader": "^0.4.2",
@@ -135,5 +139,10 @@
     "offline",
     "ceh",
     "brc"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test:eslint"
+    }
+  }
 }

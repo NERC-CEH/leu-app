@@ -1,22 +1,22 @@
 /** ****************************************************************************
  * Species List collection.
- *****************************************************************************/
-import _ from 'lodash';
-import Backbone from 'backbone';
-import appModel from 'app_model';
-import Log from 'helpers/log';
-import speciesData from 'species.data';
-import sortsFunctions from './species_list_sorts';
-import filtersFunctions from './species_list_filters';
+ **************************************************************************** */
+import _ from "lodash";
+import Backbone from "backbone";
+import appModel from "app_model";
+import Log from "helpers/log";
+import speciesData from "species.data";
+import sortsFunctions from "./species_list_sorts";
+import filtersFunctions from "./species_list_filters";
 
 const SpeciesCollection = Backbone.Collection.extend({
   initialize() {
     this.filterList();
     this.sortList();
 
-    appModel.on('change:sort', this.sortList, this);
-    appModel.on('change:filter', this.filterList, this);
-    appModel.on('change:favourite', this.filterList, this);
+    appModel.on("change:sort", this.sortList, this);
+    appModel.on("change:filter", this.filterList, this);
+    appModel.on("change:favourite", this.filterList, this);
 
     this.totalSpecies = speciesData.length;
   },
@@ -25,7 +25,7 @@ const SpeciesCollection = Backbone.Collection.extend({
    * Prepares the species list - filters, sorts.
    */
   sortList() {
-    const sort = appModel.get('sort');
+    const sort = appModel.get("sort");
 
     this.comparator = sortsFunctions[sort];
     this.sort();
@@ -44,22 +44,30 @@ const SpeciesCollection = Backbone.Collection.extend({
     const list = _.cloneDeep(speciesData);
 
     // filter country species
-    const country = appModel.get('country');
+    const country = appModel.get("country");
     let countryList = [];
     for (let j = 0; j < list.length; j++) {
-      if (list[j][country].exist === 'YES') {
+      if (list[j][country].exist === "YES") {
         countryList.push(list[j]);
       }
     }
 
     // apply each selected filter group
-    const filtersToApply = appModel.get('filters');
+    const filtersToApply = appModel.get("filters");
     _.forOwn(filtersToApply, (filterGroup, filterGroupID) => {
-      countryList = that._filterListCore(countryList, filterGroup, filterGroupID);
+      countryList = that._filterListCore(
+        countryList,
+        filterGroup,
+        filterGroupID,
+      );
     });
 
     this.reset(countryList, _.extend({ silent: true }));
-    Log(`Species:List:collection: Applied filters (${list.length}/${speciesData.length})`);
+    Log(
+      `Species:List:collection: Applied filters (${list.length}/${
+        speciesData.length
+      })`,
+    );
   },
 
   /**
@@ -75,16 +83,17 @@ const SpeciesCollection = Backbone.Collection.extend({
     let filteredList = [];
     if (filterGroup.length > 0) {
       // apply every selected filter within group
-      filterGroup.forEach((filterID) => {
+      filterGroup.forEach(filterID => {
         const filter = filtersFunctions[filterGroupID][filterID];
 
         if (!filter) {
-          Log('Species:List:collection: no such filter', 'e');
+          Log("Species:List:collection: no such filter", "e");
           return filteredList;
         }
 
         filter(list, filteredList);
         filteredList = _.uniq(filteredList);
+        return null;
       });
     } else {
       // no filtering
@@ -94,7 +103,6 @@ const SpeciesCollection = Backbone.Collection.extend({
     return filteredList;
   },
 });
-
 
 const speciesCollection = new SpeciesCollection();
 export default speciesCollection;

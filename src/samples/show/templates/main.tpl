@@ -3,14 +3,14 @@
 </div>
 <ul class="table-view core inputs info no-top">
   <li class="table-view-cell species">
-    <% if (obj.common_name) { %>
-      <span class="media-object pull-right descript"><%- obj.common_name %></span>
+    <% if (obj.commonName) { %>
+      <span class="media-object pull-right descript"><%- obj.commonName %></span>
     <% } %>
-    <span class="media-object pull-right descript"><i><%- obj.scientific_name %></i></span>
+    <span class="media-object pull-right descript"><i><%- obj.scientificName %></i></span>
   </li>
   <li class="table-view-cell">
     <span class="media-object pull-left icon icon-location"></span>
-    <span class="media-object pull-right descript"><%- obj.location_name %></span>
+    <span class="media-object pull-right descript"><%- obj.locationName %></span>
     <span class="media-object pull-right descript"><%- obj.location %></span>
     <%= t('Location') %>
   </li>

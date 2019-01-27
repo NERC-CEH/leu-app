@@ -1,18 +1,18 @@
 /** ****************************************************************************
  * Some location transformation logic.
  **************************************************************************** */
-import bigu from 'bigu';
-import Log from './log';
+import bigu from "bigu";
+import Log from "./log";
 
 const helpers = {
   // grid ref character length
   gridref_accuracy: {
     tetrad: {
-      label: 'Tetrad (2km square)',
+      label: "Tetrad (2km square)",
       length: 5,
     },
     monad: {
-      label: 'Monad (1km square)',
+      label: "Monad (1km square)",
       length: 6,
     },
     // '100m': 8, // 100m
@@ -26,7 +26,7 @@ const helpers = {
   locationToGrid(location) {
     const gridCoords = bigu.latlng_to_grid_coords(
       location.latitude,
-      location.longitude
+      location.longitude,
     );
 
     if (!gridCoords) {
@@ -34,7 +34,7 @@ const helpers = {
     }
 
     const normAcc = bigu.GridRefParser.get_normalized_precision(
-      location.accuracy * 2 // accuracy is radius
+      location.accuracy * 2, // accuracy is radius
     );
 
     // Disabled because users 'want' higher precision rather correctness
@@ -59,15 +59,15 @@ const helpers = {
         const nationalGridRefSW = parsedRef.osRef;
         const a = new parsedRef.NationalRef(
           nationalGridRefSW.x + parsedRef.length,
-          nationalGridRefSW.y
+          nationalGridRefSW.y,
         ); // eslint-disable-line
         const b = new parsedRef.NationalRef(
           nationalGridRefSW.x + parsedRef.length,
-          nationalGridRefSW.y + parsedRef.length
+          nationalGridRefSW.y + parsedRef.length,
         ); // eslint-disable-line
         const c = new parsedRef.NationalRef(
           nationalGridRefSW.x,
-          nationalGridRefSW.y + parsedRef.length
+          nationalGridRefSW.y + parsedRef.length,
         ); // eslint-disable-line
         return [
           nationalGridRefSW.to_latLng(),
@@ -151,12 +151,12 @@ const helpers = {
     if (location.latitude) {
       const nationaGridCoords = bigu.latlng_to_grid_coords(
         location.latitude,
-        location.longitude
+        location.longitude,
       );
       if (!nationaGridCoords) {
         return false;
       }
-      return nationaGridCoords.country === 'GB';
+      return nationaGridCoords.country === "GB";
     }
     return false;
   },
@@ -172,7 +172,7 @@ const helpers = {
       return false;
     }
 
-    const gridref = location.gridref || '';
+    const gridref = location.gridref || "";
     let length = helpers.gridref_accuracy[gridRefSize].length;
 
     if (/^.\d/.test(gridref)) {

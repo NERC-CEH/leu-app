@@ -1,18 +1,18 @@
 /** ****************************************************************************
  * Functions to work with media.
  **************************************************************************** */
-import Indicia from 'indicia';
-import _ from 'lodash';
-import Log from './log';
-import Analytics from './analytics';
-import Device from './device';
+import Indicia from "indicia";
+import _ from "lodash";
+import Log from "./log";
+import Analytics from "./analytics";
+import Device from "./device";
 
-export function _onGetImageError(err = '', resolve, reject) {
+export function _onGetImageError(err = "", resolve, reject) {
   const e = err.toLowerCase();
   if (
-    e.includes('has no access') ||
-    e.includes('cancelled') ||
-    e.includes('selected')
+    e.includes("has no access") ||
+    e.includes("cancelled") ||
+    e.includes("selected")
   ) {
     resolve(); // no image selected
     return;
@@ -23,13 +23,13 @@ export function _onGetImageError(err = '', resolve, reject) {
 const Image = {
   deleteInternalStorage(name, callback) {
     function errorHandler(err) {
-      Log(err, 'e');
+      Log(err, "e");
       callback(err);
     }
     window.resolveLocalFileSystemURL(
       cordova.file.dataDirectory,
       fileSystem => {
-        const relativePath = name.replace(fileSystem.nativeURL, '');
+        const relativePath = name.replace(fileSystem.nativeURL, "");
         fileSystem.getFile(
           relativePath,
           { create: false },
@@ -40,14 +40,14 @@ const Image = {
             }
 
             fileEntry.remove(() => {
-              Log('Helpers:Image: removed.');
+              Log("Helpers:Image: removed.");
               callback();
             }, errorHandler);
           },
-          errorHandler
+          errorHandler,
         );
       },
-      errorHandler
+      errorHandler,
     );
   },
 
@@ -59,7 +59,7 @@ const Image = {
    */
   getImage(options = {}) {
     return new Promise((resolve, reject) => {
-      Log('Helpers:Image: getting.');
+      Log("Helpers:Image: getting.");
 
       const cameraOptions = {
         sourceType: window.Camera.PictureSourceType.CAMERA,
@@ -92,7 +92,7 @@ const Image = {
               // copy to app data directory
               fileEntry.copyTo(fileSystem, name, resolve, reject);
             },
-            reject
+            reject,
           );
         }
 
@@ -120,7 +120,7 @@ const Image = {
           window.cordova.plugins.imagesaver.saveImageToGallery(
             fileURI,
             () => copyFileToAppStorage(fileURI),
-            reject
+            reject,
           );
         } else {
           copyFileToAppStorage(fileURI);
@@ -130,9 +130,9 @@ const Image = {
       navigator.camera.getPicture(
         onSuccess,
         err => _onGetImageError(err, resolve, reject),
-        cameraOptions
+        cameraOptions,
       );
-      Analytics.trackEvent('Image', 'get', cameraOptions.sourceType);
+      Analytics.trackEvent("Image", "get", cameraOptions.sourceType);
     });
   },
 
@@ -163,17 +163,17 @@ const Image = {
         if (Device.isIOS()) {
           // save only the file name or iOS, because the app UUID changes
           // on every app update
-          const pathArray = file.split('/');
+          const pathArray = file.split("/");
           fileName = pathArray[pathArray.length - 1];
         }
-        return success([fileName, 'jpeg', width, height]);
+        return success([fileName, "jpeg", width, height]);
       });
     } else if (file instanceof File) {
       // browser environment
       return Indicia.Media.getDataURI(file).then(success);
     }
 
-    const err = new Error('File not found while creating image model.');
+    const err = new Error("File not found while creating image model.");
     return Promise.reject(err);
   },
 };

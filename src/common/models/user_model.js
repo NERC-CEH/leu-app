@@ -1,24 +1,24 @@
 /** ****************************************************************************
  * User model describing the user model on backend. Persistent.
- *****************************************************************************/
-import _ from 'lodash';
-import Backbone from 'backbone';
-import Store from 'backbone.localstorage';
-import CONFIG from 'config';
-import Log from 'helpers/log';
-import Validate from 'helpers/validate';
-import Analytics from 'helpers/analytics';
+ **************************************************************************** */
+import _ from "lodash";
+import Backbone from "backbone";
+import Store from "backbone.localstorage";
+import CONFIG from "config";
+import Log from "helpers/log";
+import Validate from "helpers/validate";
+import Analytics from "helpers/analytics";
 
-let UserModel = Backbone.Model.extend({
-  id: 'user',
+const UserModel = Backbone.Model.extend({
+  id: "user",
 
   defaults: {
-    drupalID: '',
-    name: '',
-    firstname: '',
-    secondname: '',
-    email: '',
-    password: '',
+    drupalID: "",
+    name: "",
+    firstname: "",
+    secondname: "",
+    email: "",
+    password: "",
   },
 
   localStorage: new Store(CONFIG.name),
@@ -34,17 +34,17 @@ let UserModel = Backbone.Model.extend({
    * Resets the user login information.
    */
   logOut() {
-    Log('User: logging out.');
+    Log("User: logging out.");
 
-    this.set('email', '');
-    this.set('password', '');
-    this.set('name', '');
-    this.set('firstname', '');
-    this.set('secondname', '');
-    
+    this.set("email", "");
+    this.set("password", "");
+    this.set("name", "");
+    this.set("firstname", "");
+    this.set("secondname", "");
+
     this.save();
-    this.trigger('logout');
-    Analytics.trackEvent('User', 'logout');
+    this.trigger("logout");
+    Analytics.trackEvent("User", "logout");
   },
 
   /**
@@ -54,45 +54,43 @@ let UserModel = Backbone.Model.extend({
    * @param user User object or empty object
    */
   logIn(user) {
-    Log('User: logging in.');
+    Log("User: logging in.");
 
-    this.set('drupalID', user.id || '');
-    this.set('password', user.password || '');
-    this.set('email', user.email || '');
-    this.set('name', user.name || '');
-    this.set('firstname', user.firstname || '');
-    this.set('secondname', user.secondname || '');
+    this.set("drupalID", user.id || "");
+    this.set("password", user.password || "");
+    this.set("email", user.email || "");
+    this.set("name", user.name || "");
+    this.set("firstname", user.firstname || "");
+    this.set("secondname", user.secondname || "");
     this.save();
 
-    this.trigger('login');
-    Analytics.trackEvent('User', 'login');
+    this.trigger("login");
+    Analytics.trackEvent("User", "login");
   },
-
 
   /**
    * Sets user contact information.
    */
   setContactDetails(user) {
-    this.set('email', user.email || '');
-    this.set('firstname', user.name || '');
-    this.set('secondname', user.surname || '');
+    this.set("email", user.email || "");
+    this.set("firstname", user.name || "");
+    this.set("secondname", user.surname || "");
     this.save();
   },
-
 
   /**
    * Returns user contact information.
    */
   hasLogIn() {
-    return this.get('password');
+    return this.get("password");
   },
 
   getUser() {
-    return this.get('email');
+    return this.get("email");
   },
 
   getPassword() {
-    return this.get('password');
+    return this.get("password");
   },
 
   validateRegistration(attrs) {
@@ -101,7 +99,7 @@ let UserModel = Backbone.Model.extend({
     if (!attrs.email) {
       errors.email = t("can't be blank");
     } else if (!Validate.email(attrs.email)) {
-      errors.email = t('invalid');
+      errors.email = t("invalid");
     }
 
     if (!attrs.firstname) {
@@ -115,17 +113,17 @@ let UserModel = Backbone.Model.extend({
     if (!attrs.password) {
       errors.password = t("can't be blank");
     } else if (attrs.password.length < 2) {
-      errors.password = t('is too short');
+      errors.password = t("is too short");
     }
 
-    if (!attrs['password-confirm']) {
-      errors['password-confirm'] = t("can't be blank");
-    } else if (attrs['password-confirm'] !== attrs.password) {
-      errors['password-confirm'] = t('passwords are not equal');
+    if (!attrs["password-confirm"]) {
+      errors["password-confirm"] = t("can't be blank");
+    } else if (attrs["password-confirm"] !== attrs.password) {
+      errors["password-confirm"] = t("passwords are not equal");
     }
 
-    if (!attrs['terms-agree']) {
-      errors['terms-agree'] = t('you must agree to the terms');
+    if (!attrs["terms-agree"]) {
+      errors["terms-agree"] = t("you must agree to the terms");
     }
 
     if (!_.isEmpty(errors)) {

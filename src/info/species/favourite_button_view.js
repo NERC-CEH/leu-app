@@ -1,22 +1,22 @@
 /** ****************************************************************************
  * Record List header view.
- *****************************************************************************/
-import Marionette from 'backbone.marionette';
-import JST from 'JST';
+ **************************************************************************** */
+import Marionette from "backbone.marionette";
+import JST from "JST";
 
 export default Marionette.View.extend({
-  template: JST['info/species/favourite_button'],
+  template: JST["info/species/favourite_button"],
 
   events: {
-    'click #favourite-btn': 'toggleFavourite',
+    "click #favourite-btn": "toggleFavourite",
   },
 
   modelEvents: {
-    'change:favourite': 'render',
+    "change:favourite": "render",
   },
 
   toggleFavourite(e) {
-    this.trigger('click', e);
+    this.trigger("click", e);
   },
 
   serializeData() {
@@ -25,4 +25,3 @@ export default Marionette.View.extend({
     };
   },
 });
-

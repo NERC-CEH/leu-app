@@ -1,6 +1,6 @@
 /** ****************************************************************************
  * Sample Edit controller.
- *****************************************************************************/
+ **************************************************************************** */
 import Marionette from 'backbone.marionette';
 import Backbone from 'backbone';
 import _ from 'lodash';
@@ -168,18 +168,17 @@ const API = {
   },
 
   showInvalidsMessage(invalids) {
-    // it wasn't saved so of course this error
-    delete invalids.attributes.saved; // eslint-disable-line
-
     let missing = '';
     if (invalids.occurrences) {
-      _.each(invalids.occurrences, (message, invalid) => {
-        missing += `<b>${t(invalid)}</b> - ${t(message)}</br>`;
+      Object.keys(invalids.occurrences).forEach(key => {
+        const message = invalids.occurrences[key];
+        missing += `<b>${t(key)}</b> - ${t(message)}</br>`;
       });
     }
-    if (invalids.attributes) {
-      _.each(invalids.attributes, (message, invalid) => {
-        missing += `<b>${t(invalid)}</b> - ${t(message)}</br>`;
+    if (invalids.sample) {
+      Object.keys(invalids.sample).forEach(key => {
+        const message = invalids.sample[key];
+        missing += `<b>${t(key)}</b> - ${t(message)}</br>`;
       });
     }
 
@@ -262,7 +261,7 @@ const API = {
       },
     });
 
-    const editView = new EditView({ model: location });
+    const editView = new EditView();
 
     return new Promise(resolve => {
       App.regions.getRegion('dialog').show({

@@ -1,52 +1,54 @@
 /** ****************************************************************************
  * Settings Menu controller.
- *****************************************************************************/
-import Backbone from 'backbone';
-import radio from 'radio';
-import Log from 'helpers/log';
-import Analytics from 'helpers/analytics';
-import appModel from 'app_model';
-import userModel from 'user_model';
-import savedSamples from 'saved_samples';
-import MainView from './main_view';
-import HeaderView from '../../common/views/header_view';
+ **************************************************************************** */
+import Backbone from "backbone";
+import radio from "radio";
+import Log from "helpers/log";
+import Analytics from "helpers/analytics";
+import appModel from "app_model";
+import userModel from "user_model";
+import savedSamples from "saved_samples";
+import MainView from "./main_view";
+import HeaderView from "../../common/views/header_view";
 
 const API = {
   show() {
-    Log('Settings:Menu:Controller: showing.');
+    Log("Settings:Menu:Controller: showing.");
 
     const mainView = new MainView({
       model: appModel,
     });
-    mainView.on('setting:toggled', (setting, on) => {
-      Log('Settings:Menu:Controller: setting toggled.');
+    mainView.on("setting:toggled", (setting, on) => {
+      Log("Settings:Menu:Controller: setting toggled.");
 
       appModel.set(setting, on);
       appModel.save();
     });
 
-    mainView.on('samples:submit:all', API.sendAllSamples);
-    mainView.on('samples:delete:all', API.deleteAllSamples);
-    mainView.on('app:reset', () => {
-      radio.trigger('app:dialog', {
-        title: t('Reset'),
-        class: 'error',
-        body: t('Are you sure you want to reset the application to its initial state? This will wipe all the locally stored app data!'),
+    mainView.on("samples:submit:all", API.sendAllSamples);
+    mainView.on("samples:delete:all", API.deleteAllSamples);
+    mainView.on("app:reset", () => {
+      radio.trigger("app:dialog", {
+        title: t("Reset"),
+        class: "error",
+        body: t(
+          "Are you sure you want to reset the application to its initial state? This will wipe all the locally stored app data!",
+        ),
         buttons: [
           {
-            title: t('Cancel'),
+            title: t("Cancel"),
             onClick() {
-              radio.trigger('app:dialog:hide');
+              radio.trigger("app:dialog:hide");
             },
           },
           {
-            title: t('Reset'),
-            class: 'btn-negative',
+            title: t("Reset"),
+            class: "btn-negative",
             onClick() {
               // delete all
               API.resetApp(() => {
-                radio.trigger('app:dialog', {
-                  title: t('Done!'),
+                radio.trigger("app:dialog", {
+                  title: t("Done!"),
                   timeout: 1000,
                 });
               });
@@ -56,49 +58,54 @@ const API = {
       });
     });
 
-    radio.trigger('app:main', mainView);
+    radio.trigger("app:main", mainView);
 
     const headerView = new HeaderView({
       model: new Backbone.Model({
-        title: t('Settings'),
+        title: t("Settings"),
       }),
     });
-    radio.trigger('app:header', headerView);
+    radio.trigger("app:header", headerView);
   },
 
   deleteAllSamples() {
-    let body = t('Are you sure you want to delete all successfully synchronised local records?');
-    body += '</br><i><b>Note:</b>' + t('records on the server will not be touched') + '.</i>';
+    let body = t(
+      "Are you sure you want to delete all successfully synchronised local records?",
+    );
+    body += `</br><i><b>Note:</b>${t(
+      "records on the server will not be touched",
+    )}.</i>`;
 
-    radio.trigger('app:dialog', {
-      title: t('Delete All'),
+    radio.trigger("app:dialog", {
+      title: t("Delete All"),
       body,
       buttons: [
         {
-          title: t('Cancel'),
+          title: t("Cancel"),
           onClick() {
-            radio.trigger('app:dialog:hide');
+            radio.trigger("app:dialog:hide");
           },
         },
         {
-          title: t('Delete'),
-          class: 'btn-negative',
+          title: t("Delete"),
+          class: "btn-negative",
           onClick() {
-            Log('Settings:Menu:Controller: deleting all samples.');
+            Log("Settings:Menu:Controller: deleting all samples.");
 
             // delete all
-            savedSamples.removeAllSynced()
+            savedSamples
+              .removeAllSynced()
               .then(() => {
-                radio.trigger('app:dialog', {
-                  title: t('Done!'),
+                radio.trigger("app:dialog", {
+                  title: t("Done!"),
                   timeout: 1000,
                 });
               })
-              .catch((err) => {
-                Log(err, 'e');
-                radio.trigger('app:dialog:error', err);
+              .catch(err => {
+                Log(err, "e");
+                radio.trigger("app:dialog:error", err);
               });
-            Analytics.trackEvent('Settings', 'delete all');
+            Analytics.trackEvent("Settings", "delete all");
           },
         },
       ],
@@ -106,33 +113,34 @@ const API = {
   },
 
   sendAllSamples() {
-    radio.trigger('app:dialog', {
-      title: t('Submit All'),
-      body: t('Are you sure you want to set all valid records for submission?'),
+    radio.trigger("app:dialog", {
+      title: t("Submit All"),
+      body: t("Are you sure you want to set all valid records for submission?"),
       buttons: [
         {
-          title: t('Cancel'),
+          title: t("Cancel"),
           onClick() {
-            radio.trigger('app:dialog:hide');
+            radio.trigger("app:dialog:hide");
           },
         },
         {
-          title: t('OK'),
-          class: 'btn-positive',
+          title: t("OK"),
+          class: "btn-positive",
           onClick() {
-            Log('Settings:Menu:Controller: sending all samples.');
-            savedSamples.syncAll()
+            Log("Settings:Menu:Controller: sending all samples.");
+            savedSamples
+              .syncAll()
               .then(() => {
-                radio.trigger('app:dialog', {
-                  title: t('Done!'),
+                radio.trigger("app:dialog", {
+                  title: t("Done!"),
                   timeout: 1000,
                 });
               })
-              .catch((err) => {
-                Log(err, 'e');
-                radio.trigger('app:dialog:error', err);
+              .catch(err => {
+                Log(err, "e");
+                radio.trigger("app:dialog:error", err);
               });
-            Analytics.trackEvent('Settings', 'send all');
+            Analytics.trackEvent("Settings", "send all");
           },
         },
       ],
@@ -140,7 +148,7 @@ const API = {
   },
 
   resetApp(callback) {
-    Log('Settings:Menu:Controller: resetting the application!', 'w');
+    Log("Settings:Menu:Controller: resetting the application!", "w");
 
     appModel.clear().set(appModel.defaults);
     appModel.save();
@@ -148,14 +156,15 @@ const API = {
     userModel.clear().set(userModel.defaults);
     userModel.save();
 
-    savedSamples.destroy()
+    savedSamples
+      .destroy()
       .then(callback)
-      .catch((err) => {
-        Log(err, 'e');
+      .catch(err => {
+        Log(err, "e");
         callback && callback(err);
       });
 
-    Analytics.trackEvent('Settings', 'reset app');
+    Analytics.trackEvent("Settings", "reset app");
   },
 };
 

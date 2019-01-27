@@ -4,37 +4,37 @@
  * Uses Google analytics to track the page navigation and Sentry to server log
  * client side errors.
  */
-import Backbone from 'backbone';
-import Raven from 'raven-js';
-import CONFIG from 'config';
-import Log from './log';
+import Backbone from "backbone";
+import Raven from "raven-js";
+import CONFIG from "config";
+import Log from "./log";
 
 function _removeUUID(string) {
   // remove specific UUIDs
   return string.replace(
     /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/gi,
-    'UUID'
+    "UUID",
   );
 }
 
 export function removeUserId(URL) {
-  return URL.replace(/\/users\/.*/g, '/users/USERID');
+  return URL.replace(/\/users\/.*/g, "/users/USERID");
 }
 
 export function breadcrumbCallback(crumb) {
   // clean UUIDs
-  if (crumb.category === 'navigation') {
+  if (crumb.category === "navigation") {
     crumb.data = {
       to: _removeUUID(crumb.data.to),
       from: _removeUUID(crumb.data.from),
     };
     return crumb;
   }
-  if (crumb.category === 'xhr') {
-    if (crumb.data.method === 'GET' && crumb.data.url.match(/jpeg$/i)) {
+  if (crumb.category === "xhr") {
+    if (crumb.data.method === "GET" && crumb.data.url.match(/jpeg$/i)) {
       crumb.data.url = crumb.data.url.replace(
         /files\/\d+\.jpeg/i,
-        'files/FILENAME.jpeg'
+        "files/FILENAME.jpeg",
       );
     }
 
@@ -59,8 +59,8 @@ function concatBreadcrumbs(breadcrumbs) {
     const lastSavedCrumb = cleanBreadcrumbs[cleanBreadcrumbs.length - 1];
     // count for duplicate crumbs
     if (
-      lastSavedCrumb.category === 'xhr' &&
-      crumb.category === 'xhr' &&
+      lastSavedCrumb.category === "xhr" &&
+      crumb.category === "xhr" &&
       lastSavedCrumb.data.method === crumb.data.method &&
       lastSavedCrumb.data.url === crumb.data.url
     ) {
@@ -97,7 +97,7 @@ export function dataCallback(data) {
   const maxIndex = Math.max(data.breadcrumbs.values.length - maxBreadcrumbs, 0);
   data.breadcrumbs.values.splice(0, maxIndex);
 
-  data.culprit = _removeUUID(data.culprit || '');
+  data.culprit = _removeUUID(data.culprit || "");
   if (data.request && data.request.url) {
     data.request.url = _removeUUID(data.request.url);
   }
@@ -108,7 +108,7 @@ const API = {
   initialized: false,
 
   init() {
-    Log('Analytics: initializing.');
+    Log("Analytics: initializing.");
 
     // initialize only once
     if (this.initialized) {
@@ -117,20 +117,20 @@ const API = {
 
     // Turn on the error logging
     if (CONFIG.sentry.key) {
-      Log('Analytics: turning on server error logging.');
+      Log("Analytics: turning on server error logging.");
       Raven.config(
         `https://${CONFIG.sentry.key}@sentry.io/${CONFIG.sentry.project}`,
         {
           environment: CONFIG.environment,
           release: CONFIG.version,
           ignoreErrors: [
-            'setSelectionRange', // there is some fastclick issue (does not affect ux)
-            'Incorrect password or email', // no need to log that
-            'Backbone.history', // on refresh fires this error, todo: fix it
+            "setSelectionRange", // there is some fastclick issue (does not affect ux)
+            "Incorrect password or email", // no need to log that
+            "Backbone.history", // on refresh fires this error, todo: fix it
           ],
           // breadcrumbCallback, // moved to dataCallback
           dataCallback,
-        }
+        },
       ).install();
 
       // increase breadcrumbs captured before send
@@ -139,8 +139,8 @@ const API = {
       // console.log(Raven._globalOptions);
     } else {
       Log(
-        'Analytics: server error logging is turned off. Please provide Sentry key.',
-        'w'
+        "Analytics: server error logging is turned off. Please provide Sentry key.",
+        "w",
       );
     }
 
@@ -152,14 +152,14 @@ const API = {
     };
 
     if (window.cordova && CONFIG.ga.id) {
-      document.addEventListener('deviceready', () => {
-        Log('Analytics: turning on Google Analytics.');
+      document.addEventListener("deviceready", () => {
+        Log("Analytics: turning on Google Analytics.");
 
         window.analytics.startTrackerWithId(CONFIG.ga.id);
         window.analytics.enableUncaughtExceptionReporting(true);
 
         // listen for page change
-        Backbone.history.on('route', () => {
+        Backbone.history.on("route", () => {
           API.trackView();
         });
 
@@ -168,9 +168,9 @@ const API = {
     } else {
       Log(
         `Analytics: Google Analytics is turned off. ${
-          window.cordova ? 'Please provide the GA tracking ID.' : ''
+          window.cordova ? "Please provide the GA tracking ID." : ""
         }`,
-        'w'
+        "w",
       );
     }
   },

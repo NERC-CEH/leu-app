@@ -1,23 +1,23 @@
-import Marionette from 'backbone.marionette';
-import JST from 'JST';
+import Marionette from "backbone.marionette";
+import JST from "JST";
 
 export default Marionette.View.extend({
-  id: 'common-header',
-  tagName: 'nav',
-  template: JST['common/header'],
+  id: "common-header",
+  tagName: "nav",
+  template: JST["common/header"],
 
   regions: {
-    leftPanel: '#left-panel',
-    rightPanel: '#right-panel',
+    leftPanel: "#left-panel",
+    rightPanel: "#right-panel",
   },
 
   events: {
-    'click a[data-rel="back"]': 'navigateBack',
+    'click a[data-rel="back"]': "navigateBack",
   },
 
   onRender() {
     if (this.options.rightPanel) {
-      this.getRegion('rightPanel').show(this.options.rightPanel);
+      this.getRegion("rightPanel").show(this.options.rightPanel);
     }
   },
 
@@ -29,4 +29,3 @@ export default Marionette.View.extend({
     }
   },
 });
-

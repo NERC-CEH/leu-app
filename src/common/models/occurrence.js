@@ -1,7 +1,7 @@
-import Indicia from 'indicia';
-import CONFIG from 'config';
-import appModel from 'app_model';
-import ImageModel from './image';
+import Indicia from "indicia";
+import CONFIG from "config";
+import appModel from "app_model";
+import ImageModel from "./image";
 
 export default Indicia.Occurrence.extend({
   Media: ImageModel,
@@ -10,7 +10,7 @@ export default Indicia.Occurrence.extend({
 
   metadata() {
     return {
-      training: appModel.get('useTraining'),
+      training: appModel.get("useTraining"),
     };
   },
 });

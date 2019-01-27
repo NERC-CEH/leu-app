@@ -1,22 +1,20 @@
 /** ****************************************************************************
  * Sample Attribute controller.
- *****************************************************************************/
-import Backbone from 'backbone';
-import Indicia from 'indicia';
-import Log from 'helpers/log';
-import DateHelp from 'helpers/date';
-import radio from 'radio';
-import appModel from 'app_model';
-import savedSamples from 'saved_samples';
-import MainView from './main_view';
-import HeaderView from '../../common/views/header_view';
+ **************************************************************************** */
+import Backbone from "backbone";
+import Indicia from "indicia";
+import Log from "helpers/log";
+import radio from "radio";
+import savedSamples from "saved_samples";
+import MainView from "./main_view";
+import HeaderView from "../../common/views/header_view";
 
 const API = {
   show(sampleID, attr) {
     // wait till savedSamples is fully initialized
     if (savedSamples.fetching) {
       const that = this;
-      savedSamples.once('fetching:done', () => {
+      savedSamples.once("fetching:done", () => {
         API.show.apply(that, [sampleID, attr]);
       });
       return;
@@ -27,15 +25,15 @@ const API = {
     const sample = savedSamples.get(sampleID);
     // Not found
     if (!sample) {
-      Log('No sample model found.', 'e');
-      radio.trigger('app:404:show', { replace: true });
+      Log("No sample model found.", "e");
+      radio.trigger("app:404:show", { replace: true });
       return;
     }
 
     // can't edit a saved one - to be removed when sample update
     // is possible on the server
     if (sample.getSyncStatus() === Indicia.SYNCED) {
-      radio.trigger('samples:show', sampleID, { replace: true });
+      radio.trigger("samples:show", sampleID, { replace: true });
       return;
     }
 
@@ -44,9 +42,9 @@ const API = {
       attr,
       model: sample,
     });
-    radio.trigger('app:main', mainView);
+    radio.trigger("app:main", mainView);
 
-      // HEADER
+    // HEADER
     const headerView = new HeaderView({
       onExit() {
         API.onExit(mainView, sample, attr, () => {
@@ -56,22 +54,21 @@ const API = {
       model: new Backbone.Model({ title: t(attr) }),
     });
 
-    radio.trigger('app:header', headerView);
+    radio.trigger("app:header", headerView);
 
     // if exit on selection click
-    mainView.on('save', () => {
+    mainView.on("save", () => {
       API.onExit(mainView, sample, attr, () => {
         window.history.back();
       });
     });
 
     // FOOTER
-    radio.trigger('app:footer:hide');
+    radio.trigger("app:footer:hide");
   },
 
-
   onExit(mainView, sample, attr, callback) {
-    Log('Samples:Attr:Controller: exiting.');
+    Log("Samples:Attr:Controller: exiting.");
     const values = mainView.getValues();
     API.save(attr, values, sample, callback);
   },
@@ -82,32 +79,28 @@ const API = {
    * @param sample
    */
   save(attr, values, sample, callback) {
-    Log('Samples:Attr:Controller: saving.');
+    Log("Samples:Attr:Controller: saving.");
 
-    let currentVal;
     let newVal;
     const occ = sample.getOccurrence();
 
     switch (attr) {
-      case 'date':
-        currentVal = sample.get('date');
+      case "date":
 
         // validate before setting up
-        if (values.date && values.date.toString() !== 'Invalid Date') {
+        if (values.date && values.date.toString() !== "Invalid Date") {
           newVal = values.date;
-          sample.set('date', newVal);
+          sample.set("date", newVal);
         }
         break;
-      case 'habitat':
-        currentVal = sample.get(attr);
+      case "habitat":
         newVal = values[attr];
 
         // todo:validate before setting up
         sample.set(attr, values[attr]);
         break;
-      case 'number':
-      case 'comment':
-        currentVal = occ.get(attr);
+      case "number":
+      case "comment":
         newVal = values[attr];
 
         // todo:validate before setting up
@@ -117,11 +110,12 @@ const API = {
     }
 
     // save it
-    sample.save()
+    sample
+      .save()
       .then(callback)
-      .catch((err) => {
-        Log(err, 'e');
-        radio.trigger('app:dialog:error', err);
+      .catch(err => {
+        Log(err, "e");
+        radio.trigger("app:dialog:error", err);
       });
   },
 };

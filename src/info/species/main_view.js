@@ -1,6 +1,7 @@
 /** ****************************************************************************
  * Home main view.
  **************************************************************************** */
+/* eslint-disable */
 import $ from 'jquery';
 import Marionette from 'backbone.marionette';
 import appModel from 'app_model';
@@ -29,12 +30,19 @@ export default Marionette.View.extend({
   serializeData() {
     const country = appModel.get('country');
     const translateFn = p => t(p);
-    const data = $.extend(true, {}, this.model.attributes, this.model.attributes[country]);
-    data.common_name = appModel.getSpeciesLocalName(this.model);
+    const data = $.extend(
+      true,
+      {},
+      this.model.attributes,
+      this.model.attributes[country]
+    );
+    data.commonName = appModel.getSpeciesLocalName(this.model);
     data.food = data.food.map(translateFn).join('; ');
     data.habitat =
-      data[country].habitat.comment && data[country].habitat.comment.map(translateFn).join('; ');
-    data.plant = data[country].plant && data[country].plant.map(translateFn).join('; ');
+      data[country].habitat.comment &&
+      data[country].habitat.comment.map(translateFn).join('; ');
+    data.plant =
+      data[country].plant && data[country].plant.map(translateFn).join('; ');
     data.overwintering = data[country].overwintering;
     data.comment = data[country].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;

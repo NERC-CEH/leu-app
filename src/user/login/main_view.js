@@ -1,33 +1,33 @@
 /** ****************************************************************************
  * User Login main view.
- *****************************************************************************/
-import Marionette from 'backbone.marionette';
-import Validate from 'helpers/validate';
-import JST from 'JST';
-import CONFIG from 'config';
+ **************************************************************************** */
+import Marionette from "backbone.marionette";
+import Validate from "helpers/validate";
+import JST from "JST";
+import CONFIG from "config";
 
 export default Marionette.View.extend({
-  template: JST['user/login/main'],
+  template: JST["user/login/main"],
 
   events: {
-    'click #login-button': 'login',
+    "click #login-button": "login",
   },
 
   login() {
-    const $inputPassword = this.$el.find('#user-password');
-    const $inputName = this.$el.find('#user-name');
+    const $inputPassword = this.$el.find("#user-password");
+    const $inputName = this.$el.find("#user-name");
 
     const data = {
       name: $inputName.val(),
       password: $inputPassword.val(),
     };
 
-    this.trigger('form:submit', data);
+    this.trigger("form:submit", data);
   },
 
   onFormDataInvalid(errors) {
     const $view = this.$el;
-    Validate.updateViewFormErrors($view, errors, '#user-');
+    Validate.updateViewFormErrors($view, errors, "#user-");
   },
 
   serializeData() {
@@ -36,4 +36,3 @@ export default Marionette.View.extend({
     };
   },
 });
-
