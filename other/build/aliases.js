@@ -24,7 +24,6 @@ module.exports = grunt => ({
 
     // check for missing env vars
     [
-      'APP_OS_MAP_KEY',
       'APP_MAPBOX_MAP_KEY',
       'APP_SENTRY_KEY',
       'APP_INDICIA_API_KEY',
