@@ -21,9 +21,10 @@
   </div>
 </div>
 
-
-<div class="table-view-cell input-row">
-  <%= t('I agree to Terms and Conditions') %>
+<div class="table-view-cell input-row terms-agree-toggle">
+  <div class="label">
+    <a href="<%= obj.siteUrl %>/terms-and-conditions"><%= t('I agree to Terms and Conditions') %></a> & <a href="<%= obj.siteUrl %>/privacy-notice"><%= t('Privacy Policy') %></a>
+  </div>
   <div id="user-terms-agree" class="toggle no-yes">
     <div class="toggle-handle"></div>
   </div>

@@ -5,6 +5,8 @@ import $ from "jquery";
 import Marionette from "backbone.marionette";
 import Validate from "helpers/validate";
 import JST from "JST";
+import CONFIG from "config";
+import './styles.scss';
 
 export default Marionette.View.extend({
   template: JST["user/register/main"],
@@ -45,4 +47,10 @@ export default Marionette.View.extend({
     const $view = this.$el;
     Validate.updateViewFormErrors($view, errors, "#user-");
   },
+
+  serializeData() {
+    return {
+      siteUrl: CONFIG.site_url
+    }
+  }
 });
