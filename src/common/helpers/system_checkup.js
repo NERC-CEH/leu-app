@@ -50,13 +50,6 @@ if (!CONFIG.indicia.api_key) {
   );
 }
 
-if (!CONFIG.map.os_api_key) {
-  Log(
-    "OS map layer API key is missing! Set APP_OS_MAP_KEY build env. variable.",
-    "e",
-  );
-}
-
 if (!CONFIG.map.mapbox_api_key) {
   Log(
     "Mapbox layers API key is missing! Set APP_MAPBOX_MAP_KEY build env. variable.",
