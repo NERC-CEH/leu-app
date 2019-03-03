@@ -75,8 +75,8 @@ let AppModel = Backbone.Model.extend({
   },
 
   getSpeciesLocalName(species) {
-    let commonName = species.attributes[this.get("country")].common_name;
-    commonName = commonName || species.attributes.UK.common_name;
+    let commonName = species.attributes[this.get("country")].commonName;
+    commonName = commonName || species.attributes.UK.commonName;
 
     if (typeof commonName === "object") {
       // eslint-disable-next-line
@@ -87,7 +87,7 @@ let AppModel = Backbone.Model.extend({
       commonName = commonName[languageCode] && commonName[languageCode];
 
       if (!commonName) {
-        commonName = species.attributes.UK.common_name;
+        commonName = species.attributes.UK.commonName;
       }
     }
 
