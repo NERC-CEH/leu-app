@@ -6,7 +6,6 @@ import Indicia from "indicia";
 import CONFIG from "config";
 import userModel from "user_model";
 import Occurrence from "occurrence";
-import Log from "helpers/log";
 import Device from "helpers/device";
 import store from "../store";
 import GeolocExtension from "./sample_geoloc_ext";
@@ -39,11 +38,6 @@ const Sample = Indicia.Sample.extend({
       device: Device.getPlatform(),
       device_version: Device.getVersion(),
     };
-  },
-
-  initialize() {
-    this.checkExpiredGroup(); // activities
-    this.listenTo(userModel, "sync:activities:end", this.checkExpiredGroup);
   },
 
   validateRemote(attributes) {
@@ -94,27 +88,6 @@ const Sample = Indicia.Sample.extend({
     }
 
     return null;
-  },
-
-  checkExpiredGroup() {
-    const activity = this.get("group");
-    if (activity) {
-      const expired = userModel.hasActivityExpired(activity);
-      if (expired) {
-        const newActivity = userModel.getActivity(activity.id);
-        if (!newActivity) {
-          // the old activity is expired and removed
-          Log("Sample:Group: removing exipired activity.");
-          this.unset("group");
-          this.save();
-        } else {
-          // old activity has been updated
-          Log("Sample:Group: updating exipired activity.");
-          this.set("group", newActivity);
-          this.save();
-        }
-      }
-    }
   },
 
   isLocalOnly() {
