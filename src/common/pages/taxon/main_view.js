@@ -29,7 +29,7 @@ const SpeciesView = Marionette.View.extend({
 
     const sort = this.options.appModel.get("sort");
     const sortScientific =
-      sort === "scientific" || sort === "scientific-reverse";
+      sort === "scientific" || sort === "scientificReverse";
 
     const form = species.get("form");
     return {

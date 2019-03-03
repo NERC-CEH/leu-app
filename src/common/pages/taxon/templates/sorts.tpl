@@ -20,8 +20,8 @@
 </label>
 
 <label class="item item-radio item-small">
-  <input type="radio" name="group" value="common-reverse"
-  <%- obj['common-reverse'] ? 'checked' : ''%>>
+  <input type="radio" name="group" value="commonReverse"
+  <%- obj['commonReverse'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
       <%= t('Common Name Reverse') %>
@@ -42,8 +42,8 @@
 </label>
 
 <label class="item item-radio item-small">
-  <input type="radio" name="group" value="scientific-reverse"
-  <%- obj['scientific-reverse'] ? 'checked' : ''%>>
+  <input type="radio" name="group" value="scientificReverse"
+  <%- obj['scientificReverse'] ? 'checked' : ''%>>
   <div class="radio-content">
     <div class="item-content">
       <%= t('Scientific Name Reverse') %>

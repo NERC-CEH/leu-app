@@ -1,4 +1,4 @@
-import appModel from "app_model";
+import appModel from 'app_model';
 
 /** ****************************************************************************
  * Species list sorts.
@@ -9,10 +9,10 @@ import appModel from "app_model";
  * label - label to represent the filter in the UI
  */
 function exist(country, species1, species2) {
-  if (!species1.attributes[country].exist === "YES") {
+  if (!species1.attributes[country].exist === 'YES') {
     return false;
   }
-  if (!species2.attributes[country].exist === "YES") {
+  if (!species2.attributes[country].exist === 'YES') {
     return false;
   }
 
@@ -21,7 +21,7 @@ function exist(country, species1, species2) {
 
 const sorts = {
   default(species1, species2) {
-    const country = appModel.get("country");
+    const country = appModel.get('country');
     if (!exist(country, species1, species2)) {
       return 1;
     }
@@ -34,7 +34,7 @@ const sorts = {
     return commonName1 > commonName2 ? 1 : -1;
   },
   common(species1, species2) {
-    const country = appModel.get("country");
+    const country = appModel.get('country');
     if (!exist(country, species1, species2)) {
       return 1;
     }
@@ -44,17 +44,23 @@ const sorts = {
     if (!commonName1) return 1;
     if (!commonName2) return -1;
 
-    if (!Number.isNaN(commonName1[0]) && Number.isNaN(commonName2[0])) {
+    if (
+      !Number.isNaN(Number.parseInt(commonName1[0], 10)) &&
+      Number.isNaN(Number.parseInt(commonName2[0], 10))
+    ) {
       return 1;
     }
-    if (!Number.isNaN(commonName2[0]) && Number.isNaN(commonName1[0])) {
+    if (
+      !Number.isNaN(Number.parseInt(commonName2[0], 10)) &&
+      Number.isNaN(Number.parseInt(commonName1[0], 10))
+    ) {
       return -1;
     }
 
     return commonName1.localeCompare(commonName2, undefined, { numeric: true });
   },
   commonReverse(species1, species2) {
-    const country = appModel.get("country");
+    const country = appModel.get('country');
     if (!exist(country, species1, species2)) {
       return 1;
     }
@@ -63,10 +69,16 @@ const sorts = {
     if (!commonName1) return 1;
     if (!commonName2) return -1;
 
-    if (!Number.isNaN(commonName1[0]) && Number.isNaN(commonName2[0])) {
+    if (
+      !Number.isNaN(Number.parseInt(commonName1[0], 10)) &&
+      Number.isNaN(Number.parseInt(commonName2[0], 10))
+    ) {
       return -1;
     }
-    if (!Number.isNaN(commonName2[0]) && Number.isNaN(commonName1[0])) {
+    if (
+      !Number.isNaN(Number.parseInt(commonName2[0], 10)) &&
+      Number.isNaN(Number.parseInt(commonName1[0], 10))
+    ) {
       return 1;
     }
 
