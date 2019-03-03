@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
 <defs>
 <font id="icons" horiz-adv-x="1000" >
 <font-face font-family="icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -89,6 +89,8 @@
 <glyph glyph-name="star" unicode="&#xe828;" d="M440 790l120-336 320 0-262-196 94-348-272 208-272-208 94 348-262 196 320 0z" horiz-adv-x="880" />
 
 <glyph glyph-name="list-nested" unicode="&#xe829;" d="M18 684q0 57 56 57t56-57q0-55-56-55t-56 55z m223-55l0 112 670 0 0-112-670 0z m0-168q0 57 57 57 55 0 55-57 0-55-55-55-57 0-57 55z m223-55l0 112 447 0 0-112-447 0z m-223-391q0 56 57 56 55 0 55-56 0-56-55-56-57 0-57 56z m223-56l0 112 447 0 0-112-447 0z m0 279q0 56 57 56 55 0 55-56 0-55-55-55-57 0-57 55z m224-55l0 111 223 0 0-111-223 0z" horiz-adv-x="928" />
+
+<glyph glyph-name="doc" unicode="&#xe82a;" d="M678-119l-522 0q-65 0-110 46t-46 111l0 625q0 65 46 110t110 46l522 0q65 0 110-46t46-110l0-625q0-65-46-111t-110-46z m-522 834q-21 0-37-15t-15-37l0-625q0-21 15-37t37-16l522 0q21 0 36 16t15 37l0 625q0 21-15 37t-36 15l-522 0z m469-312l-416 0q-26 0-26 25 0 11 7 19t19 7l416 0q11 0 19-7t7-19q0-25-26-25z m0 156l-416 0q-11 0-19 8t-7 18q0 25 26 25l416 0q26 0 26-25 0-11-7-18t-19-8z m0-312l-416 0q-11 0-19 7t-7 19q0 25 26 25l416 0q26 0 26-25 0-11-7-19t-19-7z m0-157l-416 0q-26 0-26 25 0 12 7 19t19 8l416 0q11 0 19-8t7-19q0-25-26-25z" horiz-adv-x="834" />
 
 <glyph glyph-name="filter" unicode="&#xf0b0;" d="M783 685q9-22-8-39l-275-275v-414q0-23-22-33-7-3-14-3-15 0-25 11l-143 143q-10 11-10 25v271l-275 275q-18 17-8 39 9 22 33 22h714q23 0 33-22z" horiz-adv-x="785.7" />
 </font>

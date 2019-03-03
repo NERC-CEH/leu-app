@@ -2,28 +2,29 @@
  * Info Menu main view.
  **************************************************************************** */
 
-import Marionette from "backbone.marionette";
-import JST from "JST";
-import "./styles.scss";
+import Marionette from 'backbone.marionette';
+import JST from 'JST';
+import CONFIG from 'config';
+import './styles.scss';
 
 export default Marionette.View.extend({
-  tagName: "ul",
-  className: "table-view buttons",
+  tagName: 'ul',
+  className: 'table-view buttons',
 
-  template: JST["info/menu/main"],
+  template: JST['info/menu/main'],
 
   events: {
-    "click #logout-button": "logout",
+    'click #logout-button': 'logout',
   },
 
   initialize() {
-    const userModel = this.model.get("userModel");
-    this.listenTo(userModel, "logout", this.render);
+    const userModel = this.model.get('userModel');
+    this.listenTo(userModel, 'logout', this.render);
   },
 
   serializeData() {
-    const userModel = this.model.get("userModel");
-    const savedSamples = this.model.get("savedSamples");
+    const userModel = this.model.get('userModel');
+    const savedSamples = this.model.get('savedSamples');
 
     let savedsamples = 0;
     let needSync = false;
@@ -36,12 +37,13 @@ export default Marionette.View.extend({
       samples: savedsamples,
       needSync,
       login: userModel.hasLogIn(),
-      firstname: userModel.get("firstname"),
-      secondname: userModel.get("secondname"),
+      firstname: userModel.get('firstname'),
+      secondname: userModel.get('secondname'),
+      siteUrl: CONFIG.site_url,
     };
   },
 
   logout() {
-    this.trigger("user:logout");
+    this.trigger('user:logout');
   },
 });

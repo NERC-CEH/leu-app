@@ -47,6 +47,18 @@
   </a>
 </li>
 <li class="table-view-cell">
+  <a href="<%= obj.siteUrl %>/terms-and-conditions" class="navigate-right">
+    <span class="media-object pull-left icon icon-doc"></span>
+    <%= t('Terms and Conditions') %>
+  </a>
+</li>
+<li class="table-view-cell">
+  <a href="<%= obj.siteUrl %>/privacy-notice" class="navigate-right">
+    <span class="media-object pull-left icon icon-lock-closed"></span>
+    <%= t('Privacy Policy') %>
+  </a>
+</li>
+<li class="table-view-cell">
   <a href="#info/credits" class="navigate-right">
     <span class="media-object pull-left icon icon-heart"></span>
     <%= t('Credits') %>

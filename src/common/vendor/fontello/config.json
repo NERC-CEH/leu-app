@@ -287,6 +287,12 @@
       "css": "list-nested",
       "code": 59433,
       "src": "iconic"
+    },
+    {
+      "uid": "6a06892e76b81e023da6ddfb38a26b37",
+      "css": "doc",
+      "code": 59434,
+      "src": "typicons"
     }
   ]
 }

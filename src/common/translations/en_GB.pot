@@ -1339,6 +1339,9 @@ msgstr "Surname"
 msgid "Confirm password"
 msgstr "Confirm password"
 
+msgid "Terms and Conditions"
+msgstr "Terms and Conditions"
+
 msgid "I agree to Terms and Conditions"
 msgstr "I agree to Terms and Conditions"
 
