@@ -75,7 +75,7 @@ let AppModel = Backbone.Model.extend({
   },
 
   getSpeciesLocalName(species) {
-    let commonName = species.attributes[this.get("country")].commonName;
+    let commonName = species.attributes[this.get("country")].common_name;
     commonName = commonName || species.attributes.UK.commonName;
 
     if (typeof commonName === "object") {
