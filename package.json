@@ -14,6 +14,7 @@
     "build:cordova": "grunt cordova",
     "build:cordova:update": "grunt cordova:update",
     "build:cordova:android": "grunt cordova:android",
+    "build:cordova:android:dev": "grunt exec:cordova_android_build_dev",
     "test:eslint": "mocha test/eslint-test.js",
     "clean": "rm -rf node_modules dist yarn.lock package-lock.json",
     "postinstall": "grunt dev",

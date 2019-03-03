@@ -24,6 +24,10 @@ module.exports = function (grunt) {
       command: 'cd dist/cordova/ && ../../node_modules/.bin/cordova prepare ios android',
       stdout: true,
     },
+    cordova_android_build_dev: {
+      command: 'cd dist/cordova/ && ../../node_modules/.bin/cordova build android',
+      stdout: true,
+    },
     cordova_copy_dist: {
       command: 'cp -R dist/main/* dist/cordova/www/',
       stdout: true,
