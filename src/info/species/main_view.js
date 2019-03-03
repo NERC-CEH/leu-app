@@ -30,19 +30,12 @@ export default Marionette.View.extend({
   serializeData() {
     const country = appModel.get('country');
     const translateFn = p => t(p);
-    const data = $.extend(
-      true,
-      {},
-      this.model.attributes,
-      this.model.attributes[country]
-    );
+    const data = $.extend(true, {}, this.model.attributes, this.model.attributes[country]);
     data.commonName = appModel.getSpeciesLocalName(this.model);
     data.food = data.food.map(translateFn).join('; ');
     data.habitat =
-      data[country].habitat.comment &&
-      data[country].habitat.comment.map(translateFn).join('; ');
-    data.plant =
-      data[country].plant && data[country].plant.map(translateFn).join('; ');
+      data[country].habitat.comment && data[country].habitat.comment.map(translateFn).join('; ');
+    data.plant = data[country].plant && data[country].plant.map(translateFn).join('; ');
     data.overwintering = data[country].overwintering;
     data.comment = data[country].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;
@@ -50,7 +43,7 @@ export default Marionette.View.extend({
     data.colour = data.colour && data.colour.comment;
 
     data.photos = photosData[data.id - 1].width.length;
-    data.author = photosData[data.id].author;
+    data.author = photosData[data.id - 1].author;
     return data;
   },
 
@@ -161,26 +154,30 @@ export default Marionette.View.extend({
    * Launches the species gallery viewing.
    */
   photoView() {
-    const items = [];
     const options = {};
 
-    const photos = photosData[this.model.id - 1].width.length;
-    const author = this.model.get('author') || [];
-    const width = this.model.get('width') || [];
-    const height = this.model.get('height') || [];
+    const photos = photosData[this.model.id - 1];
+    const normalisedPhotosArray = photos.width.map((width, index) => ({
+      author: photos.author[index],
+      width: photos.width[index],
+      height: photos.height[index],
+    }));
 
-    for (let i = 0; i < photos; i++) {
+    const items = normalisedPhotosArray.map((photo, index) => {
       let title;
-      if (author[i]) {
-        title = `&copy; ${author[i]}`;
+      const { author, width, height } = photo;
+
+      if (author) {
+        title = `&copy; ${author}`;
       }
-      items.push({
-        src: `images/${this.model.id}_${i}.jpg`,
-        w: width[i] || 1024,
-        h: height[i] || 800,
+
+      return {
+        src: `images/${this.model.id}_${index}.jpg`,
+        w: width || 1024,
+        h: height || 800,
         title,
-      });
-    }
+      };
+    });
 
     // Initializes and opens PhotoSwipe
     const gallery = new Gallery(items, options);
