@@ -6,8 +6,9 @@
     </p>
     <p>
     <ul style="list-style-type: none;">
-      <li>Helen Roy (UK)</li>
-      <li>Karolis Kazlauskis (UK)</li>
+      <li><a href="https://www.ceh.ac.uk/staff/helen-roy">Helen Roy</a> (UK)</li>
+      <li><a href="https://www.ceh.ac.uk/staff/david-roy">David Roy</a> (UK)</li>
+      <li><a href="https://kazlauskis.com">Karolis Kazlauskis</a> (UK)</li>
       <li>Peter Brown (UK)</li>
       <li>Alberto Francesco Inghilesi (ITA)</li>
       <li>Jiří Skuhrovec (CZ)</li>

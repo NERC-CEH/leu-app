@@ -10,7 +10,7 @@
   </li>
   <li>
     <p><strong><%= t('App Development') %></strong></p>
-    <p><%= t('This app was hand crafted with love by the BRC mobile development team. For suggestions and feedback please do not hesitate to') %> <a href='mailto:<%= obj.supportEmail %>?subject=European%20Ladybirds%20Support%26Feedback&body=%0A%0A%0AVersion%3A%20<%- obj.version %>%0ABrowser%3A <%- window.navigator.appVersion %>%0A'><%= t('contact us') %></a>.
+    <p><%= t('This app was hand crafted with love by Karolis Kazlauskis and CEH developers. For suggestions and feedback please do not hesitate to') %> <a href='mailto:<%= obj.supportEmail %>?subject=European%20Ladybirds%20Support%26Feedback&body=%0A%0A%0AVersion%3A%20<%- obj.version %>%0ABrowser%3A <%- window.navigator.appVersion %>%0A'><%= t('contact us') %></a>.
     </p>
   </li>
   <li>

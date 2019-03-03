@@ -1276,8 +1276,8 @@ msgid "App Development"
 msgstr "Aplicação em progresso"
 
 msgid ""
-"This app was hand crafted with love by the BRC mobile development team. For "
-"suggestions and feedback please do not hesitate to"
+"This app was hand crafted with love by Karolis Kazlauskis and CEH "
+"developers. For suggestions and feedback please do not hesitate to"
 msgstr ""
 "Esta aplicação foi desenvolvida com amor pela equipe da Biological Record "
 "Centre (UK). Para sugestões e comentários, não hesite em"
@@ -1367,6 +1367,9 @@ msgstr "Apelido"
 
 msgid "Confirm password"
 msgstr "Confimar palavra-passe"
+
+msgid "Terms and Conditions"
+msgstr "Termos e condiçõe"
 
 msgid "I agree to Terms and Conditions"
 msgstr "Concordo com os termos e condições"

@@ -1257,8 +1257,8 @@ msgid "App Development"
 msgstr "Vývoj aplikáce"
 
 msgid ""
-"This app was hand crafted with love by the BRC mobile development team. For "
-"suggestions and feedback please do not hesitate to"
+"This app was hand crafted with love by Karolis Kazlauskis and CEH "
+"developers. For suggestions and feedback please do not hesitate to"
 msgstr ""
 "Táto aplikácia bola vyrobená s láskou tímom vývojárov z Biological Record "
 "Centre (UK). Podnety a spätnú väzbu prosím neváhajte zasielať"
@@ -1343,6 +1343,9 @@ msgstr "Priezvisko"
 
 msgid "Confirm password"
 msgstr "Potvrďte heslo"
+
+msgid "Terms and Conditions"
+msgstr "Podmienkami"
 
 msgid "I agree to Terms and Conditions"
 msgstr "Súhlasím s podmienkami"

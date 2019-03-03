@@ -1270,8 +1270,8 @@ msgid "App Development"
 msgstr "Développement de l'application"
 
 msgid ""
-"This app was hand crafted with love by the BRC mobile development team. For "
-"suggestions and feedback please do not hesitate to"
+"This app was hand crafted with love by Karolis Kazlauskis and CEH "
+"developers. For suggestions and feedback please do not hesitate to"
 msgstr ""
 "Cette application a été conçue avec amour par l'équipe de développement "
 "mobile BRC. N'hésitez pas à nous contacter avec vos suggestions et "
@@ -1361,6 +1361,9 @@ msgstr "Nom"
 
 msgid "Confirm password"
 msgstr "Vérifier le mot de passe"
+
+msgid "Terms and Conditions"
+msgstr "Conditions d'utilisation"
 
 msgid "I agree to Terms and Conditions"
 msgstr "J'accepte les conditions d'utilisation"

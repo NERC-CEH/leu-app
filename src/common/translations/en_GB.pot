@@ -1251,10 +1251,10 @@ msgid "App Development"
 msgstr "App Development"
 
 msgid ""
-"This app was hand crafted with love by the BRC mobile development team. For "
+"This app was hand crafted with love by Karolis Kazlauskis and CEH developers. For "
 "suggestions and feedback please do not hesitate to"
 msgstr ""
-"This app was hand crafted with love by the BRC mobile development team. For "
+"This app was hand crafted with love by <a href='https://kazlauskis.com'>Karolis Kazlauskis</a> and CEH developers. For "
 "suggestions and feedback please do not hesitate to"
 
 msgid ""
