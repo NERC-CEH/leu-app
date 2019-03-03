@@ -64,6 +64,7 @@ const config = {
         query: {
           presets: ['es2015'],
           plugins: [
+            'transform-exponentiation-operator',
             'transform-class-properties',
           ],
         },
