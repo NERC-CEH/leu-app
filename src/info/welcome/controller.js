@@ -23,7 +23,7 @@ const API = {
 
       const country = languageToCountryMap[language];
       if (!country) {
-        API.showCountrySelection();
+        API.showCountrySelection(language);
         return;
       }
 
@@ -35,7 +35,7 @@ const API = {
     });
   },
 
-  showCountrySelection() {
+  showCountrySelection(language) {
     const mainView = new MainView({ model: appModel });
     radio.trigger("app:main", mainView);
 
@@ -43,7 +43,7 @@ const API = {
     mainView.on("save", () => {
       const country = mainView.getValues();
       if (country) {
-        appModel.save({ country });
+        appModel.save({ country, language });
         speciesCollection.filterList(); // update collection
       }
       appModel.save({ showWelcome: false });
