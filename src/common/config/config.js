@@ -32,12 +32,12 @@ const CONFIG = {
   },
 
   supportEmail: {
-    UK: "apps%40ceh.ac.uk",
-    ITA: "apps%40ceh.ac.uk",
-    PT: "apps%40ceh.ac.uk",
-    SK: "apps%40ceh.ac.uk",
-    CZ: "apps%40ceh.ac.uk",
-    BE: "apps%40ceh.ac.uk",
+    UK: "ladybird-survey%40ceh.ac.uk",
+    IT: "alberto.inghilesi%40gmail.com",
+    PT: "antonio.oc.soares%40uac.pt",
+    SK: "sandraviglasova%40gmail.com",
+    CZ: "jirislavskuhrovec%40gmail.com",
+    BE: "tim.adriaens%40inbo.be",
   },
 
   // error analytics

@@ -33,6 +33,7 @@ const Router = Marionette.AppRouter.extend({
     "info(/)": InfoMenuController.show,
     "info/welcome(/)": WelcomeController.show,
     "info/about(/)": () => {
+      const country = appModel.get("country");
       CommonController.show({
         title: t("About"),
         App,
@@ -40,7 +41,7 @@ const Router = Marionette.AppRouter.extend({
         model: new Backbone.Model({
           version: CONFIG.version,
           build: CONFIG.build,
-          supportEmail: CONFIG.supportEmail[appModel.get("country")],
+          supportEmail: CONFIG.supportEmail[country],
         }),
       });
     },
