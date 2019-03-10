@@ -116,12 +116,6 @@ const SampleView = Marionette.View.extend({
     const media = occ.media;
     let img = media.length && media.at(0).get("thumbnail");
 
-    // quick fix
-    // todo: remove this once cordova thumbnails are fixed
-    if (window.cordova) {
-      img = img[0];
-    }
-
     const taxon =
       specie.taxon || (specie[country] && specie[country].common_name);
 
