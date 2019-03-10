@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "d9531c81-455d-45dd-8d20-b2308637f849",
+		"name": "LEU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "bbbb7fc5-115c-4c7f-85c9-9f2d09895f20",
+						"exec": [
+							"const email = pm.globals.get(\"tmp_indicia_user_email\");",
+							"const password = pm.globals.get(\"tmp_indicia_user_pass\");",
+							"",
+							"const userAuth = `${email}:${password}`;",
+							"pm.globals.set(\"tmp_indicia_user_basic_auth\", `Basic ${btoa(userAuth)}`);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{indicia_api_key}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{tmp_indicia_user_basic_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{indicia_api_host}}/api/v1/users/{{tmp_indicia_user_email}}",
+					"host": [
+						"{{indicia_api_host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"{{tmp_indicia_user_email}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sample",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "63d7dfa6-5a57-47a2-b02d-2bc8f1030104",
+						"exec": [
+							"const email = pm.globals.get(\"tmp_indicia_user_email\");",
+							"const password = pm.globals.get(\"tmp_indicia_user_pass\");",
+							"",
+							"const userAuth = `${email}:${password}`;",
+							"pm.globals.set(\"tmp_indicia_user_basic_auth\", `Basic ${btoa(userAuth)}`);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{indicia_api_key}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{tmp_indicia_user_basic_auth}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"external_key\":\"ac20e698-9e27-4352-9129-c912c5162e96\",\"survey_id\":525,\"input_form\":\"enter-app-record\",\"fields\":{\"209\":1648,\"273\":2399,\"282\":5000,\"335\":null,\"760\":\"map\",\"date\":\"2/12/2018\",\"entered_sref_system\":4326,\"location_name\":\"test\",\"entered_sref\":\"53.3833300, 11.2355800\"},\"media\":[],\"occurrences\":[{\"external_key\":\"fbb5ed61-17c0-467d-9002-4dfe3eab0930\",\"fields\":{\"143\":1783,\"taxa_taxon_list_id\":48704,\"comment\":\"sfsdfsdasadf\"},\"media\":[],\"training\":true}],\"samples\":[],\"type\":\"samples\"}}"
+				},
+				"url": {
+					"raw": "{{indicia_api_host}}/api/v1/samples",
+					"host": [
+						"{{indicia_api_host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"samples"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All records",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "49400674-e3ba-4186-8c73-86176942dc16",
+						"exec": [
+							"const email = pm.globals.get(\"tmp_indicia_user_email\");",
+							"const password = pm.globals.get(\"tmp_indicia_user_pass\");",
+							"",
+							"const userAuth = `${email}:${password}`;",
+							"pm.globals.set(\"tmp_indicia_user_basic_auth\", `Basic ${btoa(userAuth)}`);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{indicia_api_key}}"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{tmp_indicia_user_basic_auth}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{indicia_api_host}}/api/v1/reports/library/occurrences/filterable_explore_list.xml?smpattrs=760,209,282,283,335,273,759,20,6,7,8&occattrs=143&survey_id=525&offset=0&limit=20",
+					"host": [
+						"{{indicia_api_host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reports",
+						"library",
+						"occurrences",
+						"filterable_explore_list.xml"
+					],
+					"query": [
+						{
+							"key": "smpattrs",
+							"value": "760,209,282,283,335,273,759,20,6,7,8"
+						},
+						{
+							"key": "occattrs",
+							"value": "143"
+						},
+						{
+							"key": "survey_id",
+							"value": "525"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "20"
+						},
+						{
+							"key": "training",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "recorder",
+							"value": "karolis",
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2019-03-10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
