@@ -3,8 +3,8 @@
   "id": "uk.ac.ceh.leu",
   "title": "European Ladybirds",
   "description": "European Ladybirds application.",
-  "version": "1.0.0",
-  "build": "10",
+  "version": "1.0.1",
+  "build": "1",
   "homepage": "http://www.irecord.org.uk",
   "scripts": {
     "build": "grunt",
