@@ -155,6 +155,7 @@ const API = {
     Log("Settings:Menu:Controller: resetting the application!", "w");
 
     appModel.set(appModel.defaults);
+    appModel.unset("draftSampleID");
     appModel.save();
 
     userModel.set(userModel.defaults);
