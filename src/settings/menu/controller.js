@@ -154,10 +154,10 @@ const API = {
   resetApp(callback) {
     Log("Settings:Menu:Controller: resetting the application!", "w");
 
-    appModel.clear().set(appModel.defaults);
+    appModel.set(appModel.defaults);
     appModel.save();
 
-    userModel.clear().set(userModel.defaults);
+    userModel.set(userModel.defaults);
     userModel.save();
 
     savedSamples
