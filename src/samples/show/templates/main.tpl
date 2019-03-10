@@ -26,6 +26,13 @@
       <%= t('Number') %>
     </li>
   <% } %>
+  <% if (obj.habitat) { %>
+    <li class="table-view-cell">
+      <span class="media-object pull-left icon icon-habitat"></span>
+      <span class="media-object pull-right descript"><%- obj.habitat %></span>
+      <%= t('Habitat') %>
+    </li>
+  <% } %>
   <% if (obj.comment) { %>
     <li class="table-view-cell">
       <span class="media-object pull-left icon icon-comment"></span>
@@ -42,4 +49,4 @@
   <% } %>
 </ul>
 
-<div id="occurrence-id"><%- obj.cid %></div>
+<div id="occurrence-id"><%- obj.cid %> (<%- obj.id %>)</div>

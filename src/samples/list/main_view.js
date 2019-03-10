@@ -114,7 +114,7 @@ const SampleView = Marionette.View.extend({
     const date = DateHelp.print(sample.get("date"), true);
     const specie = occ.get("taxon") || {};
     const media = occ.media;
-    let img = media.length && media.at(0).get("thumbnail");
+    const img = media.length && media.at(0).get("thumbnail");
 
     const taxon =
       specie.taxon || (specie[country] && specie[country].common_name);

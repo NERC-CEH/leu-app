@@ -4,7 +4,7 @@
   "title": "European Ladybirds",
   "description": "European Ladybirds application.",
   "version": "1.0.0",
-  "build": "7",
+  "build": "8",
   "homepage": "http://www.irecord.org.uk",
   "scripts": {
     "build": "grunt",
