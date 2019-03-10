@@ -21,6 +21,10 @@ const API = {
     mainView.on("setting:toggled", (setting, on) => {
       Log("Settings:Menu:Controller: setting toggled.");
 
+      if (setting === 'useTraining') {
+        appModel.unset("draftSampleID").save();
+      }
+
       appModel.set(setting, on);
       appModel.save();
     });
