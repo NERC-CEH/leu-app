@@ -47,7 +47,8 @@ const SpeciesCollection = Backbone.Collection.extend({
     const country = appModel.get("country");
     let countryList = [];
     for (let j = 0; j < list.length; j++) {
-      if (list[j][country].exist === "YES") {
+      const speciesCountry = list[j][country];
+      if (speciesCountry && speciesCountry.exist === "YES") {
         countryList.push(list[j]);
       }
     }
