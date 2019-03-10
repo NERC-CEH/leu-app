@@ -118,20 +118,11 @@ const API = {
 
   save(sample) {
     Log('Samples:Edit:Controller: save clicked.');
-    // const promise = sample.setToSend();
 
     // invalid sample
     if (!sample.isValid({ remote: true })) {
       const invalids = sample.validationError;
       API.showInvalidsMessage(invalids);
-      return;
-    }
-
-    // should we sync?
-    if (!Device.isOnline()) {
-      radio.trigger('app:dialog:error', {
-        message: 'Looks like you are offline!',
-      });
       return;
     }
 
