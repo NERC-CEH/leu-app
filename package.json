@@ -39,7 +39,7 @@
     "leaflet": "0.7.7",
     "localforage": "1.4.3",
     "localforage-cordovasqlitedriver": "1.5.0",
-    "lodash": "3.6.0",
+    "lodash": "4.17.13",
     "marionette.sliding-view": "0.1.0",
     "mini-css-extract-plugin": "0.4.1",
     "os-leaflet": "0.2.1",
