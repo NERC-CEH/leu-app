@@ -38,8 +38,7 @@ export default Marionette.View.extend({
       "orange",
       "yellow",
       "pink",
-      "cream/beige",
-      "white",
+      "white/cream/beige",
     ].forEach(filter => {
       colourFilters.push({
         name: filter,
