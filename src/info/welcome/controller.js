@@ -1,6 +1,5 @@
 import radio from "radio";
 import appModel from "app_model";
-import { languageToCountryMap } from "helpers/translator";
 import speciesCollection from "common/species_collection";
 import MainView from "../../settings/country/main_view";
 import MainViewLanguage from "../../settings/language/main_view";
@@ -20,18 +19,7 @@ const API = {
     // if exit on selection click
     mainView.on("save", () => {
       const language = mainView.getValues();
-
-      const country = languageToCountryMap[language];
-      if (!country) {
-        API.showCountrySelection(language);
-        return;
-      }
-
-      appModel.save({ country, language });
-      speciesCollection.filterList(); // update collection
-
-      appModel.save({ showWelcome: false });
-      radio.trigger("home");
+      API.showCountrySelection(language);
     });
   },
 

@@ -3,14 +3,33 @@
  **************************************************************************** */
 import $ from "jquery";
 import Marionette from "backbone.marionette";
-import JST from "JST";
+import _ from "lodash";
+import { countries } from "helpers/translator";
 import "./styles.scss";
+
+let template = Object.entries(countries)
+  .map(
+    ([key, value]) => `
+<label class="item item-radio">
+    <input type="radio" name="group" value="${key}" 
+    <%- obj['${key}'] ? 'checked' : ''%>>
+    <div class="radio-content">
+      <div class="item-content">
+        ${value}
+      </div>
+      <i class="radio-icon icon-check"></i>
+    </div>
+</label>`,
+  )
+  .join("");
+
+template = _.template(`<div class="list">${template}</div>`);
 
 export default Marionette.View.extend({
   id: "country-selection",
   tagName: "ul",
   className: "table-view",
-  template: JST["settings/country/main"],
+  template,
 
   triggers: {
     'click input[type="radio"]': "save",
