@@ -65,8 +65,32 @@ filters.colourGroup['white/cream/beige'] = (list, filteredList) => {
   }
 };
 
+filters.sizeGroup = {
+  small(list, filteredList) {
+    for (let j = 0; j < list.length; j++) {
+      if (
+        list[j].size.filter.includes(3) ||
+        list[j].size.filter.includes(4) ||
+        list[j].size.filter.includes(5)
+      ) {
+        filteredList.push(list[j]);
+      }
+    }
+  },
 
-filters.sizeGroup = getFilterGroup('size', [3, 4, 5, 6, 7, 8, 9]);
+  large(list, filteredList) {
+    for (let j = 0; j < list.length; j++) {
+      if (
+        list[j].size.filter.includes(6) ||
+        list[j].size.filter.includes(7) ||
+        list[j].size.filter.includes(8) ||
+        list[j].size.filter.includes(9)
+      ) {
+        filteredList.push(list[j]);
+      }
+    }
+  },
+};
 
 filters.pronotumGroup = getFilterGroup('pronotum', [
   'one colour',

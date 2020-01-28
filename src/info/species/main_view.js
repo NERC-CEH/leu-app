@@ -44,10 +44,13 @@ export default Marionette.View.extend({
     data.commonName = appModel.getSpeciesLocalName(this.model);
     data.food = data.food.map(translateFn).join('; ');
     data.habitat =
+      data[country].habitat &&
       data[country].habitat.comment &&
       data[country].habitat.comment.map(translateFn).join('; ');
     data.plant =
-      data[country].plant && data[country].plant.map(translateFn).join('; ');
+      data[country].plant &&
+      data[country].plant &&
+      data[country].plant.map(translateFn).join('; ');
     data.overwintering = data[country].overwintering;
     data.comment = data[country].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;
