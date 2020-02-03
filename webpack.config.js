@@ -11,6 +11,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const pkg = require('./package.json');
+const srcPath = path.resolve(__dirname, '../src');
 
 const ROOT_DIR = path.resolve(__dirname, './');
 const DIST_DIR = path.resolve(ROOT_DIR, 'dist/main');
@@ -148,12 +149,14 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
+      inject: true,
+
       sourceMap: true,
       // https://github.com/marcelklehr/toposort/issues/20
-      chunksSortMode: 'none',
+      chunksSortMode: 'dependency'
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
+    // new webpack.optimize.OccurrenceOrderPlugin(),
   ],
   stats: {
     children: false,

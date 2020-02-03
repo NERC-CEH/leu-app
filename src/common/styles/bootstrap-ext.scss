@@ -15,13 +15,16 @@ ul.accordion {
         
         &:before {
           font-family: icons;
+          margin-left: 0;
+          margin-right: 10px;
           content: '\e804';
         }
       }
 
       &:before {
         font-size: 20px;
-        margin-right: 10px;
+        margin-right: 14px;
+        margin-left: 4px;
         font-family: icons;
         content: '\e81c';
       }
