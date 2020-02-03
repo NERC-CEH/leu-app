@@ -4,7 +4,6 @@
 import Indicia from "indicia";
 import radio from "radio";
 import Log from "helpers/log";
-import Analytics from "helpers/analytics";
 import userModel from "user_model";
 import appModel from "app_model";
 import savedSamples from "saved_samples";
@@ -89,7 +88,6 @@ const API = {
           onClick() {
             sample.destroy();
             radio.trigger("app:dialog:hide");
-            Analytics.trackEvent("List", "sample remove");
           },
         },
       ],

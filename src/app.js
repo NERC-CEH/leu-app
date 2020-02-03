@@ -1,15 +1,6 @@
 /** ****************************************************************************
  * App object.
  **************************************************************************** */
-// polyfills
-import "core-js/es6/map";
-import "core-js/es6/set";
-import "core-js/fn/object/assign";
-import "core-js/fn/array/fill";
-import "core-js/fn/array/includes";
-import "core-js/fn/string/includes";
-import "whatwg-fetch";
-
 import $ from "jquery";
 import Backbone from "backbone";
 import Marionette from "backbone.marionette";
@@ -18,7 +9,6 @@ import radio from "radio";
 import Log from "helpers/log";
 import Update from "helpers/update";
 import Device from "helpers/device";
-import Analytics from "helpers/analytics";
 import "helpers/translator";
 import appModel from "app_model";
 import CommonController from "./common/controller";
@@ -95,7 +85,6 @@ App.on("start", () => {
               navigator.splashscreen.hide();
             }
 
-            Analytics.trackEvent("App", "initialized");
           },
           false,
         );

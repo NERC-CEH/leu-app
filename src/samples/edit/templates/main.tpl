@@ -5,8 +5,8 @@
   <li class="table-view-cell">
     <a href="#samples/<%- obj.id %>/edit/taxon" id="species-button" class="navigate-right">
       <span class="media-object pull-left icon icon-species"></span>
-      <% if (obj.commonName) { %>
-      <span class="media-object pull-right descript"><%- obj.commonName %></span>
+      <% if (obj.commonName || obj.scientificName) { %>
+      <span class="media-object pull-right descript"><%- obj.commonName || obj.scientificName %></span>
       <% } else { %>
       <span class="media-object pull-right descript warn"><%= t('required') %></span>
       <% } %>

@@ -126,4 +126,12 @@
 
 #species-list-filters {
   margin-bottom: 0;
+
+  .item-checkbox {
+    text-transform: capitalize;
+  }
+
+  #pronotum .item-small.item-checkbox {
+    height: auto;
+  }
 }

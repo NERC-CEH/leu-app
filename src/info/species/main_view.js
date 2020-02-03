@@ -28,14 +28,29 @@ export default Marionette.View.extend({
   },
 
   serializeData() {
-    const country = appModel.get('country');
+    let country = appModel.get('country');
+    const isElsewhere = country === 'ELSEWHERE';
+    if (isElsewhere) {
+      country = 'UK';
+    }
+
     const translateFn = p => t(p);
-    const data = $.extend(true, {}, this.model.attributes, this.model.attributes[country]);
+    const data = $.extend(
+      true,
+      {},
+      this.model.attributes,
+      this.model.attributes[country],
+    );
     data.commonName = appModel.getSpeciesLocalName(this.model);
     data.food = data.food.map(translateFn).join('; ');
     data.habitat =
-      data[country].habitat.comment && data[country].habitat.comment.map(translateFn).join('; ');
-    data.plant = data[country].plant && data[country].plant.map(translateFn).join('; ');
+      data[country].habitat &&
+      data[country].habitat.comment &&
+      data[country].habitat.comment.map(translateFn).join('; ');
+    data.plant =
+      data[country].plant &&
+      data[country].plant &&
+      data[country].plant.map(translateFn).join('; ');
     data.overwintering = data[country].overwintering;
     data.comment = data[country].comment;
     data.pronotum = data.pronotum && data.pronotum.comment;

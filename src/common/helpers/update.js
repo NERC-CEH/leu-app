@@ -2,11 +2,10 @@
  * App update functionality.
  **************************************************************************** */
 
-import radio from "radio";
-import CONFIG from "config";
-import appModel from "app_model";
-import Log from "./log";
-import Analytics from "./analytics";
+import radio from 'radio';
+import CONFIG from 'config';
+import appModel from 'app_model';
+import Log from './log';
 
 const MIN_UPDATE_TIME = 5000; // show updating dialog for minimum seconds
 
@@ -34,12 +33,12 @@ const MIN_UPDATE_TIME = 5000; // show updating dialog for minimum seconds
  * @since 2011-07-14
  */
 function versionCompare(left, right) {
-  if (typeof left + typeof right !== "stringstring") return false;
+  if (typeof left + typeof right !== 'stringstring') return false;
 
-  const a = left.split(".");
-  const  b = right.split(".");
-  let  i = 0;
-  const  len = Math.max(a.length, b.length);
+  const a = left.split('.');
+  const b = right.split('.');
+  let i = 0;
+  const len = Math.max(a.length, b.length);
 
   for (; i < len; i++) {
     if (
@@ -47,7 +46,8 @@ function versionCompare(left, right) {
       parseInt(a[i], 10) > parseInt(b[i], 10)
     ) {
       return 1;
-    } else if (
+    }
+    if (
       (b[i] && !a[i] && parseInt(b[i], 10) > 0) ||
       parseInt(a[i], 10) < parseInt(b[i], 10)
     ) {
@@ -63,7 +63,7 @@ const API = {
    * Main update function.
    */
   run(callback, silent = false) {
-    const currentVersion = appModel.get("appVersion");
+    const currentVersion = appModel.get('appVersion');
     const newVersion = CONFIG.version;
 
     if (currentVersion !== newVersion) {
@@ -84,9 +84,9 @@ const API = {
       }
 
       if (!silent) {
-        radio.trigger("app:dialog:show", {
-          title: t("Updating"),
-          body: t("This should take only a moment..."),
+        radio.trigger('app:dialog:show', {
+          title: t('Updating'),
+          body: t('This should take only a moment...'),
           hideAllowed: false,
         });
       }
@@ -97,8 +97,8 @@ const API = {
         if (error) {
           if (!silent) {
             radio.trigger(
-              "app:dialog:error",
-              "Sorry, an error has occurred while updating the app",
+              'app:dialog:error',
+              'Sorry, an error has occurred while updating the app'
             );
           }
           return null;
@@ -108,13 +108,13 @@ const API = {
         if (timeDiff < MIN_UPDATE_TIME) {
           setTimeout(() => {
             if (!silent) {
-              radio.trigger("app:dialog:hide", true);
+              radio.trigger('app:dialog:hide', true);
             }
             callback();
           }, MIN_UPDATE_TIME - timeDiff);
         } else {
           if (!silent) {
-            radio.trigger("app:dialog:hide", true);
+            radio.trigger('app:dialog:hide', true);
           }
           callback();
         }
@@ -169,8 +169,8 @@ const API = {
   _applyUpdates(updateIndex, callback) {
     const update = API.updates[API.updatesSeq[updateIndex]];
 
-    if (typeof update !== "function") {
-      Log("Update: error with update function.", "e");
+    if (typeof update !== 'function') {
+      Log('Update: error with update function.', 'e');
       return callback();
     }
 
@@ -190,7 +190,7 @@ const API = {
         if (!fullRestartRequired) {
           return callback();
         }
-        radio.trigger("app:restart");
+        radio.trigger('app:restart');
         return null;
       }
 
@@ -200,13 +200,8 @@ const API = {
   },
 
   _updateAppVersion(currentVersion, newVersion) {
-    appModel.set("appVersion", newVersion);
+    appModel.set('appVersion', newVersion);
     appModel.save();
-
-    // log only updates and not init as no prev value on init
-    if (currentVersion) {
-      Analytics.trackEvent("App", "updated");
-    }
   },
 };
 

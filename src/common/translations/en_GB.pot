@@ -1752,3 +1752,12 @@ msgid ""
 msgstr ""
 "Are you sure you want to delete all successfully synchronised local "
 "records?</br><i><b>Note:</b>records on the server will not be touched.</i>"
+
+msgid "white/cream/beige"
+msgstr "white/cream/beige"
+
+msgid "smaller than 5mm"
+msgstr "smaller than 5mm"
+
+msgid "larger than 5mm"
+msgstr "larger than 5mm"

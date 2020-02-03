@@ -9,6 +9,11 @@ import appModel from 'app_model';
  * label - label to represent the filter in the UI
  */
 function exist(country, species1, species2) {
+  const isElsewhere = country === 'ELSEWHERE';
+  if (isElsewhere) {
+    return true;
+  }
+
   if (!species1.attributes[country].exist === 'YES') {
     return false;
   }
@@ -21,9 +26,13 @@ function exist(country, species1, species2) {
 
 const sorts = {
   default(species1, species2) {
-    const country = appModel.get('country');
+    let country = appModel.get('country');
     if (!exist(country, species1, species2)) {
       return 1;
+    }
+    const isElsewhere = country === 'ELSEWHERE';
+    if (isElsewhere) {
+      country = 'UK';
     }
     const commonName1 = species1.attributes[country].order;
     const commonName2 = species2.attributes[country].order;
