@@ -53,30 +53,10 @@ filters.push({
   filters: sizeFilters,
 });
 
-// // add pronotum
-// const pronotumFilters = [];
-// [
-//   t('one colour'),
-//   t('one colour with spots'),
-//   t('M-shape'),
-//   t('one colour with white patch on each side'),
-//   t('none of them', 'Need to find name'),
-// ].forEach(filter => {
-//   pronotumFilters.push({
-//     name: filter,
-//     label: capitalizeFirstLetter(filter),
-//   });
-// });
-// filters.push({
-//   name: 'pronotum',
-//   label: t('Pronotum pattern'),
-//   filters: pronotumFilters,
-// });
-
 const getFilterTemplate = (groupName, { name, label }) => `
-        <li class="item item-checkbox item-small">
+        <li class="item item-checkbox item-small ${groupName} ${name}">
           <label class="checkbox">
-            <input type="checkbox" value="${name}" <%- obj['pronotumGroup'].includes('name') ? 'checked' : ''%>
+            <input type="checkbox" value="${name}" <%- obj['${groupName}'].includes('${name}') ? 'checked' : ''%> />
           </label>
           ${t(label)}
         </li>`;
@@ -160,6 +140,8 @@ export default Marionette.View.extend({
       pronotumGroup: [],
     };
     const selectedFilters = this.model.get('filters');
+    console.log(selectedFilters);
+    
     return { ...defaultFilterGroups, ...selectedFilters };
   },
 });
