@@ -26,7 +26,6 @@ const config = {
   output: {
     path: DIST_DIR,
     filename: '[name].js',
-    publicPath: '/',
   },
   resolve: {
     modules: [
