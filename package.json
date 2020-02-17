@@ -7,7 +7,7 @@
   "build": "1",
   "homepage": "http://www.irecord.org.uk",
   "scripts": {
- "build": "NODE_ENV=production grunt",
+    "build": "NODE_ENV=production grunt",
     "build:update": "NODE_ENV=production grunt udpate",
     "build:dev": "grunt",
     "build:dev:update": "grunt update",
@@ -22,7 +22,7 @@
     "start-dev": "webpack-dev-server --config webpack.config.js --content-base dist/main --port 8000"
   },
   "dependencies": {
-    "@sentry/browser": "^5.11.2",
+    "@sentry/browser": "^5.12.1",
     "backbone": "^1.4.0",
     "backbone.localstorage": "1.1.16",
     "backbone.marionette": "3.0.0",
