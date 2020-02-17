@@ -480,11 +480,13 @@
     "id": 29,
     "width": [
       1024,
+      1024,
       1024
     ],
     "height": [
       685,
-      683
+      683,
+      1024
     ],
     "author": [
       "Gilles San Martins",

@@ -79,6 +79,7 @@ import "./28_1.jpg";
 import "./28_2.jpg";
 import "./29_0.jpg";
 import "./29_1.jpg";
+import "./29_2.jpg";
 import "./30_0.jpg";
 import "./31_0.jpg";
 import "./31_1.jpg";
