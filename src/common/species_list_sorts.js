@@ -35,6 +35,11 @@ const sorts = {
       country = 'UK';
     }
     const commonName1 = species1.attributes[country].order;
+    if (!commonName1) {
+      // ELSEWHERE case where UK doesn't have the species
+      return 0
+    }
+
     const commonName2 = species2.attributes[country].order;
 
     if (commonName1 === commonName2) {

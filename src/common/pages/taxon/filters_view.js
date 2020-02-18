@@ -78,14 +78,17 @@ const getGroupTemplate = ({ name, label, filters: groupFilters }) => `
 let template = filters.map(getGroupTemplate).join('');
 const pronotums = {
   none: [
-    'Different pattern (none of them)',
+    t('Different pattern (none of them)'),
     '/images/different pattern (none of them).jpeg',
   ],
-  m: ['M-shape', '/images/M-shape.jpeg'],
-  colour: ['No pattern (one colour)', '/images/no pattern (one colour).jpeg'],
-  spots: ['With spots', '/images/with spots.jpeg'],
+  m: [t('M-shape'), '/images/M-shape.jpeg'],
+  colour: [
+    t('No pattern (one colour)'),
+    '/images/no pattern (one colour).jpeg',
+  ],
+  spots: [t('With spots'), '/images/with spots.jpeg'],
   patch: [
-    'With white patch on each side',
+    t('With white patch on each side'),
     '/images/with white patch on each side.jpeg',
   ],
 };
@@ -141,7 +144,7 @@ export default Marionette.View.extend({
     };
     const selectedFilters = this.model.get('filters');
     console.log(selectedFilters);
-    
+
     return { ...defaultFilterGroups, ...selectedFilters };
   },
 });

@@ -1758,3 +1758,45 @@ msgstr ""
 "Weet je zeker dat je alle lokaal bewaarde, gesynchroniseerde waarnemingen "
 "wilt verwijderen?</br><i><b>Opmerking:</b>waarnemingen op de server worden "
 "niet gewist.</i>"
+
+msgid "white/cream/beige"
+msgstr ""
+
+msgid "smaller than 5mm"
+msgstr ""
+
+msgid "larger than 5mm"
+msgstr ""
+
+msgid "United Kingdom"
+msgstr ""
+
+msgid "Different pattern (none of them)"
+msgstr ""
+
+msgid "No pattern (one colour)"
+msgstr ""
+
+msgid "With spots"
+msgstr ""
+
+msgid "With white patch on each side"
+msgstr ""
+
+msgid "Slovakia"
+msgstr ""
+
+msgid "Czech Republic"
+msgstr ""
+
+msgid "Italy"
+msgstr ""
+
+msgid "Portugal"
+msgstr ""
+
+msgid "Belgium"
+msgstr ""
+
+msgid "Elsewhere"
+msgstr ""

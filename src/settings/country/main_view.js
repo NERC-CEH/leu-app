@@ -15,7 +15,7 @@ let template = Object.entries(countries)
     <%- obj['${key}'] ? 'checked' : ''%>>
     <div class="radio-content">
       <div class="item-content">
-        ${value}
+        ${t(value)}
       </div>
       <i class="radio-icon icon-check"></i>
     </div>

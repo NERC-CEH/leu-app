@@ -1784,3 +1784,45 @@ msgstr ""
 "Êtes-vous sûr de vouloir supprimer toutes les observations sauvées "
 "localement et synchronisés avec succès?</br><i><b>Remarque:</b>les "
 "observations sur le serveur ne seront pas touchés.</i>"
+
+msgid "white/cream/beige"
+msgstr ""
+
+msgid "smaller than 5mm"
+msgstr ""
+
+msgid "larger than 5mm"
+msgstr ""
+
+msgid "United Kingdom"
+msgstr ""
+
+msgid "Different pattern (none of them)"
+msgstr ""
+
+msgid "No pattern (one colour)"
+msgstr ""
+
+msgid "With spots"
+msgstr ""
+
+msgid "With white patch on each side"
+msgstr ""
+
+msgid "Slovakia"
+msgstr ""
+
+msgid "Czech Republic"
+msgstr ""
+
+msgid "Italy"
+msgstr ""
+
+msgid "Portugal"
+msgstr ""
+
+msgid "Belgium"
+msgstr ""
+
+msgid "Elsewhere"
+msgstr ""

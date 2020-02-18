@@ -1761,3 +1761,36 @@ msgstr "smaller than 5mm"
 
 msgid "larger than 5mm"
 msgstr "larger than 5mm"
+
+msgid "United Kingdom"
+msgstr "United Kingdom"
+
+msgid "Different pattern (none of them)"
+msgstr "Different pattern (none of them)"
+
+msgid "No pattern (one colour)"
+msgstr "No pattern (one colour)"
+
+msgid "With spots"
+msgstr "With spots"
+
+msgid "With white patch on each side"
+msgstr "With white patch on each side"
+
+msgid "Slovakia"
+msgstr "Slovakia"
+
+msgid "Czech Republic"
+msgstr "Czech Republic"
+
+msgid "Italy"
+msgstr "Italy"
+
+msgid "Portugal"
+msgstr "Portugal"
+
+msgid "Belgium"
+msgstr "Belgium"
+
+msgid "Elsewhere"
+msgstr "Elsewhere"
