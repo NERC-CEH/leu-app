@@ -1,14 +1,11 @@
 require('dotenv').config({ silent: true }); // get local environment variables from .env
-// var keystorePassword = grunt.config('keystore');
 
 module.exports = function (grunt) {
   return {
     data: {
       command() {
         return 'cd src/info/species/data && ' +
-          'node make.js species &&' +
-          'mkdir -p ../../../../dist/_build &&' +
-          'mv *data.json ../../../../dist/_build';
+          'node make.js species';
       },
       stdout: true,
     },

@@ -5,7 +5,7 @@ import _ from 'lodash';
 import Backbone from 'backbone';
 import appModel from 'app_model';
 import Log from 'helpers/log';
-import speciesData from 'species.data';
+import speciesData from '../info/species/data/species.data.json';
 import sortsFunctions from './species_list_sorts';
 import filtersFunctions from './species_list_filters';
 
@@ -61,13 +61,13 @@ const SpeciesCollection = Backbone.Collection.extend({
       countryList = that._filterListCore(
         countryList,
         filterGroup,
-        filterGroupID,
+        filterGroupID
       );
     });
 
     this.reset(countryList, _.extend({ silent: true }));
     Log(
-      `Species:List:collection: Applied filters (${list.length}/${speciesData.length})`,
+      `Species:List:collection: Applied filters (${list.length}/${speciesData.length})`
     );
   },
 
@@ -106,5 +106,5 @@ const SpeciesCollection = Backbone.Collection.extend({
 });
 
 const speciesCollection = new SpeciesCollection();
-window.speciesCollection=speciesCollection
+window.speciesCollection = speciesCollection;
 export default speciesCollection;
