@@ -98,9 +98,7 @@ function normalizeValue(value) {
   // check if int
   // https://coderwall.com/p/5tlhmw/converting-strings-to-number-in-javascript-pitfalls
   const int = value; // * 1;
-  console.log(value);
-
-  if (!Number.isNaN(int)) return int;
+    if (!Number.isNaN(int)) return int;
   return value;
 }
 
