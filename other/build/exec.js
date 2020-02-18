@@ -2,13 +2,6 @@ require('dotenv').config({ silent: true }); // get local environment variables f
 
 module.exports = function (grunt) {
   return {
-    data: {
-      command() {
-        return 'cd src/info/species/data && ' +
-          'node make.js species';
-      },
-      stdout: true,
-    },
     cordova_init: {
       command: './node_modules/.bin/cordova create dist/cordova',
       stdout: true,
