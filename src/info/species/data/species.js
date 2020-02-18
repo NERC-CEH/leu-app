@@ -9,10 +9,8 @@ const range = 'species!A1:FC73';
 
 function fetch() {
   console.log('Pulling all the data from remote.');
-  // examples:
-  // /workbook/worksheets('species')/range(address='species!A1:FC73')
-  // /workbook/worksheets('species')/cell(row=3,column=8)
 
+  // token from: https://developer.microsoft.com/en-us/graph/graph-explorer/preview
   const token = process.env.APP_MS_TOKEN;
   if (!token) {
     return Promise.reject(new Error('Requires an APP_MS_TOKEN var set up.'));
@@ -22,6 +20,11 @@ function fetch() {
     const options = {
       method: 'GET',
       hostname: 'graph.microsoft.com',
+
+      // examples:
+      // /workbook/worksheets('species')/range(address='species!A1:FC73')
+      // /workbook/worksheets('species')/cell(row=3,column=8)
+
       path: `/v1.0/me/drive/items/${fileID}/workbook/worksheets('${worksheet}')/range(address='${range}')`,
       headers: {
         Authorization: `Bearer ${token}`,
@@ -98,7 +101,7 @@ function normalizeValue(value) {
   // check if int
   // https://coderwall.com/p/5tlhmw/converting-strings-to-number-in-javascript-pitfalls
   const int = value; // * 1;
-    if (!Number.isNaN(int)) return int;
+  if (!Number.isNaN(int)) return int;
   return value;
 }
 
