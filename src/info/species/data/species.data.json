@@ -205,7 +205,7 @@
     "taxon": "Adalia decempunctata",
     "form": "decempustulata",
     "colour": {
-      "filter": ["black", "brown", "red", "orange"],
+      "filter": ["black", "brown"],
       "comment": "Black, brown, maroon"
     },
     "size": { "filter": [3, 4, 5], "comment": "3.5 - 4.5" },
@@ -406,13 +406,14 @@
     "id": 5,
     "warehouse_id": 196115,
     "taxon": "Hippodamia tredecimpunctata",
-    "colour": {
-      "filter": ["yellow", "orange", "red"],
-      "comment": "Orange-red"
-    },
-    "size": { "filter": [5, 7], "comment": "5.0 - 7.0" },
+    "colour": { "filter": ["orange", "red"], "comment": "Orange-red" },
+    "size": { "filter": [6, 7], "comment": "5.0 - 7.0" },
     "pronotum": {
-      "filter": ["with white patch on each side", "one colour with spots"],
+      "filter": [
+        "with white patch on each side",
+        "one colour with spots",
+        "none of them"
+      ],
       "comment": "White with black pattern"
     },
     "pattern": "Black spots",
@@ -810,10 +811,7 @@
     "id": 9,
     "warehouse_id": 217657,
     "taxon": "Myrrha octodecimguttata",
-    "colour": {
-      "filter": ["brown", "white", "red"],
-      "comment": "Maroon-brown"
-    },
+    "colour": { "filter": ["brown", "white"], "comment": "Maroon-brown" },
     "size": { "filter": [4, 5], "comment": "4.0 - 5.0" },
     "pronotum": {
       "filter": ["M-shape"],
@@ -952,7 +950,7 @@
     },
     "CZ": {
       "exist": "YES",
-      "order": 26,
+      "order": 25,
       "common_name": "Slunéčko dvoutečné",
       "habitat": {
         "comment": ["Very varied"],
@@ -1016,9 +1014,12 @@
     "warehouse_id": 80078,
     "taxon": "Adalia bipunctata",
     "form": "sexpustulata",
-    "colour": { "filter": ["black", "red"], "comment": "Black" },
+    "colour": { "filter": ["black"], "comment": "Black" },
     "size": { "filter": [4, 5], "comment": "4.0 - 5.0" },
-    "pronotum": { "filter": ["one colour"], "comment": "Black" },
+    "pronotum": {
+      "filter": ["one colour", "with white patch on each side"],
+      "comment": "Black"
+    },
     "pattern": "Red spots",
     "spots": 6,
     "spot_fusions": "No",
@@ -1058,7 +1059,7 @@
     },
     "CZ": {
       "exist": "YES",
-      "order": 25,
+      "order": 26,
       "common_name": "Slunéčko dvoutečné",
       "habitat": {
         "comment": ["Very varied"],
@@ -1122,9 +1123,12 @@
     "warehouse_id": 80078,
     "taxon": "Adalia bipunctata",
     "form": "quadrimaculata",
-    "colour": { "filter": ["black", "red"], "comment": "Black" },
+    "colour": { "filter": ["black"], "comment": "Black" },
     "size": { "filter": [4, 5], "comment": "4.0 - 5.0" },
-    "pronotum": { "filter": ["one colour"], "comment": "Black" },
+    "pronotum": {
+      "filter": ["one colour", "with white patch on each side"],
+      "comment": "Black"
+    },
     "pattern": "Red spots",
     "spots": 4,
     "spot_fusions": "No",
@@ -1676,7 +1680,7 @@
     "id": 17,
     "warehouse_id": 27424,
     "taxon": "Hippodamia variegata",
-    "colour": { "filter": ["red"], "comment": "Red" },
+    "colour": { "filter": ["red", "orange"], "comment": "Red" },
     "size": { "filter": [4, 5], "comment": "4.0 - 5.0" },
     "pronotum": {
       "filter": ["none of them"],
@@ -1783,8 +1787,8 @@
     "warehouse_id": 15282,
     "taxon": "Henosepilachna argus",
     "colour": { "filter": ["orange"], "comment": "Orange" },
-    "size": { "filter": [5, 6, 7], "comment": "5.0 - 7.0" },
-    "pronotum": { "filter": ["with spots"], "comment": "Orange" },
+    "size": { "filter": [6, 7], "comment": "5.0 - 7.0" },
+    "pronotum": { "filter": ["with spots", "one colour"], "comment": "Orange" },
     "pattern": "Black spots",
     "spots": 11,
     "spot_fusions": "Rare",
@@ -1867,7 +1871,7 @@
     "id": 19,
     "warehouse_id": 105375,
     "taxon": "Calvia quatuordecimguttata",
-    "colour": { "filter": ["brown", "red"], "comment": "Maroon-brown" },
+    "colour": { "filter": ["brown"], "comment": "Maroon-brown" },
     "size": { "filter": [4, 5], "comment": "4.0 - 5.0" },
     "pronotum": {
       "filter": ["with spots"],
@@ -2162,7 +2166,10 @@
       "comment": "Russet or burgundy"
     },
     "size": { "filter": [7, 8, 9], "comment": "7.0 - 8.5" },
-    "pronotum": { "filter": ["M-shape"], "comment": "White with black M-mark" },
+    "pronotum": {
+      "filter": ["M-shape", "none of them"],
+      "comment": "White with black M-mark"
+    },
     "pattern": "Black spots with or without cream rings around them",
     "spots": "0-23 (usually 15)",
     "spot_fusions": "Rare",
@@ -2255,8 +2262,8 @@
     "warehouse_id": 171445,
     "taxon": "Harmonia axyridis",
     "form": "spectabilis",
-    "colour": { "filter": ["black", "orange", "red"], "comment": "Black" },
-    "size": { "filter": [5, 6, 7, 8], "comment": "5.0 - 8.0" },
+    "colour": { "filter": ["black"], "comment": "Black" },
+    "size": { "filter": [6, 7, 8], "comment": "5.0 - 8.0" },
     "pronotum": {
       "filter": ["with white patch on each side"],
       "comment": "Black with a white patch on each side"
@@ -2372,7 +2379,7 @@
     "taxon": "Harmonia axyridis",
     "form": "conspicua",
     "colour": { "filter": ["black"], "comment": "Black" },
-    "size": { "filter": [5, 6, 7, 8], "comment": "5.0 - 8.0" },
+    "size": { "filter": [6, 7, 8], "comment": "5.0 - 8.0" },
     "pronotum": {
       "filter": ["with white patch on each side"],
       "comment": "Black with a white patch on each side"
@@ -2491,7 +2498,7 @@
       "filter": ["yellow", "orange", "red"],
       "comment": "Orange-red"
     },
-    "size": { "filter": [5, 6, 7, 8], "comment": "5.0 - 8.0" },
+    "size": { "filter": [6, 7, 8], "comment": "5.0 - 8.0" },
     "pronotum": {
       "filter": ["M-shape", "one colour with dots"],
       "comment": "White or cream with up to 5 spots, or fused lateral spots forming 2 curved lines, M-shaped mark or solid trapezoid"
@@ -2607,8 +2614,8 @@
     "warehouse_id": 48704,
     "taxon": "Harmonia axyridis",
     "form": "axyridis",
-    "colour": { "filter": ["black", "orange", "red"], "comment": "Black" },
-    "size": { "filter": [5, 6, 7, 8], "comment": "5.0 - 8.0" },
+    "colour": { "filter": ["black"], "comment": "Black" },
+    "size": { "filter": [6, 7, 8], "comment": "5.0 - 8.0" },
     "pronotum": {
       "filter": ["with white patch on each side"],
       "comment": "Black with a white patch on each side"
@@ -2726,7 +2733,7 @@
       "filter": ["yellow", "orange", "red", "black"],
       "comment": "Orange-red"
     },
-    "size": { "filter": [5, 6, 7, 8], "comment": "5.0 - 8.0" },
+    "size": { "filter": [6, 7, 8], "comment": "5.0 - 8.0" },
     "pronotum": {
       "filter": ["with white patch on each side"],
       "comment": "Black with a white patch on each side"
@@ -3259,7 +3266,7 @@
     "warehouse_id": 18083,
     "taxon": "Aphidecta obliterata",
     "form": "livida",
-    "colour": { "filter": ["brown"], "comment": "Tan brown" },
+    "colour": { "filter": ["brown", "cream/beige"], "comment": "Tan brown" },
     "size": { "filter": [4, 5], "comment": "4.0 - 5.0" },
     "pronotum": {
       "filter": ["with spots", "M-shape"],
@@ -3346,7 +3353,7 @@
     "warehouse_id": 18083,
     "taxon": "Aphidecta obliterata",
     "form": "sexnotata",
-    "colour": { "filter": ["brown"], "comment": "Tan brown" },
+    "colour": { "filter": ["brown", "cream/beige"], "comment": "Tan brown" },
     "size": { "filter": [4, 5], "comment": "4.0 - 5.0" },
     "pronotum": {
       "filter": ["with spots", "M-shape"],
@@ -4152,7 +4159,7 @@
     "id": 43,
     "warehouse_id": 28354,
     "taxon": "Coccidula scutellata",
-    "colour": { "filter": ["red", "orange"], "comment": "Russet or burgundy" },
+    "colour": { "filter": ["orange"], "comment": "Russet or burgundy" },
     "size": { "filter": [3], "comment": "2.5-3" },
     "pronotum": { "filter": ["one colour"], "comment": "Russet or burgundy" },
     "pattern": "Black spots",
@@ -4413,7 +4420,7 @@
       "filter": ["yellow", "brown"],
       "comment": "Light yellow-brown"
     },
-    "size": { "filter": [5, 6, 7], "comment": "5.0 - 6.5" },
+    "size": { "filter": [6, 7], "comment": "5.0 - 6.5" },
     "pronotum": {
       "filter": ["with white patch on each side"],
       "comment": "Yellow-brown, with white lateral and fore margin feebly cut around head, transparent, partially covering eyes. "
@@ -4683,7 +4690,7 @@
     "id": 52,
     "taxon": "Ceratomegilla undecimnotata",
     "colour": { "filter": ["red"], "comment": "Orange-red" },
-    "size": { "filter": [5, 6, 7], "comment": "5.0 - 7.0" },
+    "size": { "filter": [6, 7], "comment": "5.0 - 7.0" },
     "pronotum": {
       "filter": ["with white patch on each side"],
       "comment": "Black, anterior angles widely white, fore margin in males white"
@@ -5088,7 +5095,7 @@
     "id": 59,
     "taxon": "Hippodamia septemmaculata",
     "colour": { "filter": ["red"], "comment": "Orange-red" },
-    "size": { "filter": [5, 6, 7], "comment": "5.0 - 7.0" },
+    "size": { "filter": [6, 7], "comment": "5.0 - 7.0" },
     "pronotum": {
       "filter": ["none of them"],
       "comment": "Black, anterior and lateral margins with equally wide white stripe, border between the two colours slightly wavy"
@@ -5375,7 +5382,7 @@
     },
     "size": { "filter": [5, 6], "comment": "5.0 - 6.0" },
     "pronotum": {
-      "filter": ["M-shape"],
+      "filter": ["M-shape", "none of them"],
       "comment": "Dark with wide white lateral margins, strongly arched in the shape of the letter C"
     },
     "pattern": "White (mainly in rusty individuals) or lemon yellow (in black individuals)",
@@ -5604,7 +5611,7 @@
   {
     "id": 67,
     "taxon": "Coccinella venusta",
-    "colour": { "filter": ["red", "orange", "black"], "comment": "Black" },
+    "colour": { "filter": ["black"], "comment": "Black" },
     "size": { "filter": [4, 5, 6, 7], "comment": "4.5 - 7.0" },
     "pronotum": {
       "filter": ["with white patch on each side"],
@@ -5638,7 +5645,7 @@
     "id": 68,
     "taxon": "Coccinella trifasciata",
     "colour": {
-      "filter": ["red", "orange", "yellow", "black"],
+      "filter": ["red", "orange", "yellow"],
       "comment": "Orange-red"
     },
     "size": { "filter": [4, 5, 6], "comment": "4.5 - 6" },
@@ -5717,7 +5724,7 @@
   {
     "id": 70,
     "taxon": "Ceratomegilla rufocincta",
-    "colour": { "filter": ["red", "orange", "black"], "comment": "Black" },
+    "colour": { "filter": ["black"], "comment": "Black" },
     "size": { "filter": [3, 4, 5], "comment": "3 - 4.5" },
     "pronotum": {
       "filter": ["none of them"],
