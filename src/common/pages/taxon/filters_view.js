@@ -53,76 +53,80 @@ filters.push({
   filters: sizeFilters,
 });
 
-const getFilterTemplate = (groupName, { name, label }) => `
-        <li class="item item-checkbox ${groupName} ${name}">
-          <label class="checkbox">
-            <input type="checkbox" value="${name}" <%- obj['${groupName}'].includes('${name}') ? 'checked' : ''%> />
-          </label>
-          ${t(label)}
-        </li>`;
-
-const getGroupTemplate = ({ name, label, filters: groupFilters }) => `
-      <li class="table-view-cell">
-        <a class="collapsed" data-toggle="collapse" href="#${name}" aria-controls="${name}">
-          ${t(label)}
-        </a>
-        <div id="${name}" class="collapse">
-          <ul class="list" style="overflow: hidden;">
-            ${groupFilters
-              .map((...args) => getFilterTemplate(`${name}Group`, ...args))
-              .join('')}
-          </ul>
-        </div>
-      </li>`;
-
-let template = filters.map(getGroupTemplate).join('');
-const pronotums = {
-  m: [t('M-shape'), 'images/M-shape.jpeg'],
-  colour: [
-    t('No pattern (one colour)'),
-    'images/no pattern (one colour).jpeg',
-  ],
-  spots: [t('With spots'), 'images/with spots.jpeg'],
-  patch: [
-    t('With white patch on each side'),
-    'images/with white patch on each side.jpeg',
-  ],
-  none: [
-    t('Different pattern (none of them)'),
-    'images/different pattern (none of them).jpeg',
-  ],
-};
-
-const getPronotumFilter = ([key, [label, image]]) => `
-  <h3>${label}</h3>
-  <li class="item item-checkbox">
+function getTemplate(data) {
+  const getFilterTemplate = (groupName, { name, label }) => `
+  <li class="item item-checkbox ${groupName} ${name}">
     <label class="checkbox">
-      <input type="checkbox" value="${key}" <%- obj['pronotumGroup'].includes('${key}') ? 'checked' : ''%> />
+      <input type="checkbox" value="${name}" <%- obj['${groupName}'].includes('${name}') ? 'checked' : ''%> />
     </label>
-    <img src="${image}" />
-  </li>
-`;
+    ${t(label)}
+  </li>`;
 
-template += `
+  const getGroupTemplate = ({ name, label, filters: groupFilters }) => `
 <li class="table-view-cell">
-<a class="collapsed" data-toggle="collapse" href="#pronotum" aria-controls="pronotum">
-  ${t('Pronotum')}
-</a>
-<div id="pronotum" class="collapse">
-  <ul class="list" style="overflow: hidden;">
-    ${Object.entries(pronotums)
-      .map(getPronotumFilter)
-      .join('')}
-  </ul>
-</div>
-</li>
-`;
+  <a class="collapsed" data-toggle="collapse" href="#${name}" aria-controls="${name}">
+    ${t(label)}
+  </a>
+  <div id="${name}" class="collapse">
+    <ul class="list" style="overflow: hidden;">
+      ${groupFilters
+        .map((...args) => getFilterTemplate(`${name}Group`, ...args))
+        .join('')}
+    </ul>
+  </div>
+</li>`;
+
+  let template = filters.map(getGroupTemplate).join('');
+  const pronotums = {
+    m: [t('M-shape'), 'images/M-shape.jpeg'],
+    colour: [
+      t('No pattern (one colour)'),
+      'images/no pattern (one colour).jpeg',
+    ],
+    spots: [t('With spots'), 'images/with spots.jpeg'],
+    patch: [
+      t('With white patch on each side'),
+      'images/with white patch on each side.jpeg',
+    ],
+    none: [
+      t('Different pattern (none of them)'),
+      'images/different pattern (none of them).jpeg',
+    ],
+  };
+
+  const getPronotumFilter = ([key, [label, image]]) => `
+    <h3>${label}</h3>
+    <li class="item item-checkbox">
+      <label class="checkbox">
+        <input type="checkbox" value="${key}" <%- obj['pronotumGroup'].includes('${key}') ? 'checked' : ''%> />
+      </label>
+      <img src="${image}" />
+    </li>
+  `;
+
+  template += `
+  <li class="table-view-cell">
+  <a class="collapsed" data-toggle="collapse" href="#pronotum" aria-controls="pronotum">
+    ${t('Pronotum')}
+  </a>
+  <div id="pronotum" class="collapse">
+    <ul class="list" style="overflow: hidden;">
+      ${Object.entries(pronotums)
+        .map(getPronotumFilter)
+        .join('')}
+    </ul>
+  </div>
+  </li>
+  `;
+
+  return _.template(template)(data);
+}
 
 export default Marionette.View.extend({
   id: 'species-list-filters',
   tagName: 'ul',
   className: 'table-view accordion',
-  template: _.template(template),
+  template: getTemplate,
 
   events: {
     'click input[type="checkbox"]': 'saveFilter',
