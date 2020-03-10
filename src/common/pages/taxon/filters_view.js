@@ -54,7 +54,7 @@ filters.push({
 });
 
 const getFilterTemplate = (groupName, { name, label }) => `
-        <li class="item item-checkbox item-small ${groupName} ${name}">
+        <li class="item item-checkbox ${groupName} ${name}">
           <label class="checkbox">
             <input type="checkbox" value="${name}" <%- obj['${groupName}'].includes('${name}') ? 'checked' : ''%> />
           </label>
@@ -95,7 +95,7 @@ const pronotums = {
 
 const getPronotumFilter = ([key, [label, image]]) => `
   <h3>${label}</h3>
-  <li class="item item-checkbox item-small">
+  <li class="item item-checkbox">
     <label class="checkbox">
       <input type="checkbox" value="${key}" <%- obj['pronotumGroup'].includes('${key}') ? 'checked' : ''%> />
     </label>
