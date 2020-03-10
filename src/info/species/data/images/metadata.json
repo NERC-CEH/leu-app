@@ -480,11 +480,13 @@
     "id": 29,
     "width": [
       1024,
+      1024,
       1024
     ],
     "height": [
       685,
-      683
+      683,
+      1024
     ],
     "author": [
       "Gilles San Martins",
@@ -689,7 +691,7 @@
       1024
     ],
     "height": [
-      1441
+      800
     ],
     "author": [
       "Josef Dvořák"
@@ -701,7 +703,7 @@
       1024
     ],
     "height": [
-      1364
+      800
     ],
     "author": [
       "Josef Dvořák"

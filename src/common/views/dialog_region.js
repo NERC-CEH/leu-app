@@ -120,7 +120,7 @@ export default Marionette.Region.extend({
 
     // attach events
     this.on("view:show", this.showModal, this);
-    this.$el.on("click #dialog", this._onContainerClick);
+    this.$el.on("click #dialog", this._onContainerClick.bind(this));
   },
 
   hideAllowed: true, // hide the dialog on clicking the container

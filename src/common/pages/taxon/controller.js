@@ -68,7 +68,7 @@ const API = {
           Log("Species:List:Controller: No filter provided", "e");
           return;
         }
-        Log("Species:List:Controller: Filter set");
+        Log(`Species:List:Controller: Filter toggled ${filter}`);
         appModel.toggleFilter(filterGroup, filter);
       });
 

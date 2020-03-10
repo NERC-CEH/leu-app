@@ -38,6 +38,8 @@ const CONFIG = {
     SK: "sandraviglasova%40gmail.com",
     CZ: "jirislavskuhrovec%40gmail.com",
     BE: "tim.adriaens%40inbo.be",
+    
+    Elsewhere: "ladybird-survey%40ceh.ac.uk",
   },
 
   // error analytics

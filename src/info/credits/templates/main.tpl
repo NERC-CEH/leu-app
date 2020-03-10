@@ -5,26 +5,32 @@
       <strong><%= t('We are very grateful for all the people that helped to create this app:') %></strong>
     </p>
     <p>
-    <ul style="list-style-type: none;">
-      <li><a href="https://www.ceh.ac.uk/staff/helen-roy">Helen Roy</a> (UK)</li>
-      <li><a href="https://www.ceh.ac.uk/staff/david-roy">David Roy</a> (UK)</li>
-      <li><a href="https://kazlauskis.com">Karolis Kazlauskis</a> (UK)</li>
-      <li>Peter Brown (UK)</li>
-      <li>Alberto Francesco Inghilesi (ITA)</li>
-      <li>Jiří Skuhrovec (CZ)</li>
-      <li>Sandra Viglášová (SK)</li>
-      <li>Michal Parák (SK)</li>
-      <li>Oldřich Nedvěd (CZ)</li>
-      <li>Tim Adriaens (BE)</li>
-      <li>António Soares (PT)</li>
-      <li>Zdenka Martínková (CZ)</li>
-      <li>Alois Honěk (CZ)</li>
-    </ul>
+      <ul style="list-style-type: none;">
+        <li><a href="https://www.ceh.ac.uk/staff/helen-roy">Helen Roy</a> (UK)</li>
+        <li><a href="https://www.ceh.ac.uk/staff/david-roy">David Roy</a> (UK)</li>
+        <li><a href="https://flumens.io">Karolis Kazlauskis</a> (UK)</li>
+        <li>Peter Brown (UK)</li>
+        <li>Alberto Francesco Inghilesi (ITA)</li>
+        <li>Jiří Skuhrovec (CZ)</li>
+        <li>Sandra Viglášová (SK)</li>
+        <li>Michal Parák (SK)</li>
+        <li>Oldřich Nedvěd (CZ)</li>
+        <li>Tim Adriaens (BE)</li>
+        <li>António Soares (PT)</li>
+        <li>Zdenka Martínková (CZ)</li>
+        <li>Alois Honěk (CZ)</li>
+      </ul>
     </p>
   </li>
   <li>
     <p>
       <%= t('Thanks to the Centre of Ecology & Hydrology and Anglia Ruskin University (Faculty of Science & Engineering) for work and financial support.') %>
+    </p>
+  </li>
+  <li>
+    <p>
+      <%= t('This app was hand crafted with love by') %>
+      <a href="https://flumens.io">Flumens.</a>
     </p>
   </li>
   <li>

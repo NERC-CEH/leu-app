@@ -1,19 +1,19 @@
 require('dotenv').config({ silent: true }); // get local environment variables from .env
-// var keystorePassword = grunt.config('keystore');
 
 module.exports = function (grunt) {
   return {
-    data: {
-      command() {
-        return 'cd src/info/species/data && ' +
-          'node make.js species &&' +
-          'mkdir -p ../../../../dist/_build &&' +
-          'mv *data.json ../../../../dist/_build';
-      },
-      stdout: true,
-    },
     cordova_init: {
       command: './node_modules/.bin/cordova create dist/cordova',
+      stdout: true,
+    },
+    cordova_resources: {
+      command: `mkdir -p dist/resources &&
+                cp -R other/designs/android dist/resources &&
+                
+                cp other/designs/android/*png dist/resources/android &&
+                cp other/designs/*png dist/resources &&
+
+                ./node_modules/.bin/cordova-res --resources dist/resources`,
       stdout: true,
     },
     cordova_clean_www: {
@@ -33,9 +33,7 @@ module.exports = function (grunt) {
       stdout: true,
     },
     cordova_add_platforms: {
-      // android@6.4.0 because of https://github.com/ionic-team/ionic/issues/13857#issuecomment-381744212
-      // ios@4.4.0 because of https://github.com/ionic-team/ionic/issues/12849#issuecomment-328472880
-      command: 'cd dist/cordova && ../../node_modules/.bin/cordova platforms add ios@4.4.0 android@6.4.0',
+      command: 'cd dist/cordova && cordova platforms add ios android',
       stdout: true,
     },
     /**
@@ -46,11 +44,12 @@ module.exports = function (grunt) {
         const pass = grunt.config('keystore-password');
         return `cd dist/cordova && 
             mkdir -p dist && 
-            ../../node_modules/.bin/cordova --release build android && 
-            cd platforms/android/build/outputs/apk/release &&
-            jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore ${process.env.KEYSTORE} -storepass ${pass} android-release-unsigned.apk irecord &&
-            zipalign 4 android-release-unsigned.apk main.apk && 
-            mv -f main.apk ../../../../../../dist/`;
+            cordova --release build android && 
+            cd platforms/android/app/build/outputs/apk/release/ &&
+            jarsigner -keystore ${process.env.KEYSTORE}
+              -storepass ${pass} app-release-unsigned.apk irecord &&
+            zipalign 4 app-release-unsigned.apk main.apk &&
+            mv -f main.apk ../../../../../../../dist/`;
       },
 
       stdout: true,

@@ -1,10 +1,12 @@
 # Translators:
 # CEH Apps, 2019
+# Tim Adriaens <Tim.ADRIAENS@inbo.be>, 2020
+# Gilles San Martin <gilles.sanmartin@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: CEH Apps, 2019\n"
+"Last-Translator: Gilles San Martin <gilles.sanmartin@gmail.com>, 2020\n"
 "Language-Team: French (Belgium) (https://www.transifex.com/ceh/teams/95029/fr_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,7 +16,7 @@ msgstr ""
 "X-Generator: POEditor.com\n"
 
 msgid "Colour"
-msgstr "couleur"
+msgstr "Couleur"
 
 msgid "black"
 msgstr "noir"
@@ -41,76 +43,76 @@ msgid "white"
 msgstr "blanc"
 
 msgid "Basic colour"
-msgstr "couleur de base"
+msgstr "Couleur de base"
 
 msgid "Beige"
-msgstr "beige"
+msgstr "Beige"
 
 msgid "Black"
-msgstr "noir"
+msgstr "Noir"
 
 msgid "Black, brown, maroon"
-msgstr "noir, brun, bordeaux"
+msgstr "Noir, brun, marron"
 
 msgid "Chestnut"
-msgstr "marron"
+msgstr "Chatain"
 
 msgid "Dark orange"
-msgstr "orange foncé"
+msgstr "Orange foncé"
 
 msgid "July-April = beige April-June = reddish"
-msgstr "juillet-avril = beige avril-juin = rougâtre"
+msgstr "juillet-avril = beige avril-juin = rougeâtre"
 
 msgid "Maroon-brown"
-msgstr "bordeaux-brun"
+msgstr "Brun-marron"
 
 msgid "Orange"
-msgstr "orange"
+msgstr "Orange"
 
 msgid "Orange-red"
-msgstr "orange-rouge"
+msgstr "Orange-rouge"
 
 msgid "Red"
-msgstr "rouge"
+msgstr "Rouge"
 
 msgid "Russet or burgundy"
-msgstr "bordeaux"
+msgstr "Rousseâtre ou bordeaux"
 
 msgid "Salmon, orange-red"
-msgstr "saumon, orange-rouge"
+msgstr "Saumon, orange-rouge"
 
 msgid "Tan brown"
-msgstr "brun foncé"
+msgstr "Brun foncé"
 
 msgid "Yellow"
-msgstr "jaune"
+msgstr "Jaune"
 
 msgid "Yellow or black"
-msgstr "jaune ou noir"
+msgstr "Jaune ou noir"
 
 msgid "Yellow, orange-red"
-msgstr "jaune, orange-rouge"
+msgstr "Jaune, orange-rouge"
 
 msgid "Black, juvenile red brown"
-msgstr "noir, juvénile rouge brun"
+msgstr "Noir, juvéniles rouge-brun"
 
 msgid "Ochroid or yellow"
-msgstr "jaune"
+msgstr "Ochracé ou jaune"
 
 msgid "Beige to orange-red"
-msgstr "beige à orange-rouge"
+msgstr "Beige à orange-rouge"
 
 msgid "Light yellow-brown"
-msgstr "jaune pâle-brun"
+msgstr "brun-jaune pâle"
 
 msgid "Orange-red or ochroid"
-msgstr "orange ou jaune paille"
+msgstr "Rouge-orangé ou ochracé"
 
 msgid "Ochroid to red"
-msgstr "couleur paille au rouge"
+msgstr "Ochracé à rouge"
 
 msgid "Matt brown"
-msgstr "brun pâle"
+msgstr "brun mat"
 
 msgid "Brown-orange or rusty"
 msgstr "brun-orange ou rouille"
@@ -119,7 +121,7 @@ msgid "Cream, yellowish, pink or reddish"
 msgstr "crème, jaune, rose ou rougeâtre"
 
 msgid "Rusty brown or black"
-msgstr "rouille ou noir"
+msgstr "brun-rouille ou noir"
 
 msgid "White, cream, yellowish or pink"
 msgstr "blanc, crème, jaune ou rose"
@@ -128,7 +130,7 @@ msgid "Brown"
 msgstr "brun"
 
 msgid "Pattern colour"
-msgstr "motif de couleur"
+msgstr "motif de coloration"
 
 msgid "Black spots"
 msgstr "points noirs"
@@ -137,7 +139,7 @@ msgid "Black spots with or without cream rings around them"
 msgstr "points noirs avec ou sans anneaux de couleur crème"
 
 msgid "Black stripes, spots and patches"
-msgstr "rayures noires, taches et points"
+msgstr "lignes, taches et points noirs"
 
 msgid "Brown or black spots "
 msgstr "taches brunes ou noires"
@@ -149,7 +151,7 @@ msgid "Cream streaking"
 msgstr "bandes de couleur crème"
 
 msgid "Cream stripes and spots"
-msgstr "rayures et points de couleur crème"
+msgstr "lignes et points de couleur crème"
 
 msgid "None or dark oblique line posteriorly"
 msgstr "Aucune ligne ou ligne sombre oblique vers l'arrière"
@@ -158,7 +160,7 @@ msgid "Orange-red spots"
 msgstr "points rouge-orange "
 
 msgid "Orange stripes, spots and patches"
-msgstr "Rayures, points et taches oranges"
+msgstr "Lignes, points et taches oranges"
 
 msgid "Red spots"
 msgstr "points rouges"
@@ -194,7 +196,7 @@ msgid "None or irregular light patches"
 msgstr "pas de taches ou taches irrégulières claires "
 
 msgid "Angular black spots, black suture"
-msgstr "Taches noires angulaires, suture noire"
+msgstr "Taches noires anguleuses, suture noire"
 
 msgid "Yellow rounded spots"
 msgstr "points jaunes arrondis"
@@ -202,17 +204,17 @@ msgstr "points jaunes arrondis"
 msgid ""
 "White (mainly in rusty individuals) or lemon yellow (in black individuals)"
 msgstr ""
-"Blanc (principalement chez les exemplaires rouillées) ou jaune citron (chez "
-"les exemplaires noires)"
+"blanc (principalement chez les exemplaires de couleur rouille) ou jaune "
+"citron (chez les exemplaires noirs)"
 
 msgid "Black stripes"
-msgstr "rayures noires"
+msgstr "lignes noires"
 
 msgid "Black with wide yellow-orange lateral margins"
-msgstr "noir avec des côtés jaune orange larges"
+msgstr "noir avec des marges latérales jaune-orange"
 
 msgid "Number of spots"
-msgstr "Nombre de points"
+msgstr "nombre de points"
 
 msgid "0-7 (usually 2)"
 msgstr "0-7 (d'habitude 2)"
@@ -353,13 +355,13 @@ msgid "3 lateral spots usually fused"
 msgstr "3 points latéraux généralement fusionnés"
 
 msgid "Common"
-msgstr "commun"
+msgstr "commune"
 
 msgid "No"
 msgstr "non"
 
 msgid "Not common"
-msgstr "pas très commun"
+msgstr "peu commune"
 
 msgid "Occasionally"
 msgstr "occasionelle"
@@ -368,7 +370,7 @@ msgid "Rare"
 msgstr "rare"
 
 msgid "Very common"
-msgstr "très commun"
+msgstr "très commune"
 
 msgid "Very rare"
 msgstr "très rare"
@@ -383,10 +385,10 @@ msgid "N/A"
 msgstr "N/A"
 
 msgid "Melanic (black) form"
-msgstr "forme mélanique (noir)"
+msgstr "forme mélanique (noire)"
 
 msgid "Various and common "
-msgstr "Divers et communs"
+msgstr "Divers et communes"
 
 msgid "Black with a white patch on each side"
 msgstr "noir avec une tache blanche sur le côté"
@@ -395,7 +397,7 @@ msgid "Black with anterior-lateral white marks"
 msgstr "noir avec dessin blanc antéro-latéral"
 
 msgid "Many and common"
-msgstr "abondant et commun"
+msgstr "abondante et commune"
 
 msgid "Pronotum pattern"
 msgstr "motif sur le pronotum"
@@ -404,54 +406,54 @@ msgid "one colour"
 msgstr "monochromatique"
 
 msgid "with spots"
-msgstr "Avec des points"
+msgstr "avec des points"
 
 msgid "M-shape"
-msgstr "Forme de M"
+msgstr "en forme de M"
 
 msgid "with white patch on each side"
-msgstr "Avec tache blanche sur les côtés"
+msgstr "avec une tache blanche sur les côtés"
 
 msgid "none of them"
 msgstr "aucun de ces cas"
 
 msgid "Pronotum"
-msgstr "Pronotum"
+msgstr "pronotum"
 
 msgid "Beige with black spots"
-msgstr "Beige avec des points noirs"
+msgstr "beige avec des points noirs"
 
 msgid "Beige or red with 6 black spots"
-msgstr "Beige ou rouge avec 6 points noirs"
+msgstr "beige ou rouge avec 6 points noirs"
 
 msgid "Beige with brown m-mark"
-msgstr "Beige avec tache brune en forme de M"
+msgstr "beige avec une tache brune en forme de M"
 
 msgid "Black with white patch at each side"
 msgstr "noir avec une tache blanche sur chaque côté"
 
 msgid "Black with white sides"
-msgstr "noir avec des côtés blancs"
+msgstr "noir avec les côtés blancs"
 
 msgid "Maroon with lateral posterior off-white marks"
-msgstr "Marron avec un dessin blanchâtre posterio-latérale"
+msgstr "marron avec un dessin blanchâtre postero-latéral"
 
 msgid "Russet with black spots "
-msgstr "Couleur brun foncé avec une teinte rouge-orange avec des points noirs"
+msgstr "rousseâtre avec des points noirs"
 
 msgid ""
 "White or cream with up to 5 spots, or fused lateral spots forming 2 curved "
 "lines, M-shaped mark or solid trapezoid"
 msgstr ""
-"Blanc ou de couleur crème avec un maximum de 5 points ou des points latéraux"
-" condensé qui forment deux lignes courbes, dessin en forme de M ou d'un "
-"dessin en forme de trapèze"
+"blanc ou de couleur crème avec un maximum de 5 points ou des points latéraux"
+" fusionnés qui forment 2 lignes courbes, ou un dessin en forme de M ou un "
+"dessin en forme de trapèze plein"
 
 msgid "White with 5 dark spots, which may be fused"
-msgstr "Blanc avec 5 points noirs, ce qui peut être connecté"
+msgstr "blanc avec 5 points noirs qui peuvent être connectés"
 
 msgid "White with 5-9 black spots"
-msgstr "Blanc avec 5-9 points noirs "
+msgstr "blanc avec 5-9 points noirs "
 
 msgid "White with black M-mark"
 msgstr "blanc avec dessin noir en forme de M"
@@ -460,119 +462,122 @@ msgid "White with black pattern"
 msgstr "blanc avec motif noir"
 
 msgid "White with chestnut m-mark or trapezium"
-msgstr "Blanc avec dessin M de trapèze couleur marron "
+msgstr "blanc avec un dessin chatain en forme de \"M\" ou de trapèze"
 
 msgid "White with rounded m-mark"
-msgstr "Blanc avec un dessin arrondie en forme de M"
+msgstr "blanc avec un dessin en forme de M arrondi"
 
 msgid "Yellow or cream with black spots or trapezium or crown mark"
 msgstr ""
-"jaune ou couleur crème avec des points noirs, ou trapézoïdale, ou le dessin "
-"en forme de couronne"
+"jaune ou couleur crème avec des points noirs, ou un dessin en forme de "
+"trapèze ou  de couronne"
 
 msgid "Yellow with five discrete black spots"
-msgstr "Jaune avec cinq points noirs séparés"
+msgstr "jaune avec cinq points noirs séparés"
 
 msgid " White with 5 dark spots, which may be fused, or dark trapezium mark "
 msgstr ""
-"blanc avec 5 taches sombres, parfois fusionnés ou dessin trapezoidale foncé"
+"blanc avec 5 taches sombres, parfois fusionnées ou dessin trapezoidal foncé"
 
 msgid ""
 "Beige with 6 black spots (VV pattern)  or up to nine spots with anterior "
 "pair and middle spot small."
 msgstr ""
-"beige avec six points noirs (motif de VV) ou jusqu'à neuf points, avec les "
-"points antérieurs et médians de petit taille"
+"beige avec 6 points noirs (en forme de W) ou jusqu'à 9 points, avec les "
+"points antérieurs et médians de petite taille"
 
 msgid "Yellow-brown"
 msgstr "jaune-brun"
 
 msgid "Black, anterior angles and margins widely white"
-msgstr "noir, les coins antérieurs et les bords largement bordé de blanc "
+msgstr "noir, les angles antérieurs et les bords largement bordés de blanc "
 
 msgid "Black with large white trapeziodal patches on anterior angle"
 msgstr ""
-"noir avec de grandes taches trapézoïdales blanches sur les coins avant "
+"noir avec de grandes taches trapézoïdales blanches aux angles antérieurs"
 
 msgid ""
 "Posteriorly black, anterior margin and angles pale, border between colours "
 "wavy or four-lobed"
 msgstr ""
-"postérieurement noir, bords antérieurs et les coins pâle, transition des "
-"couleurs ondulées ou avec quatre lobes"
+"noir, marge antérieure et les angles pâles, transitions entre les couleurs "
+"ondulées ou avec quatre lobes"
 
 msgid "Brown with black spot at centre, rarely with other black markings."
-msgstr "brun avec point noir au milieu, rarement avec d'autres dessin noir"
+msgstr "brun avec un point noir au milieu, rarement avec d'autres dessin noir"
 
 msgid ""
 "Black, anterior and lateral margins with equally wide white stripe, border "
 "between the two colours slightly wavy"
 msgstr ""
-"noir, les bords partout avec une bande blanche, transition entre les "
-"couleurs légèrement ondulé"
+"noir, bords antérieurs et latéraux avec une bande blanche, transition entre "
+"les couleurs légèrement ondulée"
 
 msgid "White to beige with seven black spots"
-msgstr "Blanc au beige avec sept points noirs"
+msgstr "blanc à beige avec sept points noirs"
 
 msgid "Black with white lateral margins"
-msgstr "Noir avec des bords latéraux blancs"
+msgstr "noir avec des bords latéraux blancs"
 
 msgid "Black with large white fore angles and middle white band"
-msgstr ""
-"noir avec les coins blancs larges et une bande blanche à travers le milieu"
+msgstr "noir avec les angles antérieurs blancs et une bande blanche médiane"
 
 msgid "Black with wide yellow or brown lateral margins and fore angles"
-msgstr "noir avec les coins et de larges bords jaunes ou brunes"
+msgstr ""
+"noir avec les angles antérieurs et les marges latérales largement bordés de "
+"jaune ou de brun"
 
 msgid ""
 "Dark with wide white lateral margins, strongly arched in the shape of the "
 "letter C"
-msgstr "foncé avec de larges bords blanc, fortement inclinées en forme d'un C"
+msgstr "foncé avec de larges bords blancs, fortement arqués en forme de C"
 
 msgid "Brown-orange, transparent with opaque white patches"
 msgstr "brun-orange, translucide à taches blanches opaques"
 
 msgid "Black with white anterior and lateral margins"
-msgstr "noir avec l'avant et les côtés blanc"
+msgstr "noir avec les bords antérieurs et latéraux blancs"
 
 msgid "Black, anterior angles with small white area"
-msgstr "noir, avec une petite tâche blanche dans les coins"
+msgstr "noir, avec une petite tache blanche dans les angles antérieurs"
 
 msgid ""
 "Black, fore corners (or sometimes both lateral and fore margins) of pronotum"
 " yellowish."
 msgstr ""
-"noir, angles antérieurs (parfois aussi les bords antérieurs et latérales) du"
-" pronotum jaunâtre"
+"noir, angles antérieurs (parfois aussi les bords antérieurs et latéraux) du "
+"pronotum jaunâtre"
 
 msgid ""
 "Black, fore angles of pronotum may be slightly cleared to yellowish colour"
-msgstr "noir, angles antérieurs du pronotum peuvent être clairs ou jaunâtre"
+msgstr ""
+"noir, les angles antérieurs du pronotum peuvent être clairs ou jaunâtre"
 
 msgid ""
 "Yellow-brown, with white lateral and fore margin feebly cut around head, "
 "transparent, partially covering eyes. "
 msgstr ""
-"jaune-brun avec les bords antérieurs et latérals blancs, incisé faiblements "
-"autour de la tête, transparente et recouvrant partiellement les yeux"
+"jaune-brun avec les bords antérieurs et latéraux blancs, découpés faiblement"
+" autour de la tête, transparents et recouvrant partiellement les yeux"
 
 msgid ""
 "Yellow-brown, with white patches at\n"
 "fore and hind angles, sometimes with a white patch behind at the centre"
 msgstr ""
-"jaune-brun, avec des taches blanches dans les coins à l'avant et à "
-"l'arrière, parfois avec une tache blanche postérieure au milieu"
+"jaune-brun, avec des taches blanches dans les angles antérieurs et "
+"postérieurs, parfois avec une tache blanche médiane à l'arrière"
 
 msgid "Black, anterior angles widely white, fore margin in males white"
 msgstr ""
-"noir, les angles largement blanc, bords antérieurs blancs chez les mâles"
+"noir, les angles antérieurs largement blancs, bord antérieur blancs chez les"
+" mâles"
 
 msgid ""
 "Black, anterior angles and margins widely white, border between the two "
 "colours with four deep lobes"
 msgstr ""
-"noir, les coins et les bords large blanc, transition entre les couleurs avec"
-" quatre lobes"
+"noir, les angles et la marge antérieure largement blancs, transition entre "
+"les couleurs avec quatre lobes profonds"
 
 msgid "Reddish yellow"
 msgstr "jaune rougâtre"
@@ -584,10 +589,10 @@ msgid "Grassland, meadow"
 msgstr "prairies et prairies de fauche"
 
 msgid "Deciduous trees and hedgerows "
-msgstr "Les arbres et les haies"
+msgstr "arbres feuillus et haies"
 
 msgid "Conifer woodlands"
-msgstr "conifère"
+msgstr "forêts de cônifères"
 
 msgid "Deciduous trees"
 msgstr "feuillus"
@@ -599,16 +604,16 @@ msgid "Grassland, meadows "
 msgstr "prairies"
 
 msgid "Heather heathland"
-msgstr "landes"
+msgstr "landes à bruyère"
 
 msgid "Heather heathland, conifer scrub"
-msgstr "lande sèche et conifères"
+msgstr "lande à bruyère et conifères"
 
 msgid "Hedgerows and deciduous trees"
 msgstr "haies et feuillus"
 
 msgid "Herbage and shrub layers on well drained soils"
-msgstr "herbe et strate arbustive sur des sols bien drainés"
+msgstr "strates herbacée et arbustive sur des sols bien drainés"
 
 msgid "Low herbage"
 msgstr "végétation herbacée basse"
@@ -617,22 +622,22 @@ msgid "Low vegetation"
 msgstr "végétation basse"
 
 msgid "Mature Scots pine"
-msgstr "vieux pin sylvestre"
+msgstr "vieux pins sylvestres"
 
 msgid "Needled conifers"
-msgstr "conifères"
+msgstr "cônifères"
 
 msgid "Reed-beds and wetlands"
 msgstr "roselières et zones humides"
 
 msgid "Scots pine woodland"
-msgstr "Les forêts de pin sylvestre"
+msgstr "forêts de pin sylvestre"
 
 msgid "Trees"
 msgstr "arbres"
 
 msgid "Unstable river shingle"
-msgstr "berges des rivières de gravier"
+msgstr "plages de galets en bordure de rivière"
 
 msgid "Varied"
 msgstr "variable"
@@ -656,19 +661,19 @@ msgid "Wetlands"
 msgstr "zones humides"
 
 msgid "Coniferous trees"
-msgstr "conifères"
+msgstr "cônifères"
 
 msgid "Mixed woodlands"
 msgstr "forêts mixtes"
 
 msgid "Peat bogs"
-msgstr "tourbières de montagne"
+msgstr "tourbières"
 
 msgid "Gardens"
 msgstr "jardins"
 
 msgid "Wet and shaded stands on herbs"
-msgstr "endroits humides et ombragés aux herbes"
+msgstr "endroits humides et ombragés dans la strate herbacée"
 
 msgid "Lowland steppes"
 msgstr "steppes de plaine"
@@ -677,7 +682,7 @@ msgid "Herbs"
 msgstr "herbacées"
 
 msgid "Wet woodlands"
-msgstr "les forêts humides"
+msgstr "forêts humides"
 
 msgid "Steppes"
 msgstr "steppes"
@@ -707,7 +712,7 @@ msgid "Shrubs"
 msgstr "arbustes"
 
 msgid "Forest margins"
-msgstr "bords forestiers"
+msgstr "lisières forestières"
 
 msgid "Dry stands"
 msgstr "endroits secs"
@@ -719,10 +724,10 @@ msgid "Alpine meadows"
 msgstr "alpages"
 
 msgid "Vegetation among rocks"
-msgstr "végétation rocheuse"
+msgstr "affleurements rocheux"
 
 msgid "Coniferous forests in highlands and mountains"
-msgstr "Les forêts de pins sur les hauts plateaux et montagnes"
+msgstr "forêts de pins sur les hauts plateaux et en montagne"
 
 msgid "Wet deciduous woodlands"
 msgstr "forêts de feuillus humides"
@@ -740,7 +745,7 @@ msgid "Forests"
 msgstr "forêts"
 
 msgid "Pine forests"
-msgstr "conifère"
+msgstr "forêts de pins"
 
 msgid "Wet deciduous forests"
 msgstr "forêts de feuillus humides"
@@ -758,19 +763,19 @@ msgid "Inland waters"
 msgstr "eaux intérieures"
 
 msgid "Bogs and fens"
-msgstr "tourbière et marais"
+msgstr "tourbières et marais"
 
 msgid "Grasslands"
 msgstr "prairies"
 
 msgid "Heathland, scrub, hedgerow"
-msgstr "bruyère, bosquets et haies"
+msgstr "landes à bruyère, bosquets et haies"
 
 msgid "Woodland"
 msgstr "forêts"
 
 msgid "Unvegetated or sparsely vegetated habitats"
-msgstr "terrains rudéraux et non-végété"
+msgstr "terrains rudéraux à végétation éparse"
 
 msgid "Arable land, garden or park"
 msgstr "champs, jardins et parcs"
@@ -782,10 +787,10 @@ msgid "Mixed habitats"
 msgstr "habitat mixte"
 
 msgid "Leg colour"
-msgstr "Couleur des pâtes"
+msgstr "couleur des pattes"
 
 msgid "Russet "
-msgstr "brun foncé avec des reflets rouge-orange"
+msgstr "roussâtre"
 
 msgid "Yellow-brown with black spots on tibiae"
 msgstr "jaune-brun avec des taches noires sur le tibia"
@@ -803,24 +808,24 @@ msgid "Orange-brown"
 msgstr "orange-brun"
 
 msgid "Black, fore and mid tibiae brown at tip."
-msgstr "noir, tibias antérieurs et tibias médianes brun à l'extrémité apicale"
+msgstr "noir, tibias antérieurs et médians bruns à l'extrémité"
 
 msgid "Black, fore tibiae brown inside and at tip."
-msgstr "noir, tibias antérieurs brun à l'intérieur et à l'extrémité apicale"
+msgstr "noir, tibias antérieurs brun à la face interne et à l'extrémité"
 
 msgid ""
 "Femora black, fore tibiae brown with black outer margin, mid and hind tibiae"
 " black with brown tips"
 msgstr ""
-"fémurs noir, tibias antérieures brun et noir à l'extérieur, tibias médianes "
-"et postérieures noir et brun à l'extrémité apicale"
+"fémurs noir, tibias antérieures brun et noir à la face externe, tibias "
+"médians et postérieurs noirs avec l'extrémité brune"
 
 msgid ""
 "Forelegs mostly\n"
 "yellow-brown, middle legs partially, hind legs mostly black"
 msgstr ""
-"Jambes principalement jaune-brun, pattes médianes partiellement noir et "
-"pattes postérieures complètement noir"
+"pattes antérieures principalement jaune-brun, pattes médianes partiellement "
+"noires et pattes postérieures presque complètement noires"
 
 msgid "Yellow-brown, femora partly black"
 msgstr "jaune-brun, fémurs partiellement noir"
@@ -832,25 +837,25 @@ msgid "Black, brown or bicolour"
 msgstr "noir, brun ou bicolore"
 
 msgid "Habitat for selecting"
-msgstr "Habitat pour séléction"
+msgstr "habitat pour séléction"
 
 msgid "Sand dunes"
-msgstr "dunes de sable"
+msgstr "dunes"
 
 msgid "River shingle"
-msgstr "berges des rivières de gravier"
+msgstr "berges de gravier en bordure de rivière"
 
 msgid "Wet habitats"
 msgstr "zones humides"
 
 msgid "Agricultural areas"
-msgstr "Zones agricoles"
+msgstr "zones agricoles"
 
 msgid "Heathland"
 msgstr "landes"
 
 msgid "Gardens, allotments and parklands"
-msgstr "Jardins et parcs"
+msgstr "jardins et parcs"
 
 msgid "Urban, artificial habitats"
 msgstr "habitats urbains"
@@ -859,10 +864,10 @@ msgid "Forests and woodlands"
 msgstr "forêts"
 
 msgid "Host plant"
-msgstr "plantes hôtes"
+msgstr "plante hôte"
 
 msgid "Various grasses and low plants"
-msgstr "graminées et herbacées"
+msgstr "graminées et herbacées diverse"
 
 msgid "Various trees "
 msgstr "arbres"
@@ -886,10 +891,10 @@ msgid "Needled conifers, sallows and willows"
 msgstr "conifères, saules"
 
 msgid "Reeds"
-msgstr "roseau"
+msgstr "roseaux"
 
 msgid "Reeds and rushes"
-msgstr "rosea et joncs"
+msgstr "roseaux et joncs"
 
 msgid "Scots pine"
 msgstr "pin sylvestre"
@@ -904,10 +909,10 @@ msgid "Various deciduous trees and shrubs"
 msgstr "divers arbres et arbustes"
 
 msgid "Various deciduous trees, particularly sallows and ash"
-msgstr "feuillus divers, surtout les saules et frêne"
+msgstr "feuillus divers, surtout saules et frêne"
 
 msgid "Various grasses and low growing plants "
-msgstr "diverses graminées et des plantes basses"
+msgstr "diverses graminées et plantes basses"
 
 msgid "Various heathers, occasionally trees esp. Leylandii"
 msgstr "bruyères, parfois sur les arbres comme le cyprès de Leyland"
@@ -916,22 +921,22 @@ msgid "Various bushes"
 msgstr "diverses espèces d'arbustes"
 
 msgid "Various, particularly hogweed"
-msgstr "diverse, en particulier la berce"
+msgstr "divers, en particulier la berce"
 
 msgid "Various, particularly lime and sycamore"
-msgstr "divers, en particulier les tilleuls et l'érable"
+msgstr "divers, en particulier les tilleuls et les érables"
 
 msgid "White bryony"
-msgstr "la bryone"
+msgstr "bryone"
 
 msgid "Spruce"
-msgstr "L’épicea "
+msgstr "épicea "
 
 msgid "Scots Pine"
 msgstr "pin sylvestre"
 
 msgid "Firs"
-msgstr "Sapin"
+msgstr "sapin"
 
 msgid "Oak"
 msgstr "chêne"
@@ -943,16 +948,16 @@ msgid "family Chenopodiaceae"
 msgstr "Chénopodes"
 
 msgid "Linden"
-msgstr "tilleuls"
+msgstr "tilleul"
 
 msgid "Elm"
-msgstr "ormes "
+msgstr "orme"
 
 msgid "Alder"
-msgstr "aulnes"
+msgstr "aulne"
 
 msgid "Willow"
-msgstr "saules"
+msgstr "saule"
 
 msgid "Nettle"
 msgstr "ortie"
@@ -961,40 +966,40 @@ msgid "Thistle"
 msgstr "chardons"
 
 msgid "family Asteraceae"
-msgstr "Asteracées"
+msgstr "asteracées"
 
 msgid "Broad-leaved grasses (family Poaceae)"
 msgstr "graminées"
 
 msgid "Plants of the family Cucurbitaceae"
-msgstr "Cucurbitacées"
+msgstr "cucurbitacées"
 
 msgid "Squirting cucumber"
-msgstr "concombre d'âne"
+msgstr "concombre d'âne (Ecballium elaterium)"
 
 msgid "Poplar"
-msgstr "peupliers"
+msgstr "peuplier"
 
 msgid "Sycamore"
 msgstr "érable"
 
 msgid "Hornbeam"
-msgstr "charmes"
+msgstr "charme"
 
 msgid "Goosefoot"
-msgstr "Chénopodes"
+msgstr "chénopode"
 
 msgid "Sugar beet"
 msgstr "betterave"
 
 msgid "Tamarisk"
-msgstr "Tamaris commun"
+msgstr "tamaris"
 
 msgid "Unknown"
 msgstr "inconnu"
 
 msgid "Spindle"
-msgstr ""
+msgstr "fusain d'Europe"
 
 msgid "Overwintering"
 msgstr "hivernation"
@@ -1003,14 +1008,14 @@ msgid ""
 "Low herbage, in gorse, in plant litter, on fence posts and stone walls, "
 "often in large aggregations"
 msgstr ""
-"herbes basses, l'ajonc, dans les déchets végétaux, sur les clôtures et les "
-"murs, souvent dans de grands rassemblements"
+"herbes basses, dans les ajoncs, la litière, sur les clôtures et les murs, "
+"souvent en grands rassemblements"
 
 msgid "Leaf litter, beech nuts "
 msgstr "feuilles mortes, faînes"
 
 msgid "Bark crevices of conifers"
-msgstr "dans l'écorce des arbres conifères"
+msgstr "dans les crevaces d'écorce des conifères"
 
 msgid "Between leaves and in stems of reeds, grass tussocks"
 msgstr ""
@@ -1018,30 +1023,28 @@ msgstr ""
 "graminées"
 
 msgid "Gorse, under shingle stones, in leaf litter"
-msgstr ""
-"l'ajonc, sous les cailloux des rivières de gravier, dans la litière de "
-"feuilles"
+msgstr "dans les ajoncs, sous les gallets, dans la litière"
 
 msgid "High on Scots pine"
-msgstr "dans le pin sylvestre"
+msgstr "sur le pin sylvestre"
 
 msgid "In houses, on bark"
 msgstr "dans les maisons, sur l'écorce"
 
 msgid "In houses, on rocky surfaces"
-msgstr "Dans les maisons, sur les surfaces de pierre"
+msgstr "dans les maisons, sur les surfaces de pierre"
 
 msgid "In leaf litter or on low plants"
-msgstr "feuilles mortes ou plantes basses"
+msgstr "dans la litière ou sur les plantes basses"
 
 msgid ""
 "In leaf litter, foliage and bark crevices of evergreen trees and shrubs"
 msgstr ""
-"dans la litière et les crevasses dans l'écorce des arbres feuillus "
-"persistantes et arbustes"
+"dans la litière et les crevasses de l'écorce d'arbres et arbustes "
+"sempervirents"
 
 msgid "In litter or in bark crevices"
-msgstr "dans la litière ou derrière l'écorce"
+msgstr "dans la litière ou les crvaces d'écorce"
 
 msgid "In low herbage"
 msgstr "dans des herbacées"
@@ -1050,13 +1053,14 @@ msgid "In low herbage, in conifer foliage"
 msgstr "dans des herbacées, dans les aiguilles de pin"
 
 msgid "In sheltered positions on deciduous trees, usually near base"
-msgstr "caché dans les arbres, en particulier à la base"
+msgstr ""
+"sur des zones abritées sur les arbres feuillus, en particulier à la base"
 
 msgid "In soil or leaf litter"
-msgstr "litière ou feuilles mortes"
+msgstr "dans le sol ou la litière"
 
 msgid "Leaf litter or in sheltered positions on trees"
-msgstr "litière de feuilles mortes, des endroits cachés dans les arbres"
+msgstr "litière de feuilles mortes, des zones abritées sur les arbres"
 
 msgid "Low herbage  "
 msgstr "dans des herbacées"
@@ -1074,7 +1078,7 @@ msgid "Plant litter, bark crevices, beech nuts"
 msgstr "déchets végétaux, écorce, faînes"
 
 msgid "Various, but close to ant nests"
-msgstr "variables, mais près des nids de fourmis"
+msgstr "variable, mais près des nids de fourmis"
 
 msgid "Various, usually low down"
 msgstr "variable, normalement près du sol"
@@ -1083,25 +1087,25 @@ msgid "Litter"
 msgstr "litière"
 
 msgid "Rock crevices"
-msgstr "crevasses"
+msgstr "crevasses dans les rochers"
 
 msgid "Grass tussocks"
 msgstr "tourradons de graminées"
 
 msgid "Often in large groups"
-msgstr "souvent dans de grandes rassemblements"
+msgstr "souvent en grands rassemblements"
 
 msgid "In Soil (during winter and summer)"
-msgstr "litière (hiver et été)"
+msgstr "dans le sol (hiver et été)"
 
 msgid "On the ground in dry plants"
-msgstr "sur le sol dans le matériel végétal sec"
+msgstr "sur le sol dans des débris végétaux secs"
 
 msgid "Leaf litter"
 msgstr "feuilles mortes"
 
 msgid "Under the bark of solitary tree"
-msgstr "derrière l'écorce"
+msgstr "derrière l'écorce d'arbres solitaires"
 
 msgid "Food"
 msgstr "nourriture"
@@ -1138,7 +1142,8 @@ msgstr "mildious poudreux de la famille des Erysiphaceae"
 
 msgid "Vary greatly in abundance from year to year due to prey availability"
 msgstr ""
-"de grandes variations annuelles en fonction de la disponibilité des proies"
+"l'abondance varie grandement d'une année à l'autre en fonction de la "
+"disponibilité des proies"
 
 msgid "Adelgids"
 msgstr "Adelgidae"
@@ -1165,19 +1170,19 @@ msgid "Immature stages of chrysomelids and psocopterans"
 msgstr "stades immatures de chrysomèles et psocoptères"
 
 msgid "Probably leaf beetle larvae"
-msgstr "probablement des larves de chrysomèles"
+msgstr "probablement : larves de chrysomèles"
 
 msgid "Phytophagous on grasses"
-msgstr "se nourrit des feuilles des graminées"
+msgstr "se nourrit de feuilles de graminées"
 
 msgid "Larvae mainly aphidophagous"
-msgstr "Les larves se nourrissent principalement de pucerons"
+msgstr "les larves se nourrissent principalement de pucerons"
 
 msgid "Plant leaves"
 msgstr "feuilles"
 
 msgid "True or False"
-msgstr "vrai ou pas vrai"
+msgstr "vrai ou faux"
 
 msgid "YES"
 msgstr "oui"
@@ -1205,12 +1210,12 @@ msgid ""
 "Scientists could not do this work without the help of people, like you, "
 "reporting when and where they find a species. "
 msgstr ""
-"Pendant des centaines d'années, des gens en Europe notent les plantes et les"
-" animaux qu'il observent dans la nature. Les données recueillies par cette "
-"application seront utilisées pour mieux comprendre la distribution et "
-"l'écologie des coccinelles. Les informations sont utilisées par les "
+"Pendant des centaines d'années, des gens en Europe ont noté les plantes et "
+"les animaux qu'il observaient dans la nature. Les données recueillies par "
+"cette application seront utilisées pour mieux comprendre la distribution et "
+"l'écologie des coccinelles. Les informations seront utilisées par les "
 "scientifiques pour étudier la façon dont les animaux réagissent aux "
-"changements dans leur environnement, comme le changement climatique et les "
+"changements de leur environnement, comme le changement climatique et les "
 "espèces exotiques. Cette recherche ne serait pas possible sans votre "
 "contribution."
 
@@ -1226,6 +1231,8 @@ msgid ""
 "Thanks to the Centre of Ecology & Hydrology and Anglia Ruskin University "
 "(Faculty of Science & Engineering) for work and financial support."
 msgstr ""
+"Merci au Centre d'Ecologie et d'Hydrologie et à l'Université Anglia Ruskin "
+"(Faculté des Sciences) pour leur travail et leur soutien financier."
 
 msgid "Privacy policy"
 msgstr "Politique de confidentialité"
@@ -1237,7 +1244,7 @@ msgid "Record"
 msgstr "Encoder"
 
 msgid "App Info"
-msgstr "Sur l'application"
+msgstr "Informations sur l'application"
 
 msgid "About"
 msgstr "Le projet"
@@ -1258,13 +1265,13 @@ msgid "Records"
 msgstr "Observations"
 
 msgid "Logout"
-msgstr "Se déconnecter "
+msgstr "Se déconnecter"
 
 msgid "Login"
-msgstr "Connecter"
+msgstr "Se connecter"
 
 msgid "Register"
-msgstr "Enregistrez"
+msgstr "Enregistrez-vous"
 
 msgid "App Development"
 msgstr "Développement de l'application"
@@ -1273,18 +1280,19 @@ msgid ""
 "This app was hand crafted with love by Karolis Kazlauskis and CEH "
 "developers. For suggestions and feedback please do not hesitate to"
 msgstr ""
-"Cette application a été conçue avec amour par l'équipe de développement "
-"mobile BRC. N'hésitez pas à nous contacter avec vos suggestions et "
+"Cette application a été conçue avec amour par <a "
+"href='https://kazlauskis.com'>Karolis Kazlauskis</a> l'équipe de "
+"développeurs du CEH. N'hésitez pas à nous contacter avec vos suggestions et "
 "commentaires. "
 
 msgid ""
 "We are very grateful for all the people that helped to create this app:"
 msgstr ""
-"Nous sommes tous ceux qui ont contribué à développer cette application très "
-"reconnaissant:"
+"Nous sommes  très reconnaissant envers tous ceux qui ont contribué à "
+"développer cette application :"
 
 msgid "Photographs and Illustrations:"
-msgstr "photos"
+msgstr "Photos et illustrations"
 
 msgid "Front page"
 msgstr "Page d'accueil"
@@ -1301,7 +1309,7 @@ msgstr ""
 "Un merci spécial à Chris Shields pour ses fabuleuses illustrations de "
 "coccinelles utilisés dans cette application. Nous tenons également à "
 "remercier les photographes qui ont aimablement accepté de mettre leurs "
-"images disponibles pour les albums: "
+"images à disposition pour les albums: "
 
 msgid "Form"
 msgstr "Forme"
@@ -1328,7 +1336,7 @@ msgid "Favourite"
 msgstr "Favori"
 
 msgid "Please sign in with your account or register."
-msgstr "Connectez-vous avec votre compte ou enregistrez"
+msgstr "Connectez-vous avec votre compte ou enregistrez-vous"
 
 msgid "Username or email"
 msgstr "Nom d'utilisateur ou e-mail"
@@ -1337,7 +1345,7 @@ msgid "Password"
 msgstr "Mot de passe"
 
 msgid "Sign in"
-msgstr "Connectez"
+msgstr "Connectez-vous"
 
 msgid "Request a new password"
 msgstr "Demander un nouveau mot de passe"
@@ -1345,7 +1353,7 @@ msgstr "Demander un nouveau mot de passe"
 msgid "Enter your username or email address to request a password reset."
 msgstr ""
 "Entrez votre nom d'utilisateur ou adresse e-mail pour demander une "
-"réinitialisation de mot de passe."
+"réinitialisation de mot de votre passe."
 
 msgid "Request"
 msgstr "Demande"
@@ -1372,7 +1380,7 @@ msgid "Create"
 msgstr "Créer"
 
 msgid "Page not found"
-msgstr "Page ne peut être trouvée"
+msgstr "La page ne peut être trouvée"
 
 msgid "Training"
 msgstr "Entraînement"
@@ -1428,13 +1436,13 @@ msgstr ""
 "application."
 
 msgid "Submit All"
-msgstr "Soumettre tous"
+msgstr "Soumettre tout"
 
 msgid "Delete All Saved"
 msgstr "Supprimer toutes les observations enregistrées"
 
 msgid "Training Mode"
-msgstr "Mode d'entrainement"
+msgstr "Mode entrainement"
 
 msgid "Application"
 msgstr "Application"
@@ -1446,14 +1454,14 @@ msgid "Language"
 msgstr "Langue"
 
 msgid "Reset"
-msgstr "Reset"
+msgstr "Réinitialiser"
 
 msgid ""
 "Are you sure you want to reset the application to its initial state? This "
 "will wipe all the locally stored app data!"
 msgstr ""
-"Etes-vous sûr de restaurer l'application à son état d'origine? Ceci supprime"
-" toutes les données de l'appli stockées localement!"
+"Etes-vous sûr de vouloir restaurer l'application à son état d'origine? Ceci "
+"supprime toutes les données de l'appli stockées localement!"
 
 msgid "Cancel"
 msgstr "Annuler"
@@ -1504,7 +1512,7 @@ msgid "Updating"
 msgstr "Mise à jour"
 
 msgid "This should take only a moment..."
-msgstr "Cela ne prendrait qu'un moment ..."
+msgstr "Cela ne devrait prendre qu'un moment ..."
 
 msgid "Sort"
 msgstr "Trier"
@@ -1513,7 +1521,7 @@ msgid "Restart"
 msgstr "Redémarrer"
 
 msgid "Yikes!"
-msgstr "124"
+msgstr "Oups!"
 
 msgid "Info"
 msgstr "Info"
@@ -1524,13 +1532,15 @@ msgstr "Pardon"
 msgid ""
 "Please select <b>Login</b> if you have an account or would like to register,"
 " otherwise select <b>Send</b> and enter your contact details."
-msgstr "129"
+msgstr ""
+"Merci de sélectionner <b>Login</b> si vous avez un compte ou si vous voulez "
+"vous enregistrer, sinon sélectionez <b>Send</b> et entrez vos coordonnées."
 
 msgid "Your details"
 msgstr "vos coordonnées"
 
 msgid "Camera"
-msgstr "Caméra"
+msgstr "Appareil photo"
 
 msgid "Choose a method to upload a photo"
 msgstr "Choisissez une méthode pour télécharger une photo"
@@ -1552,7 +1562,7 @@ msgstr ""
 "le lien de vérification."
 
 msgid "OK, got it"
-msgstr "D'accord, l'ai"
+msgstr "OK, j'ai compris"
 
 msgid "Success"
 msgstr "Succès"
@@ -1571,7 +1581,7 @@ msgstr "Remarque"
 
 msgid "Please add any extra info about this record."
 msgstr ""
-"S'il vous plaît ajouter des informations supplémentaires sur cette "
+"Vous pouvez ajouter ici toute information supplémentaire sur cette "
 "observation."
 
 msgid "How many individual?"
@@ -1589,7 +1599,7 @@ msgid ""
 "away from large objects.<br/> e.g. <i>trees, buildings </i>"
 msgstr ""
 "Assurez-vous d'avoir activé la géolocalisation du téléphone et que vous êtes"
-" bien éloignés des gros objets.<br/> par exemple <i>  arbres, bâtiments</ i>"
+" bien éloignés de gros objets.<br/> par exemple <i>  arbres, bâtiments</i>"
 
 msgid "Nearest Named Place"
 msgstr "Lieu-dit le plus proche"
@@ -1612,13 +1622,13 @@ msgid "Accuracy"
 msgstr "Précision"
 
 msgid "Stop"
-msgstr "Arrêtez"
+msgstr "Arrêter"
 
 msgid "Refresh GPS"
 msgstr "Refresh GPS"
 
 msgid "Filter"
-msgstr "Sélection"
+msgstr "Filtrer"
 
 msgid "Default"
 msgstr "Default"
@@ -1627,13 +1637,13 @@ msgid "Common Name"
 msgstr "Nom commun"
 
 msgid "Common Name Reverse"
-msgstr "Trier à l'inverse sur nom commun"
+msgstr "Trier sur le nom commun (ordre anti-alphabetique)"
 
 msgid "Scientific Name"
 msgstr "Nom scientifique"
 
 msgid "Scientific Name Reverse"
-msgstr "Trier à l'inverse sur nom scientifique"
+msgstr "Trier sur le nom scientifique (ordre anti-alphabetique)"
 
 msgid "Favourites"
 msgstr "Favoris"
@@ -1667,12 +1677,12 @@ msgid ""
 "Scientists could not do this work without the help of people, like you, "
 "reporting when and where they find a species."
 msgstr ""
-"Pendant des centaines d'années, des gens en Europe notent les plantes et les"
-" animaux qu'il observent dans la nature. Les données recueillies par cette "
-"application seront utilisées pour mieux comprendre la distribution et "
-"l'écologie des coccinelles. Les informations sont utilisées par les "
+"Pendant des centaines d'années, des gens en Europe ont noté les plantes et "
+"les animaux qu'il observaient dans la nature. Les données recueillies par "
+"cette application seront utilisées pour mieux comprendre la distribution et "
+"l'écologie des coccinelles. Les informations seront utilisées par les "
 "scientifiques pour étudier la façon dont les animaux réagissent aux "
-"changements dans leur environnement, comme le changement climatique et les "
+"changements de leur environnement, comme le changement climatique et les "
 "espèces exotiques. Cette recherche ne serait pas possible sans votre "
 "contribution."
 
@@ -1740,7 +1750,7 @@ msgid "yellow form"
 msgstr "forme jaune"
 
 msgid "Grid reference"
-msgstr "Référence carré"
+msgstr "Grille de référence"
 
 msgid "Nearest named place"
 msgstr "Lieu le plus proche"
@@ -1749,7 +1759,7 @@ msgid "What sort of habitat did you find the ladybirds in?"
 msgstr "Dans quel habitat avez vous trouvé les coccinelles"
 
 msgid "Not recorded"
-msgstr "Pas observé"
+msgstr "Pas enregistré"
 
 msgid "habitat"
 msgstr "Habitat"
@@ -1761,14 +1771,14 @@ msgid "Are you sure you want to remove this photo from the sample?"
 msgstr "Êtes-vous sûr de vouloir supprimer cette photo?"
 
 msgid "</br><i><b>Note:</b> it will remain in the gallery.</i>"
-msgstr "La photo reste dans la galerie."
+msgstr "</br><i><b>Note:</b>La photo restera dans la galerie.</i>"
 
 msgid ""
 "Are you sure you want to remove this photo from the "
 "sample?</br><i><b>Note:</b> it will remain in the gallery.</i>"
 msgstr ""
 "Êtes-vous sûr de vouloir supprimer cette photo?</br><i><b>Remarque:</b> La "
-"photo reste dans la galerie.</i>"
+"photo restera dans la galerie.</i>"
 
 msgid ""
 "Are you sure you want to remove this record from your "
@@ -1784,3 +1794,45 @@ msgstr ""
 "Êtes-vous sûr de vouloir supprimer toutes les observations sauvées "
 "localement et synchronisés avec succès?</br><i><b>Remarque:</b>les "
 "observations sur le serveur ne seront pas touchés.</i>"
+
+msgid "white/cream/beige"
+msgstr "blanc/crème/beige"
+
+msgid "smaller than 5mm"
+msgstr "moins de 5mm"
+
+msgid "larger than 5mm"
+msgstr "plus grand que 5mm"
+
+msgid "United Kingdom"
+msgstr "Royaume-Uni"
+
+msgid "Different pattern (none of them)"
+msgstr "Motif différent (aucun d'entre eux)"
+
+msgid "No pattern (one colour)"
+msgstr "Pas de motif (une seule couleur)"
+
+msgid "With spots"
+msgstr "Taches blanches"
+
+msgid "With white patch on each side"
+msgstr "Avec une tache blanche de chaque côté"
+
+msgid "Slovakia"
+msgstr "Slovaquie"
+
+msgid "Czech Republic"
+msgstr "République tchèque"
+
+msgid "Italy"
+msgstr "Italie"
+
+msgid "Portugal"
+msgstr "Portugal"
+
+msgid "Belgium"
+msgstr "Belgique"
+
+msgid "Elsewhere"
+msgstr "ailleurs"

@@ -9,7 +9,6 @@ import Device from 'helpers/device';
 import Validate from 'helpers/validate';
 import StringHelp from 'helpers/string';
 import ImageHelp from 'helpers/image';
-import Analytics from 'helpers/analytics';
 import showErrMsg from 'helpers/show_err_msg';
 import Log from 'helpers/log';
 import App from 'app';
@@ -343,7 +342,6 @@ const API = {
               },
             });
             radio.trigger('app:dialog:hide');
-            Analytics.trackEvent('Sample', 'photo remove');
           },
         },
       ],

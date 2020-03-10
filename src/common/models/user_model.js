@@ -7,7 +7,6 @@ import Store from "backbone.localstorage";
 import CONFIG from "config";
 import Log from "helpers/log";
 import Validate from "helpers/validate";
-import Analytics from "helpers/analytics";
 
 const UserModel = Backbone.Model.extend({
   id: "user",
@@ -44,7 +43,6 @@ const UserModel = Backbone.Model.extend({
 
     this.save();
     this.trigger("logout");
-    Analytics.trackEvent("User", "logout");
   },
 
   /**
@@ -65,7 +63,6 @@ const UserModel = Backbone.Model.extend({
     this.save();
 
     this.trigger("login");
-    Analytics.trackEvent("User", "login");
   },
 
   /**

@@ -1,10 +1,11 @@
 # Translators:
 # CEH Apps, 2019
+# Jiri Skuhrovec <jirislavskuhrovec@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: CEH Apps, 2019\n"
+"Last-Translator: Jiri Skuhrovec <jirislavskuhrovec@gmail.com>, 2020\n"
 "Language-Team: Slovak (Slovakia) (https://www.transifex.com/ceh/teams/95029/sk_SK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -985,7 +986,7 @@ msgid "Unknown"
 msgstr "neznáma"
 
 msgid "Spindle"
-msgstr ""
+msgstr "Bršlen"
 
 msgid "Overwintering"
 msgstr "Zimovanie"
@@ -1213,6 +1214,8 @@ msgid ""
 "Thanks to the Centre of Ecology & Hydrology and Anglia Ruskin University "
 "(Faculty of Science & Engineering) for work and financial support."
 msgstr ""
+"Ďakujeme Centru Ekológie & Hydrológie a Anglia Ruskin University (Faculty of"
+" Science & Engineering) za pracovnú a finančnú podporu."
 
 msgid "Privacy policy"
 msgstr "Zásady ochrany osobných údajov"
@@ -1761,3 +1764,45 @@ msgid ""
 msgstr ""
 "Ste si istý, že chcete odstrániť všetky úspešne synchronizované miestne "
 "záznamy?</br><i><b>Note:</b>Záznamy sa uchovajú na serveri.</i>"
+
+msgid "white/cream/beige"
+msgstr "biela/krémová/béžová"
+
+msgid "smaller than 5mm"
+msgstr "menšie ako 5 mm"
+
+msgid "larger than 5mm"
+msgstr "väčšie ako 5 mm"
+
+msgid "United Kingdom"
+msgstr "Spojené kráľovstvo"
+
+msgid "Different pattern (none of them)"
+msgstr "Iný vzor "
+
+msgid "No pattern (one colour)"
+msgstr "Jednofarebný"
+
+msgid "With spots"
+msgstr "Bodkovaný"
+
+msgid "With white patch on each side"
+msgstr "S bielymi postrannými okrajmi"
+
+msgid "Slovakia"
+msgstr "Slovensko"
+
+msgid "Czech Republic"
+msgstr "Česká republika"
+
+msgid "Italy"
+msgstr "Taliansko"
+
+msgid "Portugal"
+msgstr "Portugalsko"
+
+msgid "Belgium"
+msgstr "Belgicko"
+
+msgid "Elsewhere"
+msgstr "Niekde inde"

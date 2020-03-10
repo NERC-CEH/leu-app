@@ -1,4 +1,4 @@
-@import "../../styles/_variables.scss";
+@import '../../styles/_variables.scss';
 
 #species-list-header {
   @media only screen and (max-width: 375px) {
@@ -11,8 +11,8 @@
   margin: 0 -4px;
 
   li.empty {
-    height: initial!important;
-    min-height: initial!important;
+    height: initial !important;
+    min-height: initial !important;
     padding: 13px 0;
     border: none;
     margin: 0;
@@ -91,7 +91,7 @@
     }
 
     &:after {
-      content: "";
+      content: '';
       background: #ddd;
       position: absolute;
       bottom: 0;
@@ -126,4 +126,56 @@
 
 #species-list-filters {
   margin-bottom: 0;
+
+  .list li {
+    border: none;
+
+    &.colourGroup {
+      &.black {
+        background: #2d2d2d;
+        color: white;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+      &.brown {
+        background: #a22525;
+        color: white;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+      &.red {
+        background: #ff3434;
+        color: white;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+      &.orange {
+        background: orange;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+      &.yellow {
+        background: #efef00;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+      &.pink {
+        background: #ff9dae;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .item-checkbox {
+    text-transform: capitalize;
+
+    input {
+      float: left;
+    }
+  }
+
+  #pronotum .item-small.item-checkbox {
+    height: auto;
+  }
 }
