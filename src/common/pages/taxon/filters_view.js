@@ -77,19 +77,19 @@ const getGroupTemplate = ({ name, label, filters: groupFilters }) => `
 
 let template = filters.map(getGroupTemplate).join('');
 const pronotums = {
-  m: [t('M-shape'), '/images/M-shape.jpeg'],
+  m: [t('M-shape'), 'images/M-shape.jpeg'],
   colour: [
     t('No pattern (one colour)'),
-    '/images/no pattern (one colour).jpeg',
+    'images/no pattern (one colour).jpeg',
   ],
-  spots: [t('With spots'), '/images/with spots.jpeg'],
+  spots: [t('With spots'), 'images/with spots.jpeg'],
   patch: [
     t('With white patch on each side'),
-    '/images/with white patch on each side.jpeg',
+    'images/with white patch on each side.jpeg',
   ],
   none: [
     t('Different pattern (none of them)'),
-    '/images/different pattern (none of them).jpeg',
+    'images/different pattern (none of them).jpeg',
   ],
 };
 
