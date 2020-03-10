@@ -1,10 +1,11 @@
 # Translators:
 # CEH Apps, 2019
+# Jiri Skuhrovec <jirislavskuhrovec@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: CEH Apps, 2019\n"
+"Last-Translator: Jiri Skuhrovec <jirislavskuhrovec@gmail.com>, 2020\n"
 "Language-Team: Czech (Czech Republic) (https://www.transifex.com/ceh/teams/95029/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,28 +18,28 @@ msgid "Colour"
 msgstr "Zbarvení"
 
 msgid "black"
-msgstr "Černá"
+msgstr "Černé"
 
 msgid "brown"
-msgstr "Hnědá"
+msgstr "Hnědé"
 
 msgid "red"
-msgstr "Červená"
+msgstr "Červené"
 
 msgid "orange"
-msgstr "Oranžová"
+msgstr "Oranžové"
 
 msgid "yellow"
-msgstr "Žlutá"
+msgstr "Žluté"
 
 msgid "pink"
-msgstr "Růžová"
+msgstr "Růžové"
 
 msgid "cream/beige"
-msgstr "Krémová / béžová"
+msgstr "Krémové / béžové"
 
 msgid "white"
-msgstr "Bílá"
+msgstr "Bílé"
 
 msgid "Basic colour"
 msgstr "Základní  podkladové zbarvení "
@@ -164,7 +165,7 @@ msgid "Red spots"
 msgstr "červené tečky"
 
 msgid "Red, orange, cream"
-msgstr "červená, oranžová, krémová"
+msgstr "červené, oranžové, krémové"
 
 msgid "White spots"
 msgstr "bílé tečky"
@@ -334,10 +335,10 @@ msgid "12-13"
 msgstr "12-13"
 
 msgid "usually 3"
-msgstr "Obvykle 3"
+msgstr "obvykle 3"
 
 msgid "usually 0"
-msgstr "Obvykle 0"
+msgstr "obvykle 0"
 
 msgid "7-9"
 msgstr "7-9"
@@ -352,7 +353,7 @@ msgid "3 lateral spots usually fused"
 msgstr "3 boční tečky obvykle spojené"
 
 msgid "Common"
-msgstr "běžná"
+msgstr "běžné"
 
 msgid "No"
 msgstr "ne"
@@ -364,13 +365,13 @@ msgid "Occasionally"
 msgstr "občas"
 
 msgid "Rare"
-msgstr "vzácná"
+msgstr "vzácné"
 
 msgid "Very common"
 msgstr "velmi běžné"
 
 msgid "Very rare"
-msgstr "velmi vzácná"
+msgstr "velmi vzácné"
 
 msgid "Sometimes"
 msgstr "někdy"
@@ -379,7 +380,7 @@ msgid "Yes"
 msgstr "ano"
 
 msgid "N/A"
-msgstr "nezjištěná"
+msgstr "nezjištěné"
 
 msgid "Melanic (black) form"
 msgstr "Melanická (černá) forma"
@@ -391,7 +392,7 @@ msgid "Black with a white patch on each side"
 msgstr "černá s bílými skvrnami na každé straně"
 
 msgid "Black with anterior-lateral white marks"
-msgstr "černý s bílými předními rohy"
+msgstr "černá s bílými předními rohy"
 
 msgid "Many and common"
 msgstr "mnoho a běžně"
@@ -400,19 +401,19 @@ msgid "Pronotum pattern"
 msgstr "Vzor štítu"
 
 msgid "one colour"
-msgstr "Jednobarevný"
+msgstr "jednobarevný"
 
 msgid "with spots"
-msgstr "S tečkami"
+msgstr "s tečkami"
 
 msgid "M-shape"
-msgstr "Tvar písmene M"
+msgstr "tvar písmene M"
 
 msgid "with white patch on each side"
-msgstr "S bílými skvrnami po stranách"
+msgstr "s bílými skvrnami po stranách"
 
 msgid "none of them"
-msgstr "Žádný z nabídky"
+msgstr "žádný z nabídky"
 
 msgid "Pronotum"
 msgstr "Štít"
@@ -482,7 +483,7 @@ msgstr ""
 "středové tečky malé "
 
 msgid "Yellow-brown"
-msgstr "žlutohnědé"
+msgstr "žlutohnědý"
 
 msgid "Black, anterior angles and margins widely white"
 msgstr "černý, přední rohy a okraje štítu široce bílé"
@@ -809,7 +810,7 @@ msgid ""
 "Femora black, fore tibiae brown with black outer margin, mid and hind tibiae"
 " black with brown tips"
 msgstr ""
-"stehna černá, přední holeně hnědé s černým vnějším okrajem, středni a zadní "
+"stehna černá, přední holeně hnědé s černým vnějším okrajem, střední a zadní "
 "holeně černé s hnědým koncem"
 
 msgid ""
@@ -991,7 +992,7 @@ msgid "Unknown"
 msgstr "neznámé"
 
 msgid "Spindle"
-msgstr ""
+msgstr "brslen"
 
 msgid "Overwintering"
 msgstr "Přezimování"
@@ -1000,7 +1001,7 @@ msgid ""
 "Low herbage, in gorse, in plant litter, on fence posts and stone walls, "
 "often in large aggregations"
 msgstr ""
-"nízká vegetace, keře (zejména hlodáš), opadanka, na plotech, v  kamenných "
+"nízká vegetace, keře (zejména hlodáš), opadanka, na plotech, v kamenných "
 "zídkách, často ve velkých shlucích"
 
 msgid "Leaf litter, beech nuts "
@@ -1013,7 +1014,7 @@ msgid "Between leaves and in stems of reeds, grass tussocks"
 msgstr "mezi listy a ve stoncích rákosí a v trsech trávy"
 
 msgid "Gorse, under shingle stones, in leaf litter"
-msgstr "hlodáš (Ulex sp.), pod kameny na březích, v  opadance"
+msgstr "hlodáš (Ulex sp.), pod kameny na březích, v opadance"
 
 msgid "High on Scots pine"
 msgstr "vysoko v koruně borovice lesní"
@@ -1030,7 +1031,7 @@ msgstr "v listové opadance nebo na nízkých rostlinách"
 msgid ""
 "In leaf litter, foliage and bark crevices of evergreen trees and shrubs"
 msgstr ""
-"v listové opadance, mezi listím, v štěrbinách kůry stálezelených stromů a "
+"v listové opadance, mezi listím, v štěrbinách kůry stále zelených stromů a "
 "keřů"
 
 msgid "In litter or in bark crevices"
@@ -1188,7 +1189,7 @@ msgid ""
 "forces to help map species of ladybird within Europe. "
 msgstr ""
 "Centrum pro ekologii a hydrologii (UK, Wallingford) a evropští partneři "
-"spojili své sílypři mapování slunéček v Evropě."
+"spojili své síly při mapování slunéček v Evropě."
 
 msgid ""
 "For hundreds of years people in Europe have been recording when and where "
@@ -1219,6 +1220,8 @@ msgid ""
 "Thanks to the Centre of Ecology & Hydrology and Anglia Ruskin University "
 "(Faculty of Science & Engineering) for work and financial support."
 msgstr ""
+"Děkujeme Centru ekologie & hydrologie a Anglia Ruskin University (Faculty of"
+" Science & Engineering) za pracovní a finanční podporu."
 
 msgid "Privacy policy"
 msgstr "Zásady ochrany osobních údajů"
@@ -1638,7 +1641,7 @@ msgid ""
 "forces to help map species of ladybird within Europe."
 msgstr ""
 "Centrum pro ekologii a hydrologii (UK, Wallingford) a evropští partneři "
-"spojili své sílypři mapování slunéček v Evropě."
+"spojili své síly při mapování slunéček v Evropě."
 
 msgid ""
 "For hundreds of years people in Europe have been recording when and where "
@@ -1767,43 +1770,43 @@ msgstr ""
 "B> <i> <b> Poznámka: </ b> záznamů na serveru se to nebude dotýkat. </ I>"
 
 msgid "white/cream/beige"
-msgstr ""
+msgstr "Bílé / krémové / béžové"
 
 msgid "smaller than 5mm"
-msgstr ""
+msgstr "Menší než 5 mm"
 
 msgid "larger than 5mm"
-msgstr ""
+msgstr "Větší než 5 mm"
 
 msgid "United Kingdom"
-msgstr ""
+msgstr "Velká Británie"
 
 msgid "Different pattern (none of them)"
-msgstr ""
+msgstr "Jiný vzor"
 
 msgid "No pattern (one colour)"
-msgstr ""
+msgstr "Jednobarevný"
 
 msgid "With spots"
-msgstr ""
+msgstr "Tečkovaný"
 
 msgid "With white patch on each side"
-msgstr ""
+msgstr "S bílými postranními okraji"
 
 msgid "Slovakia"
-msgstr ""
+msgstr "Slovensko"
 
 msgid "Czech Republic"
-msgstr ""
+msgstr "Česká Republika"
 
 msgid "Italy"
-msgstr ""
+msgstr "Itálie"
 
 msgid "Portugal"
-msgstr ""
+msgstr "Portugalsko"
 
 msgid "Belgium"
-msgstr ""
+msgstr "Belgie"
 
 msgid "Elsewhere"
-msgstr ""
+msgstr "Někde jinde"

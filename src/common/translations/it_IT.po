@@ -1,10 +1,11 @@
 # Translators:
 # CEH Apps, 2019
+# Jiri Skuhrovec <jirislavskuhrovec@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: CEH Apps, 2019\n"
+"Last-Translator: Jiri Skuhrovec <jirislavskuhrovec@gmail.com>, 2020\n"
 "Language-Team: Italian (Italy) (https://www.transifex.com/ceh/teams/95029/it_IT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1232,6 +1233,8 @@ msgid ""
 "Thanks to the Centre of Ecology & Hydrology and Anglia Ruskin University "
 "(Faculty of Science & Engineering) for work and financial support."
 msgstr ""
+"Grazie al Centre of Ecology & Hydrology e all'Anglia Ruskin Unversity "
+"(Faculty of Science & Engineering) per il lavoro e il supporto finanziario."
 
 msgid "Privacy policy"
 msgstr "Privacy policy"
@@ -1796,43 +1799,43 @@ msgstr ""
 " toccate.</i>"
 
 msgid "white/cream/beige"
-msgstr ""
+msgstr "bianco/crema/beige"
 
 msgid "smaller than 5mm"
-msgstr ""
+msgstr "più piccolo di 5 mm"
 
 msgid "larger than 5mm"
-msgstr ""
+msgstr "più grande di 5 mm"
 
 msgid "United Kingdom"
-msgstr ""
+msgstr "Regno Unito"
 
 msgid "Different pattern (none of them)"
-msgstr ""
+msgstr "Pattern diverso (nessuno di loro)"
 
 msgid "No pattern (one colour)"
-msgstr ""
+msgstr "Nessun pattern (unico colore)"
 
 msgid "With spots"
-msgstr ""
+msgstr "Con punti"
 
 msgid "With white patch on each side"
-msgstr ""
+msgstr "Con una macchia bianca su ciascun lato"
 
 msgid "Slovakia"
-msgstr ""
+msgstr "Slovacchia"
 
 msgid "Czech Republic"
-msgstr ""
+msgstr "Repubblica Ceca"
 
 msgid "Italy"
-msgstr ""
+msgstr "Italia"
 
 msgid "Portugal"
-msgstr ""
+msgstr "Portogallo"
 
 msgid "Belgium"
-msgstr ""
+msgstr "Belgio"
 
 msgid "Elsewhere"
-msgstr ""
+msgstr "Altrove"
