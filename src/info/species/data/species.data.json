@@ -652,7 +652,7 @@
     "pronotum": {
       "filter": [
         "with white patch on each side",
-        "one colour with spots",
+        "with spots",
         "none of them"
       ],
       "comment": "White with black pattern"
@@ -2107,9 +2107,8 @@
     "taxon": "Subcoccinella vigintiquatuorpunctata",
     "colour": {
       "filter": [
-        "yellow",
-        "orange",
-        "red"
+        "red",
+        "orange"
       ],
       "comment": "Dark orange"
     },
@@ -2424,7 +2423,6 @@
     },
     "size": {
       "filter": [
-        5,
         6,
         7,
         8
@@ -2909,7 +2907,8 @@
     "taxon": "Calvia quatuordecimguttata",
     "colour": {
       "filter": [
-        "brown"
+        "brown",
+        "orange"
       ],
       "comment": "Maroon-brown"
     },
@@ -3082,7 +3081,8 @@
     "colour": {
       "filter": [
         "orange",
-        "red"
+        "red",
+        "pink"
       ],
       "comment": "Salmon, orange-red"
     },
@@ -3242,7 +3242,8 @@
     "colour": {
       "filter": [
         "orange",
-        "red"
+        "red",
+        "pink"
       ],
       "comment": "Salmon, orange-red"
     },
@@ -3931,7 +3932,7 @@
     "pronotum": {
       "filter": [
         "M-shape",
-        "one colour with dots"
+        "with spots"
       ],
       "comment": "White or cream with up to 5 spots, or fused lateral spots forming 2 curved lines, M-shaped mark or solid trapezoid"
     },
@@ -5593,7 +5594,8 @@
     },
     "pronotum": {
       "filter": [
-        "none of them"
+        "none of them",
+        "one colour"
       ],
       "comment": "Orange"
     },
@@ -5933,7 +5935,7 @@
     "UK": {
       "exist": "YES",
       "order": 38,
-      "common_name": "Scarce ladybird",
+      "common_name": "Scarce 7-spot ladybird",
       "habitat": {
         "comment": [
           "Pine forests"
@@ -6053,8 +6055,7 @@
     "colour": {
       "filter": [
         "red",
-        "orange",
-        "yellow"
+        "orange"
       ],
       "comment": "Chestnut"
     },
@@ -6067,7 +6068,8 @@
     },
     "pronotum": {
       "filter": [
-        "with white patch on each side"
+        "with white patch on each side",
+        "none of them"
       ],
       "comment": "White with chestnut m-mark or trapezium"
     },
@@ -7008,7 +7010,8 @@
     },
     "pronotum": {
       "filter": [
-        "with white patch on each side"
+        "with white patch on each side",
+        "one colour"
       ],
       "comment": "Black, fore angles of pronotum may be slightly cleared to yellowish colour"
     },
@@ -7341,7 +7344,6 @@
     },
     "size": {
       "filter": [
-        5,
         6
       ],
       "comment": "5.0 - 6.0"
@@ -7477,7 +7479,8 @@
     },
     "pronotum": {
       "filter": [
-        "one colour"
+        "one colour",
+        "with white patch on each side"
       ],
       "comment": "Black, anterior angles with small white area"
     },
@@ -8353,7 +8356,26 @@
       "exist": "NO"
     },
     "BE": {
-      "exist": "NO"
+      "exist": "YES",
+      "order": 38,
+      "common_name": {
+        "NL": "Zwart lieveheersbeestje",
+        "FR": "Coccinelle noire"
+      },
+      "habitat": {
+        "comment": [
+          "Heather heathland"
+        ],
+        "filter": [
+          "Heathland"
+        ]
+      },
+      "plant": [
+        "Various heathers"
+      ],
+      "overwintering": [
+        "Unknown"
+      ]
     }
   },
   {
@@ -8765,7 +8787,8 @@
     },
     "pronotum": {
       "filter": [
-        "with white patch on each side"
+        "with white patch on each side",
+        "none of them"
       ],
       "comment": "Black with white lateral margins"
     },
@@ -9004,7 +9027,6 @@
     },
     "size": {
       "filter": [
-        5,
         6
       ],
       "comment": "5.0 - 6.0"
@@ -9634,26 +9656,7 @@
       "exist": "NO"
     },
     "BE": {
-      "exist": "YES",
-      "order": 38,
-      "common_name": {
-        "NL": "Zwart lieveheersbeestje",
-        "FR": "Coccinelle noire"
-      },
-      "habitat": {
-        "comment": [
-          "Heather heathland"
-        ],
-        "filter": [
-          "Heathland"
-        ]
-      },
-      "plant": [
-        "Various heathers"
-      ],
-      "overwintering": [
-        "Unknown"
-      ]
+      "exist": "NO"
     }
   },
   {
