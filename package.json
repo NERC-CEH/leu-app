@@ -18,7 +18,6 @@
     "build:species": "cd src/info/species/data && node species.js",
     "test:eslint": "mocha test/eslint-test.js",
     "clean": "rm -rf node_modules dist yarn.lock package-lock.json",
-    "postinstall": "grunt dev",
     "start": "node other/server.js",
     "start-dev": "webpack-dev-server --config webpack.config.js --content-base dist/main --port 8000"
   },
